@@ -360,7 +360,7 @@
         "description": "Icon"
     },
     "helpRuleGeneratorUblockTableMode": {
-        "message": "",
+        "message": "模式",
         "description": "Mode"
     },
     "helpRuleGeneratorUblockTableUseful": {
