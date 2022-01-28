@@ -432,11 +432,11 @@
         "description": "No"
     },
     "helpData": {
-        "message": "",
+        "message": "Dữ liệu",
         "description": "Data"
     },
     "helpSyncContentEver": {
-        "message": "",
+        "message": "Các cài đặt sẽ được đồng bộ hóa:",
         "description": "Settings that will be synchronized:"
     },
     "helpIcons": {
