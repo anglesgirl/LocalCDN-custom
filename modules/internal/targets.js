@@ -163,7 +163,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/clappr/0.') || type.startsWith('/clappr/latest/')) return '0.4.7';
     if (type.startsWith('/chosen/1.')) return '1.8.7';
     if (type.startsWith('/clipboard.js/1.')) return '1.7.1';
-    if (type.startsWith('/clipboard.js/2.')) return '2.0.8';
+    if (type.startsWith('/clipboard.js/2.')) return '2.0.9';
     if (type.startsWith('/cookieconsent2/3.')) return '3.1.1';
     if (type.startsWith('/d3/3.')) return '3.5.17';
     if (type.startsWith('/d3/4.')) return '4.13.0';
