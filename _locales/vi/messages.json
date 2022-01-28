@@ -300,27 +300,27 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "LocalCDN là một tiện ích mở rộng của trình duyệt web mô phỏng Mạng Cung cấp Nội dung để cải thiện quyền riêng tư trực tuyến của bạn. Nó chặn lưu lượng truy cập, tìm các khuôn khổ / thư viện được hỗ trợ cục bộ và đưa chúng vào trang web. Vui lòng sử dụng tiện ích kiểm tra sau đây để tìm hiểu xem bạn có được bảo vệ đúng cách hay không. Để biết thêm thông tin, hãy đọc hướng dẫn hoặc các trang Wiki của chúng tôi.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
-        "message": "",
+        "message": "Kiểm tra tiện ích",
         "description": "Testing utility"
     },
     "helpLinkTutorial": {
-        "message": "",
+        "message": "Hướng dẫn",
         "description": "Tutorial"
     },
     "helpLinkWikiPages": {
-        "message": "",
+        "message": "Trang Wiki",
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "",
+        "message": "Trong hầu hết các trường hợp, LocalCDN có thể dễ dàng thay thế các khuôn khổ nhúng và cải thiện quyền riêng tư. Trong một số trường hợp, trang web có thể cố gắng ngăn chặn điều này bằng cách thiết lập các tùy chọn nhất định trong mã nguồn HTML. LocalCDN đọc mã nguồn HTML trước khi nó được hiển thị trong trình duyệt và loại bỏ phần này (màu đỏ).",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
-        "message": "",
+        "message": "Bộ lọc HTML loại bỏ các ký tự màu đỏ khỏi ví dụ này:",
         "description": "The HTML filter removes the red characters from this example:"
     },
     "helpHtmlFilterAfter": {
@@ -432,11 +432,11 @@
         "description": "No"
     },
     "helpData": {
-        "message": "",
+        "message": "Dữ liệu",
         "description": "Data"
     },
     "helpSyncContentEver": {
-        "message": "",
+        "message": "Các cài đặt sẽ được đồng bộ hóa:",
         "description": "Settings that will be synchronized:"
     },
     "helpIcons": {
