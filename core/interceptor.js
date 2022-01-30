@@ -31,7 +31,7 @@ var interceptor = {};
  */
 
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
-    let validCandidate, targetDetails, targetDomain;
+    let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed;
 
     validCandidate = requestAnalyzer.isValidCandidate(requestDetails, tab);
     if (!validCandidate) {
@@ -49,9 +49,10 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     }
 
     targetDomain = helpers.extractDomainFromUrl(requestDetails.url, true);
+    isGoogleFont = requestAnalyzer.isGoogleFont(targetDomain);
+    isGoogleMaterialIcons = requestAnalyzer.isGoogleMaterialIcons(requestDetails.url);
 
-    if (requestAnalyzer.isGoogleFont(targetDomain) && !requestAnalyzer.isGoogleMaterialIcons(requestDetails.url)) {
-        let initiatorDomain, isListed;
+    if (BrowserType.FIREFOX && (isGoogleFont || !isGoogleMaterialIcons)) {
         initiatorDomain = helpers.extractDomainFromUrl(tab.url, true);
         isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
         // Check if the website is allowed to load Google Fonts
@@ -64,6 +65,13 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
                 'cancel': false
             };
         }
+    } else if (!BrowserType.FIREFOX && (isGoogleFont || isGoogleMaterialIcons)) {
+        initiatorDomain = helpers.extractDomainFromUrl(tab.url, true);
+        isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
+        // Check if the website is allowed to load Google Fonts
+        return {
+            'cancel': interceptor.blockGoogleFonts === true && isListed === false
+        };
     }
 
     targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
