@@ -52,7 +52,7 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     isGoogleFont = requestAnalyzer.isGoogleFont(targetDomain);
     isGoogleMaterialIcons = requestAnalyzer.isGoogleMaterialIcons(requestDetails.url);
 
-    if (BrowserType.FIREFOX && (isGoogleFont || !isGoogleMaterialIcons)) {
+    if (BrowserType.FIREFOX && isGoogleFont && !isGoogleMaterialIcons) {
         initiatorDomain = helpers.extractDomainFromUrl(tab.url, true);
         isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
         // Check if the website is allowed to load Google Fonts
