@@ -280,7 +280,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/libsodium-wrappers/0.')) return '0.5.4';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
     if (type.startsWith('/lightgallery/1.')) return '1.10.0';
-    if (type.startsWith('/lightgallery/2.')) return '2.3.0';
+    if (type.startsWith('/lightgallery/2.')) return '2.4.0';
     if (type.startsWith('/lodash.js/3.')) return '3.10.1';
     if (type.startsWith('/lodash.js/4.')) return '4.17.21';
     if (type.startsWith('/lozad')) return '1.16.0';
