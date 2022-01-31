@@ -118,6 +118,10 @@ popup._renderDomainAllowlistPanel = function () {
     googleFontsToggleElement = document.getElementById('google-fonts-toggle-switch');
     googleFontsToggleStyle = document.getElementById('toggle-switch-google-fonts');
 
+    if (popup._blockGoogleFonts === false) {
+        document.getElementById('div-google-fonts').hidden = true;
+    }
+
     if (popup._domainIsAllowlisted === true) {
         manipulateDOMToggleElement.disabled = true;
         manipulateDOMToggleStyle.setAttribute('class', 'slider-disabled');
@@ -128,10 +132,6 @@ popup._renderDomainAllowlistPanel = function () {
         protectionToggleElement.checked = false;
         protectionToggleElement.addEventListener('click', popup._enableProtection);
         return;
-    }
-
-    if (popup._blockGoogleFonts === false) {
-        document.getElementById('div-google-fonts').hidden = true;
     }
 
     googleFontsToggleStyle.setAttribute('class', 'slider');
