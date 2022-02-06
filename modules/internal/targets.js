@@ -268,6 +268,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jasny-bootstrap/3.')) return '3.1.3';
     if (type.startsWith('/jasny-bootstrap/4.')) return '4.0.0';
     if (type.startsWith('/js-cookie/2.')) return '2.2.1';
+    if (type.startsWith('/js-cookie/3.')) return '3.0.1';
     if (type.startsWith('/knockout/3.')) return '3.5.1';
     if (type.startsWith('/lazysizes/4.')) return '4.1.8';
     if (type.startsWith('/lazysizes/5.')) return '5.3.2';
