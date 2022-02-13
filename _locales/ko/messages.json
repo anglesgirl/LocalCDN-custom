@@ -388,7 +388,7 @@
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
-        "message": "당황하지 마세요. 재 원칙에 반대됨으로 아무것도 전송되지 않을 겁니다. 통계(JSON 형식)은 다음 정보만을 포함합니다. 날자, CDN+카운터와 프레임워크+카운터. 예시가 여기 있습니다:",
+        "message": "당황하지 마세요. 제 원칙에 반대됨으로 아무것도 전송되지 않을 겁니다. 통계(JSON 형식)은 다음 정보만을 포함합니다. 날자, CDN+카운터와 프레임워크+카운터. 예시가 여기 있습니다:",
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
@@ -404,7 +404,7 @@
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
-        "message": "",
+        "message": "저장소 종류로 »동기화«를 선택하면 무엇이 동기화되나요?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
