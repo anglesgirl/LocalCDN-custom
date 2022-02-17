@@ -344,7 +344,7 @@
         "description": "Unfortunately, it sometimes happens that special characters are then displayed incorrectly. In this case you can deactivate the setting again, to display the umlauts correctly."
     },
     "helpRuleGeneratorDescription": {
-        "message": "Desteklenen tüm CDN bağlantılarını LocalCDN'ye otomatik olarak yeniden yönlendirmek istiyorsanız, bu yeniden yönlendirmelere izin vermek için bu kuralları reklam engelleyicinize ekleyebilirsiniz. Bu kuralları eklemek istemiyorsanız, her web sitesi için her CDN bağlantısına ayrı ayrı izin vermelisiniz.",
+        "message": "Desteklenen tüm CDN bağlantılarını LocalCDN'e otomatik olarak yeniden yönlendirmek istiyorsanız, bu yeniden yönlendirmelere izin vermek için bu kuralları reklam engelleyicinize ekleyebilirsiniz. Bu kuralları eklemek istemiyorsanız, her web sitesi için her CDN bağlantısına ayrı ayrı izin vermelisiniz.",
         "description": "If you want to automatically redirect all supported CDN connections to LocalCDN, you can add these rules to your adblocker to allow these redirections. If you do not want to add these rules, you must allow each CDN connection individually for each website."
     },
     "helpRuleGeneratorUblockTitle": {
