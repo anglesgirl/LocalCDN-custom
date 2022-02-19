@@ -697,6 +697,8 @@ function create_url() {
         url="$CLOUDFLARE/$folder/$version/react-router.production.min.js"
     elif [ "$folder" = "search-insights" ];then
         url="$JSDELIVR/npm/$folder@$version/dist/$jfile"
+    elif [ "$folder" = "dygraph" ] && [ "$version" = "1.1.1" ];then
+        url="$CLOUDFLARE/$folder/$version/dygraph-combined.js"
     # --------------------------------------------------------------------------
     # TODO: REMOVE WHEN CDNJS.COM AUTO UPDATE BOT IS FULLY FUNCTIONAL AGAIN
     elif [ "$folder" = "noUiSlider" ] && [ "$version" != "14.7.0" ];then
