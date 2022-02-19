@@ -354,6 +354,10 @@ var resources = {
     'drawerCSS': {
         'path': 'resources/drawer/{version}/drawer.min.css'
     },
+    // dygraph
+    'dygraph': {
+        'path': 'resources/dygraph/{version}/dygraph.min.jsm'
+    },
     // Element-UI (Bundle)
     'elementUI': {
         'path': 'resources/element-ui/{version}/'

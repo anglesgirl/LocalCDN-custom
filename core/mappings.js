@@ -280,6 +280,7 @@ mappings.cdn = {
             'dojo/{version}/dojo.': resources.dojo,
             'drawer/{version}/js/drawer.min.js': resources.drawerJS,
             'drawer/{version}/css/drawer.min.css': resources.drawerCSS,
+            'dygraph/{version}/dygraph': resources.dygraph,
             'element-ui/{version}/': resources.elementUI,
             'ember.js/{version}/ember.': resources.ember,
             'ext-core/{version}/ext-core.': resources.extCore,

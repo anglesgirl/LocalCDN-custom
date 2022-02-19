@@ -177,6 +177,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/docsearch.js/2.')) return '2.6.3';
     if (type.startsWith('/dojo/1.')) return '1.16.4';
     if (type.startsWith('/drawer/3.')) return '3.2.2';
+    if (type.startsWith('/dygraph/2.')) return '2.1.0';
     if (type.startsWith('/element-ui/2.')) return '2.15.7';
     if (type.startsWith('/embedly-player/0.')) return '0.1.0';
     if (type.startsWith('/ember.js/1.')) return '1.13.13';
@@ -425,6 +426,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'dygraph.min.jsm': 'dygraph',
     'search-insights.min.jsm': 'Search Insights',
     'fork-awesome.min.css': 'Fork Awesome',
     'foundation-icons.min.css': 'Foundation Icon Fonts',
