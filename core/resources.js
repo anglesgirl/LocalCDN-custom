@@ -157,6 +157,13 @@ var resources = {
     'appboyWebSdk': {
         'path': 'resources/appboy-web-sdk/{version}/appboy.min.jsm'
     },
+    // asciinema-player
+    'asciinemaPlayerJS': {
+        'path': 'resources/asciinema-player/{version}/asciinema-player.min.jsm'
+    },
+    'asciinemaPlayerCSS': {
+        'path': 'resources/asciinema-player/{version}/asciinema-player.min.css'
+    },
     // autocomplete.js
     'autocompleteJS': {
         'path': 'resources/autocomplete.js/{version}/autocomplete.min.jsm'
