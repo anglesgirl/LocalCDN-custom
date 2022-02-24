@@ -306,7 +306,10 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Modaal/0.')) return '0.4.4';
     if (type.startsWith('/modernizr/2.')) return '2.8.3';
     if (type.startsWith('/moment.js/2.')) return '2.29.1';
-    if (type.startsWith('/mootools/1.')) return '1.6.0';
+    if (type.startsWith('/mootools/1.')) {
+        if (helpers.compareVersion('1.4.5', version)) return '1.4.5'; // <= v1.4.5
+        return '1.6.0';
+    }
     if (type.startsWith('/ngx-bootstrap/6.')) return '6.2.0';
     if (type.startsWith('/ngx-bootstrap/7.')) return '7.1.2';
     if (type.startsWith('/ngx-bootstrap/8.')) return '8.0.0';
