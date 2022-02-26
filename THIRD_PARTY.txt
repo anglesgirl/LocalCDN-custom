@@ -179,7 +179,7 @@ https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js
 https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js
 https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js
 https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js
-https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js
+https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone-min.js
 https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css
 https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js
 https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js
