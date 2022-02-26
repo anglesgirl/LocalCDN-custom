@@ -206,6 +206,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/font-awesome/6.')) return '6.0.0';
     if (type.startsWith('/fork-awesome/1.')) return '1.2.0';
     if (type.startsWith('/foundation/5.')) return '5.5.3';
+    if (type.startsWith('/foundation/6.')) return '6.7.4';
     if (type.startsWith('/foundicons/3.')) return '3.0.0';
     if (type.startsWith('/gsap/1.')) return '1.20.5';
     if (type.startsWith('/gsap/2.')) return '2.1.3';
