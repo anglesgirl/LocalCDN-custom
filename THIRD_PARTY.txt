@@ -413,6 +413,8 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-regular-40
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-solid-900.woff2
 https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css
 https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/fonts/forkawesome-webfont.woff2
+https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css
+https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js
 https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css
 https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.woff
 https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.5/easing/EasePack.min.js

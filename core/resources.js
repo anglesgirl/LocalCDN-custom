@@ -439,6 +439,13 @@ var resources = {
     'forkawesome': {
         'path': 'resources/fork-awesome/{version}/css/fork-awesome.min.css'
     },
+    // Foundation
+    'foundationCSS': {
+        'path': 'resources/foundation/{version}/css/foundation.min.css'
+    },
+    'foundationJS': {
+        'path': 'resources/foundation/{version}/js/foundation.min.jsm'
+    },
     // Foundation Icon Font Sets
     'foundationIconsCSS': {
         'path': 'resources/foundicons/{version}/foundation-icons.min.css'

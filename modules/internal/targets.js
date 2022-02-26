@@ -205,6 +205,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/font-awesome/5.')) return '5.15.4';
     if (type.startsWith('/font-awesome/6.')) return '6.0.0';
     if (type.startsWith('/fork-awesome/1.')) return '1.2.0';
+    if (type.startsWith('/foundation/5.')) return '5.5.3';
     if (type.startsWith('/foundicons/3.')) return '3.0.0';
     if (type.startsWith('/gsap/1.')) return '1.20.5';
     if (type.startsWith('/gsap/2.')) return '2.1.3';
@@ -431,6 +432,8 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'foundation.min.jsm': 'foundation (JS)',
+    'foundation.min.css': 'foundation (CSS)',
     'asciinema-player.min.jsm': 'asciinema player (JS)',
     'asciinema-player.min.css': 'asciinema player (CSS)',
     'dygraph.min.jsm': 'dygraph',
