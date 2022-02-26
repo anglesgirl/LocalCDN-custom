@@ -124,7 +124,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/aos/2.')) return '2.3.4';
     if (type.startsWith('/appboy-web-sdk/3.')) return '3.5.0';
     if (type.startsWith('/asciinema-player/2.')) return '2.6.1';
-    if (type.startsWith('/axios/0.')) return '0.25.0';
+    if (type.startsWith('/axios/0.')) return '0.26.0';
     if (type.startsWith('/babel-polyfill/')) return '7.12.1';
     if (type.startsWith('/babel-standalone/6.')) return '6.26.0';
     if (type.startsWith('/babel-standalone/7.')) return '7.14.6';
