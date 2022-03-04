@@ -701,6 +701,8 @@ function create_url() {
         url="$CLOUDFLARE/$folder/$version/dygraph-combined.js"
     elif [ "$folder" = "mootools" ] && [ "$version" = "1.4.5" ];then
         url="$CLOUDFLARE/$folder/$version/mootools-core-full-compat-yc.min.js"
+    elif [ "$folder" = "docsify-themeable" ];then
+        url="$JSDELIVR/npm/$folder@$version/dist/css/$jfile"
     # --------------------------------------------------------------------------
     # TODO: REMOVE WHEN CDNJS.COM AUTO UPDATE BOT IS FULLY FUNCTIONAL AGAIN
     elif [ "$folder" = "noUiSlider" ] && [ "$version" != "14.7.0" ];then

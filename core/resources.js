@@ -354,6 +354,16 @@ var resources = {
     'docsify': {
         'path': 'resources/docsify/{version}/docsify.min.jsm'
     },
+    // docsify themes
+    'docsifyThemeDefault': {
+        'path': 'resources/docsify-themeable/{version}/theme-default.css'
+    },
+    'docsifyThemeSimple': {
+        'path': 'resources/docsify-themeable/{version}/theme-simple.css'
+    },
+    'docsifyThemeSimpleDark': {
+        'path': 'resources/docsify-themeable/{version}/theme-simple-dark.css'
+    },
     // Dojo
     'dojo': {
         'path': 'resources/dojo/{version}/dojo/dojo.jsm'
