@@ -350,6 +350,10 @@ var resources = {
     'docsearchCSS': {
         'path': 'resources/docsearch.js/{version}/docsearch.min.css'
     },
+    // docsify
+    'docsify': {
+        'path': 'resources/docsify/{version}/docsify.min.jsm'
+    },
     // Dojo
     'dojo': {
         'path': 'resources/dojo/{version}/dojo/dojo.jsm'
