@@ -1337,6 +1337,7 @@ https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.
 https://cdnjs.cloudflare.com/ajax/libs/mootools/1.4.5/mootools-core-full-compat-yc.min.js
 https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.min.js
 https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js
+https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js
 https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css
 https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.js
 https://cdnjs.cloudflare.com/ajax/libs/oclazyload/1.1.0/ocLazyLoad.min.js
@@ -1759,7 +1760,6 @@ https://cdn.jsdelivr.net/npm/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.fe
 https://cdn.jsdelivr.net/npm/ngx-bootstrap@6.2.0/datepicker/bs-datepicker.css
 https://cdn.jsdelivr.net/npm/ngx-bootstrap@7.1.2/datepicker/bs-datepicker.css
 https://cdn.jsdelivr.net/npm/ngx-bootstrap@8.0.0/datepicker/bs-datepicker.css
-https://cdn.jsdelivr.net/npm/nouislider@15.5.1/dist/nouislider.min.js
 https://cdn.jsdelivr.net/npm/object-assign@4.1.1/index.js
 https://cdn.jsdelivr.net/npm/p2p-media-loader-core@0.6.2/build/p2p-media-loader-core.min.js
 https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@0.6.2/build/p2p-media-loader-hlsjs.min.js
