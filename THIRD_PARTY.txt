@@ -176,7 +176,7 @@ https://cdnjs.cloudflare.com/ajax/libs/asciinema-player/2.6.1/asciinema-player.m
 https://cdnjs.cloudflare.com/ajax/libs/asciinema-player/2.6.1/asciinema-player.min.js
 https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.1/autocomplete.min.js
 https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/1.1.0/autocomplete.min.js
-https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js
+https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js
 https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js
 https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js
 https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js
