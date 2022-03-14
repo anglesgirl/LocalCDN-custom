@@ -368,15 +368,15 @@
         "description": "Rules useful"
     },
     "helpRuleGeneratorUblockTableDefaultEasy": {
-        "message": "",
+        "message": "기본/쉬움",
         "description": "Default/Easy"
     },
     "helpRuleGeneratorUblockTableMedium": {
-        "message": "",
+        "message": "보통",
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "",
+        "message": "강력",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
@@ -400,7 +400,7 @@
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
-        "message": "",
+        "message": "확장 저장소는 Firefox 브라우저에서 직접 볼 수 있습니다. »about:debugging« URL을 열어, »저장소«로 이동하여 »확장 저장소«를 선택하세요. »internalStatisticsData« 키 에서 수집된 데이터를 살펴볼 수 있습니다. 이를 복사하여 JSON PrettyPrinter에 붙여 넣으면 더 읽기 쉽습니다. 처음과 마지막 따옴표와 키 자체를 제거 해야 하는 점에 유의하시기 바랍니다. 이 비디오에서 해당 절차를 명확하게 확인 할 수 있습니다.",
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
@@ -432,7 +432,7 @@
         "description": "No"
     },
     "helpData": {
-        "message": "",
+        "message": "데이터",
         "description": "Data"
     },
     "helpSyncContentEver": {
@@ -472,15 +472,15 @@
         "description": "This is not a limitation of LocalCDN, but missing API support of Chromium based browsers."
     },
     "titleBadgeDefault": {
-        "message": "",
+        "message": "기본 배지",
         "description": "Default badge"
     },
     "titleBadgeHTMLFilter": {
-        "message": "",
+        "message": "HTML 필터 배지",
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "",
+        "message": "누락된 리소스 배지",
         "description": "Missing resource badge"
     }
 }
