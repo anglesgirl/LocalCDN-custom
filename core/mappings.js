@@ -598,6 +598,7 @@ mappings.cdn = {
             'npm-modernizr@{version}/modernizr.': resources.modernizr,
             'npm-modernizr@{version}/modernizr.min.': resources.modernizr,
             'markdown-it@{version}/dist/markdown-it.': resources.markdownIt,
+            'mathjax@{version}/es5/': resources.mathJax,
             'moment@{version}/moment.': resources.moment,
             'moment@{version}/moment.min.': resources.moment,
             'mootools@{version}/lib/mootools-core-{version}-server.': resources.mootools,
