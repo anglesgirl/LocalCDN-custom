@@ -340,7 +340,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/prototype/1.')) return '1.7.3';
     if (type.startsWith('/pure/0.')) return '0.6.2';
     if (type.startsWith('/pure/1.')) return '1.0.1';
-    if (type.startsWith('/pure/2.')) return '2.0.6';
+    if (type.startsWith('/pure/2.')) return '2.1.0';
     if (type.startsWith('/raven.js/3.')) return '3.27.2';
     if (type.startsWith('/react/16.')) return '16.14.0';
     if (type.startsWith('/react/17.')) return '17.0.2';
