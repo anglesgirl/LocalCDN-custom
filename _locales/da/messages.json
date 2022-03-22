@@ -300,11 +300,11 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "LocalCDN er en web browser udvidelse der emulerer Indholds Leverings Netværk (CDN) for at forbedre dit online privatliv. Den opsnapper trafik, finder understøttede frameworks/biblioteker lokalt, og indsprøjter dem i internet siden. Vær velkommen til at bruge det efterfølgende test værktøj, til at finde ud af om du er ordentligt beskyttet. For mere information læs vejledningen, eller vores WIKI sider.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
-        "message": "",
+        "message": "Test værktøj",
         "description": "Testing utility"
     },
     "helpLinkTutorial": {
@@ -316,23 +316,23 @@
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "",
+        "message": "I de fleste tilfælde kan LocalCDN nemt erstatte indlejrede frameworks og forbedrer privatliv. I nogle tilfælde kan web siden prøve at undgå dette ved at sætte nogle indstilninger i HTML kilde koden. LocalCDN læser HTML kilde koden før den bliver vist i browseren og fjerner disse dele (rød).",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
-        "message": "",
+        "message": "HTML filteret fjerne de røde tegn fra dette eksempel:",
         "description": "The HTML filter removes the red characters from this example:"
     },
     "helpHtmlFilterAfter": {
-        "message": "",
+        "message": "Så ser resultatet såden her ud:",
         "description": "The result then looks like this:"
     },
     "helpHtmlFilterWhyTitle": {
-        "message": "",
+        "message": "Hvorfor er det nødvendigt at fjerne crossorigin og integritets værdier?",
         "description": "Why is it necessary to remove crossorigin and integrity attributes?"
     },
     "helpHtmlFilterCrossorigin": {
-        "message": "",
+        "message": "Crossorigin værdier forhindrer udskiftningen fordi destinationen ikke matcher den anmodede destination.",
         "description": "The crossorigin attribute prevents the replacement because the destination does not match the requested one."
     },
     "helpHtmlFilterIntegrity": {
@@ -476,7 +476,7 @@
         "description": "Default badge"
     },
     "titleBadgeHTMLFilter": {
-        "message": "",
+        "message": "HTML filter emblem",
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {

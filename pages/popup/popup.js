@@ -423,30 +423,38 @@ popup._createInjectionElement = function (injection) {
     injectionElement.appendChild(nameTextNode);
 
     if (injection.versionRequested !== null) {
-        noteElement = document.createElement('span');
-        noteElement.setAttribute('class', 'side-note');
-
         let versionNode;
 
-        if (injection.versionRequested === undefined || injection.versionDelivered === undefined) {
-            versionNode = '';
-        } else if (injection.versionRequested === injection.versionDelivered) {
-            versionNode = ` v${injection.versionRequested}`;
-        } else if (injection.versionRequested === 'beta') {
-            versionNode = ` ${injection.versionRequested}`;
-        } else if (injection.versionRequested !== 'latest') {
-            versionNode = ` (v${injection.versionRequested} » v${injection.versionDelivered})`;
-        } else if (injection.versionRequested === 'latest') {
-            versionNode = ` v${injection.versionDelivered}`;
-        } else {
-            versionNode = '';
-        }
+        noteElement = document.createElement('span');
+        noteElement.setAttribute('class', 'side-note');
+        versionNode = popup._createVersionNode(injection.versionRequested, injection.versionDelivered);
+
         noteTextNode = document.createTextNode(versionNode);
         noteElement.appendChild(noteTextNode);
         injectionElement.appendChild(noteElement);
     }
 
     return injectionElement;
+};
+
+popup._createVersionNode = function (versionRequested, versionDelivered) {
+    let version = '';
+
+    if (versionRequested === undefined || versionDelivered === undefined) {
+        version = '';
+    } else if (versionRequested === versionDelivered && versionDelivered !== 'latest') {
+        version = `v${versionRequested}`;
+    } else if (versionRequested === versionDelivered) {
+        version = `v${versionRequested}`;
+    } else if (versionRequested === 'beta') {
+        version = `(${versionRequested} » v${versionDelivered})`;
+    } else if (versionRequested !== 'latest') {
+        version = `(v${versionRequested} » v${versionDelivered})`;
+    } else if (versionRequested === 'latest') {
+        version = `v${versionDelivered}`;
+    }
+
+    return version;
 };
 
 popup._filterDuplicates = function (array, key) {

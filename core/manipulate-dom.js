@@ -124,7 +124,7 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                     str = str.replace(/<(link|script)[^>]+>/ig, (m) => {
                         // eslint-disable-next-line no-use-before-define
                         if (cdnDomainsRE.test(m)) {
-                            return m.replace(/\s+(integrity|crossorigin)(="[^"]*"|='[^']*'|=[^"'`=>\s]+|)/ig, '');
+                            return m.replace(/\s+(integrity|crossorigin)(="[^"]*"|='[^']*'|=[^"'`=>\s]+=?|)/ig, '');
                         }
                         return m;
                     });

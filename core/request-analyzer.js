@@ -242,7 +242,10 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
     let filename = channelPath.split('/').pop();
     if (bundle === 'MathJax (Bundle)' && filename !== 'MathJax.js') {
         filename = channelPath.replace(Resource.MATHJAX, '');
-        if (!MathJaxFiles[filename]) {
+        if (filename.startsWith('/npm/mathjax@3')) {
+            filename = filename.replace('/npm/mathjax@3/', '');
+        }
+        if (!MathJaxFiles[filename] && !MathJax3Files[filename]) {
             console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
             log.append(initiator, channelHost + channelPath, '-', true);
             return {

@@ -157,6 +157,13 @@ var resources = {
     'appboyWebSdk': {
         'path': 'resources/appboy-web-sdk/{version}/appboy.min.jsm'
     },
+    // asciinema-player
+    'asciinemaPlayerJS': {
+        'path': 'resources/asciinema-player/{version}/asciinema-player.min.jsm'
+    },
+    'asciinemaPlayerCSS': {
+        'path': 'resources/asciinema-player/{version}/asciinema-player.min.css'
+    },
     // autocomplete.js
     'autocompleteJS': {
         'path': 'resources/autocomplete.js/{version}/autocomplete.min.jsm'
@@ -164,14 +171,6 @@ var resources = {
     // axios
     'axios': {
         'path': 'resources/axios/{version}/axios.min.jsm'
-    },
-    // Babel Polyfill
-    'babelPolyfill': {
-        'path': 'resources/babel-polyfill/{version}/polyfill.min.jsm'
-    },
-    // Babel standalone
-    'babelStandalone': {
-        'path': 'resources/babel-standalone/{version}/babel.min.jsm'
     },
     // Backbone.js
     'backbone': {
@@ -343,6 +342,20 @@ var resources = {
     'docsearchCSS': {
         'path': 'resources/docsearch.js/{version}/docsearch.min.css'
     },
+    // docsify
+    'docsify': {
+        'path': 'resources/docsify/{version}/docsify.min.jsm'
+    },
+    // docsify themes
+    'docsifyThemeDefault': {
+        'path': 'resources/docsify-themeable/{version}/theme-default.css'
+    },
+    'docsifyThemeSimple': {
+        'path': 'resources/docsify-themeable/{version}/theme-simple.css'
+    },
+    'docsifyThemeSimpleDark': {
+        'path': 'resources/docsify-themeable/{version}/theme-simple-dark.css'
+    },
     // Dojo
     'dojo': {
         'path': 'resources/dojo/{version}/dojo/dojo.jsm'
@@ -354,6 +367,10 @@ var resources = {
     'drawerCSS': {
         'path': 'resources/drawer/{version}/drawer.min.css'
     },
+    // dygraph
+    'dygraph': {
+        'path': 'resources/dygraph/{version}/dygraph.min.jsm'
+    },
     // Element-UI (Bundle)
     'elementUI': {
         'path': 'resources/element-ui/{version}/'
@@ -361,10 +378,6 @@ var resources = {
     // embedly player
     'embedlyPlayer': {
         'path': 'resources/embedly-player/{version}/embedly-player.min.jsm'
-    },
-    // Ember.js
-    'ember': {
-        'path': 'resources/ember.js/{version}/ember.min.jsm'
     },
     // ethJs [Deprecated]
     'ethJs': {
@@ -427,6 +440,13 @@ var resources = {
     // Fork Awesome
     'forkawesome': {
         'path': 'resources/fork-awesome/{version}/css/fork-awesome.min.css'
+    },
+    // Foundation
+    'foundationCSS': {
+        'path': 'resources/foundation/{version}/css/foundation.min.css'
+    },
+    'foundationJS': {
+        'path': 'resources/foundation/{version}/js/foundation.min.jsm'
     },
     // Foundation Icon Font Sets
     'foundationIconsCSS': {

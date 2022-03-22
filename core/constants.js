@@ -55,7 +55,7 @@ const MessageResponse = {
 const Resource = {
     'MAPPING_EXPRESSION': /\.map$/i,
     'VERSION_EXPRESSION': /(?:\d{1,2}\.){1,3}\d{1,2}(?:-\d)?|latest/,
-    'SINGLE_NUMBER_EXPRESSION': /^\D+\d\D+$/,
+    'SINGLE_NUMBER_EXPRESSION': /^\D+@?\d.*$/,
     'MATHJAX': /\/\w.*(?:\d{1,2}\.){1,3}\d{1,2}(?:-\d)?\/|\/(mathjax\/)?latest\//,
     'VERSION_PLACEHOLDER': '{version}'
 };
@@ -398,6 +398,12 @@ const MathJaxFiles = {
     'jax/output/HTML-CSS/jax.js': true,
 };
 
+const MathJax3Files = {
+    'es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff': true,
+    'es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff': true,
+    'es5/tex-mml-chtml.js': true,
+
+};
 /**
  * To block bad resources, e.g. fingerprint
  *
