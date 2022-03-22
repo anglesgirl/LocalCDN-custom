@@ -323,7 +323,7 @@ https://cdnjs.cloudflare.com/ajax/libs/dexie/3.2.1/dexie.min.js
 https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css
 https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.js
 https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.2/docsify.min.js
-https://cdnjs.cloudflare.com/ajax/libs/dojo/1.17.1/dojo.min.js
+https://cdnjs.cloudflare.com/ajax/libs/dojo/1.17.2/dojo.min.js
 https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css
 https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js
 https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js

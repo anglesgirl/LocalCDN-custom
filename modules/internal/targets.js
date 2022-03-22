@@ -178,7 +178,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/docsearch.js/2.')) return '2.6.3';
     if (type.startsWith('/docsify/4.') || type.startsWith('/docsify/')) return '4.12.2';
     if (type.startsWith('/docsify-themeable/0.')) return '0.8.6';
-    if (type.startsWith('/dojo/1.')) return '1.17.1';
+    if (type.startsWith('/dojo/1.')) return '1.17.2';
     if (type.startsWith('/drawer/3.')) return '3.2.2';
     if (type.startsWith('/dygraph/1.')) return '1.1.1';
     if (type.startsWith('/dygraph/2.')) return '2.1.0';
