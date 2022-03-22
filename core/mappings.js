@@ -135,7 +135,6 @@ mappings.cdn = {
             'asciinema-player/{version}/asciinema-player.min.css': resources.asciinemaPlayerCSS,
             'asciinema-player/{version}/asciinema-player.css': resources.asciinemaPlayerCSS,
             'axios/{version}/axios.': resources.axios,
-            'babel-polyfill/{version}/polyfill.': resources.babelPolyfill,
             'backbone.js/{version}/backbone.': resources.backbone,
             'backbone.js/{version}/backbone-min.': resources.backbone,
             'baguettebox.js/{version}/baguetteBox.js': resources.baguetteBoxJS,

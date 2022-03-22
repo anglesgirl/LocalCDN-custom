@@ -172,10 +172,6 @@ var resources = {
     'axios': {
         'path': 'resources/axios/{version}/axios.min.jsm'
     },
-    // Babel Polyfill
-    'babelPolyfill': {
-        'path': 'resources/babel-polyfill/{version}/polyfill.min.jsm'
-    },
     // Backbone.js
     'backbone': {
         'path': 'resources/backbone.js/{version}/backbone-min.jsm'
