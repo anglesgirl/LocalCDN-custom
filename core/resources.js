@@ -176,10 +176,6 @@ var resources = {
     'babelPolyfill': {
         'path': 'resources/babel-polyfill/{version}/polyfill.min.jsm'
     },
-    // Babel standalone
-    'babelStandalone': {
-        'path': 'resources/babel-standalone/{version}/babel.min.jsm'
-    },
     // Backbone.js
     'backbone': {
         'path': 'resources/backbone.js/{version}/backbone-min.jsm'

@@ -178,7 +178,6 @@ https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.1/autocomplete.min.j
 https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/1.1.0/autocomplete.min.js
 https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js
 https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js
-https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js
 https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js
 https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone-min.js
 https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css
@@ -1719,7 +1718,6 @@ https://cdn.jsdelivr.net/npm/anchor-js@3.2.2/anchor.min.js
 https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js
 https://cdn.jsdelivr.net/npm/angular-stripe-checkout@5.1.0/angular-stripe-checkout.min.js
 https://cdn.jsdelivr.net/npm/appboy-web-sdk@3.5.0/appboy.min.js
-https://cdn.jsdelivr.net/npm/@babel/standalone@7.14.6/babel.min.js
 https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.8.6/dist/css/theme-defaults.css
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.8.6/dist/css/theme-simple.css

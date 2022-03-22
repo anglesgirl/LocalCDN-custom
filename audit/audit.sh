@@ -698,10 +698,6 @@ function create_url() {
     elif [ "$folder" = "docsify-themeable" ];then
         url="$JSDELIVR/npm/$folder@$version/dist/css/$jfile"
     # --------------------------------------------------------------------------
-    # TODO: REMOVE WHEN CDNJS.COM AUTO UPDATE BOT IS FULLY FUNCTIONAL AGAIN
-    elif [ "$folder" = "babel-standalone" ] && [ "$version" != "6.26.0" ]; then
-        url="$JSDELIVR/npm/@babel/standalone@$version/babel.min.js"
-    # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then
             url="$CLOUDFLARE/$folder/$version/$subfile"
