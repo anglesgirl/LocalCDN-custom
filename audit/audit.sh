@@ -512,10 +512,6 @@ function create_url() {
         elif [ "$jfile" = "mdb-ui-kit.min.js" ]; then
             url="$CLOUDFLARE/$folder/$version/mdb.min.js"
         fi
-    elif [ "$folder" = "ember.js" ]; then
-        if [ "$jfile" = "ember.min.js" ]; then
-            url="$CLOUDFLARE/$folder/$version/ember.debug.js"
-        fi
     elif [ "$folder" = "Modaal" ]; then
         if [ "$jfile" = "modaal.min.css" ]; then
             url="$CLOUDFLARE/$folder/$version/css/$jfile"
@@ -602,8 +598,6 @@ function create_url() {
         url="$GITHUB/jquery-validation/jquery-validation/$version/dist/jquery.validate.min.js"
     elif [ "$folder" = "history" ] && [ "$version" != "4.10.1" ]; then
         url="$CLOUDFLARE/history/$version/history.production.min.js"
-    elif [ "$folder" = "ember.js" ] && [ "$version" = "3.24.2" ] && [ "$jfile" = "ember.min.js" ]; then
-        url="$CLOUDFLARE/ember.js/3.24.2/ember.debug.js"
     elif [ "$folder" = "dojo" ]; then
         url="$CLOUDFLARE/dojo/$version/dojo.min.js"
     elif [ "$folder" = "material-design-icons" ]; then
