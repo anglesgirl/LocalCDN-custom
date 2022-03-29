@@ -664,6 +664,10 @@ var resources = {
     'libsodiumJS': {
         'path': 'resources/libsodium-wrappers/{version}/sodium.min.jsm'
     },
+    // lightbox2
+    'lightbox2': {
+        'path': 'resources/lightbox2/{version}/js/lightbox.min.jsm'
+    },
     // lightcase
     'lightcaseJS': {
         'path': 'resources/lightcase/{version}/js/lightcase.min.jsm'

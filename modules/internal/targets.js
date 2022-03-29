@@ -284,6 +284,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/leaflet.markercluster/1.')) return '1.5.3';
     if (type.startsWith('/libphonenumber-js/1.')) return '1.9.50';
     if (type.startsWith('/libsodium-wrappers/0.')) return '0.5.4';
+    if (type.startsWith('/lightbox2/2.')) return '2.11.3';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
     if (type.startsWith('/lightgallery/1.')) return '1.10.0';
     if (type.startsWith('/lightgallery/2.')) return '2.4.0';
@@ -434,6 +435,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'lightbox.min.jsm': 'Lightbox2',
     'iziModal.min.jsm': 'iziModal',
     'granim.min.jsm': 'Granim.js',
     'validator.min.jsm': 'Bootstrap Validator',

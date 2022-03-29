@@ -359,6 +359,7 @@ mappings.cdn = {
             'leaflet.markercluster/{version}/leaflet.markercluster': resources.leafletMarkercluster,
             'libphonenumber-js/{version}/libphonenumber-js.': resources.libphonenumber,
             'libsodium-wrappers/{version}/sodium.min.js': resources.libsodiumJS,
+            'lightbox2/{version}/js/lightbox.': resources.lightbox2,
             'lightcase/{version}/js/lightcase.': resources.lightcaseJS,
             'lightcase/{version}/css/lightcase.': resources.lightcaseCSS,
             'lightgallery/{version}/js/lightgallery.': resources.lightGalleryJS,
