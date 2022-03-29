@@ -417,6 +417,7 @@ https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/css/foundation.min.css
 https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/js/foundation.min.js
 https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css
 https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.woff
+https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js
 https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.5/easing/EasePack.min.js
 https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.5/jquery.gsap.min.js
 https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.5/plugins/AttrPlugin.min.js

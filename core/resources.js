@@ -460,6 +460,10 @@ var resources = {
     'foundationIconsCSS': {
         'path': 'resources/foundicons/{version}/foundation-icons.min.css'
     },
+    // granim
+    'granim': {
+        'path': 'resources/granim/{version}/granim.min.jsm'
+    },
     // GSAP
     'gsapBundle': {
         'path': 'resources/gsap/{version}/'

@@ -307,6 +307,7 @@ mappings.cdn = {
             'foundation/{version}/js/foundation.min.js': resources.foundationJS,
             'foundation/{version}/js/foundation.js': resources.foundationJS,
             'foundicons/{version}/foundation-icons.min.css': resources.foundationIconsCSS,
+            'granim/{version}/granim.': resources.granim,
             'gsap/{version}/': resources.gsapBundle,
             'highlight.js/{version}/': resources.highlightJS,
             'hls.js/{version}/hls.': resources.hlsJS,
