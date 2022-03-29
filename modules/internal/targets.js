@@ -224,6 +224,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
     if (type.startsWith('/instantsearch.js/4.')) return '4.40.1';
     if (type.startsWith('/iScroll/5.')) return '5.2.0';
+    if (type.startsWith('/izimodal/1.')) return '1.5.1';
     if (type.startsWith('/jets/0.')) return '0.14.1';
     if (type.startsWith('/jquery/1.')) {
         if (helpers.compareVersion('1.7.1', version)) return '1.7.1'; // <= v1.7.1
@@ -433,6 +434,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'iziModal.min.jsm': 'iziModal',
     'granim.min.jsm': 'Granim.js',
     'validator.min.jsm': 'Bootstrap Validator',
     'flickity.pkgd.min.jsm': 'Flickity',

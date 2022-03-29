@@ -500,6 +500,10 @@ var resources = {
     'iScroll': {
         'path': 'resources/iScroll/{version}/iscroll.min.jsm'
     },
+    // iziModal
+    'izimodal': {
+        'path': 'resources/izimodal/{version}/js/iziModal.min.jsm'
+    },
     // jasny-bootstrap
     'jasnyBootstrapJS': {
         'path': 'resources/jasny-bootstrap/{version}/js/jasny-bootstrap.min.jsm'
