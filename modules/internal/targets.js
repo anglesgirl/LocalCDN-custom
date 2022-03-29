@@ -432,6 +432,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'validator.min.jsm': 'Bootstrap Validator',
     'flickity.pkgd.min.jsm': 'Flickity',
     'theme-defaults.css': 'docsify theme',
     'theme-simple.css': 'docsify theme',
