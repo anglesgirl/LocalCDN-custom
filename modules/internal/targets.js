@@ -195,6 +195,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/fancybox/3.')) return '3.5.7';
     if (type.startsWith('/feather-icons/4.')) return '4.28.0';
     if (type.startsWith('/FitText.js/1.')) return '1.2.0';
+    if (type.startsWith('/flickity/3.')) return '3.0.0';
     if (type.startsWith('/flv.js/')) return '1.6.2';
     if (type.startsWith('/font-awesome/3.')) return '3.2.1';
     if (type.startsWith('/font-awesome/4.')) return '4.7.0';
@@ -431,6 +432,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'flickity.pkgd.min.jsm': 'Flickity',
     'theme-defaults.css': 'docsify theme',
     'theme-simple.css': 'docsify theme',
     'theme-simple-dark.css': 'docsify theme',

@@ -297,6 +297,7 @@ mappings.cdn = {
             'fastclick/{version}/fastclick.': resources.fastclick,
             'feather-icons/{version}/feather.': resources.feather,
             'FitText.js/{version}/jquery.fittext.': resources.fitTextJs,
+            'flickity/{version}/flickity.pkgd.': resources.flickity,
             'font-awesome/{version}/css/font-awesome': resources.fontawesome,
             'font-awesome/{version}/css/': resources.fontawesome5CSS,
             'font-awesome/{version}/js/': resources.fontawesome5JS,
