@@ -263,6 +263,10 @@ var resources = {
     'bootstrap3Typeahead': {
         'path': 'resources/bootstrap-3-typeahead/{version}/bootstrap3-typeahead.min.jsm'
     },
+    // Bootstrap Validator
+    'bootstrapValidator': {
+        'path': 'resources/1000hz-bootstrap-validator/{version}/validator.min.jsm'
+    },
     // BootstrapVue
     'bootstrapVueJS': {
         'path': 'resources/bootstrap-vue/{version}/bootstrap-vue.min.jsm'

@@ -75,6 +75,7 @@ targets.setLastVersion = function (type, version) {
     if (version !== null && version !== undefined) {
         version = version.toString();
     }
+    if (type.startsWith('/1000hz-bootstrap-validator/0.')) return '0.11.9';
     if (type.startsWith('/ajax-bootstrap-select/1.')) return '1.4.5';
     if (type.startsWith('/algoliasearch/3.')) return '3.35.1';
     if (type.startsWith('/algoliasearch/4.')) return '4.13.0';
