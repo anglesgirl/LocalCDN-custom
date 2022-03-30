@@ -697,6 +697,8 @@ function create_url() {
         url="$CLOUDFLARE/$folder/$version/mootools-core-full-compat-yc.min.js"
     elif [ "$folder" = "docsify-themeable" ];then
         url="$JSDELIVR/npm/$folder@$version/dist/css/$jfile"
+    elif [ "$folder" = "autocomplete.js" ] && [ "$version" != "0.38.1" ];then
+        url="$JSDELIVR/npm/@algolia/autocomplete-js@$version/dist/umd/index.production.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then
