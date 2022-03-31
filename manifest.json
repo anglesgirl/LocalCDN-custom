@@ -56,6 +56,8 @@
     "resources/*"
   ],
 
+  "content_security_policy": "default-src 'self'; img-src 'self' data:",
+
   "commands": { "_execute_browser_action": {} }
 
 }
