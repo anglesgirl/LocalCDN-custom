@@ -263,6 +263,10 @@ var resources = {
     'bootstrap3Typeahead': {
         'path': 'resources/bootstrap-3-typeahead/{version}/bootstrap3-typeahead.min.jsm'
     },
+    // Bootstrap Validator
+    'bootstrapValidator': {
+        'path': 'resources/1000hz-bootstrap-validator/{version}/validator.min.jsm'
+    },
     // BootstrapVue
     'bootstrapVueJS': {
         'path': 'resources/bootstrap-vue/{version}/bootstrap-vue.min.jsm'
@@ -417,6 +421,10 @@ var resources = {
     'fitTextJs': {
         'path': 'resources/FitText.js/{version}/jquery.fittext.min.jsm'
     },
+    // flickity
+    'flickity': {
+        'path': 'resources/flickity/{version}/flickity.pkgd.min.jsm'
+    },
     // flv.js [Deprecated]
     'flvJS': {
         'path': 'resources/flv.js/{version}/flv.min.jsm'
@@ -451,6 +459,10 @@ var resources = {
     // Foundation Icon Font Sets
     'foundationIconsCSS': {
         'path': 'resources/foundicons/{version}/foundation-icons.min.css'
+    },
+    // granim
+    'granim': {
+        'path': 'resources/granim/{version}/granim.min.jsm'
     },
     // GSAP
     'gsapBundle': {
@@ -487,6 +499,10 @@ var resources = {
     // iScroll [Deprecated]
     'iScroll': {
         'path': 'resources/iScroll/{version}/iscroll.min.jsm'
+    },
+    // iziModal
+    'izimodal': {
+        'path': 'resources/izimodal/{version}/js/iziModal.min.jsm'
     },
     // jasny-bootstrap
     'jasnyBootstrapJS': {
@@ -647,6 +663,10 @@ var resources = {
     // libsodium.js
     'libsodiumJS': {
         'path': 'resources/libsodium-wrappers/{version}/sodium.min.jsm'
+    },
+    // lightbox2
+    'lightbox2': {
+        'path': 'resources/lightbox2/{version}/js/lightbox.min.jsm'
     },
     // lightcase
     'lightcaseJS': {

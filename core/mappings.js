@@ -90,6 +90,7 @@ mappings.cdn = {
     // CDNJS (Cloudflare)
     'cdnjs.cloudflare.com': {
         '/ajax/libs/': {
+            '1000hz-bootstrap-validator/{version}/validator.': resources.bootstrapValidator,
             'ajax-bootstrap-select/{version}/js/ajax-bootstrap-select.': resources.ajaxBootstrapSelect,
             'algoliasearch/{version}/algoliasearch.angular.': resources.algoliaSearch,
             'algoliasearch/{version}/algoliasearch.': resources.algoliaSearch,
@@ -296,6 +297,7 @@ mappings.cdn = {
             'fastclick/{version}/fastclick.': resources.fastclick,
             'feather-icons/{version}/feather.': resources.feather,
             'FitText.js/{version}/jquery.fittext.': resources.fitTextJs,
+            'flickity/{version}/flickity.pkgd.': resources.flickity,
             'font-awesome/{version}/css/font-awesome': resources.fontawesome,
             'font-awesome/{version}/css/': resources.fontawesome5CSS,
             'font-awesome/{version}/js/': resources.fontawesome5JS,
@@ -305,12 +307,14 @@ mappings.cdn = {
             'foundation/{version}/js/foundation.min.js': resources.foundationJS,
             'foundation/{version}/js/foundation.js': resources.foundationJS,
             'foundicons/{version}/foundation-icons.min.css': resources.foundationIconsCSS,
+            'granim/{version}/granim.': resources.granim,
             'gsap/{version}/': resources.gsapBundle,
             'highlight.js/{version}/': resources.highlightJS,
             'hls.js/{version}/hls.': resources.hlsJS,
             'hogan.js/{version}/hogan.': resources.hoganJS,
             'instantsearch.js/{version}/instantsearch.production.': resources.InstantSearchJS,
             'iScroll/{version}/iscroll.min.js': resources.iScroll,
+            'izimodal/{version}/js/iziModal.': resources.izimodal,
             'jasny-bootstrap/{version}/css/jasny-bootstrap.': resources.jasnyBootstrapCSS,
             'jasny-bootstrap/{version}/js/jasny-bootstrap.': resources.jasnyBootstrapJS,
             'jeditable.js/{version}/jquery.jeditable.min.js': resources.jeditableJS,
@@ -355,6 +359,7 @@ mappings.cdn = {
             'leaflet.markercluster/{version}/leaflet.markercluster': resources.leafletMarkercluster,
             'libphonenumber-js/{version}/libphonenumber-js.': resources.libphonenumber,
             'libsodium-wrappers/{version}/sodium.min.js': resources.libsodiumJS,
+            'lightbox2/{version}/js/lightbox.': resources.lightbox2,
             'lightcase/{version}/js/lightcase.': resources.lightcaseJS,
             'lightcase/{version}/css/lightcase.': resources.lightcaseCSS,
             'lightgallery/{version}/js/lightgallery.': resources.lightGalleryJS,
