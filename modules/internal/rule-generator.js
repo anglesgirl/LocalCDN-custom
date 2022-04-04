@@ -47,7 +47,7 @@ ruleGenerator.openRuleSet = function ({target}) {
         } else if (key === 'AdGuard') {
             content += `@@||${domain}^\n`;
         } else if (key === 'NoScript') {
-            content += `"$:${domain}",\n`;
+            content += `"§:${domain}",\n`;
         }
     }
     textArea.value = content.replace(/\n+$/, '');
