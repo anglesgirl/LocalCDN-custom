@@ -319,6 +319,10 @@ var resources = {
     'cookieconsent2CSS': {
         'path': 'resources/cookieconsent2/{version}/cookieconsent.min.css'
     },
+    // corejs-typeahead
+    'corejsTypeahead': {
+        'path': 'resources/corejs-typeahead/{version}/typeahead.bundle.min.jsm'
+    },
     // D3.js
     'd3JS': {
         'path': 'resources/d3/{version}/d3.min.jsm'

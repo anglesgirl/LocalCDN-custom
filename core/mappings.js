@@ -272,6 +272,7 @@ mappings.cdn = {
             'cookieconsent2/{version}/cookieconsent.js': resources.cookieconsent2JS,
             'cookieconsent2/{version}/cookieconsent.min.css': resources.cookieconsent2CSS,
             'cookieconsent2/{version}/cookieconsent.css': resources.cookieconsent2CSS,
+            'corejs-typeahead/{version}/typeahead.bundle.': resources.corejsTypeahead,
             'd3/{version}/d3.min.js': resources.d3JS,
             'd3-legend/{version}/d3-legend.': resources.d3legend,
             'dayjs/{version}/dayjs.': resources.dayjs,
