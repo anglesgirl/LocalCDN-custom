@@ -1336,7 +1336,7 @@ https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js
 https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css
 https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js
 https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
-https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js
+https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment-with-locales.min.js
 https://cdnjs.cloudflare.com/ajax/libs/mootools/1.4.5/mootools-core-full-compat-yc.min.js
 https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.min.js
 https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js
