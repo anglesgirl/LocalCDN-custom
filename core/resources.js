@@ -1041,6 +1041,10 @@ var resources = {
     'vueI18N': {
         'path': 'resources/vue-i18n/{version}/vue-i18n.min.jsm'
     },
+    // vue-match-media
+    'vueMatchMedia': {
+        'path': 'resources/vue-match-media/{version}/vue-match-media.min.jsm'
+    },
     // vue-resource
     'vueResource': {
         'path': 'resources/vue-resource/{version}/vue-resource.min.jsm'

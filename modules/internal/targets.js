@@ -419,6 +419,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vue/3.')) return '3.2.31';
     if (type.startsWith('/vue-i18n/8.')) return '8.27.1';
     if (type.startsWith('/vue-i18n/9.')) return '9.1.9';
+    if (type.startsWith('/vue-match-media/1.')) return '1.0.3';
     if (type.startsWith('/vue-resource/1.')) return '1.5.3';
     if (type.startsWith('/vuex/3.')) return '3.6.2';
     if (type.startsWith('/vuex/4.')) return '4.0.2';
@@ -438,6 +439,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'vue-match-media.min.jsm': 'vue-match-media',
     'typeahead.bundle.min.jsm': 'corejs-typeahead',
     'lightbox.min.jsm': 'Lightbox2',
     'iziModal.min.jsm': 'iziModal',
