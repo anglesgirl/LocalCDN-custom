@@ -148,10 +148,10 @@ var resources = {
     },
     // aos [Deprecated]
     'aosCSS': {
-        'path': 'resources/aos/{version}/aos.css',
+        'path': 'resources/aos/{version}/aos.css'
     },
     'aosJS': {
-        'path': 'resources/aos/{version}/aos.jsm',
+        'path': 'resources/aos/{version}/aos.jsm'
     },
     // Appboy/Braze Web SDK
     'appboyWebSdk': {

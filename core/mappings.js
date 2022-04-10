@@ -1134,9 +1134,7 @@ mappings.cdn['pagecdn.io'] = {
 };
 
 mappings.cdn['cdnjs.loli.net'] = mappings.cdn['cdnjs.cloudflare.com'];
-
 mappings.cdn['ajax.loli.net'] = mappings.cdn['ajax.googleapis.com'];
-
 mappings.cdn['fonts.loli.net'] = mappings.cdn['fonts.googleapis.com'];
 
 // Qihoo 360 CDN [Mirror]
