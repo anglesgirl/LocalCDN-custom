@@ -539,6 +539,10 @@ var resources = {
     'jqueryAjaxUnobtrusive': {
         'path': 'resources/jquery-ajax-unobtrusive/{version}/jquery.unobtrusive-ajax.min.jsm'
     },
+    // Cycle2 (Bundle)
+    'jqueryCycle2': {
+        'path': 'resources/jquery.cycle2/{version}/'
+    },
     // jquery.cookie [Deprecated]
     'jqueryCookie': {
         'path': 'resources/jquery-cookie/{version}/jquery.cookie.min.jsm'

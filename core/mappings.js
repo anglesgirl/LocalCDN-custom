@@ -327,6 +327,7 @@ mappings.cdn = {
             'jquery.devbridge-autocomplete/{version}/jquery.autocomplete.min.js': resources.jQueryAjaxAutoComplete,
             'jquery.blockUI/{version}/jquery.blockUI.min.js': resources.jQueryBlockUI,
             'jquery-csv/{version}/jquery.csv.min.js': resources.jQueryCSV,
+            'jquery.cycle2/{version}/': resources.jqueryCycle2,
             'jquery-easing/{version}/jquery.easing.': resources.jQueryEasing,
             'jquery.lazyload/{version}/jquery.lazyload.min.js': resources.jQueryLazyLoad,
             'jquery.lazy/{version}/': resources.jQueryLazyBundle,
