@@ -793,6 +793,7 @@ var resources = {
     'owlCarouselCSScarousel': {
         'path': 'resources/owl-carousel/{version}/owl.carousel.min.css'
     },
+    // OwlCarousel2 [Deprecated]
     'owlCarousel2Bundle': {
         'path': 'resources/OwlCarousel2/{version}/'
     },

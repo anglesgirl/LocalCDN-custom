@@ -1123,16 +1123,17 @@ mappings.cdn['sdn.geekzu.org'] = {
 // USTC Linux User Group [Mirror]
 mappings.cdn['ajax.proxy.ustclug.org'] = mappings.cdn['ajax.googleapis.com'];
 
-// UNPKG (Cloudflare)
+// UNPKG (Cloudflare) [Mirror]
 mappings.cdn['unpkg.com'] = {
     '/': mappings.cdn['cdn.jsdelivr.net']['/npm/']
 };
 
-// PageCDN
+// PageCDN [Mirror]
 mappings.cdn['pagecdn.io'] = {
     '/lib/': mappings.cdn['cdnjs.cloudflare.com']['/ajax/libs/']
 };
 
+// loli.net [Mirror]
 mappings.cdn['cdnjs.loli.net'] = mappings.cdn['cdnjs.cloudflare.com'];
 mappings.cdn['ajax.loli.net'] = mappings.cdn['ajax.googleapis.com'];
 mappings.cdn['fonts.loli.net'] = mappings.cdn['fonts.googleapis.com'];
