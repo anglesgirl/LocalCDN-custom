@@ -2952,6 +2952,7 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
+    display: block !important;
 }
 
 .findify-components-common--image img {
