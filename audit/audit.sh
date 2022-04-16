@@ -699,6 +699,8 @@ function create_url() {
         url="$JSDELIVR/npm/$folder@$version/dist/css/$jfile"
     elif [ "$folder" = "autocomplete.js" ] && [ "$version" != "0.38.1" ];then
         url="$JSDELIVR/npm/@algolia/autocomplete-js@$version/dist/umd/index.production.min.js"
+    elif [ "$folder" = "vue-match-media" ];then
+        url="$JSDELIVR/npm/vue-match-media@$version/dist/index.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

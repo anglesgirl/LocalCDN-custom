@@ -148,10 +148,10 @@ var resources = {
     },
     // aos [Deprecated]
     'aosCSS': {
-        'path': 'resources/aos/{version}/aos.css',
+        'path': 'resources/aos/{version}/aos.css'
     },
     'aosJS': {
-        'path': 'resources/aos/{version}/aos.jsm',
+        'path': 'resources/aos/{version}/aos.jsm'
     },
     // Appboy/Braze Web SDK
     'appboyWebSdk': {
@@ -318,6 +318,10 @@ var resources = {
     },
     'cookieconsent2CSS': {
         'path': 'resources/cookieconsent2/{version}/cookieconsent.min.css'
+    },
+    // corejs-typeahead
+    'corejsTypeahead': {
+        'path': 'resources/corejs-typeahead/{version}/typeahead.bundle.min.jsm'
     },
     // D3.js
     'd3JS': {
@@ -534,6 +538,10 @@ var resources = {
     // jquery-ajax-unobtrusive
     'jqueryAjaxUnobtrusive': {
         'path': 'resources/jquery-ajax-unobtrusive/{version}/jquery.unobtrusive-ajax.min.jsm'
+    },
+    // Cycle2 (Bundle)
+    'jqueryCycle2': {
+        'path': 'resources/jquery.cycle2/{version}/'
     },
     // jquery.cookie [Deprecated]
     'jqueryCookie': {
@@ -789,6 +797,7 @@ var resources = {
     'owlCarouselCSScarousel': {
         'path': 'resources/owl-carousel/{version}/owl.carousel.min.css'
     },
+    // OwlCarousel2 [Deprecated]
     'owlCarousel2Bundle': {
         'path': 'resources/OwlCarousel2/{version}/'
     },
@@ -1036,6 +1045,10 @@ var resources = {
     // Vue.js i18n
     'vueI18N': {
         'path': 'resources/vue-i18n/{version}/vue-i18n.min.jsm'
+    },
+    // vue-match-media
+    'vueMatchMedia': {
+        'path': 'resources/vue-match-media/{version}/vue-match-media.min.jsm'
     },
     // vue-resource
     'vueResource': {

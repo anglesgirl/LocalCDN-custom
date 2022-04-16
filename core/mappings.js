@@ -272,6 +272,7 @@ mappings.cdn = {
             'cookieconsent2/{version}/cookieconsent.js': resources.cookieconsent2JS,
             'cookieconsent2/{version}/cookieconsent.min.css': resources.cookieconsent2CSS,
             'cookieconsent2/{version}/cookieconsent.css': resources.cookieconsent2CSS,
+            'corejs-typeahead/{version}/typeahead.bundle.': resources.corejsTypeahead,
             'd3/{version}/d3.min.js': resources.d3JS,
             'd3-legend/{version}/d3-legend.': resources.d3legend,
             'dayjs/{version}/dayjs.': resources.dayjs,
@@ -326,6 +327,7 @@ mappings.cdn = {
             'jquery.devbridge-autocomplete/{version}/jquery.autocomplete.min.js': resources.jQueryAjaxAutoComplete,
             'jquery.blockUI/{version}/jquery.blockUI.min.js': resources.jQueryBlockUI,
             'jquery-csv/{version}/jquery.csv.min.js': resources.jQueryCSV,
+            'jquery.cycle2/{version}/': resources.jqueryCycle2,
             'jquery-easing/{version}/jquery.easing.': resources.jQueryEasing,
             'jquery.lazyload/{version}/jquery.lazyload.min.js': resources.jQueryLazyLoad,
             'jquery.lazy/{version}/': resources.jQueryLazyBundle,
@@ -643,6 +645,7 @@ mappings.cdn = {
             'videojs-seek-buttons/dist/videojs-seek-buttons.min.css': resources.videojsSeekButtonsCSS,
             'videojs-seek-buttons/dist/videojs-seek-buttons.js': resources.videojsSeekButtonsJS,
             'videojs-seek-buttons/dist/videojs-seek-buttons.min.js': resources.videojsSeekButtonsJS,
+            'vue-match-media@{version}/dist/index.': resources.vueMatchMedia,
             'vue-resource@{version}/dist/vue-resource.': resources.vueResource,
             'vue@{version}/dist/vue.min.js': resources.vueJs,
             'vue@{version}/dist/vue.js': resources.vueJs,
@@ -1121,20 +1124,19 @@ mappings.cdn['sdn.geekzu.org'] = {
 // USTC Linux User Group [Mirror]
 mappings.cdn['ajax.proxy.ustclug.org'] = mappings.cdn['ajax.googleapis.com'];
 
-// UNPKG (Cloudflare)
+// UNPKG (Cloudflare) [Mirror]
 mappings.cdn['unpkg.com'] = {
     '/': mappings.cdn['cdn.jsdelivr.net']['/npm/']
 };
 
-// PageCDN
+// PageCDN [Mirror]
 mappings.cdn['pagecdn.io'] = {
     '/lib/': mappings.cdn['cdnjs.cloudflare.com']['/ajax/libs/']
 };
 
+// loli.net [Mirror]
 mappings.cdn['cdnjs.loli.net'] = mappings.cdn['cdnjs.cloudflare.com'];
-
 mappings.cdn['ajax.loli.net'] = mappings.cdn['ajax.googleapis.com'];
-
 mappings.cdn['fonts.loli.net'] = mappings.cdn['fonts.googleapis.com'];
 
 // Qihoo 360 CDN [Mirror]

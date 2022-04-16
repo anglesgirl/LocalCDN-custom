@@ -168,17 +168,6 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': `resources/twitter-bootstrap/fonts/${helpers.extractFilenameFromPath(channelPath)}`,
             'bundle': 'Bootstrap (Fonts)'
         };
-    } else if ((/cdnjs\.cloudflare\.com\/ajax\/libs\/jquery\.cycle2\/[\d.]+\//).test(CompleteURL)) {
-        if (channelPath.endsWith('js')) {
-            channelPath += 'm';
-        }
-        return {
-            'source': channelHost,
-            'versionRequested': '2.1.6',
-            'versionDelivered': '2.1.6',
-            'path': `resources/jquery.cycle2/2.1.6/${helpers.extractFilenameFromPath(channelPath)}`,
-            'bundle': 'Cycle2 (Bundle)'
-        };
     } else if (CompleteURL === 'cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.min.js') {
         lastVersion = targets.setLastVersion('/videojs-seek-buttons/');
         return {

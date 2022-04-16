@@ -27,14 +27,13 @@ var optionsInfo = {};
  */
 
 optionsInfo._renderCdnFrameworkSection = function () {
-    let unsupportedFrameworks, summarizedFrameworks, btnCDNs, btnFrameworks;
+    let unsupportedFrameworks, btnCDNs, btnFrameworks;
 
     unsupportedFrameworks = 0;
-    summarizedFrameworks = 12;
     optionsInfo._listOfFrameworks = {};
 
     btnCDNs = document.getElementById('cdn');
-    btnCDNs.value = 'CDNs: ';
+    btnCDNs.value = 'CDNs (incl. CNAME): ';
 
     btnFrameworks = document.getElementById('framework');
     btnFrameworks.value = 'Frameworks: ';
@@ -57,9 +56,8 @@ optionsInfo._renderCdnFrameworkSection = function () {
     btnFrameworks.addEventListener('click', optionsInfo._btnCreateList);
     btnCDNs.addEventListener('click', optionsInfo._btnCreateList);
 
-    // Reduce CDNs by 3, because loli.net includes = cdn.css.net, cdnjs.loli.net, ajax.loli.net, fonts.loli.net
-    btnCDNs.value += Object.keys(mappings.cdn).length - 3;
-    btnFrameworks.value += Object.keys(optionsInfo._listOfFrameworks).length - unsupportedFrameworks - summarizedFrameworks;
+    btnCDNs.value += Object.keys(mappings.cdn).length;
+    btnFrameworks.value += Object.keys(optionsInfo._listOfFrameworks).length - unsupportedFrameworks;
 };
 
 optionsInfo._renderLinkSection = function () {
