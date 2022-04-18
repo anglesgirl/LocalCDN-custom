@@ -165,6 +165,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/clipboard.js/2.')) return '2.0.10';
     if (type.startsWith('/cookieconsent2/3.')) return '3.1.1';
     if (type.startsWith('/corejs-typeahead/1.')) return '1.3.1';
+    if (type.startsWith('/createjs/')) return '1.0.0';
     if (type.startsWith('/d3/3.')) return '3.5.17';
     if (type.startsWith('/d3/4.')) return '4.13.0';
     if (type.startsWith('/d3/5.')) return '5.16.0';
@@ -440,6 +441,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'createjs.min.jsm': 'CreateJS',
     'vue-match-media.min.jsm': 'vue-match-media',
     'typeahead.bundle.min.jsm': 'corejs-typeahead',
     'lightbox.min.jsm': 'Lightbox2',

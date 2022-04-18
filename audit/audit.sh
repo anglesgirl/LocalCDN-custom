@@ -85,6 +85,7 @@ readonly FONTAWESOME="https://use.fontawesome.com"
 readonly UNPKG="https://unpkg.com"
 readonly FONTSGSTATIC="https://fonts.gstatic.com"
 readonly GOOGLEAPIS="https://ajax.googleapis.com/ajax/libs"
+readonly CREATEJS="https://code.createjs.com"
 
 # =============================================================================
 # GLOBALS
@@ -701,6 +702,8 @@ function create_url() {
         url="$JSDELIVR/npm/@algolia/autocomplete-js@$version/dist/umd/index.production.min.js"
     elif [ "$folder" = "vue-match-media" ];then
         url="$JSDELIVR/npm/vue-match-media@$version/dist/index.min.js"
+    elif [ "$folder" = "createjs" ];then
+        url="$CREATEJS/$version/createjs.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then
