@@ -688,7 +688,7 @@ function create_url() {
         fi
     elif [ "$folder" = "angular.js" ]; then
         url="$GOOGLEAPIS/angularjs/$version/$subfile"
-    elif [ "$folder" = "react-router" ] && [ "$version" != "5.2.1" ];then
+    elif [ "$folder" = "react-router" ] && [ "$version" != "5.3.1" ];then
         url="$CLOUDFLARE/$folder/$version/react-router.production.min.js"
     elif [ "$folder" = "search-insights" ];then
         url="$JSDELIVR/npm/$folder@$version/dist/$jfile"
