@@ -146,7 +146,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootstrap-select/1.')) return '1.13.18';
     if (type.startsWith('/bootstrap-table/1.')) return '1.19.1';
     if (type.startsWith('/bootstrap-toggle/2.')) return '2.2.2';
-    if (type.startsWith('/bootstrap-vue/2.')) return '2.21.2';
+    if (type.startsWith('/bootstrap-vue/2.')) return '2.22.0';
     if (type.startsWith('/bootstrap-3-typeahead/4.')) return '4.0.2';
     if (type.startsWith('/bootswatch/3.')) return '3.4.0';
     if (type.startsWith('/bootswatch/4.')) return '4.6.1';
