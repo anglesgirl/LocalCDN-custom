@@ -30,7 +30,7 @@ var mappings = {};
  * This only needs to be updated when new domains are added.
  * It's not necessary for subdirectories!
  */
-mappings.lastMappingUpdate = '2021-12-21';
+mappings.lastMappingUpdate = '2022-04-18';
 
 mappings.cdn = {
 
@@ -1113,7 +1113,13 @@ mappings.cdn = {
         '/': {
             'mathjax/{version}/': resources.mathJax,
         }
-    }
+    },
+    // CreateJS
+    'code.createjs.com': {
+        '/': {
+            '{version}/createjs': resources.createJS,
+        }
+    },
 };
 
 // Geekzu Public Service [Mirror]
