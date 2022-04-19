@@ -548,6 +548,7 @@ mappings.cdn = {
             'cookieconsent@{version}/build/cookieconsent.js': resources.cookieconsent2JS,
             'cookieconsent@{version}/build/cookieconsent.min.css': resources.cookieconsent2CSS,
             'cookieconsent@{version}/build/cookieconsent.css': resources.cookieconsent2CSS,
+            'createjs@{version}/builds/createjs-': resources.createJS,
             'dexie@{version}/dist/dexie.': resources.dexie,
             'docsearch.js@{version}/dist/cdn/docsearch.min.js': resources.docsearchJS,
             'docsearch.js@{version}/dist/cdn/docsearch.js': resources.docsearchJS,
