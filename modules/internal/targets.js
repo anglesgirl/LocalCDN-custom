@@ -280,7 +280,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/lazysizes/4.')) return '4.1.8';
     if (type.startsWith('/lazysizes/5.')) return '5.3.2';
     if (type.startsWith('/leaflet/0.')) return '0.7.7';
-    if (type.startsWith('/leaflet/1.')) return '1.7.1';
+    if (type.startsWith('/leaflet/1.')) return '1.8.0';
     if (type.startsWith('/Leaflet.EasyButton/2.')) return '2.4.0';
     if (type.startsWith('/leaflet.featuregroup.subgroup/1.')) return '1.0.2';
     if (type.startsWith('/leaflet.markercluster/1.')) return '1.5.3';
