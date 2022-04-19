@@ -1435,7 +1435,7 @@ https://cdnjs.cloudflare.com/ajax/libs/react-redux/7.2.8/react-redux.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react-redux/8.0.0/react-redux.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react-router/5.3.1/react-router.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react-router/6.3.0/react-router.production.min.js
-https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.2/redux.min.js
+https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js
 https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.7.1/rickshaw.min.css
 https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.7.1/rickshaw.min.js
 https://cdnjs.cloudflare.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js
