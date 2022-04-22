@@ -193,7 +193,7 @@ options._serializeAllowlistedDomains = function (allowlistedDomains) {
 
     let domainAllowlist, allowlistedDomainKeys;
 
-    allowlistedDomainKeys = Object.keys(allowlistedDomains);
+    allowlistedDomainKeys = Object.keys(allowlistedDomains).sort();
     domainAllowlist = '';
 
     allowlistedDomainKeys.forEach(function (domain) {
