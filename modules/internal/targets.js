@@ -366,7 +366,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/semantic-ui/2.')) return '2.4.1';
     if (type.startsWith('/showdown/0.')) return '0.5.1';
     if (type.startsWith('/showdown/1.')) return '1.9.1';
-    if (type.startsWith('/showdown/2.')) return '2.0.3';
+    if (type.startsWith('/showdown/2.')) return '2.1.0';
     if (type.startsWith('/simplebar/')) return '5.3.6';
     if (type.startsWith('/simplemde/')) return '1.11.2';
     if (type.startsWith('/slick-carousel/1.')) {
