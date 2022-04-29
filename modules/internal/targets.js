@@ -345,7 +345,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/raven.js/3.')) return '3.27.2';
     if (type.startsWith('/react/16.')) return '16.14.0';
     if (type.startsWith('/react/17.')) return '17.0.2';
-    if (type.startsWith('/react/18.')) return '18.0.0';
+    if (type.startsWith('/react/18.')) return '18.1.0';
     if (type.startsWith('/react-dom/16.')) return '16.14.0';
     if (type.startsWith('/react-dom/17.')) return '17.0.2';
     if (type.startsWith('/react-dom/18.')) return '18.1.0';
