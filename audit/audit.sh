@@ -85,6 +85,7 @@ readonly FONTAWESOME="https://use.fontawesome.com"
 readonly UNPKG="https://unpkg.com"
 readonly FONTSGSTATIC="https://fonts.gstatic.com"
 readonly GOOGLEAPIS="https://ajax.googleapis.com/ajax/libs"
+readonly CREATEJS="https://code.createjs.com"
 
 # =============================================================================
 # GLOBALS
@@ -437,7 +438,17 @@ function create_url() {
     elif [ "$folder" = "rocket-loader" ]; then
         url="$CLOUDFLARE_AJAX/7089c43e/cloudflare-static/rocket-loader.min.js"
     elif [ "$folder" = "google-material-design-icons" ]; then
-        url="$FONTSGSTATIC/s/materialicons/$version/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
+        if [[ $file = "MaterialIcons.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialicons/$version/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
+        elif [[ $file = "MaterialIconsOutlined.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconsoutlined/$version/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2"
+        elif [[ $file = "MaterialIconsRound.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconsround/$version/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2"
+        elif [[ $file = "MaterialIconsSharp.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconssharp/$version/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2"
+        elif [[ $file = "MaterialIconsTwoTone.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconstwotone/$version/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2"
+        fi
     elif [ "$folder" = "object-assign" ]; then
         url="$JSDELIVR/npm/object-assign@4.1.1/index.js"
     elif [ "$folder" = "mirage2" ]; then
@@ -687,7 +698,7 @@ function create_url() {
         fi
     elif [ "$folder" = "angular.js" ]; then
         url="$GOOGLEAPIS/angularjs/$version/$subfile"
-    elif [ "$folder" = "react-router" ] && [ "$version" != "5.2.1" ];then
+    elif [ "$folder" = "react-router" ] && [ "$version" != "5.3.1" ];then
         url="$CLOUDFLARE/$folder/$version/react-router.production.min.js"
     elif [ "$folder" = "search-insights" ];then
         url="$JSDELIVR/npm/$folder@$version/dist/$jfile"
@@ -701,6 +712,8 @@ function create_url() {
         url="$JSDELIVR/npm/@algolia/autocomplete-js@$version/dist/umd/index.production.min.js"
     elif [ "$folder" = "vue-match-media" ];then
         url="$JSDELIVR/npm/vue-match-media@$version/dist/index.min.js"
+    elif [ "$folder" = "createjs" ];then
+        url="$CREATEJS/$version/createjs.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

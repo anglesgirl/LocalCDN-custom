@@ -236,6 +236,15 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': 'resources/jquery/1.11.2/jquery.min.jsm',
             'bundle': ''
         };
+    } else if (CompleteURL.startsWith('code.createjs.com/createjs-')) {
+        lastVersion = targets.setLastVersion('/createjs/');
+        return {
+            'source': channelHost,
+            'versionDelivered': lastVersion,
+            'versionRequested': lastVersion,
+            'path': `resources/createjs/${lastVersion}/createjs.min.jsm`,
+            'bundle': ''
+        };
     }
     return {
         'result': false,

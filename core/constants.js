@@ -320,6 +320,7 @@ const CDNs = {
     'cdn.datatables.net': 'DataTables',
     'mathjax.rstudio.com': 'MathJax RStudio',
     'cdn.mathjax.org': 'MathJax CDN',
+    'code.createjs.com': 'CreateJS',
 };
 
 const IgnoredHost = {

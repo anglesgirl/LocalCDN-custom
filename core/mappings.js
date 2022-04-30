@@ -30,7 +30,7 @@ var mappings = {};
  * This only needs to be updated when new domains are added.
  * It's not necessary for subdirectories!
  */
-mappings.lastMappingUpdate = '2021-12-21';
+mappings.lastMappingUpdate = '2022-04-18';
 
 mappings.cdn = {
 
@@ -548,6 +548,7 @@ mappings.cdn = {
             'cookieconsent@{version}/build/cookieconsent.js': resources.cookieconsent2JS,
             'cookieconsent@{version}/build/cookieconsent.min.css': resources.cookieconsent2CSS,
             'cookieconsent@{version}/build/cookieconsent.css': resources.cookieconsent2CSS,
+            'createjs@{version}/builds/createjs-': resources.createJS,
             'dexie@{version}/dist/dexie.': resources.dexie,
             'docsearch.js@{version}/dist/cdn/docsearch.min.js': resources.docsearchJS,
             'docsearch.js@{version}/dist/cdn/docsearch.js': resources.docsearchJS,
@@ -1113,7 +1114,13 @@ mappings.cdn = {
         '/': {
             'mathjax/{version}/': resources.mathJax,
         }
-    }
+    },
+    // CreateJS
+    'code.createjs.com': {
+        '/': {
+            '{version}/createjs': resources.createJS,
+        }
+    },
 };
 
 // Geekzu Public Service [Mirror]
