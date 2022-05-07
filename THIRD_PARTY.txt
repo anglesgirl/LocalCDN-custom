@@ -317,7 +317,7 @@ https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js
 https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js
 https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.4/d3.min.js
 https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js
-https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/dayjs.min.js
+https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.2/dayjs.min.js
 https://cdnjs.cloudflare.com/ajax/libs/dexie/3.2.2/dexie.min.js
 https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css
 https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.js
