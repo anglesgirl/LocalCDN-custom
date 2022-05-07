@@ -100,11 +100,11 @@
         "description": "Invert HTML filter"
     },
     "negateHtmlFilterListDescription": {
-        "message": "",
+        "message": "Tuto možnost povolte, chcete-li vždy použít filtr HTML. Domény v seznamu pak budou ignorovány. Pokud je tato možnost zakázána, filtr HTML se použije pouze na domény v seznamu.",
         "description": "Enable this option to always apply the HTML filter. The domains in the list will be ignored then. If this option is disabled, the HTML filter is only applied to domains in the list."
     },
     "negateHtmlFilterListWarning": {
-        "message": "",
+        "message": "Tato funkce může poškodit webové stránky. Více informací najdete ve Wiki.",
         "description": "This function can break websites. Please note the information on the Wiki page."
     },
     "htmlFilterDomainsTitleExclude": {
@@ -112,7 +112,7 @@
         "description": "Do not apply HTML filter to these domains:"
     },
     "htmlFilterDomainsDescription": {
-        "message": "",
+        "message": "Zadejte domény, které má filtr HTML zpracovávat nebo ignorovat. Na každém řádku uveďte jednu položku.",
         "description": "Enter the domains to be handled or ignored by the HTML filter. One entry per line."
     },
     "htmlFilterDomainsTitleInclude": {
@@ -124,7 +124,7 @@
         "description": "Block Google Fonts"
     },
     "blockGoogleFontsDescription": {
-        "message": "",
+        "message": "Pokud jsou požadavky na chybějící prostředky povoleny, připojení k \"fonts.googleapis.com\" nejsou blokována. Povolením této možnosti tyto požadavky zablokujete.",
         "description": "If requests for missing resources are allowed, connections to \"fonts.googleapis.com\" are not blocked. Enable this option to block these requests."
     },
     "chooseIconStyle": {
@@ -176,7 +176,7 @@
         "description": "Are you sure you want to delete all the statistics?"
     },
     "labelDomainsAllowlistGoogleFonts": {
-        "message": "",
+        "message": "Tyto domény mohou načítat písma Google. Jedna položka na řádek.",
         "description": "These domains are allowed to load Google Fonts. One entry per line."
     },
     "btnGeneral": {
@@ -256,11 +256,11 @@
         "description": "beta"
     },
     "changeBadgeColorMissingResourcesTitle": {
-        "message": "",
+        "message": "Zobrazovat chybějící zdroje na ikoně",
         "description": "Indicate missing resources on the icon"
     },
     "changeBadgeColorMissingResourcesDescription": {
-        "message": "",
+        "message": "Změňit barvu odznaku, pokud chybí zdroje.",
         "description": "Change the badge color if resources are missing."
     },
     "titleHelp": {
@@ -284,7 +284,7 @@
         "description": "Some websites look strange or are not easy to use"
     },
     "helpBlockGoogleFontsTitle": {
-        "message": "",
+        "message": "Proč existuje možnost \"Blokovat písma Google\"?",
         "description": "Why is there a »Block Google Fonts« option?"
     },
     "helpStatisticsTitle": {
@@ -292,7 +292,7 @@
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
-        "message": "",
+        "message": "Co se bude synchronizovat, když jako typ úložiště vyberu \"synchronizovat\"?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {
@@ -300,7 +300,7 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "LocalCDN je rozšíření webového prohlížeče, které emuluje sítě pro doručování obsahu a zlepšuje tak vaše soukromí na internetu. Zachytí provoz, lokálně vyhledá podporované frameworky/knihovny a vloží je do webové stránky. Neváhejte použít následující testovací nástroj, abyste zjistili, zda jste řádně chráněni. Další informace naleznete v návodu nebo na našich stránkách Wiki.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
@@ -316,7 +316,7 @@
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "",
+        "message": "Ve většině případů může LocalCDN snadno nahradit vložená rozhraní a zlepšit soukromí. V některých případech se tomu může webová stránka pokusit zabránit nastavením určitých možností ve zdrojovém kódu HTML. LocalCDN přečte zdrojový kód HTML před jeho zobrazením v prohlížeči a tyto části odstraní (červeně).",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
