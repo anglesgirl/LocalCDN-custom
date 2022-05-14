@@ -138,7 +138,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootstrap-daterangepicker/2.')) return '2.1.27';
     if (type.startsWith('/bootstrap-daterangepicker/3.')) return '3.1';
     if (type.startsWith('/bootstrap-datepicker/1.')) return '1.9.0';
-    if (type.startsWith('/bootstrap-icons/1.')) return '1.8.1';
+    if (type.startsWith('/bootstrap-icons/1.')) return '1.8.2';
     if (type.startsWith('/bootstrap-multiselect/0.')) return '0.9.16';
     if (type.startsWith('/bootstrap-multiselect/1.')) return '1.1.1';
     if (type.startsWith('/bootstrap-slider/10.')) return '10.6.2';
