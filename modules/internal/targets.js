@@ -261,7 +261,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery-mobile/1.')) return '1.4.5';
     if (type.startsWith('/jquery-mousewheel/3.')) return '3.1.13';
     if (type.startsWith('/jScrollPane/2.')) return '2.2.2';
-    if (type.startsWith('/jquery-validate/1.')) return '1.19.3';
+    if (type.startsWith('/jquery-validate/1.')) return '1.19.4';
     if (type.startsWith('/jeditable.js/1.')) return '1.8.0';
     if (type.startsWith('/jeditable.js/2.')) return '2.0.19';
     if (type.startsWith('/jquery.cycle2/2.')) return '2.1.6';
