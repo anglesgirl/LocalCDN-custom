@@ -1005,6 +1005,10 @@ var resources = {
     'tetherJS': {
         'path': 'resources/tether/{version}/js/tether.min.jsm'
     },
+    // TinyMCE Community
+    'tinymce': {
+        'path': 'resources/tinymce/{version}/'
+    },
     // toastr [Deprecated]
     'toastrCSS': {
         'path': 'resources/toastr.js/{version}/toastr.min.css'

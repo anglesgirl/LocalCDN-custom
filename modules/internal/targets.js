@@ -65,6 +65,8 @@ targets.determineBundle = function (path) {
         val = 'Pure CSS';
     } else if (path.startsWith('/vex-js/')) {
         val = 'vex';
+    } else if (path.startsWith('/tinymce/')) {
+        val = 'TinyMCE';
     }
 
     return val === '' ? val : `${val} (Bundle)`;
@@ -394,6 +396,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Swiper/7.')) return '7.4.1';
     if (type.startsWith('/Swiper/8.') || type.startsWith('/Swiper/')) return '8.1.5';
     if (type.startsWith('/tether/1.')) return '1.4.7';
+    if (type.startsWith('/tinymce/5.')) return '5.10.4';
+    if (type.startsWith('/tinymce/6.')) return '6.0.2';
     if (type.startsWith('/tooltipster/3.')) return '3.3.0';
     if (type.startsWith('/tooltipster/4.')) return '4.2.8';
     if (type.startsWith('/toastr.js/2.') || type.startsWith('/toastr.js/latest/')) return '2.1.4';
@@ -442,6 +446,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'tinymce.min.jsm': 'TinyMCE',
     'createjs.min.jsm': 'CreateJS',
     'vue-match-media.min.jsm': 'vue-match-media',
     'typeahead.bundle.min.jsm': 'corejs-typeahead',
