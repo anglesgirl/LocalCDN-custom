@@ -258,6 +258,13 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
     }
     if (bundle === 'TinyMCE (Bundle)' && filename !== 'tinymce.min.js') {
         filename = channelPath.replace(Resource.TINYMCE, '');
+        if (filename.startsWith('plugins/')) {
+            console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
+            log.append(initiator, channelHost + channelPath, '-', true);
+            return {
+                'result': false,
+            };
+        }
     }
     return helpers.formatFilename(filename.endsWith('.js')
         ? `${targetPath + filename}m`
