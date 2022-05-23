@@ -256,6 +256,9 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
             };
         }
     }
+    if (bundle === 'TinyMCE (Bundle)' && filename !== 'tinymce.min.js') {
+        filename = channelPath.replace(Resource.TINYMCE, '');
+    }
     return helpers.formatFilename(filename.endsWith('.js')
         ? `${targetPath + filename}m`
         : targetPath + filename);
