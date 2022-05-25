@@ -288,7 +288,7 @@
         "description": "Why is there a »Block Google Fonts« option?"
     },
     "helpStatisticsTitle": {
-        "message": "",
+        "message": "Što je sa statistikom? Prenosi li se išta na bilo koje poslužitelje?",
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
@@ -296,43 +296,43 @@
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {
-        "message": "",
+        "message": "Kompatibilnost s preglednikom",
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "LocalCDN je proširenje web-preglednika koje oponaša mreže za isporuku sadržaja (CDN) kako bi se poboljšala tvoja privatnost na mreži. Presreće promet, lokalno pronalazi podržana okruženja/biblioteke i umeće ih u web-stranicu. Slobodno koristi sljedeći uslužni program za testiranje zaštićenosti. Za više informacija pročitaj vježbe ili naše Wiki stranice.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
-        "message": "",
+        "message": "Uslužni program za testiranje",
         "description": "Testing utility"
     },
     "helpLinkTutorial": {
-        "message": "",
+        "message": "Vježbe",
         "description": "Tutorial"
     },
     "helpLinkWikiPages": {
-        "message": "",
+        "message": "Wiki stranice",
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "",
+        "message": "U većini slučajeva LocalCDN može lako zamijeniti ugrađena okruženja i poboljšava privatnost. U nekim slučajevima web-mjesto može to pokušati spriječiti postavljanjem određenih opcija u izvornom HTML-kodu. LocalCDN čita izvorni HTML-kod prije nego što se prikaže u pregledniku i uklanja ovaj dio (crveni).",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
-        "message": "",
+        "message": "HTML filtar uklanja crvene znakove iz ovog primjera:",
         "description": "The HTML filter removes the red characters from this example:"
     },
     "helpHtmlFilterAfter": {
-        "message": "",
+        "message": "Rezultat tada izgleda ovako:",
         "description": "The result then looks like this:"
     },
     "helpHtmlFilterWhyTitle": {
-        "message": "",
+        "message": "Zašto je potrebno ukloniti atribute crossorigin i integrity?",
         "description": "Why is it necessary to remove crossorigin and integrity attributes?"
     },
     "helpHtmlFilterCrossorigin": {
-        "message": "",
+        "message": "Atribut crossorigin sprečava zamjenu jer odredište ne odgovara traženom.",
         "description": "The crossorigin attribute prevents the replacement because the destination does not match the requested one."
     },
     "helpHtmlFilterIntegrity": {
@@ -348,7 +348,7 @@
         "description": "If you want to automatically redirect all supported CDN connections to LocalCDN, you can add these rules to your adblocker to allow these redirections. If you do not want to add these rules, you must allow each CDN connection individually for each website."
     },
     "helpRuleGeneratorUblockTitle": {
-        "message": "",
+        "message": "Samo uBlock izvor:",
         "description": "Only uBlock Origin:"
     },
     "helpRuleGeneratorUblockDescription": {
@@ -356,27 +356,27 @@
         "description": "These rules are only relevant in »medium« or »hard« mode, because it blocks all 3rd-party resources. They are not necessary in »default«, »easy« or »very-easy« mode. For more information, please visit the uBlock Origin Wiki."
     },
     "helpRuleGeneratorUblockTableIcon": {
-        "message": "",
+        "message": "Ikona",
         "description": "Icon"
     },
     "helpRuleGeneratorUblockTableMode": {
-        "message": "",
+        "message": "Modus",
         "description": "Mode"
     },
     "helpRuleGeneratorUblockTableUseful": {
-        "message": "",
+        "message": "Pravila korisna",
         "description": "Rules useful"
     },
     "helpRuleGeneratorUblockTableDefaultEasy": {
-        "message": "",
+        "message": "Standardno/Jednostavno",
         "description": "Default/Easy"
     },
     "helpRuleGeneratorUblockTableMedium": {
-        "message": "",
+        "message": "Srednje",
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "",
+        "message": "Teško",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
@@ -396,7 +396,7 @@
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
-        "message": "",
+        "message": "Kako znam da je to točno?",
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
@@ -404,23 +404,23 @@
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
-        "message": "",
+        "message": "Što će se sinkronizirati kad odaberem „sinkronizacija” kao vrstu spremanja?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "",
+        "message": "Sinkronizacija će raditi samo ako si prijavljen/a s Firefox računom na uređaju i ako dopuštaš sinkronizaciju dodataka u postavkama. Zaseban poslužitelj za sinkronizaciju pod tvojom kontrolom također će raditi. Ovo će sinkronizirati većinu LocalCDN postavki na svim uređajima.",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {
-        "message": "",
+        "message": "Ako nemaš račun za sinkronizaciju, ništa se neće sinkronizirati. U tom je slučaju svejedno koju si vrstu spremišta odabrao/la.",
         "description": "If you don‘t have a sync account, nothing will be synchronized. In that case it makes no difference what type of storage you have selected."
     },
     "helpSyncContentNever": {
-        "message": "",
+        "message": "Stvari koje se nikada ne sinkroniziraju:",
         "description": "Things that are never synchronized:"
     },
     "helpNumberOfInjections": {
-        "message": "",
+        "message": "Broj umetanja",
         "description": "Numbers of injections"
     },
     "helpYes": {
@@ -440,43 +440,43 @@
         "description": "Settings that will be synchronized:"
     },
     "helpIcons": {
-        "message": "",
+        "message": "Standardno, svijetlo, plavo/sivo",
         "description": "Default, Light, Blue/Grey"
     },
     "helpSyncContentLinks": {
-        "message": "",
+        "message": "Daljnje informacije o Firefox sinkronizaciji:",
         "description": "More information about Firefox Sync:"
     },
     "helpBrowserCompatibility": {
-        "message": "",
+        "message": "Kompatibilnost s preglednikom",
         "description": "Browser compatibility"
     },
     "helpReplace": {
-        "message": "",
+        "message": "Zamijeni",
         "description": "Replace"
     },
     "helpReplaceOther": {
-        "message": "",
+        "message": "Zamijeni druge resurse",
         "description": "Replace other resources"
     },
     "helpUpgradeAllResources": {
-        "message": "",
+        "message": "Nadogradi sve resurse",
         "description": "Upgrade all resources"
     },
     "helpExplanationChrome": {
-        "message": "",
+        "message": "Svi preglednici temeljeni na Chromiumu",
         "description": "All Chromium based Browser"
     },
     "helpLimitation": {
-        "message": "",
+        "message": "Ovo nije ograničenje LocalCDN-a, već nedostajuća API podrška preglednika temeljenih na Chromiumu.",
         "description": "This is not a limitation of LocalCDN, but missing API support of Chromium based browsers."
     },
     "titleBadgeDefault": {
-        "message": "",
+        "message": "Standardna značka",
         "description": "Default badge"
     },
     "titleBadgeHTMLFilter": {
-        "message": "",
+        "message": "Značka za HTML filtar",
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
