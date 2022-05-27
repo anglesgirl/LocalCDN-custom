@@ -96,7 +96,7 @@ targets.setLastVersion = function (type, version) {
         return '1.8.2'; // >= 1.6.11
     }
     if (type.startsWith('/angularjs-slider/6.')) return '6.7.0';
-    if (type.startsWith('/angularjs-slider/7.')) return '7.0.1';
+    if (type.startsWith('/angularjs-slider/7.')) return '7.1.0';
     if (type.startsWith('/angularjs-toaster/0.')) return '0.4.18';
     if (type.startsWith('/angularjs-toaster/1.')) return '1.2.0';
     if (type.startsWith('/angularjs-toaster/2.')) return '2.2.0';
