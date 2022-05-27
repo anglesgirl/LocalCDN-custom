@@ -368,7 +368,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/showdown/0.')) return '0.5.1';
     if (type.startsWith('/showdown/1.')) return '1.9.1';
     if (type.startsWith('/showdown/2.')) return '2.1.0';
-    if (type.startsWith('/simplebar/')) return '5.3.6';
+    if (type.startsWith('/simplebar/')) return '5.3.8';
     if (type.startsWith('/simplemde/')) return '1.11.2';
     if (type.startsWith('/slick-carousel/1.')) {
         if (helpers.compareVersion('1.8.1', version)) return '1.8.1'; // <= v1.8.1
