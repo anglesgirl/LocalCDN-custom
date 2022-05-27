@@ -438,16 +438,17 @@ function create_url() {
     elif [ "$folder" = "rocket-loader" ]; then
         url="$CLOUDFLARE_AJAX/7089c43e/cloudflare-static/rocket-loader.min.js"
     elif [ "$folder" = "google-material-design-icons" ]; then
-        if [[ $file = "MaterialIcons.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialicons/$version/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
-        elif [[ $file = "MaterialIconsOutlined.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconsoutlined/$version/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2"
-        elif [[ $file = "MaterialIconsRound.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconsround/$version/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2"
-        elif [[ $file = "MaterialIconsSharp.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconssharp/$version/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2"
-        elif [[ $file = "MaterialIconsTwoTone.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconstwotone/$version/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2"
+        googlefontversion=$(echo -e "$path" | cut -d"/" -f5)
+        if [[ $subfile = "MaterialIcons.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialicons/$googlefontversion/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
+        elif [[ $subfile = "MaterialIconsOutlined.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconsoutlined/$googlefontversion/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2"
+        elif [[ $subfile = "MaterialIconsRound.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconsround/$googlefontversion/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2"
+        elif [[ $subfile = "MaterialIconsSharp.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconssharp/$googlefontversion/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2"
+        elif [[ $subfile = "MaterialIconsTwoTone.woff2" ]]; then
+            url="$FONTSGSTATIC/s/materialiconstwotone/$googlefontversion/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2"
         fi
     elif [ "$folder" = "object-assign" ]; then
         url="$JSDELIVR/npm/object-assign@4.1.1/index.js"
