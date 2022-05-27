@@ -1,18 +1,18 @@
 {
     "extensionDescription": {
-        "message": "",
+        "message": "స్థానిక వనరులకు దారి మళ్లించడం ద్వారా CDNల (కంటెంట్ డెలివరీ నెట్‌వర్క్‌లు) ద్వారా ట్రాకింగ్ నుండి మిమ్మల్ని రక్షిస్తుంది.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
-        "message": "",
+        "message": "ఇన్‌స్టాలేషన్ నుండి స్థానిక కంటెంట్ డెలివరీ నెట్‌వర్క్ రిసోర్స్ ఇంజెక్షన్‌ల మొత్తం.",
         "description": "Amount injected description."
     },
     "optionsTitle": {
-        "message": "",
+        "message": "ఎంపికలు",
         "description": "Options title"
     },
     "showIconBadgeTitle": {
-        "message": "",
+        "message": "చిహ్నంపై ఇంజెక్షన్ గణనలను ప్రదర్శించండి",
         "description": "Show icon badge title"
     },
     "showIconBadgeDescription": {
