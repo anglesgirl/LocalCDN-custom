@@ -309,7 +309,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/mathjax/2.') || type.startsWith('/mathjax/latest')) return '2.7.5';
     if (type.startsWith('/mathjax/3.')) return '3.2.1';
     if (type.startsWith('/mdb-ui-kit/3.')) return '3.11.0';
-    if (type.startsWith('/mdb-ui-kit/4.')) return '4.0.0';
+    if (type.startsWith('/mdb-ui-kit/4.')) return '4.1.0';
     if (type.startsWith('/mobile/1.')) return '1.4.5';
     if (type.startsWith('/Modaal/0.')) return '0.4.4';
     if (type.startsWith('/modernizr/2.')) return '2.8.3';
