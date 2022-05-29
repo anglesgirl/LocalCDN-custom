@@ -438,16 +438,18 @@ function create_url() {
     elif [ "$folder" = "rocket-loader" ]; then
         url="$CLOUDFLARE_AJAX/7089c43e/cloudflare-static/rocket-loader.min.js"
     elif [ "$folder" = "google-material-design-icons" ]; then
-        if [[ $file = "MaterialIcons.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialicons/$version/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
-        elif [[ $file = "MaterialIconsOutlined.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconsoutlined/$version/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2"
-        elif [[ $file = "MaterialIconsRound.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconsround/$version/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2"
-        elif [[ $file = "MaterialIconsSharp.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconssharp/$version/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2"
-        elif [[ $file = "MaterialIconsTwoTone.woff2" ]]; then
-            url="$FONTSGSTATIC/s/materialiconstwotone/$version/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2"
+        iconVersion=$(echo -e "$path" | cut -d"/" -f5)
+        iconType=$(echo -e "$path" | cut -d"/" -f4)
+        if [[ $iconType = "materialicons" ]]; then
+            url="$FONTSGSTATIC/s/materialicons/$iconVersion/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
+        elif [[ $iconType = "materialiconsoutlined" ]]; then
+            url="$FONTSGSTATIC/s/materialiconsoutlined/$iconVersion/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2"
+        elif [[ $iconType = "materialiconsround" ]]; then
+            url="$FONTSGSTATIC/s/materialiconsround/$iconVersion/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2"
+        elif [[ $iconType = "materialiconssharp" ]]; then
+            url="$FONTSGSTATIC/s/materialiconssharp/$iconVersion/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2"
+        elif [[ $iconType = "materialiconstwotone" ]]; then
+            url="$FONTSGSTATIC/s/materialiconstwotone/$iconVersion/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2"
         fi
     elif [ "$folder" = "object-assign" ]; then
         url="$JSDELIVR/npm/object-assign@4.1.1/index.js"
@@ -675,7 +677,7 @@ function create_url() {
         url="$JSDELIVR/npm/$folder@$version/dist/leaflet.featuregroup.subgroup.js"
     elif [ "$folder" = "bodymovin" ] && [[ "$version" = 5* ]]; then
         url="$CLOUDFLARE/$folder/$version/lottie.min.js"
-    elif [ "$folder" = "mathjax" ]; then
+    elif [ "$folder" = "mathjax" ] || [ "$folder" = "tinymce" ]; then
         url=$(echo "$path" | cut -d"/" -f3-)
         url="$CLOUDFLARE/$url"
     elif [ "$folder" = "vanilla-lazyload" ]; then
@@ -698,7 +700,7 @@ function create_url() {
         fi
     elif [ "$folder" = "angular.js" ]; then
         url="$GOOGLEAPIS/angularjs/$version/$subfile"
-    elif [ "$folder" = "react-router" ] && [ "$version" != "5.3.1" ];then
+    elif [ "$folder" = "react-router" ] && [[ "$version" != 5* ]];then
         url="$CLOUDFLARE/$folder/$version/react-router.production.min.js"
     elif [ "$folder" = "search-insights" ];then
         url="$JSDELIVR/npm/$folder@$version/dist/$jfile"

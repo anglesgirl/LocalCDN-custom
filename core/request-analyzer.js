@@ -245,7 +245,20 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
         if (filename.startsWith('/npm/mathjax@3')) {
             filename = filename.replace('/npm/mathjax@3/', '');
         }
+        if (filename === 'config/TeX-AMS_HTML.js') {
+            filename = 'config/TeX-AMS_HTML-full.js';
+        }
         if (!MathJaxFiles[filename] && !MathJax3Files[filename]) {
+            console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
+            log.append(initiator, channelHost + channelPath, '-', true);
+            return {
+                'result': false,
+            };
+        }
+    }
+    if (bundle === 'TinyMCE (Bundle)' && filename !== 'tinymce.min.js') {
+        filename = channelPath.replace(Resource.TINYMCE, '');
+        if (filename.startsWith('plugins/')) {
             console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
             log.append(initiator, channelHost + channelPath, '-', true);
             return {

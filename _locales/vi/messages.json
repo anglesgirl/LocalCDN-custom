@@ -100,7 +100,7 @@
         "description": "Invert HTML filter"
     },
     "negateHtmlFilterListDescription": {
-        "message": "Bật tính năng này để luôn luôn sử dụng bộ lọc HTML. Các tên miền trong danh sách khi đó sẽ bị bỏ qua. Nếu tính năng này tắt, bộ lọc HTML chỉ được sử dụng đối với các tên miền trong danh sách.",
+        "message": "Bật tính năng này để luôn sử dụng bộ lọc HTML. Các tên miền trong danh sách khi đó sẽ bị bỏ qua. Nếu tính năng này tắt, bộ lọc HTML chỉ được sử dụng đối với các tên miền trong danh sách.",
         "description": "Enable this option to always apply the HTML filter. The domains in the list will be ignored then. If this option is disabled, the HTML filter is only applied to domains in the list."
     },
     "negateHtmlFilterListWarning": {
@@ -132,7 +132,7 @@
         "description": "Choose an icon for this extension"
     },
     "internalStatisticsTitle": {
-        "message": "Số liệu nội bộ",
+        "message": "Thống kê nội bộ",
         "description": "Internal statistics"
     },
     "internalStatisticsDescription": {
@@ -156,7 +156,7 @@
         "description": "Statistics view for past month."
     },
     "labelPastYear": {
-        "message": "Năm trước",
+        "message": "Năm ngoái",
         "description": "Statistics view for past year."
     },
     "labelDelete": {

@@ -455,6 +455,7 @@ mappings.cdn = {
             'Swiper/{version}/css/swiper.': resources.swiperCSS,
             'Swiper/{version}/js/swiper.': resources.swiperJS,
             'tether/{version}/js/tether.': resources.tetherJS,
+            'tinymce/{version}/': resources.tinymce,
             'tooltipster/{version}/js/jquery.tooltipster.': resources.jQueryTooltipster,
             'toastr.js/{version}/toastr.min.css': resources.toastrCSS,
             'toastr.js/{version}/toastr.min.js': resources.toastrJS,
