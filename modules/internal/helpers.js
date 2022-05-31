@@ -117,6 +117,7 @@ helpers.languageIsFullySupported = function (language) {
         'sl',
         'sr',
         'sv',
+        'te',
         'tl',
         'tr',
         'uk',
