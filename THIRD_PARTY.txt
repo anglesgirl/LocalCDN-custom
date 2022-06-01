@@ -1831,8 +1831,8 @@ https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css
 https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js
 https://cdn.jsdelivr.net/npm/swiper@7.4.1/swiper-bundle.min.css
 https://cdn.jsdelivr.net/npm/swiper@7.4.1/swiper-bundle.min.js
-https://cdn.jsdelivr.net/npm/swiper@8.1.6/swiper-bundle.min.css
-https://cdn.jsdelivr.net/npm/swiper@8.1.6/swiper-bundle.min.js
+https://cdn.jsdelivr.net/npm/swiper@8.2.1/swiper-bundle.min.css
+https://cdn.jsdelivr.net/npm/swiper@8.2.1/swiper-bundle.min.js
 https://cdn.jsdelivr.net/npm/urlize.js/urlize.js
 https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js
 https://cdn.jsdelivr.net/npm/videojs-seek-buttons@1.6.0/dist/videojs-seek-buttons.css
