@@ -324,7 +324,7 @@
         "description": "The HTML filter removes the red characters from this example:"
     },
     "helpHtmlFilterAfter": {
-        "message": "",
+        "message": "Kết quả sau đó trông như thế này:",
         "description": "The result then looks like this:"
     },
     "helpHtmlFilterWhyTitle": {
