@@ -219,7 +219,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/materialiconsoutlined/')) return 'v105';
     if (type.startsWith('/materialiconsround/')) return 'v104';
     if (type.startsWith('/materialiconssharp/')) return 'v105';
-    if (type.startsWith('/materialiconstwotone/')) return 'v107';
+    if (type.startsWith('/materialiconstwotone/')) return 'v108';
     // ---------------------------------------------------------------
 
     if (type.startsWith('/highlight.js/7.')) return '9.18.5';
