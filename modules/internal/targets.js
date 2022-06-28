@@ -95,6 +95,7 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('1.6.10', version)) return '1.6.10'; // > 1.5.11 to <= 1.6.10
         return '1.8.2'; // >= 1.6.11
     }
+    if (type.startsWith('/angular-i18n/1.')) return '1.8.3';
     if (type.startsWith('/angularjs-slider/6.')) return '6.7.0';
     if (type.startsWith('/angularjs-slider/7.')) return '7.1.0';
     if (type.startsWith('/angularjs-toaster/0.')) return '0.4.18';
@@ -455,6 +456,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'angular-locale_en-us.min.jsm': 'angular-i18n',
     'angular-translate-loader-partial.min.jsm': 'angular-translate-loader-partial',
     'tinymce.min.jsm': 'TinyMCE',
     'createjs.min.jsm': 'CreateJS',

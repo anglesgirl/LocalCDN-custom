@@ -137,6 +137,7 @@ https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angucomplete-alt/3.0.0/angucomplete-alt.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angular-bootstrap-colorpicker/3.0.32/css/colorpicker.min.css
 https://cdnjs.cloudflare.com/ajax/libs/angular-bootstrap-colorpicker/3.0.32/js/bootstrap-colorpicker-module.min.js
+https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.8.3/angular-locale_en-us.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/6.7.0/rzslider.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/7.1.0/rzslider.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.18/toaster.min.css

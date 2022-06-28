@@ -109,6 +109,7 @@ mappings.cdn = {
             'angular-animate/{version}/angular-animate': resources.angularAnimate,
             'angular-aria/{version}/angular-aria': resources.angularAria,
             'angular-cookies/{version}/angular-cookies': resources.angularCookies,
+            'angular-i18n/{version}/angular-locale': resources.angularI18N,
             'angular-loader/{version}/angular-loader': resources.angularLoader,
             'angular-message-format/{version}/angular-message-format': resources.angularMessageFormat,
             'angular-messages/{version}/angular-messages': resources.angularMessages,

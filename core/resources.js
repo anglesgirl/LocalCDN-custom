@@ -58,6 +58,9 @@ var resources = {
     'angularCookies': {
         'path': 'resources/angular.js/{version}/angular-cookies.min.jsm'
     },
+    'angularI18N': {
+        'path': 'resources/angular-i18n/{version}/angular-locale_en-us.min.jsm'
+    },
     'angularLoader': {
         'path': 'resources/angular.js/{version}/angular-loader.min.jsm'
     },
