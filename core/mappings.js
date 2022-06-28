@@ -259,6 +259,7 @@ mappings.cdn = {
             'bootstrap/{version}/bootstrap.min.css': resources.bootstrapCSS,
             'bootstrap/{version}/bootstrap.css': resources.bootstrapCSS,
             'bowser/{version}/': resources.bowserJS,
+            'bower-angular-translate-loader-partial/{version}/angular-translate-loader-partial.': resources.angularTranslateLoaderPartial,
             'bulma/{version}/css/bulma.': resources.bulma,
             'bxslider/{version}/jquery.bxslider.min.js': resources.bxsliderJS,
             'bxslider/{version}/jquery.bxslider.js': resources.bxsliderJS,

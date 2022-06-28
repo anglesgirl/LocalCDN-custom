@@ -82,6 +82,9 @@ var resources = {
     'angularTouch': {
         'path': 'resources/angular.js/{version}/angular-touch.min.jsm'
     },
+    'angularTranslateLoaderPartial': {
+        'path': 'resources/angular-translate-loader-partial/{version}/angular-translate-loader-partial.min.jsm'
+    },
     // angularMaterialDesign
     'angularMaterialDesignJS': {
         'path': 'resources/angular-material/{version}/angular-material.min.jsm'

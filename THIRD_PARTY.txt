@@ -157,6 +157,7 @@ https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.19.0/angular-translat
 https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.19.0/angular-translate.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.19.0/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.19.0/angular-translate-storage-local/angular-translate-storage-local.min.js
+https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-partial/2.19.0/angular-translate-loader-partial.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js
