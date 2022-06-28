@@ -1022,6 +1022,10 @@ var resources = {
     'toastrJS': {
         'path': 'resources/toastr.js/{version}/toastr.min.jsm'
     },
+    // twix.js
+    'twixJS': {
+        'path': 'resources/twix.js/{version}/twix.min.jsm'
+    },
     // Underscore.js
     'underscore': {
         'path': 'resources/underscore.js/{version}/underscore-min.jsm'
