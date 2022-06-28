@@ -324,7 +324,10 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/mobile/1.')) return '1.4.5';
     if (type.startsWith('/Modaal/0.')) return '0.4.4';
     if (type.startsWith('/modernizr/2.')) return '2.8.3';
-    if (type.startsWith('/moment.js/2.')) return '2.29.3';
+    if (type.startsWith('/moment.js/2.')) {
+        if (helpers.compareVersion('2.5.1', version)) return '2.5.1'; // <= v2.5.1
+        return '2.29.3';
+    }
     if (type.startsWith('/mootools/1.')) {
         if (helpers.compareVersion('1.4.5', version)) return '1.4.5'; // <= v1.4.5
         return '1.6.0';
