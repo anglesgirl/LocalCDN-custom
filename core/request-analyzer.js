@@ -150,10 +150,6 @@ requestAnalyzer._matchBasePath = function (hostMappings, channelPath) {
 requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channelHost, channelPath, destinationSearchString, initiator) {
     let resourcePath, versionNumber, resourcePattern, shorthandResource;
 
-    storageManager.type.get(Setting.LOGGING, function (items) {
-        requestAnalyzer.logging = items.enableLogging;
-    });
-
     resourcePath = channelPath.replace(basePath, '');
 
     // Evaluate first in case of version 'latest' and numerals in resource
@@ -170,10 +166,8 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
 
     shorthandResource = shorthands.specialFiles(channelHost, channelPath, destinationSearchString);
     if (shorthandResource['result'] !== false) {
-        if (requestAnalyzer.logging) {
-            console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${shorthandResource.path}`);
-            log.append(initiator, channelHost + channelPath, shorthandResource.path, false);
-        }
+        console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${shorthandResource.path}`);
+        log.append(initiator, channelHost + channelPath, shorthandResource.path, false);
         return shorthandResource;
     }
 
@@ -214,10 +208,9 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
                 break;
             }
 
-            if (requestAnalyzer.logging) {
-                console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${targetPath}`);
-                log.append(initiator, channelHost + channelPath, targetPath, false);
-            }
+            console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${targetPath}`);
+            log.append(initiator, channelHost + channelPath, targetPath, false);
+
             // Prepare and return a local target.
             return {
                 'source': channelHost,
@@ -229,7 +222,7 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
         }
     }
 
-    if (requestAnalyzer.logging && !IgnoredHost[channelHost]) {
+    if (!IgnoredHost[channelHost]) {
         console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost}${channelPath}`);
         log.append(initiator, channelHost + channelPath, '-', true);
     }
