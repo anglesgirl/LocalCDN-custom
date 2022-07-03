@@ -716,6 +716,8 @@ function create_url() {
         url="$JSDELIVR/npm/vue-match-media@$version/dist/index.min.js"
     elif [ "$folder" = "createjs" ];then
         url="$CREATEJS/$version/createjs.min.js"
+    elif [ "$folder" = "moment.js" ] && [ "$version" = "2.5.1" ];then
+        url="$CLOUDFLARE/$folder/$version/moment-with-langs.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

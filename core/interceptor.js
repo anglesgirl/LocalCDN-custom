@@ -33,6 +33,11 @@ var interceptor = {};
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed;
 
+    targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
+    stateManager.requests[requestDetails.requestId] = {
+        tabIdentifier, targetDetails
+    };
+
     validCandidate = requestAnalyzer.isValidCandidate(requestDetails, tab);
     if (!validCandidate) {
         return {
@@ -74,18 +79,12 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
         };
     }
 
-    targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
-
     if (targetDetails['result'] === false) {
         if (!IgnoredHost[targetDomain]) {
             ++stateManager.tabs[tabIdentifier].missing;
         }
         return interceptor._handleMissingCandidate(requestDetails.url, tabIdentifier);
     }
-
-    stateManager.requests[requestDetails.requestId] = {
-        tabIdentifier, targetDetails
-    };
 
     return {
         'redirectUrl': chrome.runtime.getURL(targetDetails.path + fileGuard.secret)
@@ -106,6 +105,7 @@ interceptor._handleMissingCandidate = function (requestUrl, tabIdentifier) {
             missingCount = stateManager.tabs[tabIdentifier].missing || 0;
             if (missingCount > 0 && injectionCount === 0) {
                 wrappers.setBadgeText(tabIdentifier, injectionCount);
+                wrappers.setBadgeColoring(tabIdentifier, BadgeSettingMissingResource.TYPE);
             }
         } else {
             wrappers.setBadgeText(tabIdentifier, injectionCount);

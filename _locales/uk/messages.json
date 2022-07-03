@@ -380,19 +380,19 @@
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
-        "message": "",
+        "message": "Є дві можливі причини: Або необхідний фреймворк/бібліотека, яку LocalCDN (поки що) не постачає, або SOP. SOP (англ. \"Same origin policy\" – укр. \"Політика однакового походження\") – це механізм безпеки, який визначає, які дані можна завантажувати браузеру. Вона допомагає ізолювати шкідливі документи і цим зменшити можливі вектори атак. Ця політика не дозволяє браузеру завантажувати зовнішні фреймворки LocalCDN. На жаль, зараз для цього немає рішення.",
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
-        "message": "",
+        "message": "LocalCDN може замінити \"Google Material Icons\". Щоб перехопити з'єднання, ваш адблокер (наприклад, uBlock Origin, uMatrix або AdGuard) має дозволити запит. LocalCDN прослуховує ці запити, і якщо запит містить \"Google Material Icons\", ресурс буде замінено. Якщо ви знімите прапорець \"Блокувати запити на відсутній вміст\", неіснуючі ресурси будуть дозволені і \"Google Fonts\" буде завантажено, оскільки \"Google Material Icons\" та \"Google Fonts\" використовують один і той же домен. Якщо ви не бажаєте цього, ви можете заблокувати \"Google Fonts\" на LocalCDN.",
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
-        "message": "",
+        "message": "Не панікуйте, нічого не передаватиметься. Це було б проти всіх моїх принципів. Статистика (у форматі JSON) містить таку інформацію: дату, CDN+лічильник та фреймворк+лічильник. Це все. Ось приклад:",
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
-        "message": "",
+        "message": "Статистика не містить жодної інформації щодо браузеру, операційної системи, запитуючому веб-сайті, IP-адресах чи будь-якої іншої інформації. Тільки дата, CDN+лічильник та фреймворк+лічильник. Він показує вам, які фреймворки заміняються LocalCDN, як части і які CDN запитувалися.",
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
@@ -400,19 +400,19 @@
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
-        "message": "",
+        "message": "Сховище розширень можна продивитися безпосередньо в браузері Firefox. Відкрийте URL-адресу \"about:debugging\", перейдіть на \"Сховище\" і оберіть \"Сховище розширень\". Під ключем \"internalStatisticsData\" ви знайдете всі зібрані дані. Скопіюйте їх та помістить в JSON PrettyPrinter для того, щоб зробити їх більш зрозумілими. Зверніть увагу, що ви повинні спочатку прибрати перші та останні лапки і ключ до неї. Ви побачите все ясно побачите на цьому відео.",
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
-        "message": "",
+        "message": "Що буде синхронізуватись, якщо я оберу \"Синхронізувати\" в якості типу сховища?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "",
+        "message": "Синхронізація буде працювати лише тоді, коли ви ввійшли в свій акаунт Firefox на пристрої і дозволили синхронізацію розширень в налаштуваннях. Окремий сервер синхронізації під вашим контролем також буде працювати. Це синхронізує більшість налаштувань LocalCDN серед усіх девайсів.",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {
-        "message": "",
+        "message": "Якщо у вас відсутній обліковий запис синхронізації, нічого не буде сінхронізовано. У такому випадку, немає значення, який тип сховища ви обрали.",
         "description": "If you don‘t have a sync account, nothing will be synchronized. In that case it makes no difference what type of storage you have selected."
     },
     "helpSyncContentNever": {
@@ -448,7 +448,7 @@
         "description": "More information about Firefox Sync:"
     },
     "helpBrowserCompatibility": {
-        "message": "",
+        "message": "Сумісність з браузерами",
         "description": "Browser compatibility"
     },
     "helpReplace": {
@@ -464,23 +464,23 @@
         "description": "Upgrade all resources"
     },
     "helpExplanationChrome": {
-        "message": "",
+        "message": "Всі браузери на базі Chromium",
         "description": "All Chromium based Browser"
     },
     "helpLimitation": {
-        "message": "",
+        "message": "Це не обмеження LocalCDN, а відсутність підтримки API браузерів на базі Chromium.",
         "description": "This is not a limitation of LocalCDN, but missing API support of Chromium based browsers."
     },
     "titleBadgeDefault": {
-        "message": "",
+        "message": "Значок за замовчанням",
         "description": "Default badge"
     },
     "titleBadgeHTMLFilter": {
-        "message": "",
+        "message": "Значок фільтрації HTML",
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "",
+        "message": "Значок відсутніх ресурсів",
         "description": "Missing resource badge"
     }
 }

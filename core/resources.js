@@ -58,6 +58,9 @@ var resources = {
     'angularCookies': {
         'path': 'resources/angular.js/{version}/angular-cookies.min.jsm'
     },
+    'angularI18N': {
+        'path': 'resources/angular-i18n/{version}/angular-locale_en-us.min.jsm'
+    },
     'angularLoader': {
         'path': 'resources/angular.js/{version}/angular-loader.min.jsm'
     },
@@ -81,6 +84,9 @@ var resources = {
     },
     'angularTouch': {
         'path': 'resources/angular.js/{version}/angular-touch.min.jsm'
+    },
+    'angularTranslateLoaderPartial': {
+        'path': 'resources/angular-translate-loader-partial/{version}/angular-translate-loader-partial.min.jsm'
     },
     // angularMaterialDesign
     'angularMaterialDesignJS': {
@@ -1015,6 +1021,10 @@ var resources = {
     },
     'toastrJS': {
         'path': 'resources/toastr.js/{version}/toastr.min.jsm'
+    },
+    // twix.js
+    'twixJS': {
+        'path': 'resources/twix.js/{version}/twix.min.jsm'
     },
     // Underscore.js
     'underscore': {
