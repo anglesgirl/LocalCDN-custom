@@ -26,7 +26,7 @@ LocalCDN is a fork of Decentraleyes and a web browser extension that emulates Co
 #### How does it work?
 LocalCDN uses redirection for certain requests. There is a [mapping file](https://codeberg.org/nobody/LocalCDN/src/branch/main/core/mappings.js#L71) that lists the source (all CDNs and the path to the frameworks) and a [resource file](https://codeberg.org/nobody/LocalCDN/src/branch/main/core/resources.js#L328) that defines the destination.
 
-Currently only JavaScript and CSS files are redirected. However, some CSS files internally refer to other files, e.g. Font Awesome. All requests are redirected to a local file, e.g. [jQuery](https://codeberg.org/nobody/LocalCDN/src/branch/main/resources/jquery). This is the reason why the extension is currently 14 MB in size. Only if LocalCDN cannot find a local resource (and the option is enabled), a request will be blocked.
+Currently only JavaScript and CSS files are redirected. However, some CSS files internally refer to other files, e.g. Font Awesome. All requests are redirected to a local file, e.g. [jQuery](https://codeberg.org/nobody/LocalCDN/src/branch/main/resources/jquery). This is the reason why the extension is over 17 MB in size. Only if LocalCDN cannot find a local resource (and the option is enabled), a request will be blocked.
 
 An adblocker (e.g. uBlock Origin, uMatrix or AdGuard) decides which requests are allowed. Only if your adblocker allows a request, it will be intercepted by LocalCDN. LocalCDN catches the request after an adblocker and not before.
 
@@ -41,17 +41,9 @@ An adblocker (e.g. uBlock Origin, uMatrix or AdGuard) decides which requests are
 #### Other CDN emulators
 [<img src="https://codeberg.org/nobody/LocalCDN/raw/branch/main/screenshots/replacement_other_cdn_emulators.png" alt="Other CDN emulators" width="500"/>](screenshots/replacement_other_cdn_emulators.png)
 
-## We need you!
-
-![We Need You!](pages/images/we-need-you.png?raw=true "We Need You!")
-
-The whole Internet is full of different frameworks and CDNs that negatively affect your privacy. If you find a website that embeds another unsupported version of a framework, please report that website.
-
 #### :warning: **Important** :warning:
 
 In some cases, LocalCDN is not allowed to replace requested resources because the website sets up a strong Same Origin Policy (SOP). Please read [Broken JavaScript or CSS on some websites](https://codeberg.org/nobody/LocalCDN/wiki/Home#user-content-7-a-website-looks-weird-or-cannot-be-used-if-i-deactivate-localcdn-everything-works-what-is-the-problem) before opening an issue. [Here](https://www.localcdn.org/test/check) you can also find an online tool to test a website. This test covers the most common causes and provides solutions.
-
-On behalf of everyone: Thank you!
 
 ## Screenshots
 
