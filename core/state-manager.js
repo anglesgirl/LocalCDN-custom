@@ -33,7 +33,7 @@ var stateManager = {};
 stateManager.registerInjection = function (tabIdentifier, injection, url) {
     let injectionIdentifier, registeredTab, injectionCount, missingCount, initiatorDomain, listedToManipulateDOM;
 
-    injectionIdentifier = injection.source + injection.path + injection.version;
+    injectionIdentifier = injection.source + injection.path;
     registeredTab = stateManager.tabs[tabIdentifier];
     registeredTab.injections[injectionIdentifier] = injection;
 
@@ -357,7 +357,7 @@ chrome.webRequest.onErrorOccurred.addListener(function (requestDetails) {
 
 chrome.webRequest.onBeforeRedirect.addListener(function (requestDetails) {
     let knownRequest = stateManager.requests[requestDetails.requestId];
-    if (knownRequest) {
+    if (knownRequest['targetDetails']['result'] !== false) {
         stateManager.registerInjection(
             knownRequest.tabIdentifier,
             knownRequest.targetDetails,
