@@ -352,7 +352,7 @@
         "description": "Only uBlock Origin:"
     },
     "helpRuleGeneratorUblockDescription": {
-        "message": "Các quy tắc này chỉ có ý nghĩa trong chế độ »medium« hoặc »hard«, vì nó chặn tất cả các tài nguyên của bên thứ ba. Chúng không cần thiết trong chế độ «default», «easy» hoặc «very-easy». Để biết thêm thông tin, hãy truy cập Wiki uBlock Origin.",
+        "message": "Các quy tắc này chỉ có ý nghĩa trong chế độ »medium« hoặc »hard«, vì nó chặn tất cả các tài nguyên của bên thứ ba. Chúng không cần thiết trong chế độ »mặc định«, »easy« hoặc »very-easy«. Để biết thêm thông tin, hãy truy cập Wiki uBlock Origin.",
         "description": "These rules are only relevant in »medium« or »hard« mode, because it blocks all 3rd-party resources. They are not necessary in »default«, »easy« or »very-easy« mode. For more information, please visit the uBlock Origin Wiki."
     },
     "helpRuleGeneratorUblockTableIcon": {
