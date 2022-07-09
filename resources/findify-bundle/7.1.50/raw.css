@@ -1665,6 +1665,14 @@ p.findify-layouts--recommendation--grid__title {
     margin: 0 -10px;
 }
 
+.findify-components-autocomplete--content__horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
 /*  imported from styles.css  */
 
 .findify-components-autocomplete--tip__tip {
