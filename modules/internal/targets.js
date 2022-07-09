@@ -178,7 +178,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/d3/4.')) return '4.13.0';
     if (type.startsWith('/d3/5.')) return '5.16.0';
     if (type.startsWith('/d3/6.')) return '6.7.0';
-    if (type.startsWith('/d3/7.')) return '7.5.0';
+    if (type.startsWith('/d3/7.')) return '7.6.1';
     if (type.startsWith('/d3-legend/2.')) return '2.25.6';
     if (type.startsWith('/datatables/1.')) return '1.11.0';
     if (type.startsWith('/dayjs/1.')) return '1.11.3';
@@ -199,7 +199,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/findify')) {
         if (helpers.compareVersion('6.9.15', version)) return '6.9.15'; // <= 6.9.15
         if (helpers.compareVersion('6.17.0', version)) return '6.17.0'; // > 6.9.15 to <= 6.17.0
-        return '7.1.49';
+        return '7.1.50';
     }
     if (type.startsWith('/fancybox/2.')) return '2.1.7';
     if (type.startsWith('/fancybox/3.')) return '3.5.7';
@@ -330,7 +330,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/modernizr/2.')) return '2.8.3';
     if (type.startsWith('/moment.js/2.')) {
         if (helpers.compareVersion('2.5.1', version)) return '2.5.1'; // <= v2.5.1
-        return '2.29.3';
+        return '2.29.4';
     }
     if (type.startsWith('/mootools/1.')) {
         if (helpers.compareVersion('1.4.5', version)) return '1.4.5'; // <= v1.4.5
@@ -411,7 +411,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Swiper/5.')) return '5.4.5';
     if (type.startsWith('/Swiper/6.')) return '6.8.4';
     if (type.startsWith('/Swiper/7.')) return '7.4.1';
-    if (type.startsWith('/Swiper/8.') || type.startsWith('/Swiper/')) return '8.2.6';
+    if (type.startsWith('/Swiper/8.') || type.startsWith('/Swiper/')) return '8.3.0';
     if (type.startsWith('/tether/1.')) return '1.4.7';
     if (type.startsWith('/tinymce/5.')) return '5.10.5';
     if (type.startsWith('/tinymce/6.')) return '6.1.0';

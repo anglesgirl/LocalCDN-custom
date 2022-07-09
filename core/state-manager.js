@@ -33,9 +33,11 @@ var stateManager = {};
 stateManager.registerInjection = function (tabIdentifier, injection, url) {
     let injectionIdentifier, registeredTab, injectionCount, missingCount, initiatorDomain, listedToManipulateDOM;
 
-    injectionIdentifier = injection.source + injection.path + injection.version;
-    registeredTab = stateManager.tabs[tabIdentifier];
-    registeredTab.injections[injectionIdentifier] = injection;
+    if (injection['result'] !== false) {
+        injectionIdentifier = injection.source + injection.path;
+        registeredTab = stateManager.tabs[tabIdentifier];
+        registeredTab.injections[injectionIdentifier] = injection;
+    }
 
     initiatorDomain = helpers.extractDomainFromUrl(url, true) || Address.EXAMPLE;
     listedToManipulateDOM = stateManager._domainIsListed(initiatorDomain, 'manipulate-dom');

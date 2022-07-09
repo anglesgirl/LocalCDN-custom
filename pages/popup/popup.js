@@ -102,7 +102,7 @@ popup._renderContextualContents = function () {
 
 popup._renderDomainAllowlistPanel = function () {
     let websiteContextElement, protectionToggleElement, domainIndicatorElement,
-        manipulateDOMToggleElement, manipulateDOMToggleStyle, googleFontsToggleElement, googleFontsToggleStyle;
+        manipulateDOMToggleElement, googleFontsToggleElement;
 
     websiteContextElement = document.getElementById('website-context');
     websiteContextElement.setAttribute('class', 'panel');
@@ -113,10 +113,8 @@ popup._renderDomainAllowlistPanel = function () {
     protectionToggleElement.setAttribute('dir', popup._scriptDirection);
     domainIndicatorElement.innerText = popup._domain;
     manipulateDOMToggleElement = document.getElementById('manipulateDOM-toggle-switch');
-    manipulateDOMToggleStyle = document.getElementById('toggle-switch-manipulateDOM');
 
     googleFontsToggleElement = document.getElementById('google-fonts-toggle-switch');
-    googleFontsToggleStyle = document.getElementById('toggle-switch-google-fonts');
 
     if (popup._blockGoogleFonts === false) {
         document.getElementById('div-google-fonts').hidden = true;
@@ -124,17 +122,12 @@ popup._renderDomainAllowlistPanel = function () {
 
     if (popup._domainIsAllowlisted === true) {
         manipulateDOMToggleElement.disabled = true;
-        manipulateDOMToggleStyle.setAttribute('class', 'slider-disabled');
-
         googleFontsToggleElement.disabled = true;
-        googleFontsToggleStyle.setAttribute('class', 'slider-disabled');
-
         protectionToggleElement.checked = false;
         protectionToggleElement.addEventListener('click', popup._enableProtection);
         return;
     }
 
-    googleFontsToggleStyle.setAttribute('class', 'slider');
     googleFontsToggleElement.disabled = false;
 
     if (popup._domainGoogleFonts) {
@@ -146,7 +139,6 @@ popup._renderDomainAllowlistPanel = function () {
     }
 
     manipulateDOMToggleElement.disabled = false;
-    manipulateDOMToggleStyle.setAttribute('class', 'slider');
 
     protectionToggleElement.checked = true;
     protectionToggleElement.addEventListener('click', popup._disableProtection);
@@ -164,6 +156,8 @@ popup._renderDomainAllowlistPanel = function () {
         manipulateDOMToggleElement.checked = true;
         manipulateDOMToggleElement.addEventListener('click', popup._disableManipulateDOM);
     }
+
+    websiteContextElement.style.display = 'block';
 };
 
 popup._renderInjectionPanel = function (groupedInjections) {
