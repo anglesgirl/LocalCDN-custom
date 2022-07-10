@@ -45,7 +45,6 @@ popup._renderContents = function () {
         .then(popup._determineStatusManipulateDOM)
         .then(popup._determineStatusGoogleFonts)
         .then(popup._determineResourceInjections)
-        .then(popup._determineNegateHtmlFilterOption)
         .then(popup._renderContextualContents);
 
     if (BrowserType.CHROMIUM) {
