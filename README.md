@@ -1,6 +1,6 @@
 # LocalCDN
 
-[![Translate](https://www.localcdn.org/badges/translation.svg)](https://hosted.weblate.org/projects/localcdn/localcdn/) [![CDNs](https://www.localcdn.org/badges/cdn.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/core/mappings.js) [![Frameworks](https://www.localcdn.org/badges/frameworks.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/resources/) [![Firefox Add-on](https://www.localcdn.org/badges/amo-version.svg)](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) [![Chrome Add-on](https://www.localcdn.org/badges/chrome-version.svg)](https://chrome.google.com/webstore/detail/localcdn/njdfdhgcmkocbgbhcioffdbicglldapd/)
+[![Translate](https://www.localcdn.org/badges/translation.svg)](https://hosted.weblate.org/projects/localcdn/localcdn/) [![CDNs](https://www.localcdn.org/badges/cdn.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/core/mappings.js) [![Frameworks](https://www.localcdn.org/badges/frameworks.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/resources/) [![Firefox Add-on](https://www.localcdn.org/badges/amo-version.svg)](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) [![Chrome Add-on](https://www.localcdn.org/badges/chrome-version.svg)](https://chrome.google.com/webstore/detail/localcdn/njdfdhgcmkocbgbhcioffdbicglldapd/) [![Buy Me a Coffee](https://www.localcdn.org/badges/buymeacoffee.svg)](https://www.buymeacoffee.com/LocalCDN)
 
 LocalCDN is a fork of Decentraleyes and a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported resources locally, and injects them into the environment. All of this happens automatically, so no prior configuration is required. Feel free to use the following [testing utility](https://www.localcdn.org/test/) to find out if you are properly protected. For more information, please read the [tutorial](https://www.localcdn.org/tutorial) or the [Wiki](https://codeberg.org/nobody/LocalCDN/wiki). You can also [download](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) the extension directly from Mozilla and just try it.
 
@@ -99,6 +99,7 @@ LocalCDN is free and open-source. If you like LocalCDN you can support continued
 * Bitcoin: `1C4GRNyuUFkp9dMDjUkV4TwDwdfxdgLzde`
 * Ether: `0x2df49c1186f8b615c2059f29c3ed7f9f86d49552`
 * Monero: `46j26ggSZNT9rN7VeFYXp2PsKEMyJSSYneBVKXY4xeemdfZfCpNg6tQEXQZpWiTTuGX3SbnDPwuh3167cCoYSrqN72H9jPk`
+* [Buy Me a Coffee](https://www.buymeacoffee.com/LocalCDN)
 
 ## License
 
