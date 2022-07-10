@@ -34,6 +34,12 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed;
 
     targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
+    if (targetDetails['result'] === 'blocked') {
+        return {
+            'redirectUrl': chrome.runtime.getURL('resources/blocked/index.html')
+        };
+    }
+
     stateManager.requests[requestDetails.requestId] = {
         tabIdentifier, targetDetails
     };

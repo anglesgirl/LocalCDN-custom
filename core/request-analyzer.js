@@ -226,6 +226,11 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
         console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost}${channelPath}`);
         log.append(initiator, channelHost + channelPath, '-', true);
     }
+
+    if (Object.keys(mappings.cdn).includes(channelHost)) {
+        return {'result': 'blocked'};
+    }
+
     return {
         'result': false,
     };
