@@ -99,7 +99,8 @@ LocalCDN is free and open-source. If you like LocalCDN you can support continued
 * Bitcoin: `1C4GRNyuUFkp9dMDjUkV4TwDwdfxdgLzde`
 * Ether: `0x2df49c1186f8b615c2059f29c3ed7f9f86d49552`
 * Monero: `46j26ggSZNT9rN7VeFYXp2PsKEMyJSSYneBVKXY4xeemdfZfCpNg6tQEXQZpWiTTuGX3SbnDPwuh3167cCoYSrqN72H9jPk`
-* [Buy Me a Coffee](https://www.buymeacoffee.com/LocalCDN)
+
+[<img src="https://codeberg.org/nobody/LocalCDN/raw/branch/develop/pages/images/buymeacoffee.png" alt="Buy me a coffee" width="214"/>](https://www.buymeacoffee.com/LocalCDN) [<img src="https://codeberg.org/nobody/LocalCDN/raw/branch/develop/pages/images/opencollective.png" alt="Open Collective" width="214"/>](https://opencollective.com/LocalCDN)
 
 ## License
 
