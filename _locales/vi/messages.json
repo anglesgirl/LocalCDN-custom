@@ -1,10 +1,10 @@
 {
     "extensionDescription": {
-        "message": "Bảo vệ bạn khỏi sự theo dõi bằng các CDN (Mạng phân phối nội dung) bằng cách chuyển hướng về tài nguyên có sẵn.",
+        "message": "Bảo vệ bạn khỏi sự theo dõi bằng các CDN (viết tắt của từ tiếng Anh \"Content Delivery Networks\", tiếng Việt nghĩa là \"Mạng phân phối nội dung\") bằng cách chuyển hướng về các tài nguyên có sẵn.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
-        "message": "Số lượng mạng phân phối nội dung có sẵn được sử dụng từ khi cài đặt.",
+        "message": "Số lượng mạng phân phối nội dung có sẵn được sử dụng kể từ khi lúc cài đặt.",
         "description": "Amount injected description."
     },
     "optionsTitle": {
@@ -16,7 +16,7 @@
         "description": "Show icon badge title"
     },
     "showIconBadgeDescription": {
-        "message": "Hiện số lần đã sử dụng tài nguyên có sẵn trên biểu tượng của chương trình mở rộng.",
+        "message": "Hiện số lần đã sử dụng tài nguyên có sẵn trên biểu tượng của tiện ích mở rộng.",
         "description": "Show icon badge description."
     },
     "blockMissingTitle": {
@@ -28,7 +28,7 @@
         "description": "Block requests for missing resources description."
     },
     "disablePrefetchTitle": {
-        "message": "Vô hiệu hoá nạp trước đường dẫn",
+        "message": "Vô hiệu hoá nạp trước đường liên lết",
         "description": "Disable prefetch title"
     },
     "disablePrefetchDescription": {
@@ -40,7 +40,7 @@
         "description": "Strip metadata title"
     },
     "stripMetadataDescription": {
-        "message": "Xoá bỏ dữ liệu nhạy cảm từ những yêu cầu tới mạng phân phối nội dung được cho phép để tăng cường bảo mật.",
+        "message": "Xoá bỏ dữ liệu nhạy cảm từ những yêu cầu tới mạng phân phối nội dung được cho phép để tăng cường riêng tư.",
         "description": "Strip metadata description."
     },
     "allowlistedDomainsTitle": {
@@ -364,19 +364,19 @@
         "description": "Mode"
     },
     "helpRuleGeneratorUblockTableUseful": {
-        "message": "Quy tắc có hữu ích",
+        "message": "Những quy tắc hữu ích",
         "description": "Rules useful"
     },
     "helpRuleGeneratorUblockTableDefaultEasy": {
-        "message": "Mặc định/Easy",
+        "message": "Mặc định/Dễ dàng",
         "description": "Default/Easy"
     },
     "helpRuleGeneratorUblockTableMedium": {
-        "message": "Medium",
+        "message": "Vừa",
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "Hard",
+        "message": "Nghiêm ngặt",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
@@ -392,11 +392,11 @@
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
-        "message": "Thống kê không chứa thông tin về trình duyệt, hệ điều hành, trang web yêu cầu, địa chỉ IP hoặc bất kỳ thông tin nào khác. Chỉ có ngày, CDN + bộ đếm và khung + bộ đếm. Nó cho bạn biết những khuôn khổ nào đã được thay thế bởi LocalCDN, tần suất và những CDN nào được yêu cầu.",
+        "message": "Thống kê không chứa thông tin về trình duyệt, hệ điều hành, trang web yêu cầu, địa chỉ IP hoặc bất kỳ thông tin nào khác. Chỉ có ngày, CDN + bộ đếm và framework + bộ đếm. Nó cho bạn biết những framework nào đã được thay thế bởi LocalCDN, tần suất và những CDN nào được yêu cầu.",
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
-        "message": "Làm thế nào để tôi biết những gì bạn đang nói là sự thật?",
+        "message": "Làm thế nào để tôi biết những gì bạn nói là sự thật?",
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
