@@ -374,10 +374,6 @@ var resources = {
     'docsifyThemeSimpleDark': {
         'path': 'resources/docsify-themeable/{version}/theme-simple-dark.css'
     },
-    // Dojo
-    'dojo': {
-        'path': 'resources/dojo/{version}/dojo/dojo.jsm'
-    },
     // Drawer [Deprecated]
     'drawerJS': {
         'path': 'resources/drawer/{version}/drawer.min.jsm'

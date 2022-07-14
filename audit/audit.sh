@@ -611,8 +611,6 @@ function create_url() {
         url="$GITHUB/jquery-validation/jquery-validation/$version/dist/jquery.validate.min.js"
     elif [ "$folder" = "history" ] && [ "$version" != "4.10.1" ]; then
         url="$CLOUDFLARE/history/$version/history.production.min.js"
-    elif [ "$folder" = "dojo" ]; then
-        url="$CLOUDFLARE/dojo/$version/dojo.min.js"
     elif [ "$folder" = "material-design-icons" ]; then
         url="$GITHUB/Templarian/MaterialDesign-Webfont/v$version/$jfile/$subfile"
     elif [ "$folder" = "algoliasearch" ]; then
