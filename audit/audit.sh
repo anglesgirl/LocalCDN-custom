@@ -358,11 +358,11 @@ function check_resource() {
 
     # Use Tor Proxy if set
     if [ "$USE_TOR" = true ]; then
-        if ! torsocks wget -t 3 -qO ./tmp "$url"; then
+        if ! torsocks wget --retry-connrefused --waitretry=30 --read-timeout=30 --timeout=30 -t 10 -qO ./tmp "$url"; then
             error=true
         fi
     else
-        if ! wget -t 3 -qO ./tmp "$url"; then
+        if ! wget --retry-connrefused --waitretry=30 --read-timeout=30 --timeout=30 -t 10 -qO ./tmp "$url"; then
             error=true
         fi
     fi
