@@ -632,8 +632,11 @@ var resources = {
         'path': 'resources/jquery-validate/{version}/jquery.validate.min.jsm'
     },
     // jQuery Mobile [Deprecated]
-    'jQueryMobile': {
+    'jQueryMobileJS': {
         'path': 'resources/jquery-mobile/{version}/jquery.mobile.min.jsm'
+    },
+    'jQueryMobileCSS': {
+        'path': 'resources/jquery-mobile/{version}/jquery.mobile.min.css'
     },
     // jquery-validation-unobtrusive
     'jQueryValidationUnobtrusive': {
