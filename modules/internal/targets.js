@@ -273,7 +273,10 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery.matchHeight/0.')) return '0.7.2';
     if (type.startsWith('/jquery-migrate/1.')) return '1.4.1';
     if (type.startsWith('/jquery-migrate/3.')) return '3.4.0';
-    if (type.startsWith('/jquery-mobile/1.')) return '1.4.5';
+    if (type.startsWith('/jquery-mobile/1.')) {
+        if (helpers.compareVersion('1.3.2', version)) return '1.3.2'; // <= v1.3.2
+        return '1.4.5';
+    }
     if (type.startsWith('/jquery-mousewheel/3.')) return '3.1.13';
     if (type.startsWith('/jScrollPane/2.')) return '2.2.2';
     if (type.startsWith('/jquery-validate/1.')) return '1.19.5';
