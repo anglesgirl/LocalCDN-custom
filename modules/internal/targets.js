@@ -223,7 +223,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/materialicons/')) return 'v135';
     if (type.startsWith('/materialiconsoutlined/')) return 'v107';
     if (type.startsWith('/materialiconsround/')) return 'v106';
-    if (type.startsWith('/materialiconssharp/')) return 'v106';
+    if (type.startsWith('/materialiconssharp/')) return 'v107';
     if (type.startsWith('/materialiconstwotone/')) return 'v109';
     // ---------------------------------------------------------------
 
