@@ -227,7 +227,7 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
         log.append(initiator, channelHost + channelPath, '-', true);
     }
 
-    if (Object.keys(mappings.cdn).includes(channelHost)) {
+    if (Object.keys(mappings.cdn).includes(helpers.extractDomainFromUrl(initiator, true))) {
         return {'result': 'blocked'};
     }
 
