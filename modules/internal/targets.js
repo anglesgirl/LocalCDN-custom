@@ -286,6 +286,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery.scrollbar/0.')) return '0.2.11';
     if (type.startsWith('/jquery-validation-unobtrusive/3.')) return '3.2.12';
     if (type.startsWith('/jquery.tablesorter/2.')) return '2.31.3';
+    if (type.startsWith('/jquery-scrollTo/2.')) return '2.1.3';
     if (type.startsWith('/jquery-timeago/1.')) return '1.6.7';
     if (type.startsWith('/jquery-tiny-pubsub/0.')) return '0.7.0';
     if (type.startsWith('/jquery-ujs/1.')) return '1.2.3';
@@ -467,6 +468,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'jquery.scrollTo.min.jsm': 'jQuery.scrollTo',
     'twix.min.jsm': 'twix.js',
     'angular-locale_en-us.min.jsm': 'angular-i18n',
     'angular-translate-loader-partial.min.jsm': 'angular-translate-loader-partial',

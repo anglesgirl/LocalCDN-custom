@@ -592,6 +592,10 @@ var resources = {
     'jQueryScrollbar': {
         'path': 'resources/jquery.scrollbar/{version}/jquery.scrollbar.min.jsm'
     },
+    // jQuery-scrollTo
+    'jQueryScrollTo': {
+        'path': 'resources/jquery-scrollTo/{version}/jquery.scrollTo.min.jsm'
+    },
     // jQuery Tablesorter
     'jQueryTablesorter': {
         'path': 'resources/jquery.tablesorter/{version}/jquery.tablesorter.min.jsm'
