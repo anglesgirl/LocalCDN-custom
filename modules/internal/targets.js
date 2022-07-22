@@ -285,6 +285,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery.cycle2/2.')) return '2.1.6';
     if (type.startsWith('/jquery.scrollbar/0.')) return '0.2.11';
     if (type.startsWith('/jquery-validation-unobtrusive/3.')) return '3.2.12';
+    if (type.startsWith('/jquery-validation-unobtrusive/4.')) return '4.0.0';
     if (type.startsWith('/jquery.tablesorter/2.')) return '2.31.3';
     if (type.startsWith('/jquery-scrollTo/2.')) return '2.1.3';
     if (type.startsWith('/jquery-timeago/1.')) return '1.6.7';
