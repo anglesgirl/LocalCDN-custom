@@ -4,7 +4,7 @@
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
-        "message": "Số lượng mạng phân phối nội dung có sẵn được sử dụng kể từ khi lúc cài đặt.",
+        "message": "Số lượng mạng phân phối nội dung nội địa được sử dụng kể từ khi lúc cài đặt.",
         "description": "Amount injected description."
     },
     "optionsTitle": {
@@ -32,7 +32,7 @@
         "description": "Disable prefetch title"
     },
     "disablePrefetchDescription": {
-        "message": "Ngăn những yêu cầu bị cấm để không bị lộ ra cho các mạng phân phối.",
+        "message": "Ngăn những yêu cầu bị cấm không bị lộ ra cho các mạng phân phối.",
         "description": "Disable prefetch description."
     },
     "stripMetadataTitle": {
@@ -72,11 +72,11 @@
         "description": "Text of button to copy ruleset"
     },
     "loggingTitle": {
-        "message": "Kích hoạt ghi chép",
+        "message": "Kích hoạt ghi chép nhật ký",
         "description": "Enable logging"
     },
     "loggingDescription": {
-        "message": "Bạn có thể mở bản ghi chép từ biểu tượng trong trình đơn. Bản ghi chép sẽ bị xoá khi bạn đóng trình duyệt hoặc tắt ghi chép.",
+        "message": "Bạn có thể mở nhật ký từ biểu tượng trong trình đơn. Nhật ký sẽ bị xoá khi bạn đóng trình duyệt hoặc tắt ghi chép nhật ký.",
         "description": "You can open the log with the icon in the menu. The log will be deleted when you close the browser or disable logging."
     },
     "featureBreaksWebsitesDescription": {
