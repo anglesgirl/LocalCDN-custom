@@ -433,7 +433,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/twix.js/1.')) return '1.3.0';
     if (type.startsWith('/underscore.js/1.')) return '1.13.4';
     if (type.startsWith('/urlive/1.')) return '1.1.1';
-    if (type.startsWith('/vanilla-lazyload')) return '17.8.2';
+    if (type.startsWith('/vanilla-lazyload')) return '17.8.3';
     if (type.startsWith('/vex-js/3.')) return '3.1.1';
     if (type.startsWith('/vex-js/4.')) return '4.1.0';
     if (type.startsWith('/videojs-seek-buttons/1.')) return '1.6.0';
