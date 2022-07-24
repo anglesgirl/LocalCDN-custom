@@ -236,17 +236,6 @@ textarea {
     visibility: hidden;
 }
 
-#chromium-banner {
-    background-color: #ffcccc;
-    border: 1px solid red;
-    border-radius: 3px;
-    display: none;
-    font-weight: bold;
-    margin-top: 20px;
-    padding: 0.8em;
-    text-align: center;
-}
-
 #notice-locale {
     background-color: #ffa500;
     border-radius: 3px;

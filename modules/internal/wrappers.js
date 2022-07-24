@@ -82,11 +82,6 @@ wrappers.setIcon = function (details, type) {
 wrappers.setBadgeColoring = function (tabId, value) {
     let textColor, backgroundColor;
 
-    if (chrome.browserAction.setBadgeBackgroundColor === undefined ||
-        chrome.browserAction.setBadgeTextColor === undefined) {
-        return;
-    }
-
     if (value === BadgeSettingHTMLFilter.TYPE) {
         textColor = wrappers.badgeHTMLfilterTextColor;
         backgroundColor = wrappers.badgeHTMLFilterBackgroundColor;
@@ -100,12 +95,17 @@ wrappers.setBadgeColoring = function (tabId, value) {
         return;
     }
 
-    chrome.browserAction.setBadgeTextColor({
-        'tabId': tabId,
-        'color': textColor
-    });
-    chrome.browserAction.setBadgeBackgroundColor({
-        'tabId': tabId,
-        'color': backgroundColor
-    });
+    if (chrome.browserAction.setBadgeTextColor !== undefined) {
+        chrome.browserAction.setBadgeTextColor({
+            'tabId': tabId,
+            'color': textColor
+        });
+    }
+
+    if (chrome.browserAction.setBadgeBackgroundColor !== undefined) {
+        chrome.browserAction.setBadgeBackgroundColor({
+            'tabId': tabId,
+            'color': backgroundColor
+        });
+    }
 };

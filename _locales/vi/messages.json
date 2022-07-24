@@ -1,10 +1,10 @@
 {
     "extensionDescription": {
-        "message": "Bảo vệ bạn khỏi sự theo dõi bằng các CDN (Mạng phân phối nội dung) bằng cách chuyển hướng về tài nguyên có sẵn.",
+        "message": "Bảo vệ bạn khỏi sự theo dõi bằng các CDN (viết tắt của từ tiếng Anh \"Content Delivery Networks\", tiếng Việt nghĩa là \"Mạng phân phối nội dung\") bằng cách chuyển hướng về các tài nguyên có sẵn.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
-        "message": "Số lượng mạng phân phối nội dung có sẵn được sử dụng từ khi cài đặt.",
+        "message": "Số lượng mạng phân phối nội dung nội địa được sử dụng kể từ khi lúc cài đặt.",
         "description": "Amount injected description."
     },
     "optionsTitle": {
@@ -16,7 +16,7 @@
         "description": "Show icon badge title"
     },
     "showIconBadgeDescription": {
-        "message": "Hiện số lần đã sử dụng tài nguyên có sẵn trên biểu tượng của chương trình mở rộng.",
+        "message": "Hiện số lần đã sử dụng tài nguyên có sẵn trên biểu tượng của tiện ích mở rộng.",
         "description": "Show icon badge description."
     },
     "blockMissingTitle": {
@@ -28,11 +28,11 @@
         "description": "Block requests for missing resources description."
     },
     "disablePrefetchTitle": {
-        "message": "Vô hiệu hoá nạp trước đường dẫn",
+        "message": "Vô hiệu hoá nạp trước đường liên kết",
         "description": "Disable prefetch title"
     },
     "disablePrefetchDescription": {
-        "message": "Ngăn những yêu cầu bị cấm để không bị lộ ra cho các mạng phân phối.",
+        "message": "Ngăn những yêu cầu bị cấm không bị lộ ra cho các mạng phân phối.",
         "description": "Disable prefetch description."
     },
     "stripMetadataTitle": {
@@ -40,7 +40,7 @@
         "description": "Strip metadata title"
     },
     "stripMetadataDescription": {
-        "message": "Xoá bỏ dữ liệu nhạy cảm từ những yêu cầu tới mạng phân phối nội dung được cho phép để tăng cường bảo mật.",
+        "message": "Xoá bỏ dữ liệu nhạy cảm từ những yêu cầu tới mạng phân phối nội dung được cho phép để tăng cường riêng tư.",
         "description": "Strip metadata description."
     },
     "allowlistedDomainsTitle": {
@@ -56,11 +56,11 @@
         "description": "Advanced label"
     },
     "generateRuleSetTitle": {
-        "message": "Tạo luật cho trình chặn quảng cáo của bạn",
+        "message": "Tạo quy luật cho trình chặn quảng cáo của bạn",
         "description": "Generate rule sets for your adblocker"
     },
     "generateRuleSetDescription": {
-        "message": "Trong trường hợp bạn sử dụng trình chặn quảng cáo thì có thể tạo ra luật ở đây. Bạn phải thêm những luật này vào trình chặn quảng cáo bằng tay.",
+        "message": "Trong trường hợp bạn sử dụng trình chặn quảng cáo thì có thể tạo các quy luật ở đây. Bạn phải thêm những quy luật này vào trình chặn quảng cáo một cách thủ công.",
         "description": "In case you are using an adblocker you can generate the rules here. You have to add these rules manually in your adblocker."
     },
     "lastUpdate": {
@@ -72,11 +72,11 @@
         "description": "Text of button to copy ruleset"
     },
     "loggingTitle": {
-        "message": "Kích hoạt ghi chép",
+        "message": "Kích hoạt ghi chép nhật ký",
         "description": "Enable logging"
     },
     "loggingDescription": {
-        "message": "Bạn có thể mở bản ghi chép từ biểu tượng trong trình đơn. Bản ghi chép sẽ bị xoá khi bạn đóng trình duyệt hoặc tắt ghi chép.",
+        "message": "Bạn có thể mở nhật ký từ biểu tượng trong trình đơn. Nhật ký sẽ bị xoá khi bạn đóng trình duyệt hoặc tắt ghi chép nhật ký.",
         "description": "You can open the log with the icon in the menu. The log will be deleted when you close the browser or disable logging."
     },
     "featureBreaksWebsitesDescription": {
@@ -364,23 +364,23 @@
         "description": "Mode"
     },
     "helpRuleGeneratorUblockTableUseful": {
-        "message": "Quy tắc có hữu ích",
+        "message": "Những quy luật hữu ích",
         "description": "Rules useful"
     },
     "helpRuleGeneratorUblockTableDefaultEasy": {
-        "message": "Mặc định/Easy",
+        "message": "Mặc định/Dễ dàng (Easy)",
         "description": "Default/Easy"
     },
     "helpRuleGeneratorUblockTableMedium": {
-        "message": "Medium",
+        "message": "Vừa (Medium)",
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "Hard",
+        "message": "Nghiêm ngặt (Hard)",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
-        "message": "Có hai lý do có thể xảy ra: Hoặc do khuôn khổ/thư viện được yêu cầu nhưng LocalCDN không (chưa) phân phối hoặc do SOP. SOP (Điều khoản đồng nguồn) là một cơ chế bảo mật quyết định dữ liệu nào mà trình duyệt được phép tải. Nó giúp cô lập các tài liệu độc hại, từ đó làm giảm thiểu các vectơ tấn công có thể xảy ra. Điều khoản này ngăn chặn các trình duyệt tải các khuôn khổ bên ngoài của LocalCDN. Thật không may, hiện nay chưa có giải pháp cho vấn đề này.",
+        "message": "Có hai lý do có thể xảy ra: Hoặc do khuôn khổ/thư viện được yêu cầu nhưng LocalCDN chưa phân phối hoặc do SOP. SOP (Viết tắt của từ tiếng Anh \"Same origin policy\" dịch tạm là \"Điều khoản đồng nguồn\") là một cơ chế bảo mật quyết định dữ liệu nào mà trình duyệt được phép tải. Nó giúp cô lập các tài liệu độc hại, từ đó làm giảm thiểu các nguy cơ tấn công có thể xảy ra. Điều khoản này ngăn chặn các trình duyệt tải các framework bên ngoài của LocalCDN. Thật không may, hiện nay chưa có giải pháp cho vấn đề này.",
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
@@ -388,19 +388,19 @@
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
-        "message": "Đừng lo, sẽ không có gì được truyền đi. Điều đó sẽ trái với tất cả các nguyên tắc của tôi. Thống kê (ở định dạng JSON) chứa các thông tin sau: Ngày, CDN + bộ đếm và khuôn khổ + bộ đếm. Đó là tất cả. Tôi có một ví dụ dưới đây:",
+        "message": "Đừng lo, sẽ không có gì được truyền đi. Điều đó sẽ trái với tất cả các nguyên tắc của tôi. Thống kê (ở định dạng JSON) chứa các thông tin sau: Ngày tháng, CDN + bộ đếm framework + bộ đếm. Đó là tất cả. Tôi có một ví dụ dưới đây:",
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
-        "message": "Thống kê không chứa thông tin về trình duyệt, hệ điều hành, trang web yêu cầu, địa chỉ IP hoặc bất kỳ thông tin nào khác. Chỉ có ngày, CDN + bộ đếm và khung + bộ đếm. Nó cho bạn biết những khuôn khổ nào đã được thay thế bởi LocalCDN, tần suất và những CDN nào được yêu cầu.",
+        "message": "Thống kê không chứa thông tin về trình duyệt, hệ điều hành, trang web yêu cầu, địa chỉ IP hoặc bất kỳ thông tin nào khác. Chỉ có ngày tháng, CDN + bộ đếm và framework + bộ đếm. Nó cho bạn biết những framework nào đã được thay thế bởi LocalCDN, tần suất và những CDN nào được yêu cầu.",
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
-        "message": "Làm thế nào để tôi biết những gì bạn đang nói là sự thật?",
+        "message": "Làm thế nào để tôi biết những gì bạn nói là sự thật?",
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
-        "message": "Bộ nhớ mở rộng có thể được xem trực tiếp thông qua trình duyệt Firefox. Mở URL »about: debugging«, đi tới »Storage« và chọn »Extension Storage«. Trong khóa »internalStatisticsData« bạn sẽ tìm thấy dữ liệu được thu thập. Dữ liệu đó có thể được sao chép và đưa vào JSON PrettyPrinter để làm cho nó dễ đọc hơn. Lưu ý rằng bạn phải xóa dấu ngoặc kép đầu tiên và cuối cùng của dữ liệu và tên khóa của nó. Bạn sẽ có thể nhìn thấy chi tiết trong video này.",
+        "message": "Bộ nhớ của tiện ích mở rộng có thể được xem trực tiếp thông qua trình duyệt Firefox. Mở URL »about: debugging«, đi tới »Storage« và chọn »Extension Storage«. Trong khóa »internalStatisticsData« bạn sẽ tìm thấy dữ liệu được thu thập. Dữ liệu đó có thể được sao chép và đưa vào JSON PrettyPrinter để làm cho nó dễ đọc hơn. Lưu ý rằng bạn phải xóa dấu ngoặc kép đầu tiên và cuối cùng của dữ liệu và tên khóa của nó. Bạn sẽ có thể nhìn thấy chi tiết trong video này.",
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
@@ -408,7 +408,7 @@
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "Đồng bộ hóa sẽ chỉ hoạt động nếu bạn đã đăng nhập bằng tài khoản Firefox của mình trên thiết bị và cho phép các add-on đồng bộ hóa trong cài đặt. Một máy chủ riêng mà bạn kiểm soát cũng có thể được sử dụng để đồng bộ hóa. Điều này sẽ đồng bộ hóa hầu hết các cài đặt của LocalCDN trên tất cả các thiết bị.",
+        "message": "Đồng bộ hóa sẽ chỉ hoạt động nếu bạn đã đăng nhập bằng tài khoản Firefox của mình trên thiết bị và cho phép các tiện ích đồng bộ hóa trong cài đặt. Một máy chủ riêng mà bạn kiểm soát cũng có thể được sử dụng để đồng bộ hóa. Điều này sẽ đồng bộ hóa hầu hết các cài đặt của LocalCDN trên tất cả các thiết bị.",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {

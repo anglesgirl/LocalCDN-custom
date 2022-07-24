@@ -374,10 +374,6 @@ var resources = {
     'docsifyThemeSimpleDark': {
         'path': 'resources/docsify-themeable/{version}/theme-simple-dark.css'
     },
-    // Dojo
-    'dojo': {
-        'path': 'resources/dojo/{version}/dojo/dojo.jsm'
-    },
     // Drawer [Deprecated]
     'drawerJS': {
         'path': 'resources/drawer/{version}/drawer.min.jsm'
@@ -596,6 +592,10 @@ var resources = {
     'jQueryScrollbar': {
         'path': 'resources/jquery.scrollbar/{version}/jquery.scrollbar.min.jsm'
     },
+    // jQuery-scrollTo
+    'jQueryScrollTo': {
+        'path': 'resources/jquery-scrollTo/{version}/jquery.scrollTo.min.jsm'
+    },
     // jQuery Tablesorter
     'jQueryTablesorter': {
         'path': 'resources/jquery.tablesorter/{version}/jquery.tablesorter.min.jsm'
@@ -636,8 +636,11 @@ var resources = {
         'path': 'resources/jquery-validate/{version}/jquery.validate.min.jsm'
     },
     // jQuery Mobile [Deprecated]
-    'jQueryMobile': {
+    'jQueryMobileJS': {
         'path': 'resources/jquery-mobile/{version}/jquery.mobile.min.jsm'
+    },
+    'jQueryMobileCSS': {
+        'path': 'resources/jquery-mobile/{version}/jquery.mobile.min.css'
     },
     // jquery-validation-unobtrusive
     'jQueryValidationUnobtrusive': {

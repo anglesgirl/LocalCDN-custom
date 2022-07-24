@@ -36,22 +36,14 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
         return;
     }
     if (details.statusCode === 200) {
-        let initiatorDomain, listedToManipulateDOM, negateHtmlFilter, filtering, header;
+        let initiatorDomain, header;
 
         initiatorDomain = helpers.extractDomainFromUrl(details.url, true) || Address.EXAMPLE;
-        listedToManipulateDOM = stateManager._domainIsListed(initiatorDomain, 'manipulate-dom');
-        negateHtmlFilter = stateManager.getInvertOption;
-
-        if ((negateHtmlFilter || listedToManipulateDOM) && !(negateHtmlFilter && listedToManipulateDOM)) {
-            filtering = true;
-        } else {
-            filtering = false;
-        }
 
         // by Jaap (https://gitlab.com/Jaaap)
         header = details.responseHeaders.find((h) => h.name.toLowerCase() === 'content-type');
 
-        if (header && filtering) {
+        if (header && manipulateDOM.checkHtmlFilterEnabled(initiatorDomain)) {
 
             let mimeType, isAllowlisted;
 
@@ -149,6 +141,22 @@ manipulateDOM._searchCharset = function (str, charset) {
         return str.replace(`charset=${charset}`, 'charset=utf8');
     }
     return str;
+};
+
+
+/**
+ * Public Methods
+ */
+
+manipulateDOM.checkHtmlFilterEnabled = function (url) {
+    let listedToManipulateDOM, negateHtmlFilter;
+    listedToManipulateDOM = stateManager._domainIsListed(url, 'manipulate-dom');
+    negateHtmlFilter = stateManager.getInvertOption;
+
+    if ((negateHtmlFilter || listedToManipulateDOM) && !(negateHtmlFilter && listedToManipulateDOM)) {
+        return true;
+    }
+    return false;
 };
 
 /**

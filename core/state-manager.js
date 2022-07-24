@@ -31,7 +31,7 @@ var stateManager = {};
  */
 
 stateManager.registerInjection = function (tabIdentifier, injection, url) {
-    let injectionIdentifier, registeredTab, injectionCount, missingCount, initiatorDomain, listedToManipulateDOM;
+    let injectionIdentifier, registeredTab, injectionCount, missingCount, initiatorDomain, htmlFilterIsActive;
 
     if (injection['result'] !== false) {
         injectionIdentifier = injection.source + injection.path;
@@ -40,7 +40,7 @@ stateManager.registerInjection = function (tabIdentifier, injection, url) {
     }
 
     initiatorDomain = helpers.extractDomainFromUrl(url, true) || Address.EXAMPLE;
-    listedToManipulateDOM = stateManager._domainIsListed(initiatorDomain, 'manipulate-dom');
+    htmlFilterIsActive = manipulateDOM.checkHtmlFilterEnabled(initiatorDomain);
 
     injectionCount = Object.keys(registeredTab.injections).length || 0;
     missingCount = registeredTab.missing || 0;
@@ -54,7 +54,7 @@ stateManager.registerInjection = function (tabIdentifier, injection, url) {
     if (stateManager.showIconBadge === true) {
         if (missingCount > 0 && stateManager.changeBadgeColorMissingResources) {
             wrappers.setBadgeColoring(tabIdentifier, BadgeSettingMissingResource.TYPE);
-        } else if (listedToManipulateDOM) {
+        } else if (htmlFilterIsActive) {
             wrappers.setBadgeColoring(tabIdentifier, BadgeSettingHTMLFilter.TYPE);
         } else {
             wrappers.setBadgeColoring(tabIdentifier, BadgeSetting.TYPE);

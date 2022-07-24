@@ -209,9 +209,9 @@ statistics._displayNameOfFramework = function (str, type) {
                 filename = 'Google Charts';
             } else if (str === 'resources/fontawesome/5.15.1/css/v4-shims.css') {
                 filename = 'Font Awesome (Shim)';
-            } else if (str === 'resources/bootstrap/fonts/') {
+            } else if (str === 'resources/twitter-bootstrap/fonts/') {
                 filename = 'Bootstrap (Fonts)';
-            } else {
+            } else if (str.length === 0) {
                 console.warn(`[LocalCDN] Missing path: ${str}`);
             }
         }
