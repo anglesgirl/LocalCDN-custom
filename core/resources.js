@@ -711,6 +711,10 @@ var resources = {
     'lozad': {
         'path': 'resources/lozad.js/{version}/lozad.min.jsm'
     },
+    // lunr.js
+    'lunrJS': {
+        'path': 'resources/lunr.js/{version}/lunr.min.jsm'
+    },
     // MathJax
     'mathJax': {
         'path': 'resources/mathjax/{version}/'

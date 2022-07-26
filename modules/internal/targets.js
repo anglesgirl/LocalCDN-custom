@@ -313,6 +313,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/lodash.js/3.')) return '3.10.1';
     if (type.startsWith('/lodash.js/4.')) return '4.17.21';
     if (type.startsWith('/lozad')) return '1.16.0';
+    if (type.startsWith('/lunr.js/2.')) return '2.3.9';
     if (type.startsWith('/magnific-popup.js/1.')) return '1.1.0';
     if (type.startsWith('/markdown-it/')) return '13.0.1';
     if (type.startsWith('/mdbootstrap/4.')) return '4.20.0';
@@ -469,6 +470,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'lunr.min.jsm': 'lunr.js',
     'jquery.scrollTo.min.jsm': 'jQuery.scrollTo',
     'twix.min.jsm': 'twix.js',
     'angular-locale_en-us.min.jsm': 'angular-i18n',
