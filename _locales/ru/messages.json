@@ -136,7 +136,7 @@
         "description": "Internal statistics"
     },
     "internalStatisticsDescription": {
-        "message": "Эта функция находится в эеспериментальном состоянии. Данные не передаются. Все хранится только на вашем устройстве.",
+        "message": "Эта функция находится в экспериментальном состоянии. Данные не передаются. Все хранится только на вашем устройстве.",
         "description": "No data transmission. It’s all local on your device."
     },
     "headerStatistics": {
@@ -408,7 +408,7 @@
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "Синхронизация будет работать только в том случае, если вы вошли в систему с учетной записью Firefox на устройстве и разрешили синхронизацию расширений в настройках. Также будет работать отдельный сервер синхронизации под вашим контролем. Это синхронизирует большинство настроек LocalCDN на всех устройствах.",
+        "message": "Синхронизация будет работать только в том случае, если вы вошли в учетную запись Firefox на устройстве и разрешили синхронизацию расширений в настройках. Также будет работать отдельный сервер синхронизации под вашим контролем. Это синхронизирует большинство настроек LocalCDN на всех устройствах.",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {
