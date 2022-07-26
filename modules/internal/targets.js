@@ -373,6 +373,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-dom/16.')) return '16.14.0';
     if (type.startsWith('/react-dom/17.')) return '17.0.2';
     if (type.startsWith('/react-dom/18.')) return '18.2.0';
+    if (type.startsWith('/react-intl/5.')) return '6.0.5';
+    if (type.startsWith('/react-intl/6.')) return '6.0.5';
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.0.2';
     if (type.startsWith('/react-router/5.')) return '5.3.3';
@@ -470,6 +472,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'react-intl.iife.min.jsm': 'react-intl',
     'lunr.min.jsm': 'lunr.js',
     'jquery.scrollTo.min.jsm': 'jQuery.scrollTo',
     'twix.min.jsm': 'twix.js',

@@ -889,6 +889,10 @@ var resources = {
     'reactDOM': {
         'path': 'resources/react-dom/{version}/umd/react-dom.production.min.jsm'
     },
+    // react-intl
+    'reactIntl': {
+        'path': 'resources/react-intl/{version}/react-intl.iife.min.jsm'
+    },
     // react-lifecycles-compat
     'reactLifecyclesCompat': {
         'path': 'resources/react-lifecycles-compat/{version}/react-lifecycles-compat.min.jsm'

@@ -644,6 +644,7 @@ mappings.cdn = {
             'purecss@{version}/build/': resources.pureCSS,
             'redux@{version}/dist/redux.': resources.redux,
             'react-dom@{version}/umd/react-dom.production.min.js': resources.reactDOM,
+            'react-intl@{version}/react-intl.iife.': resources.reactIntl,
             'react@{version}/umd/react.production.min.js': resources.react,
             'search-insights@{version}/dist/search-insights.': resources.searchInsights,
             'select2@{version}/': resources.select2,
