@@ -1172,6 +1172,14 @@ mappings.cdn['cdn.bootcdn.net'] = mappings.cdn['cdnjs.cloudflare.com'];
 // CDN for the "Block Google Fonts" option (see: https://codeberg.org/nobody/LocalCDN/issues/269)
 mappings.cdn['fonts.gstatic.com'] = mappings.cdn['fonts.googleapis.com'];
 
+
+// Remove Google Fonts Endpoints for Chromium browsers (https://codeberg.org/nobody/LocalCDN/issues/1085)
+if (!BrowserType.FIREFOX) {
+    delete mappings.cdn['fonts.gstatic.com'];
+    delete mappings.cdn['fonts.googleapis.com'];
+}
+
+
 /**
  * List of CNAME CDNs
  * https://codeberg.org/nobody/LocalCDN/issues/816
