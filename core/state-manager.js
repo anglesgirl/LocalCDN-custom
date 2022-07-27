@@ -294,6 +294,9 @@ stateManager.logging = false;
 
 for (let mapping in mappings.cdn) {
     let supportedHost = Address.ANY_PROTOCOL + mapping + Address.ANY_PATH;
+    if (!BrowserType.FIREFOX && (mapping === 'fonts.gstatic.com' || mapping === 'fonts.googleapis.com')) {
+        continue;
+    }
     stateManager.validHosts.push(supportedHost);
 }
 

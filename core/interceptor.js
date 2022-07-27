@@ -76,13 +76,6 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
                 'cancel': false
             };
         }
-    } else if (!BrowserType.FIREFOX && (isGoogleFont || isGoogleMaterialIcons)) {
-        initiatorDomain = helpers.extractDomainFromUrl(tab.url, true);
-        isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
-        // Check if the website is allowed to load Google Fonts
-        return {
-            'cancel': interceptor.blockGoogleFonts === true && isListed === false
-        };
     }
 
     if (targetDetails['result'] === false) {

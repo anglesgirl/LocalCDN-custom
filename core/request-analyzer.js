@@ -57,12 +57,6 @@ requestAnalyzer.isValidCandidate = function (requestDetails, tabDetails) {
             log.append(tabDetails.url, requestDetails.url, LogString.FONT_AWESOME, true);
             return false;
         }
-        if (requestAnalyzer.isGoogleMaterialIcons(requestedDomain, requestDetails.url)) {
-            // also valid for Google Material icons
-            console.warn(`${LogString.PREFIX} ${LogString.GOOGLE_MATERIAL_ICONS}`);
-            log.append(tabDetails.url, requestDetails.url, LogString.GOOGLE_MATERIAL_ICONS, true);
-            return false;
-        }
     }
 
     // Ignore requests if website is 'yandex.com' and CDN is 'yastatic.net', because website and CDN are the same.

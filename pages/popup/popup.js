@@ -49,6 +49,7 @@ popup._renderContents = function () {
 
     if (BrowserType.CHROMIUM) {
         document.getElementById('div-manipulateDOM').hidden = true;
+        document.getElementById('div-google-fonts').hidden = true;
     }
 };
 
