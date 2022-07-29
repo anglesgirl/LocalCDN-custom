@@ -258,6 +258,11 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
             };
         }
     }
+    if (bundle === 'DataTables (Bundle)') {
+        if (!filename.endsWith('.min.js') && filename.endsWith('.js')) {
+            filename = filename.replace('.js', '.min.js');
+        }
+    }
     return helpers.formatFilename(filename.endsWith('.js')
         ? `${targetPath + filename}m`
         : targetPath + filename);
