@@ -343,6 +343,7 @@ const MathJaxFiles = {
     'config/TeX-AMS_HTML-full.js': true,
     'config/TeX-AMS-MML_HTMLorMML.js': true,
     'config/TeX-MML-AM_CHTML.js': true,
+    'config/TeX-MML-AM_SVG.js': true,
     'extensions/TeX/begingroup.js': true,
     'extensions/TeX/cancel.js': true,
     'extensions/TeX/color.js': true,

@@ -1277,6 +1277,7 @@ https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS_CHTML.js
 https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS_HTML-full.js
 https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js
 https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-MML-AM_CHTML.js
+https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-MML-AM_SVG.js
 https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/extensions/asciimath2jax.js
 https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/extensions/MathEvents.js
 https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/extensions/MathMenu.js
