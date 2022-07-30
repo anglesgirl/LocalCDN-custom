@@ -232,40 +232,57 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
 
 requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath, targetPath, bundle) {
     let filename = channelPath.split('/').pop();
+
     if (bundle === 'MathJax (Bundle)' && filename !== 'MathJax.js') {
-        filename = channelPath.replace(Resource.MATHJAX, '');
-        if (filename.startsWith('/npm/mathjax@3')) {
-            filename = filename.replace('/npm/mathjax@3/', '');
-        }
-        if (filename === 'config/TeX-AMS_HTML.js') {
-            filename = 'config/TeX-AMS_HTML-full.js';
-        }
-        if (!MathJaxFiles[filename] && !MathJax3Files[filename]) {
-            console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
-            log.append(initiator, channelHost + channelPath, '-', true);
-            return {
-                'result': false,
-            };
-        }
+        filename = requestAnalyzer._handleMathJax(filename, channelPath, channelHost, initiator);
+    } else if (bundle === 'TinyMCE (Bundle)' && filename !== 'tinymce.min.js') {
+        filename = requestAnalyzer._handleTinyMCE(filename, channelPath, channelHost, initiator);
+    } else if (bundle === 'DataTables (Bundle)') {
+        filename = requestAnalyzer._handleDataTables(filename);
     }
-    if (bundle === 'TinyMCE (Bundle)' && filename !== 'tinymce.min.js') {
-        filename = channelPath.replace(Resource.TINYMCE, '');
-        if (filename.startsWith('plugins/')) {
-            console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
-            log.append(initiator, channelHost + channelPath, '-', true);
-            return {
-                'result': false,
-            };
-        }
+
+    if (filename === false) {
+        return {
+            'result': false,
+        };
     }
-    if (bundle === 'DataTables (Bundle)') {
-        if (!filename.endsWith('.min.js') && filename.endsWith('.js')) {
-            filename = filename.replace('.js', '.min.js');
-        }
-    }
+
     return helpers.formatFilename(filename.endsWith('.js')
         ? `${targetPath + filename}m`
         : targetPath + filename);
+};
+
+requestAnalyzer._handleMathJax = function (filename, channelPath, channelHost, initiator) {
+    filename = channelPath.replace(Resource.MATHJAX, '');
+    if (filename.startsWith('/npm/mathjax@3')) {
+        filename = filename.replace('/npm/mathjax@3/', '');
+    }
+    if (filename === 'config/TeX-AMS_HTML.js') {
+        filename = 'config/TeX-AMS_HTML-full.js';
+    }
+    if (!MathJaxFiles[filename] && !MathJax3Files[filename]) {
+        console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
+        log.append(initiator, channelHost + channelPath, '-', true);
+        return false;
+    }
+    return filename;
+};
+
+requestAnalyzer._handleDataTables = function (filename) {
+    if (!filename.endsWith('.min.js') && filename.endsWith('.js')) {
+        return filename.replace('.js', '.min.js');
+    }
+    return filename;
+};
+
+requestAnalyzer._handleTinyMCE = function (filename, channelPath, channelHost, initiator) {
+    filename = channelPath.replace(Resource.TINYMCE, '');
+    if (filename.startsWith('plugins/')) {
+        console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
+        log.append(initiator, channelHost + channelPath, '-', true);
+        return false;
+    }
+    return filename;
 };
 
 requestAnalyzer._applyAllowlistedDomains = function () {
