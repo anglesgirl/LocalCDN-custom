@@ -271,6 +271,8 @@ requestAnalyzer._handleMathJax = function (filename, channelPath, channelHost, i
 requestAnalyzer._handleDataTables = function (filename) {
     if (!filename.endsWith('.min.js') && filename.endsWith('.js')) {
         return filename.replace('.js', '.min.js');
+    } else if (!filename.endsWith('.min.css') && filename.endsWith('.css')) {
+        return filename.replace('.css', '.min.css');
     }
     return filename;
 };
