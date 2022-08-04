@@ -1792,7 +1792,7 @@ https://cdn.jsdelivr.net/npm/anchor-js@3.2.2/anchor.min.js
 https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js
 https://cdn.jsdelivr.net/npm/angular-stripe-checkout@5.1.0/angular-stripe-checkout.min.js
 https://cdn.jsdelivr.net/npm/appboy-web-sdk@3.5.1/appboy.min.js
-https://cdn.jsdelivr.net/npm/chart.js@3.8.2/dist/chart.min.js
+https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-defaults.css
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple.css
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple-dark.css
