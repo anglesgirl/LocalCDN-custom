@@ -262,7 +262,7 @@ const Regex = {
     'FONT_AWESOME_WITH_CODE': /use\.fontawesome\.com\/[a-z0-9]{10}\.(js|css)/,
     'FONT_AWESOME_FONTS_ONLY': /\/font-?awesome\/(?:\d{1,2}\.){1,3}\d{1,2}\/fonts\//,
     'BOOTSTRAP_FONTS_ONLY': /\/bootstrap\/(?:\d{1,2}\.){1,3}\d{1,2}\/fonts\//,
-    'ROCKET_LOADER': /ajax\.cloudflare\.com\/cdn-cgi\/scripts\/[\d\w]{8}\/cloudflare-static\/rocket-loader\.min\.js/
+    'ROCKET_LOADER': /ajax\.cloudflare\.com\/cdn-cgi\/scripts\/[a-zA-Z0-9]{8}\/cloudflare-static\/rocket-loader\.min\.js/
 };
 
 const MaterialIcons = {
@@ -343,6 +343,7 @@ const MathJaxFiles = {
     'config/TeX-AMS_HTML-full.js': true,
     'config/TeX-AMS-MML_HTMLorMML.js': true,
     'config/TeX-MML-AM_CHTML.js': true,
+    'config/TeX-MML-AM_SVG.js': true,
     'extensions/TeX/begingroup.js': true,
     'extensions/TeX/cancel.js': true,
     'extensions/TeX/color.js': true,

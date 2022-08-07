@@ -711,6 +711,10 @@ var resources = {
     'lozad': {
         'path': 'resources/lozad.js/{version}/lozad.min.jsm'
     },
+    // lunr.js
+    'lunrJS': {
+        'path': 'resources/lunr.js/{version}/lunr.min.jsm'
+    },
     // MathJax
     'mathJax': {
         'path': 'resources/mathjax/{version}/'
@@ -884,6 +888,10 @@ var resources = {
     // ReactDOM
     'reactDOM': {
         'path': 'resources/react-dom/{version}/umd/react-dom.production.min.jsm'
+    },
+    // react-intl
+    'reactIntl': {
+        'path': 'resources/react-intl/{version}/react-intl.iife.min.jsm'
     },
     // react-lifecycles-compat
     'reactLifecyclesCompat': {

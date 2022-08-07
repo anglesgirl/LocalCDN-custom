@@ -44,6 +44,7 @@ options._renderContents = function () {
 
     if (!BrowserType.FIREFOX) {
         document.getElementById('chromium-banner').style.display = 'block';
+        document.getElementById('div-html-badge').style.display = 'none';
     }
 
     document.getElementById('label-version').textContent = chrome.runtime.getManifest().version;

@@ -49,6 +49,7 @@ popup._renderContents = function () {
 
     if (BrowserType.CHROMIUM) {
         document.getElementById('div-manipulateDOM').hidden = true;
+        document.getElementById('div-google-fonts').hidden = true;
     }
 };
 
@@ -434,8 +435,10 @@ popup._createVersionNode = function (versionRequested, versionDelivered) {
     let version = '';
 
     if (versionRequested === undefined || versionDelivered === undefined) {
-        version = '';
-    } else if (versionRequested === versionDelivered && versionDelivered !== 'latest') {
+        return version;
+    }
+
+    if (versionRequested === versionDelivered && versionDelivered !== 'latest') {
         version = `v${versionRequested}`;
     } else if (versionRequested === versionDelivered) {
         version = `v${versionRequested}`;

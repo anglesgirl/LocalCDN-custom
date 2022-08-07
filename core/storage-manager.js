@@ -212,7 +212,7 @@ storageManager._validateDomainsAndStatistics = function (type, obj) {
     if (type === 'allowedDomainsGoogleFonts' || type === 'domainsManipulateDOM' || type === 'allowlistedDomains') {
         for (const [key, value] of Object.entries(obj)) {
             // eslint-disable-next-line no-useless-escape
-            if ((/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,24}/.test(key) || key === '') && value === true) {
+            if (((/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,24}/).test(key) || key === '') && value === true) {
                 valid[key] = value;
             } else {
                 alert(`${chrome.i18n.getMessage('dialogImportFailed')}: ${key}`);
@@ -221,7 +221,7 @@ storageManager._validateDomainsAndStatistics = function (type, obj) {
         }
     } else if (type === 'internalStatisticsData') {
         for (const [date, values] of Object.entries(obj)) {
-            if (/((2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])/.test(date)) {
+            if ((/((2\d)\d{2})-(0[1-9]|1[012])-(0[1-9]|[12]\d|3[01])/).test(date)) {
                 for (const [types, category] of Object.entries(values)) {
                     if (types === 'frameworks') {
                         for (const [name, counter] of Object.entries(category)) {
@@ -258,9 +258,9 @@ storageManager._validateDomainsAndStatistics = function (type, obj) {
 };
 
 storageManager._validateStrings = function (value) {
-    if (/((2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])/.test(value)) {
+    if ((/((2\d)\d{2})-(0[1-9]|1[012])-(0[1-9]|[12]\d|3[01])/).test(value)) {
         return value;
-    } else if (/#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/.test(value)) {
+    } else if ((/#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/).test(value)) {
         return value;
     } else if (value === 'Default' || value === 'Light' || value === 'Grey') {
         return value;

@@ -38,6 +38,11 @@ ruleGenerator.openRuleSet = function ({target}) {
     textArea.style.display = 'block';
     btnCopy.style.display = 'block';
 
+    if (!BrowserType.FIREFOX) {
+        delete urls['fonts.googleapis.com'];
+        delete urls['fonts.gstatic.com'];
+    }
+
     for (const domain in urls) {
         if (key === 'uMatrix') {
             content += `* ${domain} script allow\n`;

@@ -80,7 +80,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/1000hz-bootstrap-validator/0.')) return '0.11.9';
     if (type.startsWith('/ajax-bootstrap-select/1.')) return '1.4.5';
     if (type.startsWith('/algoliasearch/3.')) return '3.35.1';
-    if (type.startsWith('/algoliasearch/4.')) return '4.14.1';
+    if (type.startsWith('/algoliasearch/4.')) return '4.14.2';
     if (type.startsWith('/alpinejs/2.')) return '2.8.2';
     if (type.startsWith('/alpinejs/3.')) return '3.10.3';
     if (type.startsWith('/anchor-js/3.')) return '3.2.2';
@@ -158,7 +158,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootstrap-3-typeahead/4.')) return '4.0.2';
     if (type.startsWith('/bootswatch/3.')) return '3.4.0';
     if (type.startsWith('/bootswatch/4.')) return '4.6.1';
-    if (type.startsWith('/bootswatch/5.')) return '5.1.3';
+    if (type.startsWith('/bootswatch/5.')) return '5.2.0';
     if (type.startsWith('/bowser/')) {
         if (version !== 'latest' && helpers.compareVersion('1.9.4', version)) return '1.9.4';
         return '2.11.0';
@@ -166,7 +166,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bulma/0.')) return '0.9.4';
     if (type.startsWith('/bxslider/4.')) return '4.2.15';
     if (type.startsWith('/Chart.js/2.')) return '2.9.4';
-    if (type.startsWith('/Chart.js/3.')) return '3.8.0';
+    if (type.startsWith('/Chart.js/3.')) return '3.9.1';
     if (type.startsWith('/clappr/0.') || type.startsWith('/clappr/latest/')) return '0.4.7';
     if (type.startsWith('/chosen/1.')) return '1.8.7';
     if (type.startsWith('/clipboard.js/1.')) return '1.7.1';
@@ -185,7 +185,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/dexie/3.') || type.startsWith('/dexie/latest')) return '3.2.2';
     if (type.startsWith('/docsearch.js/2.')) return '2.6.3';
     if (type.startsWith('/docsify/4.') || type.startsWith('/docsify/')) return '4.12.2';
-    if (type.startsWith('/docsify-themeable/0.')) return '0.8.6';
+    if (type.startsWith('/docsify-themeable/0.')) return '0.9.0';
     if (type.startsWith('/drawer/3.')) return '3.2.2';
     if (type.startsWith('/dygraph/1.')) return '1.1.1';
     if (type.startsWith('/dygraph/2.')) return '2.1.0';
@@ -198,7 +198,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/findify')) {
         if (helpers.compareVersion('6.9.15', version)) return '6.9.15'; // <= 6.9.15
         if (helpers.compareVersion('6.17.0', version)) return '6.17.0'; // > 6.9.15 to <= 6.17.0
-        return '7.1.55';
+        return '7.1.56';
     }
     if (type.startsWith('/fancybox/2.')) return '2.1.7';
     if (type.startsWith('/fancybox/3.')) return '3.5.7';
@@ -209,7 +209,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/font-awesome/3.')) return '3.2.1';
     if (type.startsWith('/font-awesome/4.')) return '4.7.0';
     if (type.startsWith('/font-awesome/5.')) return '5.15.4';
-    if (type.startsWith('/font-awesome/6.')) return '6.1.1';
+    if (type.startsWith('/font-awesome/6.')) return '6.1.2';
     if (type.startsWith('/fork-awesome/1.')) return '1.2.0';
     if (type.startsWith('/foundation/5.')) return '5.5.3';
     if (type.startsWith('/foundation/6.')) return '6.7.5';
@@ -235,7 +235,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/history/4.')) return '4.10.1';
     if (type.startsWith('/history/5.')) return '5.3.0';
     if (type.startsWith('/hls.js/0.')) return '0.14.17';
-    if (type.startsWith('/hls.js/1.')) return '1.1.5';
+    if (type.startsWith('/hls.js/1.')) return '1.2.0';
     if (type.startsWith('/hogan.js/')) return '3.0.2';
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
@@ -261,7 +261,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jqueryui/1.')) {
         if (helpers.compareVersion('1.8.24', version)) return '1.8.24'; // <= v1.8.24
         if (helpers.compareVersion('1.10.0', version)) return '1.10.0'; // > v1.8.24 to <= v1.10.0
-        return '1.12.1'; // >= 1.8.19
+        return '1.13.2'; // >= 1.8.19
     }
     if (type.startsWith('/jquery-ajax-unobtrusive/3.')) return '3.2.6';
     if (type.startsWith('/jquery.blockUI/2.')) return '2.70';
@@ -300,11 +300,14 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/lazysizes/4.')) return '4.1.8';
     if (type.startsWith('/lazysizes/5.')) return '5.3.2';
     if (type.startsWith('/leaflet/0.')) return '0.7.7';
-    if (type.startsWith('/leaflet/1.')) return '1.8.0';
+    if (type.startsWith('/leaflet/1.')) {
+        if (helpers.compareVersion('1.7.1', version)) return '1.7.1'; // <= v1.7.1
+        return '1.8.0';
+    }
     if (type.startsWith('/Leaflet.EasyButton/2.')) return '2.4.0';
     if (type.startsWith('/leaflet.featuregroup.subgroup/1.')) return '1.0.2';
     if (type.startsWith('/leaflet.markercluster/1.')) return '1.5.3';
-    if (type.startsWith('/libphonenumber-js/1.')) return '1.10.9';
+    if (type.startsWith('/libphonenumber-js/1.')) return '1.10.11';
     if (type.startsWith('/libsodium-wrappers/0.')) return '0.5.4';
     if (type.startsWith('/lightbox2/2.')) return '2.11.3';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
@@ -313,6 +316,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/lodash.js/3.')) return '3.10.1';
     if (type.startsWith('/lodash.js/4.')) return '4.17.21';
     if (type.startsWith('/lozad')) return '1.16.0';
+    if (type.startsWith('/lunr.js/2.')) return '2.3.9';
     if (type.startsWith('/magnific-popup.js/1.')) return '1.1.0';
     if (type.startsWith('/markdown-it/')) return '13.0.1';
     if (type.startsWith('/mdbootstrap/4.')) return '4.20.0';
@@ -328,7 +332,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/mathjax/2.') || type.startsWith('/mathjax/latest')) return '2.7.5';
     if (type.startsWith('/mathjax/3.')) return '3.2.2';
     if (type.startsWith('/mdb-ui-kit/3.')) return '3.11.0';
-    if (type.startsWith('/mdb-ui-kit/4.')) return '4.3.0';
+    if (type.startsWith('/mdb-ui-kit/4.')) return '4.4.0';
     if (type.startsWith('/mobile/1.')) return '1.4.5';
     if (type.startsWith('/Modaal/0.')) return '0.4.4';
     if (type.startsWith('/modernizr/2.')) return '2.8.3';
@@ -343,6 +347,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/ngx-bootstrap/6.')) return '6.2.0';
     if (type.startsWith('/ngx-bootstrap/7.')) return '7.1.2';
     if (type.startsWith('/ngx-bootstrap/8.')) return '8.0.0';
+    if (type.startsWith('/ngx-bootstrap/9.')) return '9.0.0';
     if (type.startsWith('/noUiSlider/14.')) return '14.7.0';
     if (type.startsWith('/noUiSlider/15.')) return '15.6.0';
     if (type.startsWith('/nvd3/1.')) return '1.8.6';
@@ -372,6 +377,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-dom/16.')) return '16.14.0';
     if (type.startsWith('/react-dom/17.')) return '17.0.2';
     if (type.startsWith('/react-dom/18.')) return '18.2.0';
+    if (type.startsWith('/react-intl/5.')) return '6.0.5';
+    if (type.startsWith('/react-intl/6.')) return '6.0.5';
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.0.2';
     if (type.startsWith('/react-router/5.')) return '5.3.3';
@@ -415,10 +422,10 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Swiper/5.')) return '5.4.5';
     if (type.startsWith('/Swiper/6.')) return '6.8.4';
     if (type.startsWith('/Swiper/7.')) return '7.4.1';
-    if (type.startsWith('/Swiper/8.') || type.startsWith('/Swiper/')) return '8.3.1';
+    if (type.startsWith('/Swiper/8.') || type.startsWith('/Swiper/')) return '8.3.2';
     if (type.startsWith('/tether/1.')) return '1.4.7';
     if (type.startsWith('/tinymce/5.')) return '5.10.5';
-    if (type.startsWith('/tinymce/6.')) return '6.1.0';
+    if (type.startsWith('/tinymce/6.')) return '6.1.2';
     if (type.startsWith('/tooltipster/3.')) return '3.3.0';
     if (type.startsWith('/tooltipster/4.')) return '4.2.8';
     if (type.startsWith('/toastr.js/2.') || type.startsWith('/toastr.js/latest/')) return '2.1.4';
@@ -442,13 +449,13 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/video.js/')) {
         if (helpers.compareVersion('5.20.5', version)) return '5.20.5'; // <= 5.20.5
         if (helpers.compareVersion('6.13.0', version)) return '6.13.0'; // > 5.20.5 to <= 6.13.0
-        return '7.20.1';
+        return '7.20.2';
     }
     if (type.startsWith('/vue/1.')) return '1.0.28';
     if (type.startsWith('/vue/2.')) return '2.6.14';
     if (type.startsWith('/vue/3.')) return '3.2.37';
     if (type.startsWith('/vue-i18n/8.')) return '8.27.2';
-    if (type.startsWith('/vue-i18n/9.')) return '9.1.10';
+    if (type.startsWith('/vue-i18n/9.')) return '9.2.2';
     if (type.startsWith('/vue-match-media/1.')) return '1.0.3';
     if (type.startsWith('/vue-resource/1.')) return '1.5.3';
     if (type.startsWith('/vuex/3.')) return '3.6.2';
@@ -469,6 +476,8 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'react-intl.iife.min.jsm': 'react-intl',
+    'lunr.min.jsm': 'lunr.js',
     'jquery.scrollTo.min.jsm': 'jQuery.scrollTo',
     'twix.min.jsm': 'twix.js',
     'angular-locale_en-us.min.jsm': 'angular-i18n',

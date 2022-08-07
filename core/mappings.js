@@ -385,6 +385,7 @@ mappings.cdn = {
             'lightgallery/{version}/css/lightgallery.': resources.lightGalleryCSS,
             'lodash.js/{version}/lodash.': resources.lodashJS,
             'lozad.js/{version}/lozad.': resources.lozad,
+            'lunr.js/{version}/lunr.': resources.lunrJS,
             'magnific-popup.js/{version}/jquery.magnific-popup.min.js': resources.magnificPopupJS,
             'magnific-popup.js/{version}/jquery.magnific-popup.js': resources.magnificPopupJS,
             'magnific-popup.js/{version}/magnific-popup.css': resources.magnificPopupCSS,
@@ -618,6 +619,7 @@ mappings.cdn = {
             'leaflet.featuregroup.subgroup@{version}/dist/leaflet.featuregroup.subgroup.': resources.leafletFeatureGroupSubGroup,
             'lodash@{version}/lodash.min.js': resources.lodashJS,
             'lozad': resources.lozad,
+            'lunr@{version}/lunr.': resources.lunrJS,
             'npm-modernizr@{version}/modernizr.': resources.modernizr,
             'npm-modernizr@{version}/modernizr.min.': resources.modernizr,
             'markdown-it@{version}/dist/markdown-it.': resources.markdownIt,
@@ -642,6 +644,7 @@ mappings.cdn = {
             'purecss@{version}/build/': resources.pureCSS,
             'redux@{version}/dist/redux.': resources.redux,
             'react-dom@{version}/umd/react-dom.production.min.js': resources.reactDOM,
+            'react-intl@{version}/react-intl.iife.': resources.reactIntl,
             'react@{version}/umd/react.production.min.js': resources.react,
             'search-insights@{version}/dist/search-insights.': resources.searchInsights,
             'select2@{version}/': resources.select2,
@@ -1168,6 +1171,14 @@ mappings.cdn['cdn.bootcdn.net'] = mappings.cdn['cdnjs.cloudflare.com'];
 
 // CDN for the "Block Google Fonts" option (see: https://codeberg.org/nobody/LocalCDN/issues/269)
 mappings.cdn['fonts.gstatic.com'] = mappings.cdn['fonts.googleapis.com'];
+
+
+// Remove Google Fonts Endpoints for Chromium browsers (https://codeberg.org/nobody/LocalCDN/issues/1085)
+if (!BrowserType.FIREFOX) {
+    delete mappings.cdn['fonts.gstatic.com'];
+    delete mappings.cdn['fonts.googleapis.com'];
+}
+
 
 /**
  * List of CNAME CDNs

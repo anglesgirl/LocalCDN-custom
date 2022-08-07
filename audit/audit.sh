@@ -716,6 +716,8 @@ function create_url() {
         url="$CREATEJS/$version/createjs.min.js"
     elif [ "$folder" = "moment.js" ] && [ "$version" = "2.5.1" ];then
         url="$CLOUDFLARE/$folder/$version/moment-with-langs.min.js"
+    elif [ "$folder" = "react-intl" ]; then
+        url="$JSDELIVR/npm/react-intl@$version/react-intl.iife.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

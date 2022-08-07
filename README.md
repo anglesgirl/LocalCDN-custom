@@ -10,7 +10,7 @@ LocalCDN is a fork of Decentraleyes and a web browser extension that emulates Co
 * Removes integrity and crossorigin tags from embedded script and style elements to replace even more frameworks <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
 * Font Awesome  <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
 * Google Material Icons <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
-* jQuery up to 3.5.1 <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
+* jQuery <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
 * Bootstrap CSS <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
 * Bootstrap JavaScript <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
 * AngularJS, AngularJS-Animate, AngularJS-Sanitize, AngularJS-Cookies and AngularJS-Touch <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
@@ -18,7 +18,7 @@ LocalCDN is a fork of Decentraleyes and a web browser extension that emulates Co
 * MathJax (minimal) <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
 * TinyMCE (without plugins) <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
 * Internal statistics about CDNs and frameworks (day, week, month, year) <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* Export/Import your config (day, week, month, year) <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
+* Export/Import your config <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
 * Prepared rules for uBlock Origin, uMatrix, AdGuard and NoScript <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
 
 > **Note:** LocalCDN is no silver bullet, but it does prevent a lot of websites from making you send these kinds of requests. Ultimately, you can make LocalCDN block requests for any missing CDN resources, too.
