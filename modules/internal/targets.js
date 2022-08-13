@@ -363,7 +363,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/paginationjs/2.')) return '2.1.5';
     if (type.startsWith('/plyr/3.')) return '3.7.2';
     if (type.startsWith('/popper.js/1.')) return '1.16.1';
-    if (type.startsWith('/popper.js/2.')) return '2.11.5';
+    if (type.startsWith('/popper.js/2.')) return '2.11.6';
     if (type.startsWith('/prop-types/15.')) return '15.8.1';
     if (type.startsWith('/protonet-jquery.inview/1.')) return '1.1.2';
     if (type.startsWith('/prototype/1.')) return '1.7.3';
