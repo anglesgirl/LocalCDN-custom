@@ -377,8 +377,10 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-dom/16.')) return '16.14.0';
     if (type.startsWith('/react-dom/17.')) return '17.0.2';
     if (type.startsWith('/react-dom/18.')) return '18.2.0';
-    if (type.startsWith('/react-intl/5.')) return '6.0.5';
-    if (type.startsWith('/react-intl/6.')) return '6.0.5';
+    if (type.startsWith('/react-intl/')) {
+        // NOTE: Parameters swapped. (= anything greater than v5.0.0)
+        if (helpers.compareVersion(version, '5.0.0')) return '6.0.8'; // >= v5.0.0
+    }
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.0.2';
     if (type.startsWith('/react-router/5.')) return '5.3.3';
