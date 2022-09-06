@@ -610,6 +610,7 @@ mappings.cdn = {
             'instantsearch.js@{version}/dist/instantsearch.production.': resources.InstantSearchJS,
             'instantsearch.js@{version}': resources.InstantSearchJS,
             'instantsearch.css@{version}': resources.InstantSearchCSS,
+            'in-view@{version}/dist/in-view.min.js': resources.inView,
             'jquery@{version}/dist/jquery.': resources.jQuery,
             'jquery@{version}/dist/jquery.min.': resources.jQuery,
             'jquery.scrollto@{version}/jquery.scrollTo.': resources.jQueryScrollTo,

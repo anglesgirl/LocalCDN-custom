@@ -240,6 +240,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
     if (type.startsWith('/instantsearch.js/4.')) return '4.45.0';
+    if (type.startsWith('/in-view/0.')) return '0.6.1';
     if (type.startsWith('/iScroll/5.')) return '5.2.0';
     if (type.startsWith('/izimodal/1.')) return '1.6.1';
     if (type.startsWith('/jets/0.')) return '0.14.1';
@@ -481,6 +482,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'in-view.min.jsm': 'in-view',
     'jquery.minicolors.min.jsm': 'jquery-minicolors (JS)',
     'jquery.minicolors.min.css': 'jquery-minicolors (CSS)',
     'jquery.Jcrop.min.jsm': 'jquery-jcrop (JS)',

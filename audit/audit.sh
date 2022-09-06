@@ -718,6 +718,8 @@ function create_url() {
         url="$CLOUDFLARE/$folder/$version/moment-with-langs.min.js"
     elif [ "$folder" = "react-intl" ]; then
         url="$JSDELIVR/npm/react-intl@$version/react-intl.iife.min.js"
+    elif [ "$folder" = "in-view" ]; then
+        url="$JSDELIVR/npm/in-view@$version/dist/in-view.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then
