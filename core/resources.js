@@ -584,6 +584,13 @@ var resources = {
     'jQueryMigrate': {
         'path': 'resources/jquery-migrate/{version}/jquery-migrate.min.jsm'
     },
+    // jquery-minicolors
+    'jqueryMinicolorsJS': {
+        'path': 'resources/jquery-minicolors/{version}/jquery.minicolors.min.jsm'
+    },
+    'jqueryMinicolorsCSS': {
+        'path': 'resources/jquery-minicolors/{version}/jquery.minicolors.min.css'
+    },
     // jQuery Modal [Deprecated]
     'jQueryModalJS': {
         'path': 'resources/jquery-modal/{version}/jquery.modal.min.jsm'
