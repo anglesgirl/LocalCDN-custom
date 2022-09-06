@@ -341,6 +341,8 @@ mappings.cdn = {
             'jquery-csv/{version}/jquery.csv.min.js': resources.jQueryCSV,
             'jquery.cycle2/{version}/': resources.jqueryCycle2,
             'jquery-easing/{version}/jquery.easing.': resources.jQueryEasing,
+            'jquery-jcrop/{version}/css/jquery.Jcrop.': resources.jqueryJcropCSS,
+            'jquery-jcrop/{version}/js/jquery.Jcrop.': resources.jqueryJcropJS,
             'jquery.lazyload/{version}/jquery.lazyload.min.js': resources.jQueryLazyLoad,
             'jquery.lazy/{version}/': resources.jQueryLazyBundle,
             'jquery.matchHeight/{version}/jquery.matchHeight-min.js': resources.jqueryMatchHeightJS,

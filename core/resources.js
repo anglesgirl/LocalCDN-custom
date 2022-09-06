@@ -561,6 +561,13 @@ var resources = {
     'jQueryEasing': {
         'path': 'resources/jquery-easing/{version}/jquery.easing.min.jsm'
     },
+    // jquery-jcrop
+    'jqueryJcropJS': {
+        'path': 'resources/jquery-jcrop/{version}/js/jquery.Jcrop.min.jsm'
+    },
+    'jqueryJcropCSS': {
+        'path': 'resources/jquery-jcrop/{version}/css/jquery.Jcrop.min.css'
+    },
     // jQuery Lazy Load [Deprecated]
     'jQueryLazyLoad': {
         'path': 'resources/jquery.lazyload/{version}/jquery.lazyload.min.jsm'

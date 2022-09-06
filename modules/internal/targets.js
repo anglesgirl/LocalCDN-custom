@@ -268,6 +268,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery-cookie/1.')) return '1.4.1';
     if (type.startsWith('/jquery-csv/1.')) return '1.0.21';
     if (type.startsWith('/jquery-easing/1.')) return '1.4.1';
+    if (type.startsWith('/jquery-jcrop/0.')) return '0.9.15';
     if (type.startsWith('/jquery.lazyload/1.')) return '1.9.1';
     if (type.startsWith('/jquery.lazy/1.')) return '1.7.11';
     if (type.startsWith('/jquery.matchHeight/0.')) return '0.7.2';
@@ -479,6 +480,8 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'jquery.Jcrop.min.jsm': 'jquery-jcrop (JS)',
+    'jquery.Jcrop.min.css': 'jquery-jcrop (CSS)',
     'react-intl.iife.min.jsm': 'react-intl',
     'lunr.min.jsm': 'lunr.js',
     'jquery.scrollTo.min.jsm': 'jQuery.scrollTo',
