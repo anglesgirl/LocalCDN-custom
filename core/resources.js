@@ -506,6 +506,10 @@ var resources = {
     'InstantSearchCSS': {
         'path': 'resources/instantsearch.css/{version}/algolia-min.css'
     },
+    // in-view [Deprecated]
+    'inView': {
+        'path': 'resources/in-view/{version}/in-view.min.jsm'
+    },
     // iScroll [Deprecated]
     'iScroll': {
         'path': 'resources/iScroll/{version}/iscroll.min.jsm'
@@ -561,6 +565,13 @@ var resources = {
     'jQueryEasing': {
         'path': 'resources/jquery-easing/{version}/jquery.easing.min.jsm'
     },
+    // jquery-jcrop
+    'jqueryJcropJS': {
+        'path': 'resources/jquery-jcrop/{version}/js/jquery.Jcrop.min.jsm'
+    },
+    'jqueryJcropCSS': {
+        'path': 'resources/jquery-jcrop/{version}/css/jquery.Jcrop.min.css'
+    },
     // jQuery Lazy Load [Deprecated]
     'jQueryLazyLoad': {
         'path': 'resources/jquery.lazyload/{version}/jquery.lazyload.min.jsm'
@@ -576,6 +587,13 @@ var resources = {
     // jQuery Migrate
     'jQueryMigrate': {
         'path': 'resources/jquery-migrate/{version}/jquery-migrate.min.jsm'
+    },
+    // jquery-minicolors
+    'jqueryMinicolorsJS': {
+        'path': 'resources/jquery-minicolors/{version}/jquery.minicolors.min.jsm'
+    },
+    'jqueryMinicolorsCSS': {
+        'path': 'resources/jquery-minicolors/{version}/jquery.minicolors.min.css'
     },
     // jQuery Modal [Deprecated]
     'jQueryModalJS': {
