@@ -158,7 +158,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootstrap-3-typeahead/4.')) return '4.0.2';
     if (type.startsWith('/bootswatch/3.')) return '3.4.0';
     if (type.startsWith('/bootswatch/4.')) return '4.6.1';
-    if (type.startsWith('/bootswatch/5.')) return '5.2.0';
+    if (type.startsWith('/bootswatch/5.')) return '5.2.1';
     if (type.startsWith('/bowser/')) {
         if (version !== 'latest' && helpers.compareVersion('1.9.4', version)) return '1.9.4';
         return '2.11.0';
