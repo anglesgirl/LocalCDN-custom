@@ -202,9 +202,6 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
                 break;
             }
 
-            console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${targetPath}`);
-            log.append(initiator, channelHost + channelPath, targetPath, false);
-
             // Prepare and return a local target.
             return {
                 'source': channelHost,

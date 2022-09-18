@@ -33,6 +33,13 @@ var interceptor = {};
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed;
 
+    if (requestDetails['type'] === WebRequestType.MAIN_FRAME &&
+        helpers.checkAllowlisted(tab.url, requestAnalyzer.allowlistedDomains)) {
+        return {
+            'cancel': false
+        };
+    }
+
     targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
     if (targetDetails['result'] === 'blocked') {
         return {
@@ -84,6 +91,9 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
         }
         return interceptor._handleMissingCandidate(requestDetails.url, tabIdentifier);
     }
+
+    console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${targetDetails.path}`);
+    log.append(tab.url, requestDetails.url, targetDetails.path, false);
 
     return {
         'redirectUrl': chrome.runtime.getURL(targetDetails.path + fileGuard.secret)
