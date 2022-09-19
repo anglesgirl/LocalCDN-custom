@@ -34,7 +34,10 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed;
 
     if (requestDetails['type'] === WebRequestType.MAIN_FRAME &&
-        helpers.checkAllowlisted(tab.url, requestAnalyzer.allowlistedDomains)) {
+        helpers.checkAllowlisted(
+            helpers.extractDomainFromUrl(tab.url, true),
+            requestAnalyzer.allowlistedDomains
+        )) {
         return {
             'cancel': false
         };
