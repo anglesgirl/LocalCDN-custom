@@ -1248,8 +1248,8 @@ https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css
 https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js
 https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css
 https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js
-https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.0/leaflet.css
-https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.0/leaflet.js
+https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.1/leaflet.css
+https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.1/leaflet.js
 https://cdnjs.cloudflare.com/ajax/libs/Leaflet.EasyButton/2.4.0/easy-button.min.js
 https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js
 https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.10.13/libphonenumber-js.min.js
