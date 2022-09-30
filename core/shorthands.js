@@ -245,6 +245,17 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': `resources/createjs/${lastVersion}/createjs.min.jsm`,
             'bundle': ''
         };
+    } else if (CompleteURL.startsWith('cdnjs.cloudflare.com/ajax/libs/gsap/latest/')) {
+        if (channelPath.endsWith('js')) {
+            channelPath += 'm';
+        }
+        lastVersion = '1.20.5';
+        return {
+            'source': channelHost,
+            'versionDelivered': lastVersion,
+            'path': `resources/gsap/${lastVersion}/${helpers.extractFilenameFromPath(channelPath)}`,
+            'bundle': 'GSAP'
+        };
     }
     return {
         'result': false,
