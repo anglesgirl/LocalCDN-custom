@@ -55,6 +55,7 @@
 # Exceptions:
 #   /resources/*/note
 #   /resources/google-material-design-icons/google-material-design-icons.css
+#   /resources/blocked/*
 #
 # =============================================================================
 # WHY ARE THESE FILES EXCLUDED?
@@ -68,6 +69,10 @@
 #
 # /resources/*/note                 These files contain notes if a file has
 #                                   been renamed.
+#
+# /resources/blocked/*              This folder contains files which will be
+#                                   displayed if the direct CDN call is blocked.
+#                                   (https://codeberg.org/nobody/LocalCDN/issues/1050)
 # =============================================================================
 
 
@@ -765,6 +770,7 @@ done < <(find ../resources/ \
     ! -iname "fa-loader.css" \
     ! -iname "google-material-design-icons.css" \
     ! -iname "google-fonts-placeholder.css" \
+    -not -path "../resources/blocked/*" \
     -print0)
 
 

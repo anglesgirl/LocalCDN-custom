@@ -151,7 +151,7 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
 
     // Handle weird version expressions
     if (!versionNumber && Resource.SINGLE_NUMBER_EXPRESSION.test(channelPath)) {
-        versionNumber = channelPath.match(/\d/);
+        versionNumber = channelPath.match(/\d{1,2}/);
         resourcePattern = resourcePath.replaceAll(versionNumber, Resource.VERSION_PLACEHOLDER);
         versionNumber = [`${versionNumber}.0`];
     } else {
