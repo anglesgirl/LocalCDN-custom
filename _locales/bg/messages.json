@@ -236,7 +236,7 @@
         "description": "Never (Silent Updates)"
     },
     "updateNotificationOnlyRules": {
-        "message": "Само при нови мрежи за доставка на съдържание и правила",
+        "message": "Само при добавени мрежи и нови правила",
         "description": "Only if new CDNs and rules"
     },
     "updateNotificationAlways": {
