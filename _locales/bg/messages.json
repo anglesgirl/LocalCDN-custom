@@ -4,7 +4,7 @@
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
-        "message": "Количество на използваните местни ресурси от инсталирането до момента.",
+        "message": "Брой използвани местни ресурси от инсталирането до момента.",
         "description": "Amount injected description."
     },
     "optionsTitle": {
