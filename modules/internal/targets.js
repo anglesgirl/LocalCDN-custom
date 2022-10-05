@@ -305,7 +305,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/leaflet/0.')) return '0.7.7';
     if (type.startsWith('/leaflet/1.')) {
         if (helpers.compareVersion('1.7.1', version)) return '1.7.1'; // <= v1.7.1
-        return '1.9.1';
+        return '1.9.2';
     }
     if (type.startsWith('/Leaflet.EasyButton/2.')) return '2.4.0';
     if (type.startsWith('/leaflet.featuregroup.subgroup/1.')) return '1.0.2';
