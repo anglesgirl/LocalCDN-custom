@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "Защитава от проследяване от мрежите за доставка на съдържание като пренасочва заявките към местни ресурси.",
+        "message": "Защитава от проследяване от страна на мрежите за доставка на съдържание като пренасочва заявките към местни ресурси.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
@@ -20,7 +20,7 @@
         "description": "Show icon badge description."
     },
     "blockMissingTitle": {
-        "message": "Блокиране на заявки за липсващи ресурси",
+        "message": "Спиране на заявки към липсващи ресурси",
         "description": "Block requests for missing resources title"
     },
     "blockMissingDescription": {
@@ -384,7 +384,7 @@
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
-        "message": "",
+        "message": "LocalCDN може да замести материалните икони от Гугъл. За да бъде прехваната заявката, добавката за спиране на реклами (напр. uBlock Origin, uMatrix или AdGuard) трябва да я разреши. LocalCDN слуша за тезт заявки и ако тя е за материални икони от Гугъл, ресурсът ще бъде заменен. Ако махнете отметката „Спиране на заявки към липсващи ресурси“, несъществуващите ресурси ще бъдат допуснати и шрифтове от Гугъл ще бъдат достъпни, защото материалните икони и шрифтовете от Гугъл използват един и същ домейн. Ако не искате това да е така, можете да спрете шрифтовете от Гугъл в LocalCDN.",
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
