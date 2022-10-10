@@ -316,7 +316,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/lightbox2/2.')) return '2.11.3';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
     if (type.startsWith('/lightgallery/1.')) return '1.10.0';
-    if (type.startsWith('/lightgallery/2.')) return '2.6.1';
+    if (type.startsWith('/lightgallery/2.')) return '2.7.0';
     if (type.startsWith('/lodash.js/3.')) return '3.10.1';
     if (type.startsWith('/lodash.js/4.')) return '4.17.21';
     if (type.startsWith('/lozad')) return '1.16.0';
