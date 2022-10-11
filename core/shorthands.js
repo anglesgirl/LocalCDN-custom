@@ -256,6 +256,14 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': `resources/gsap/${lastVersion}/${helpers.extractFilenameFromPath(channelPath)}`,
             'bundle': 'GSAP'
         };
+    } else if (CompleteURL.startsWith('cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.')) {
+        return {
+            'source': channelHost,
+            'versionDelivered': 'latest',
+            'versionRequested': 'latest',
+            'path': 'resources/google-material-design-icons/google-material-design-icons.css',
+            'bundle': ''
+        };
     }
     return {
         'result': false,
