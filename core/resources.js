@@ -892,6 +892,13 @@ var resources = {
     'pureCSS': {
         'path': 'resources/pure/{version}/'
     },
+    // rangeslider.js
+    'rangesliderJS': {
+        'path': 'resources/rangeslider.js/{version}/rangeslider.min.jsm'
+    },
+    'rangesliderCSS': {
+        'path': 'resources/rangeslider.js/{version}/rangeslider.min.css'
+    },
     // Raven.js
     'ravenJS': {
         'path': 'resources/raven.js/{version}/raven.min.jsm'

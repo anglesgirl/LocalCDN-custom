@@ -1445,6 +1445,8 @@ https://cdnjs.cloudflare.com/ajax/libs/pure/2.1.0/menus-skin.min.css
 https://cdnjs.cloudflare.com/ajax/libs/pure/2.1.0/pure.min.css
 https://cdnjs.cloudflare.com/ajax/libs/pure/2.1.0/pure-nr.min.css
 https://cdnjs.cloudflare.com/ajax/libs/pure/2.1.0/tables.min.css
+https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.css
+https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react/16.14.0/umd/react.production.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js
