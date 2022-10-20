@@ -300,7 +300,7 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "LocalCDN е разширение, което емулира мрежи за доставка на съдържание, за да подобри поверителността ви в мрежата. То прихваща трафика, намира местно наличните софтуерни рамки/библиотеки и ги предоставя за използване от страницата. Чувствайте се свободни да използвате следния инструмент за изпробване, за да разберете дали сте защитени. За повече информация прочетете ръководството или документацията.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
@@ -316,7 +316,7 @@
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "",
+        "message": "В повечето случаи LocalCDN може лесно да замени използваните софтуерни рамки и да подобри поверителността. В някои случаи страницатс може да се опита да предотврати това чрез задаване на определени атрибути в изходния код на HTML. LocalCDN чете изходния код на HTML преди да бъде показан и премахва тази атрибути (в червено).",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
@@ -344,7 +344,7 @@
         "description": "Unfortunately, it sometimes happens that special characters are then displayed incorrectly. In this case you can deactivate the setting again, to display the umlauts correctly."
     },
     "helpRuleGeneratorDescription": {
-        "message": "",
+        "message": "Ако искате заявките към поддържаните мрежи за доставка на съдържание (МДС) автоматично да бъдат пренасочвани към LocalCDN, можете да добавите тези правила към приложението за спиране на реклами, за да разрешите тези пренасочвания. Ако не искате да добавяте тези правила, трябва да разрешавате всяка заява МДС поотделно за всяка страница.",
         "description": "If you want to automatically redirect all supported CDN connections to LocalCDN, you can add these rules to your adblocker to allow these redirections. If you do not want to add these rules, you must allow each CDN connection individually for each website."
     },
     "helpRuleGeneratorUblockTitle": {
@@ -392,7 +392,7 @@
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
-        "message": "",
+        "message": "Статистиката не съдържа информация за мрежовия четец, операционната система, страницата, от която идва заявката, IP адреси или друга информация. Само дата, брояч на мрежа за доставка на съдържание (МДС) и брояч на софтуерни рамки. Статистиката показва кои софтуени рамки са заменени от LocalCDN колко често и кои МДС са били поискани.",
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
@@ -408,7 +408,7 @@
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "",
+        "message": "Синхронизацията ще работи само ако сте влезли във Firefox Account на устройството и сте разрешили синхронизирането на добавките в настройките. Отделен сървър за синхронизиране под ваш контрол също ще работи. По такъв начин ще бъдат синхронизирани повечето от настройките на LocalCDN на всички устройства.",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {
