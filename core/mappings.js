@@ -520,6 +520,7 @@ mappings.cdn = {
             'waypoints/{version}/shortcuts/infinite.': resources.jQueryWaypoints,
             'waypoints/{version}/shortcuts/inview.': resources.jQueryWaypoints,
             'waypoints/{version}/shortcuts/sticky.': resources.jQueryWaypoints,
+            'webcomponentsjs/{version}/webcomponents-loader.': resources.webcomponentsJS,
             'webfont/{version}/webfont.js': resources.webfontloader,
             'webfont/{version}/webfontloader.js': resources.webfontloader,
             'webrtc-adapter/{version}/adapter.min.js': resources.webRTCadapter,
