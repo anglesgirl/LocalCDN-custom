@@ -471,6 +471,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vuex/3.')) return '3.6.2';
     if (type.startsWith('/vuex/4.')) return '4.1.0';
     if (type.startsWith('/waypoints/4.')) return '4.0.1';
+    if (type.startsWith('/webcomponentsjs/')) return '2.7.0';
     if (type.startsWith('/webfont')) return '1.6.28';
     if (type.startsWith('/webrtc-adapter/6.')) return '6.4.8';
     if (type.startsWith('/webrtc-adapter/7.')) return '7.7.1';
