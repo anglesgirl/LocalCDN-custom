@@ -197,6 +197,9 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
             bundle = targets.determineBundle(targetPath);
             if (bundle !== '') {
                 targetPath = requestAnalyzer._getPathOfBundle(initiator, channelHost, channelPath, targetPath, bundle);
+                if (bundle === 'vex (Bundle)' && !targetPath.endsWith('.min.css') && targetPath.endsWith('.css')) {
+                    targetPath = targetPath.replace('.css', '.min.css');
+                }
             }
             if (targetPath['result'] === false) {
                 break;
