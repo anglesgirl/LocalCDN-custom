@@ -267,6 +267,7 @@ targets.setLastVersion = function (type, version) {
     }
     if (type.startsWith('/jquery-ajax-unobtrusive/3.')) return '3.2.6';
     if (type.startsWith('/jquery.blockUI/2.')) return '2.70';
+    if (type.startsWith('/jquery.colorbox/1.')) return '1.6.4';
     if (type.startsWith('/jquery-cookie/1.')) return '1.4.1';
     if (type.startsWith('/jquery-csv/1.')) return '1.0.21';
     if (type.startsWith('/jquery-easing/1.')) return '1.4.1';
@@ -485,6 +486,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'jquery.colorbox-min.jsm': 'Colorbox',
     'rangeslider.min.css': 'rangeslider.js (CSS)',
     'rangeslider.min.jsm': 'rangeslider.js (JS)',
     'in-view.min.jsm': 'in-view',

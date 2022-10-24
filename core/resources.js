@@ -553,6 +553,10 @@ var resources = {
     'jqueryCycle2': {
         'path': 'resources/jquery.cycle2/{version}/'
     },
+    // Colorbox
+    'jqueryColorbox': {
+        'path': 'resources/jquery.colorbox/{version}/jquery.colorbox-min.jsm'
+    },
     // jquery.cookie [Deprecated]
     'jqueryCookie': {
         'path': 'resources/jquery-cookie/{version}/jquery.cookie.min.jsm'

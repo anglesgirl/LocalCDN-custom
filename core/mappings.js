@@ -338,6 +338,7 @@ mappings.cdn = {
             'jquery-ajax-unobtrusive/{version}/jquery.unobtrusive-ajax.': resources.jqueryAjaxUnobtrusive,
             'jquery.devbridge-autocomplete/{version}/jquery.autocomplete.min.js': resources.jQueryAjaxAutoComplete,
             'jquery.blockUI/{version}/jquery.blockUI.min.js': resources.jQueryBlockUI,
+            'jquery.colorbox/{version}/jquery.colorbox': resources.jqueryColorbox,
             'jquery-csv/{version}/jquery.csv.min.js': resources.jQueryCSV,
             'jquery.cycle2/{version}/': resources.jqueryCycle2,
             'jquery-easing/{version}/jquery.easing.': resources.jQueryEasing,
