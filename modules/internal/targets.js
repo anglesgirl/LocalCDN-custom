@@ -82,7 +82,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/algoliasearch/3.')) return '3.35.1';
     if (type.startsWith('/algoliasearch/4.')) return '4.14.2';
     if (type.startsWith('/alpinejs/2.')) return '2.8.2';
-    if (type.startsWith('/alpinejs/3.')) return '3.10.4';
+    if (type.startsWith('/alpinejs/3.')) return '3.10.5';
     if (type.startsWith('/anchor-js/3.')) return '3.2.2';
     if (type.startsWith('/anchor-js/4.')) return '4.3.1';
     if (type.startsWith('/angular.js/1.')) {
@@ -155,7 +155,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootstrap-select/1.')) return '1.13.18';
     if (type.startsWith('/bootstrap-table/1.')) return '1.21.1';
     if (type.startsWith('/bootstrap-toggle/2.')) return '2.2.2';
-    if (type.startsWith('/bootstrap-vue/2.')) return '2.22.0';
+    if (type.startsWith('/bootstrap-vue/2.')) return '2.23.1';
     if (type.startsWith('/bootstrap-3-typeahead/4.')) return '4.0.2';
     if (type.startsWith('/bootswatch/3.')) return '3.4.0';
     if (type.startsWith('/bootswatch/4.')) return '4.6.1';
@@ -182,10 +182,10 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/d3/7.')) return '7.6.1';
     if (type.startsWith('/d3-legend/2.')) return '2.25.6';
     if (type.startsWith('/datatables/1.')) return '1.11.0';
-    if (type.startsWith('/dayjs/1.')) return '1.11.5';
+    if (type.startsWith('/dayjs/1.')) return '1.11.6';
     if (type.startsWith('/dexie/3.') || type.startsWith('/dexie/latest')) return '3.2.2';
     if (type.startsWith('/docsearch.js/2.')) return '2.6.3';
-    if (type.startsWith('/docsify/4.') || type.startsWith('/docsify/')) return '4.12.2';
+    if (type.startsWith('/docsify/4.') || type.startsWith('/docsify/')) return '4.13.0';
     if (type.startsWith('/docsify-themeable/0.')) return '0.9.0';
     if (type.startsWith('/drawer/3.')) return '3.2.2';
     if (type.startsWith('/dygraph/1.')) return '1.1.1';
@@ -199,7 +199,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/findify')) {
         if (helpers.compareVersion('6.9.15', version)) return '6.9.15'; // <= 6.9.15
         if (helpers.compareVersion('6.17.0', version)) return '6.17.0'; // > 6.9.15 to <= 6.17.0
-        return '7.1.62';
+        return '7.1.63';
     }
     if (type.startsWith('/fancybox/2.')) return '2.1.7';
     if (type.startsWith('/fancybox/3.')) return '3.5.7';
@@ -240,7 +240,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/hogan.js/')) return '3.0.2';
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
-    if (type.startsWith('/instantsearch.js/4.')) return '4.48.0';
+    if (type.startsWith('/instantsearch.js/4.')) return '4.49.0';
     if (type.startsWith('/in-view/0.')) return '0.6.1';
     if (type.startsWith('/iScroll/5.')) return '5.2.0';
     if (type.startsWith('/izimodal/1.')) return '1.6.1';
@@ -267,6 +267,7 @@ targets.setLastVersion = function (type, version) {
     }
     if (type.startsWith('/jquery-ajax-unobtrusive/3.')) return '3.2.6';
     if (type.startsWith('/jquery.blockUI/2.')) return '2.70';
+    if (type.startsWith('/jquery.colorbox/1.')) return '1.6.4';
     if (type.startsWith('/jquery-cookie/1.')) return '1.4.1';
     if (type.startsWith('/jquery-csv/1.')) return '1.0.21';
     if (type.startsWith('/jquery-easing/1.')) return '1.4.1';
@@ -363,7 +364,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/owl-carousel/2.')) return '2.3.4';
     if (type.startsWith('/p2p-media-loader-core') || type.startsWith('/p2p-media-loader-hlsjs')) return '0.6.2';
     if (type.startsWith('/p5.js/0.')) return '0.10.2';
-    if (type.startsWith('/p5.js/1.')) return '1.4.2';
+    if (type.startsWith('/p5.js/1.')) return '1.5.0';
     if (type.startsWith('/page.js/1.')) return '1.11.6';
     if (type.startsWith('/paginationjs/2.')) return '2.1.5';
     if (type.startsWith('/plyr/3.')) return '3.7.2';
@@ -374,7 +375,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/prototype/1.')) return '1.7.3';
     if (type.startsWith('/pure/0.')) return '0.6.2';
     if (type.startsWith('/pure/1.')) return '1.0.1';
-    if (type.startsWith('/pure/2.')) return '2.1.0';
+    if (type.startsWith('/pure/2.')) return '2.2.0';
+    if (type.startsWith('/pure/3.')) return '3.0.0';
     if (type.startsWith('/rangeslider.js/2.')) return '2.3.3';
     if (type.startsWith('/raven.js/3.')) return '3.27.2';
     if (type.startsWith('/react/16.')) return '16.14.0';
@@ -454,7 +456,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vex-js/4.')) return '4.1.0';
     if (type.startsWith('/videojs-seek-buttons/1.')) return '1.6.0';
     if (type.startsWith('/videojs-seek-buttons/2.')) return '2.2.1';
-    if (type.startsWith('/videojs-seek-buttons/3.')) return '3.0.0';
+    if (type.startsWith('/videojs-seek-buttons/3.')) return '3.0.1';
     if (type.startsWith('/video.js/')) {
         if (helpers.compareVersion('5.20.5', version)) return '5.20.5'; // <= 5.20.5
         if (helpers.compareVersion('6.13.0', version)) return '6.13.0'; // > 5.20.5 to <= 6.13.0
@@ -470,6 +472,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vuex/3.')) return '3.6.2';
     if (type.startsWith('/vuex/4.')) return '4.1.0';
     if (type.startsWith('/waypoints/4.')) return '4.0.1';
+    if (type.startsWith('/webcomponentsjs/')) return '2.7.0';
     if (type.startsWith('/webfont')) return '1.6.28';
     if (type.startsWith('/webrtc-adapter/6.')) return '6.4.8';
     if (type.startsWith('/webrtc-adapter/7.')) return '7.7.1';
@@ -485,6 +488,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'jquery.colorbox-min.jsm': 'Colorbox',
     'rangeslider.min.css': 'rangeslider.js (CSS)',
     'rangeslider.min.jsm': 'rangeslider.js (JS)',
     'in-view.min.jsm': 'in-view',

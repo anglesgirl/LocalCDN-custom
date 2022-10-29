@@ -264,6 +264,15 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': 'resources/google-material-design-icons/google-material-design-icons.css',
             'bundle': ''
         };
+    } else if (CompleteURL.startsWith('cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/webcomponents-loader.')) {
+        lastVersion = targets.setLastVersion('/webcomponentsjs/');
+        return {
+            'source': channelHost,
+            'versionDelivered': lastVersion,
+            'versionRequested': 'latest',
+            'path': `resources/webcomponentsjs/${lastVersion}/webcomponents-loader.min.jsm`,
+            'bundle': ''
+        };
     }
     return {
         'result': false,

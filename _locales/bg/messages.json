@@ -300,7 +300,7 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "LocalCDN е разширение, което емулира мрежи за доставка на съдържание, за да подобри поверителността ви в мрежата. То прихваща трафика, намира местно наличните софтуерни рамки/библиотеки и ги предоставя за използване от страницата. Чувствайте се свободни да използвате следния инструмент за изпробване, за да разберете дали сте защитени. За повече информация прочетете ръководството или документацията.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
@@ -316,7 +316,7 @@
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "",
+        "message": "В повечето случаи LocalCDN може лесно да замени използваните софтуерни рамки и да подобри поверителността. В някои случаи страницатс може да се опита да предотврати това чрез задаване на определени атрибути в изходния код на HTML. LocalCDN чете изходния код на HTML преди да бъде показан и премахва тази атрибути (в червено).",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
@@ -344,7 +344,7 @@
         "description": "Unfortunately, it sometimes happens that special characters are then displayed incorrectly. In this case you can deactivate the setting again, to display the umlauts correctly."
     },
     "helpRuleGeneratorDescription": {
-        "message": "",
+        "message": "Ако искате заявките към поддържаните мрежи за доставка на съдържание (МДС) автоматично да бъдат пренасочвани към LocalCDN, можете да добавите тези правила към приложението за спиране на реклами, за да разрешите тези пренасочвания. Ако не искате да добавяте тези правила, трябва да разрешавате всяка заява МДС поотделно за всяка страница.",
         "description": "If you want to automatically redirect all supported CDN connections to LocalCDN, you can add these rules to your adblocker to allow these redirections. If you do not want to add these rules, you must allow each CDN connection individually for each website."
     },
     "helpRuleGeneratorUblockTitle": {
@@ -352,7 +352,7 @@
         "description": "Only uBlock Origin:"
     },
     "helpRuleGeneratorUblockDescription": {
-        "message": "",
+        "message": "Тези правила са приложими само в режимите „Междинен“ и „Тежък“, тъй като спират всички ресурси на трети страни. Не са необходими в режимите „Стандартен“ и „Лек“. За повече информация посетете документацията на uBlock Origin.",
         "description": "These rules are only relevant in »medium« or »hard« mode, because it blocks all 3rd-party resources. They are not necessary in »default«, »easy« or »very-easy« mode. For more information, please visit the uBlock Origin Wiki."
     },
     "helpRuleGeneratorUblockTableIcon": {
@@ -380,7 +380,7 @@
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
-        "message": "Има две възможни причини: Или има заявка за софтуерна рамка / библиотека, която LocalCDN (все още) не предоставя, или SOP. SOP (Same origin policy - политика за същия произход) е механизъм за сигурност, който определя какви данни е позволено да се зареждат от мрежовия четец. Този механизъм помага да се изолират злонамерени документи и по този начин да се намалят възможните вектори за атака. Тази политика не позволява да бъдат зареждани софтуерните рамки / библиотеките от LocalCDN. За съжаление за момента няма решение за този проблем.",
+        "message": "Има две възможни причини: Или има заявка за софтуерна рамка / библиотека, която LocalCDN (все още) не предоставя, или SOP (Same origin policy - политика за същия произход). Това е механизъм за сигурност, който определя какви данни е позволено да се зареждат от мрежовия четец. Този механизъм помага да се изолират злонамерени документи и по този начин да се намалят възможните вектори за атака. Тази политика не позволява да бъдат зареждани софтуерните рамки / библиотеките от LocalCDN. За съжаление за момента няма решение за този проблем.",
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
@@ -388,11 +388,11 @@
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
-        "message": "",
+        "message": "Не се паникьосвайте, нищо не се изпраща никъде. Това би било против всички мои принципи. Статистиката (под формата на JSON) съдържа следната информация: дата, брояч на мрежа за доставка на съдържание и брояч на софтуерна рамка. Това е всичко. Ето пример:",
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
-        "message": "",
+        "message": "Статистиката не съдържа информация за мрежовия четец, операционната система, страницата, от която идва заявката, IP адреси или друга информация. Само дата, брояч на мрежа за доставка на съдържание (МДС) и брояч на софтуерни рамки. Статистиката показва кои софтуени рамки са заменени от LocalCDN колко често и кои МДС са били поискани.",
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
@@ -408,11 +408,11 @@
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "",
+        "message": "Синхронизацията ще работи само ако сте влезли във Firefox Account на устройството и сте разрешили синхронизирането на добавките в настройките. Отделен сървър за синхронизиране под ваш контрол също ще работи. По такъв начин ще бъдат синхронизирани повечето от настройките на LocalCDN на всички устройства.",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {
-        "message": "",
+        "message": "Ако нямате профил в Sync, нищо няма да бъде синхронизирано. В този случай няма значение какъв вид хранилище ще изберете.",
         "description": "If you don‘t have a sync account, nothing will be synchronized. In that case it makes no difference what type of storage you have selected."
     },
     "helpSyncContentNever": {
