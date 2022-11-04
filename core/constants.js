@@ -336,6 +336,7 @@ const IgnoredHost = {
  * https://codeberg.org/nobody/LocalCDN/issues/75
  */
 const MathJaxFiles = {
+    'latest.js': true,
     'config/default.js': true,
     'config/MML_HTMLorMML.js': true,
     'config/TeX-AMS_CHTML.js': true,
