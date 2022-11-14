@@ -1,5 +1,10 @@
 https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js
 https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js
+https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-cookies.min.js
+https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-loader.min.js
+https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js
+https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js
+https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-sanitize.min.js
 https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-animate.min.js
 https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-cookies.min.js
 https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-loader.min.js
