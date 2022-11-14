@@ -730,6 +730,7 @@ mappings.cdn = {
             'momentjs/{version}/moment.': resources.moment,
             'momentjs/{version}/moment.min.': resources.moment,
             'mootools/{version}/mootools-': resources.mootools,
+            'select2/{version}/': resources.select2,
             'simplemde/{version}/simplemde.js': resources.simplemdeJS,
             'simplemde/{version}/simplemde.min.js': resources.simplemdeJS,
             'simplemde/{version}/simplemde.css': resources.simplemdeCSS,
