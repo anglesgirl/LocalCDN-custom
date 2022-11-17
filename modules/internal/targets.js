@@ -403,7 +403,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/script.js/2.')) return '2.5.9';
     if (type.startsWith('/scriptaculous/1.')) return '1.9.0';
     if (type.startsWith('/search-insights/1.')) return '1.8.0';
-    if (type.startsWith('/search-insights/2.')) return '2.2.1';
+    if (type.startsWith('/search-insights/2.')) return '2.2.3';
     if (type.startsWith('/select2/3.')) return '3.5.4';
     if (type.startsWith('/select2/4.')) return '4.0.13';
     if (type.startsWith('/semantic-ui/2.')) return '2.5.0';
