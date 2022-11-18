@@ -312,6 +312,8 @@ https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css
 https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js
 https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js
 https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css
+https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js
+https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.min.js
 https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/clappr/0.4.7/clappr.min.js
 https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js
@@ -1828,8 +1830,6 @@ https://cdn.jsdelivr.net/npm/anchor-js@3.2.2/anchor.min.js
 https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js
 https://cdn.jsdelivr.net/npm/angular-stripe-checkout@5.1.0/angular-stripe-checkout.min.js
 https://cdn.jsdelivr.net/npm/appboy-web-sdk@3.5.1/appboy.min.js
-https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js
-https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.min.js
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-defaults.css
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple.css
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple-dark.css
