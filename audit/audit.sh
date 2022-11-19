@@ -53,26 +53,40 @@
 # All files in the directory /resources/
 #
 # Exceptions:
-#   /resources/*/note
-#   /resources/google-material-design-icons/google-material-design-icons.css
-#   /resources/blocked/*
+#  1)  /resources/google-material-design-icons/google-material-design-icons.css
+#  2)  /resources/google-fonts-placeholder.css
+#  3)  /resources/*/note
+#  4)  /resources/blocked/*
+#  5)  /resources/mathjax/2.7.5/latest.jsm
 #
 # =============================================================================
 # WHY ARE THESE FILES EXCLUDED?
-# google-material-design-icons.css  This is a separate file so that the WOFF2
-#                                   file in this extension is used and not an
-#                                   external one.
+
+#  1)  /resources/google-material-design-icons/google-material-design-icons.css
+#          This is a separate file so that the WOFF2 file in this extension is
+#          used and not an external one.
 #
-# google-fonts-placeholder.css      This is a placeholder which is used for
-#                                   Google Fonts redirects. Only used
-#                                   when "Block Google Fonts" is enabled.
+#  2)  /resources/google-fonts-placeholder.css
+#          This is a placeholder which is used for Google Fonts redirects. Only
+#          used when "Block Google Fonts" is enabled.
 #
-# /resources/*/note                 These files contain notes if a file has
-#                                   been renamed.
+#  3)  /resources/*/note
+#          These files contain notes if a file has been renamed.
 #
-# /resources/blocked/*              This folder contains files which will be
-#                                   displayed if the direct CDN call is blocked.
-#                                   (https://codeberg.org/nobody/LocalCDN/issues/1050)
+#  4)  /resources/blocked/*
+#          This folder contains files which will be displayed if the direct CDN
+#          call is blocked. (https://codeberg.org/nobody/LocalCDN/issues/1050)
+#
+#  5)  /resources/mathjax/2.7.5/latest.jsm
+#          This file would request the latest version number of Mathjax from a
+#          CDN API (e.g. https://api.cdnjs.com/libraries/mathjax?fields=version)
+#          Based on this version number, all further resources will be reloaded
+#          from this CDN. The reloading of resources would be intercepted or
+#          prevented by LocalCDN anyway. To prevent requests to the CDN API when
+#          this file will be requested by a website, it has been modified. This
+#          audit script would overwrite my changes or declare them as errors,
+#          so this file is excluded.
+#          (https://codeberg.org/nobody/LocalCDN/issues/1194)
 # =============================================================================
 
 
@@ -646,8 +660,8 @@ function create_url() {
     elif [ "$folder" = "semantic-ui" ]; then
         relativpath=$(echo -e "$path" | awk -F"../$folder/$version" '{print $NF}')
         url="$CLOUDFLARE/$folder/$version/$relativpath"
-    elif [ "$folder" = "Chart.js" ] && [ "$version" != "2.9.4" ]; then
-        url="$JSDELIVR/npm/chart.js@$version/dist/chart.min.js"
+    elif [ "$folder" = "Chart.js" ] && [ "$version" = "2.9.4" ] && [ "$jfile" = "chart.min.js" ]; then
+        url="$CLOUDFLARE/$folder/$version/Chart.bundle.min.js"
     elif [ "$folder" = "angular-ui-select" ] && [ "$version" = "0.19.8" ]; then
         url="$JSDELIVR/npm/ui-select@$version/dist/select.min.js"
     elif [ "$folder" = "plyr" ]; then
@@ -769,6 +783,7 @@ done < <(find ../resources/ \
     ! -iname "google-material-design-icons.css" \
     ! -iname "google-fonts-placeholder.css" \
     -not -path "../resources/blocked/*" \
+    -not -path "../resources/mathjax/*/latest.jsm" \
     -print0)
 
 
