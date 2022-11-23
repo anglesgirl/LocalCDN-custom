@@ -674,7 +674,7 @@ var resources = {
     },
     // knockout
     'knockout': {
-        'path': 'resources/knockout/{version}/knockout-latest.min.jsm'
+        'path': 'resources/knockout/{version}/knockout-min.jsm'
     },
     // lazysizes
     'lazysizes': {

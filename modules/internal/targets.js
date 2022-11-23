@@ -303,7 +303,10 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jasny-bootstrap/4.')) return '4.0.0';
     if (type.startsWith('/js-cookie/2.')) return '2.2.1';
     if (type.startsWith('/js-cookie/3.')) return '3.0.1';
-    if (type.startsWith('/knockout/3.')) return '3.5.1';
+    if (type.startsWith('/knockout/3.')) {
+        if (helpers.compareVersion('3.4.2', version)) return '3.4.2'; // <= v3.4.2
+        return '3.5.1';
+    }
     if (type.startsWith('/lazysizes/4.')) return '4.1.8';
     if (type.startsWith('/lazysizes/5.')) return '5.3.2';
     if (type.startsWith('/leaflet/0.')) return '0.7.7';
@@ -574,7 +577,7 @@ const ListOfFiles = {
     'dayjs.min.jsm': 'Day.js',
     'jquery.validate.unobtrusive.min.jsm': 'jQuery Validate Unobtrusive',
     'jquery.sliderPro.min.jsm': 'Slider Pro (JS)',
-    'knockout-latest.min.jsm': 'Knockout',
+    'knockout-min.jsm': 'Knockout',
     'bootstrap-multiselect.min.jsm': 'Bootstrap Multiselect',
     'ajax-bootstrap-select.min.jsm': 'Ajax Bootstrap Select',
     'bootstrap-vue.min.jsm': 'BootstrapVue (JS)',
