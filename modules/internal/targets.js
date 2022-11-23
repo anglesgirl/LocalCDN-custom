@@ -307,6 +307,7 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('3.4.2', version)) return '3.4.2'; // <= v3.4.2
         return '3.5.1';
     }
+    if (type.startsWith('/knockout.mapping/2.')) return '2.4.1';
     if (type.startsWith('/lazysizes/4.')) return '4.1.8';
     if (type.startsWith('/lazysizes/5.')) return '5.3.2';
     if (type.startsWith('/leaflet/0.')) return '0.7.7';
@@ -494,6 +495,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'knockout.mapping.min.jsm': 'knockout.mapping',
     'jquery.colorbox-min.jsm': 'Colorbox',
     'rangeslider.min.css': 'rangeslider.js (CSS)',
     'rangeslider.min.jsm': 'rangeslider.js (JS)',

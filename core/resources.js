@@ -676,6 +676,10 @@ var resources = {
     'knockout': {
         'path': 'resources/knockout/{version}/knockout-min.jsm'
     },
+    // knockout.mapping
+    'knockoutMapping': {
+        'path': 'resources/knockout.mapping/{version}/knockout.mapping.min.jsm'
+    },
     // lazysizes
     'lazysizes': {
         'path': 'resources/lazysizes/{version}/lazysizes.min.jsm'
