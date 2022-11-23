@@ -377,6 +377,7 @@ mappings.cdn = {
             'jScrollPane/{version}/script/jquery.jscrollpane.': resources.jScrollPane,
             'js-cookie/{version}/js.cookie.min.js': resources.jscookie,
             'knockout/{version}/knockout': resources.knockout,
+            'knockout.mapping/{version}/knockout.mapping.': resources.knockoutMapping,
             'lazysizes/{version}/lazysizes.min.js': resources.lazysizes,
             'leaflet/{version}/leaflet.js': resources.leafletJS,
             'leaflet/{version}/leaflet.css': resources.leafletCSS,
