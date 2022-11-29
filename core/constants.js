@@ -173,6 +173,15 @@ const WebRequest = {
     'EXTRA_HEADERS': 'extraHeaders'
 };
 
+const BlockedRequestMethods = {
+    'POST': true,
+    'HEAD': true,
+    'PUT': true,
+    'DELETE': true,
+    'TRACE': true,
+    'OPTIONS': true,
+};
+
 const WebRequestType = {
     'MAIN_FRAME': 'main_frame',
     'SUB_FRAME': 'sub_frame',
@@ -434,6 +443,7 @@ const LogString = {
     'REPLACED_RESOURCE': 'Replaced resource:',
     'MISSING_RESOURCE': 'Missing resource:',
     'EVIL_RESOURCE_BLOCKED': 'Evil resource blocked:',
+    'NON_GET_REQUEST_BLOCKED': 'Non-GET-Request blocked',
 };
 
 // Supported charsets for TextDecoder()

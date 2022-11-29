@@ -33,6 +33,7 @@
         "BadgeSettingMissingResource": true,
         "BadResources": true,
         "LogString": true,
+        "BlockedRequestMethods": true,
 
         "fileGuard": true,
         "files": true,
