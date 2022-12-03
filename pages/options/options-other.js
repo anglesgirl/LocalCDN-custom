@@ -112,6 +112,14 @@ optionsOther._onStorageOptionChanged = function ({target}) {
     if (target.value === 'local') {
         storageManager.migrateData('local');
     } else {
+        optionsOther._fetchSyncData();
+    }
+};
+
+optionsOther._fetchSyncData = function () {
+    if (confirm('Fetch remote data now?')) {
+        storageManager.migrateData('sync-fetch');
+    } else {
         storageManager.migrateData('sync');
     }
 };
