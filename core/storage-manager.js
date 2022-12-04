@@ -120,12 +120,21 @@ storageManager.startImportFilePicker = function () {
 };
 
 storageManager.handleImportFilePicker = function () {
-    return new Promise((resolve) => {
-        let file = document.getElementById('import-file-picker').files[0];
-        storageManager._readFile(file)
-            .then(storageManager._validation);
-        resolve();
-    });
+    let file, reader;
+    file = document.getElementById('import-file-picker').files[0];
+
+    reader = new FileReader();
+    reader.readAsText(file, 'UTF-8');
+
+    reader.onload = (ev) => {
+        let content = ev.target.result;
+        try {
+            storageManager._validation(JSON.parse(content));
+        } catch (err) {
+            console.error(`[ LocalCDN ] ${err}`);
+            alert(err);
+        }
+    };
 };
 
 
@@ -143,26 +152,8 @@ storageManager._handleStorageChanged = function (type) {
     }
 };
 
-storageManager._readFile = function (file) {
-    return new Promise((resolve, reject) => {
-        let reader = new FileReader();
-        reader.onload = () => {
-            resolve(reader.result);
-        };
-        reader.onerror = reject;
-        reader.readAsText(file);
-    });
-};
-
 storageManager._validation = function (content) {
     let imported = {};
-
-    try {
-        JSON.parse(content);
-    } catch (err) {
-        console.error(`[ LocalCDN ] ${err}`);
-        alert(err);
-    }
 
     // Delete old keys
     if (content.whitelistedDomains !== undefined) {
