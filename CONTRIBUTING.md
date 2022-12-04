@@ -2,9 +2,11 @@
 
 The following is a set of guidelines for contributing to LocalCDN.
 
-Pull requests via codeberg are the best way to contribute, and are always welcome. Pull requests are an easy way to add frameworks and update resources.  Feel free to suggest changes to this or any other document in a pull request as well.
+Pull requests via codeberg are the best way to contribute, and are always welcome. Pull requests are an easy way to add frameworks and update resources. Feel free to suggest changes to this or any other document in a pull request as well.
 
-Please note the two-branch structure of this extension.  The "develop" branch is where the next release is being produced, while "main" holds the current release.  Target all pull requests to the develop branch.
+Please note the two-branch structure of this extension. The "develop" branch is where the next release is being produced, while "main" holds the current release. Target all pull requests to the develop branch.
+
+I would be happy if you would implement one of the requested features. These feature requests have the label PR welcome, see [here](https://codeberg.org/nobody/LocalCDN/issues?q=&labels=74391).
 
 ## Content
 * [Guidelines](#guidelines)

@@ -44,7 +44,9 @@ storageManager.checkStorageType = function () {
 };
 
 storageManager.migrateData = function (target) {
-    let storageSource, storageDestination;
+    let storageSource, storageDestination, syncFetch;
+
+    syncFetch = false;
 
     if (target === 'local') {
         storageSource = chrome.storage.sync;
@@ -52,6 +54,11 @@ storageManager.migrateData = function (target) {
     } else if (target === 'sync') {
         storageSource = chrome.storage.local;
         storageDestination = chrome.storage.sync;
+    } else if (target === 'sync-fetch') {
+        storageSource = chrome.storage.sync;
+        storageDestination = chrome.storage.sync;
+        target = 'sync';
+        syncFetch = true;
     } else {
         return;
     }
@@ -84,6 +91,9 @@ storageManager.migrateData = function (target) {
             [Setting.BADGE_HTML_FILTER_BACKGROUND_COLOR]: data.badgeHTMLFilterBackgroundColor,
             [Setting.BADGE_HTML_FILTER_TEXT_COLOR]: data.badgeHTMLfilterTextColor
         });
+        if (syncFetch === true) {
+            chrome.runtime.reload();
+        }
     });
 };
 
@@ -111,17 +121,10 @@ storageManager.startImportFilePicker = function () {
 
 storageManager.handleImportFilePicker = function () {
     return new Promise((resolve) => {
-        try {
-            let file = document.getElementById('import-file-picker').files[0];
-            storageManager._readFile(file)
-                .then(JSON.parse)
-                .then(storageManager._validation);
-            resolve();
-
-        } catch (err) {
-            console.error(`[ LocalCDN ] ${err}`);
-            alert(err);
-        }
+        let file = document.getElementById('import-file-picker').files[0];
+        storageManager._readFile(file)
+            .then(storageManager._validation);
+        resolve();
     });
 };
 
@@ -153,6 +156,13 @@ storageManager._readFile = function (file) {
 
 storageManager._validation = function (content) {
     let imported = {};
+
+    try {
+        JSON.parse(content);
+    } catch (err) {
+        console.error(`[ LocalCDN ] ${err}`);
+        alert(err);
+    }
 
     // Delete old keys
     if (content.whitelistedDomains !== undefined) {

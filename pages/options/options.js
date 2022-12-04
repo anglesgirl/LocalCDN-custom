@@ -155,10 +155,17 @@ options._determineOptionValues = function () {
 
         optionKeys = Object.keys(optionList);
 
-        storageManager.type.get(optionKeys, function (items) {
-            options._optionValues = items;
-            resolve();
-        });
+        if (options._storageType === 'sync') {
+            chrome.storage.sync.get(optionKeys, function (items) {
+                options._optionValues = items;
+                resolve();
+            });
+        } else {
+            chrome.storage.local.get(optionKeys, function (items) {
+                options._optionValues = items;
+                resolve();
+            });
+        }
     });
 };
 
@@ -278,9 +285,15 @@ options.onOptionChanged = function ({target}) {
             break;
     }
 
-    storageManager.type.set({
-        [optionKey]: optionValue,
-    });
+    if (options._storageType === 'sync') {
+        chrome.storage.sync.set({
+            [optionKey]: optionValue,
+        });
+    } else {
+        chrome.storage.local.set({
+            [optionKey]: optionValue,
+        });
+    }
 };
 
 options._onLinkClick = function (url) {

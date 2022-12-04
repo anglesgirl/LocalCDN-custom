@@ -737,6 +737,8 @@ function create_url() {
         url="$JSDELIVR/npm/react-intl@$version/react-intl.iife.min.js"
     elif [ "$folder" = "in-view" ]; then
         url="$JSDELIVR/npm/in-view@$version/dist/in-view.min.js"
+    elif [ "$folder" = "knockout" ] && [ "$version" = "3.5.1" ];then
+        url="$CLOUDFLARE/$folder/$version/knockout-latest.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

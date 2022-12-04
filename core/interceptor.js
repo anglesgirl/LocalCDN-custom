@@ -54,6 +54,15 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
         tabIdentifier, targetDetails
     };
 
+    // Block POST, HEAD, PUT, DELETE, TRACE, OPTIONS
+    if (BlockedRequestMethods[requestDetails.method]) {
+        console.warn(`${LogString.PREFIX} ${LogString.NON_GET_REQUEST_BLOCKED}`);
+        log.append(tab.url, requestDetails.url, LogString.NON_GET_REQUEST_BLOCKED, true);
+        return {
+            'cancel': true
+        };
+    }
+
     validCandidate = requestAnalyzer.isValidCandidate(requestDetails, tab);
     if (!validCandidate) {
         return {

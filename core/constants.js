@@ -55,7 +55,7 @@ const MessageResponse = {
 const Resource = {
     'MAPPING_EXPRESSION': /\.map$/i,
     'VERSION_EXPRESSION': /(?:\d{1,2}\.){1,3}\d{1,2}(?:-\d)?|latest/,
-    'SINGLE_NUMBER_EXPRESSION': /^\D+@?\d{1,2}\D*$/,
+    'SINGLE_NUMBER_EXPRESSION': /\D+@?\d{1,2}\D*/,
     'MATHJAX': /\/\w.*(?:\d{1,2}\.){1,3}\d{1,2}(?:-\d)?\/|\/(mathjax\/)?latest\//,
     'TINYMCE': /\/\w.*(?:\d{1,2}\.){1,3}\d{1,2}(?:-\d)?\//,
     'VERSION_PLACEHOLDER': '{version}'
@@ -171,6 +171,15 @@ const WebRequest = {
     'HEADERS': 'requestHeaders',
     'RESPONSE_HEADERS': 'responseHeaders',
     'EXTRA_HEADERS': 'extraHeaders'
+};
+
+const BlockedRequestMethods = {
+    'POST': true,
+    'HEAD': true,
+    'PUT': true,
+    'DELETE': true,
+    'TRACE': true,
+    'OPTIONS': true,
 };
 
 const WebRequestType = {
@@ -409,6 +418,7 @@ const MathJaxFiles = {
 const MathJax3Files = {
     'es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff': true,
     'es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff': true,
+    'es5/tex-chtml.js': true,
     'es5/tex-mml-chtml.js': true,
 
 };
@@ -434,6 +444,7 @@ const LogString = {
     'REPLACED_RESOURCE': 'Replaced resource:',
     'MISSING_RESOURCE': 'Missing resource:',
     'EVIL_RESOURCE_BLOCKED': 'Evil resource blocked:',
+    'NON_GET_REQUEST_BLOCKED': 'Non-GET-Request blocked',
 };
 
 // Supported charsets for TextDecoder()
