@@ -121,17 +121,10 @@ storageManager.startImportFilePicker = function () {
 
 storageManager.handleImportFilePicker = function () {
     return new Promise((resolve) => {
-        try {
-            let file = document.getElementById('import-file-picker').files[0];
-            storageManager._readFile(file)
-                .then(JSON.parse)
-                .then(storageManager._validation);
-            resolve();
-
-        } catch (err) {
-            console.error(`[ LocalCDN ] ${err}`);
-            alert(err);
-        }
+        let file = document.getElementById('import-file-picker').files[0];
+        storageManager._readFile(file)
+            .then(storageManager._validation);
+        resolve();
     });
 };
 
@@ -163,6 +156,13 @@ storageManager._readFile = function (file) {
 
 storageManager._validation = function (content) {
     let imported = {};
+
+    try {
+        JSON.parse(content);
+    } catch (err) {
+        console.error(`[ LocalCDN ] ${err}`);
+        alert(err);
+    }
 
     // Delete old keys
     if (content.whitelistedDomains !== undefined) {
