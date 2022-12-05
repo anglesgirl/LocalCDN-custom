@@ -36,7 +36,7 @@ options._renderContents = function () {
     document.body.setAttribute('dir', options._scriptDirection);
     translationComplete = helpers.insertI18nContentIntoDocument(document);
 
-    options._determineOptionValues().then(options._determineLocalOptionValues).then(options._renderOptionsPanel);
+    options._determineLocalOptionValues().then(options._determineOptionValues).then(options._renderOptionsPanel);
 
     if (!translationComplete) {
         options._renderLocaleNotice();
@@ -152,6 +152,7 @@ options._determineOptionValues = function () {
         for (let element of nodeList) {
             optionList[element.getAttribute('data-option')] = true;
         }
+        delete optionList.internalStatistics;
 
         optionKeys = Object.keys(optionList);
 
@@ -285,7 +286,7 @@ options.onOptionChanged = function ({target}) {
             break;
     }
 
-    if (options._storageType === 'sync') {
+    if (options._storageType === 'sync' && optionKey !== 'internalStatistics') {
         chrome.storage.sync.set({
             [optionKey]: optionValue,
         });
