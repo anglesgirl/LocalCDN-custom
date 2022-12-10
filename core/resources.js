@@ -1040,6 +1040,13 @@ var resources = {
     'storeJS': {
         'path': 'resources/store.js/{version}/store.legacy.min.jsm'
     },
+    // swagger-ui
+    'swaggerUiJS': {
+        'path': 'resources/swagger-ui/{version}/swagger-ui-bundle.min.jsm'
+    },
+    'swaggerUiCSS': {
+        'path': 'resources/swagger-ui/{version}/swagger-ui.min.css'
+    },
     // SWFObject [Deprecated]
     'swfobject': {
         'path': 'resources/swfobject/{version}/swfobject.jsm'
