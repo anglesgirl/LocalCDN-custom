@@ -435,6 +435,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/stickyfill/2.')) return '2.1.0';
     if (type.startsWith('/sticky-js/')) return '1.3.0';
     if (type.startsWith('/store.js/2.')) return '2.0.12';
+    if (type.startsWith('/swagger-ui/4.')) return '4.15.5';
     if (type.startsWith('/swfobject/2.')) return '2.2';
     if (type.startsWith('/Swiper/3.')) return '3.4.2';
     if (type.startsWith('/Swiper/4.')) return '4.5.1';
@@ -499,6 +500,8 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'swagger-ui-bundle.min.jsm': 'Swagger-UI (JS)',
+    'swagger-ui.min.css': 'Swagger-UI (CSS)',
     'knockout.mapping.min.jsm': 'knockout.mapping',
     'jquery.colorbox-min.jsm': 'Colorbox',
     'rangeslider.min.css': 'rangeslider.js (CSS)',
