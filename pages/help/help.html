@@ -13,11 +13,11 @@
         <script src="help.js"></script>
     </head>
     <body>
-        <img src="../images/logo.svg" alt="LocalCDN" class="logo"/>
+        <img src="../images/logo.svg" alt="" class="logo">
         <h1 data-i18n-content="titleHelp">Help</h1>
-        <section class="notice notice-default hidden" id="notice-locale">
+        <div class="notice notice-default hidden" id="notice-locale">
             <p>Your preferred language is not yet fully supported. Please help out by translating this add-on on <a class="button button-notice button-warning" href="https://hosted.weblate.org/projects/localcdn/localcdn/" target="_blank" rel="noopener noreferrer">Weblate</a>.</p>
-        </section>
+        </div>
         <div class="notice">
             <div class="index">
                 <ul>
@@ -35,18 +35,18 @@
         <div id="introduction" class="notice">
             <h2 data-i18n-content="helpIntroductionTitle">Introduction</h2>
             <p data-i18n-content="helpIntroductionDescription">LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages.</p>
-            <a href="https://www.localcdn.org/test" rel="nofollow noopener noreferrer" data-i18n-content="helpLinkTestUtility">Testing utility</a><br/>
-            <a href="https://www.localcdn.org/tutorial" rel="nofollow noopener noreferrer" data-i18n-content="helpLinkTutorial">Tutorial</a><br/>
+            <a href="https://www.localcdn.org/test" rel="nofollow noopener noreferrer" data-i18n-content="helpLinkTestUtility">Testing utility</a><br>
+            <a href="https://www.localcdn.org/tutorial" rel="nofollow noopener noreferrer" data-i18n-content="helpLinkTutorial">Tutorial</a><br>
             <a href="https://codeberg.org/nobody/LocalCDN/wiki" target="_blank" rel="nofollow noopener noreferrer" data-i18n-content="helpLinkWikiPages">Wiki pages</a>
         </div>
         <div id="html-filter" class="notice">
             <h2 data-i18n-content="helpHtmlFilterTitle">What is "HTML filter"? (Firefox only)</h2>
             <p data-i18n-content="helpHtmlFilterDescription">In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red).</p>
             <p>
-                <span data-i18n-content="helpHtmlFilterBefore">The HTML filter removes the red characters from this example:</span><br/>
-                <code><span class="code-blue">&lt;script&nbsp;src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span>&nbsp;<span class="code-red">integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="&nbsp;crossorigin="anonymous"</span><span class="code-blue">>&lt;/script></span></code><br/><br/>
-                <span data-i18n-content="helpHtmlFilterAfter">The result then looks like this:</span><br/>
-                <code><span class="code-blue">&lt;script&nbsp;src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">&lt;/script></span></code><br/><br/><br/>
+                <span data-i18n-content="helpHtmlFilterBefore">The HTML filter removes the red characters from this example:</span><br>
+                <code><span class="code-blue">&lt;script&nbsp;src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span>&nbsp;<span class="code-red">integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="&nbsp;crossorigin="anonymous"</span><span class="code-blue">>&lt;/script></span></code><br><br>
+                <span data-i18n-content="helpHtmlFilterAfter">The result then looks like this:</span><br>
+                <code><span class="code-blue">&lt;script&nbsp;src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">&lt;/script></span></code><br><br><br>
             </p>
             <p><em><span data-i18n-content="helpHtmlFilterWhyTitle">Why is it necessary to remove crossorigin and integrity attributes?</span></em></p>
             <p data-i18n-content="helpHtmlFilterCrossorigin">The crossorigin attribute prevents the replacement because the destination does not match the requested one.</p>
@@ -71,19 +71,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="ublock-easy.png" alt="Default"></a></td>
+                        <td><img src="ublock-easy.png" alt=""></td>
                         <td data-i18n-content="helpRuleGeneratorUblockTableDefaultEasy">Default/Easy</td>
                         <td data-i18n-content="helpNo">No</td>
                         <td><a href="https://github.com/gorhill/uBlock/wiki/Blocking-mode#very-easy-mode-details-" rel="nofollow">Link (github.com)</a></td>
                     </tr>
                     <tr>
-                        <td><img src="ublock-medium.png" alt="Medium"></a></td>
+                        <td><img src="ublock-medium.png" alt=""></td>
                         <td data-i18n-content="helpRuleGeneratorUblockTableMedium">Medium</td>
                         <td data-i18n-content="helpYes">Yes</td>
                         <td><a href="https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode" rel="nofollow">Link (github.com)</a></td>
                     </tr>
                     <tr>
-                        <td><img src="ublock-hard.png" alt="Hard"></a></td>
+                        <td><img src="ublock-hard.png" alt=""></td>
                         <td data-i18n-content="helpRuleGeneratorUblockTableHard">Hard</td>
                         <td data-i18n-content="helpYes">Yes</td>
                         <td><a href="https://github.com/gorhill/uBlock/wiki/Blocking-mode:-hard-mode" rel="nofollow">Link (github.com)</a></td>
@@ -103,19 +103,19 @@
             <h2 data-i18n-content="helpStatisticsTitle">What about the statistics? Is anything transferred to any servers?</h2>
             <p data-i18n-content="helpStatisticsDescription">Don't panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That's all. I've an example here:</p>
             <div class="statistic-demo">
-                <code>"2020-08-10": {</code><br/>
-                <code>    "frameworks": {</code><br/>
-                <code>        "resources/jquery/1.12.4/jquery.min.jsm": 5</code><br/>
-                <code>    },</code><br/>
-                <code>    "cdns": {</code><br/>
-                <code>        "ajax.googleapis.com": 5</code><br/>
-                <code>    }</code><br/>
-                <code>}</code><br/>
+                <code>"2020-08-10": {</code><br>
+                <code>    "frameworks": {</code><br>
+                <code>        "resources/jquery/1.12.4/jquery.min.jsm": 5</code><br>
+                <code>    },</code><br>
+                <code>    "cdns": {</code><br>
+                <code>        "ajax.googleapis.com": 5</code><br>
+                <code>    }</code><br>
+                <code>}</code><br>
             </div>
             <p data-i18n-content="helpStatisticsContent">The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested.</p>
-            <h3 span data-i18n-content="helpStatisticsTruthTitle">How do I know that's true?</h3>
+            <h3 data-i18n-content="helpStatisticsTruthTitle">How do I know that's true?</h3>
             <p>
-                <span data-i18n-content="helpStatisticsTruthDescription">The extension storage can be viewed directly with the Firefox browser. Open the URL "about:debugging", switch to "Storage" and select "Extension Storage". Under the key "internalStatisticsData" you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video.</span><br/>
+                <span data-i18n-content="helpStatisticsTruthDescription">The extension storage can be viewed directly with the Firefox browser. Open the URL "about:debugging", switch to "Storage" and select "Extension Storage". Under the key "internalStatisticsData" you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video.</span><br>
                 <a href="https://www.localcdn.org/view-extension-storage.mp4">https://www.localcdn.org/view-extension-storage.mp4</a>
             </p>
         </div>

@@ -16,7 +16,7 @@
         <script src="updates.js"></script>
     </head>
     <body>
-        <img src="../images/logo.svg" alt="LocalCDN" class="logo"/>
+        <img src="../images/logo.svg" alt="" class="logo">
         <div class="container">
             <h1>Release notes</h1>
             <div class="notice">
@@ -35,33 +35,33 @@
                         </div>
                         <div class="ruleset-generator">
                             <label class="b-contain" for="generate-ublock-rules">uBlock
-                                <input id="generate-ublock-rules" name="rule-sets" data-ruleset="uBlock" type="radio" value="uBlock" autocomplete="off">
-                                <div class="b-input"></div>
+                                <input id="generate-ublock-rules" name="rule-sets" data-ruleset="uBlock" type="radio" value="uBlock">
+                                <span class="b-input"></span>
                             </label>
                         </div>
                         <div class="ruleset-generator">
                             <label class="b-contain" for="generate-umatrix-rules">uMatrix
-                                <input id="generate-umatrix-rules" name="rule-sets" data-ruleset="uMatrix" type="radio" value="uMatrix" autocomplete="off">
-                                <div class="b-input"></div>
+                                <input id="generate-umatrix-rules" name="rule-sets" data-ruleset="uMatrix" type="radio" value="uMatrix">
+                                <span class="b-input"></span>
                             </label>
                         </div>
                         <div class="ruleset-generator">
                             <label class="b-contain" for="generate-adguard-rules">AdGuard
-                                <input id="generate-adguard-rules" name="rule-sets" data-ruleset="AdGuard" type="radio" value="AdGuard" autocomplete="off">
-                                <div class="b-input"></div>
+                                <input id="generate-adguard-rules" name="rule-sets" data-ruleset="AdGuard" type="radio" value="AdGuard">
+                                <span class="b-input"></span>
                             </label>
                         </div>
                         <div class="ruleset-generator">
                             <label class="b-contain" for="generate-noscript-rules">NoScript
-                                <input id="generate-noscript-rules" name="rule-sets" data-ruleset="NoScript" type="radio" value="NoScript" autocomplete="off">
-                                <div class="b-input"></div>
+                                <input id="generate-noscript-rules" name="rule-sets" data-ruleset="NoScript" type="radio" value="NoScript">
+                                <span class="b-input"></span>
                             </label>
                         </div>
                         <div>
                             <textarea rows="12" cols="15" id="generated-rules" readonly></textarea>
                             <input id="button-copy-rule-set" type="button" value="Copy">
                         </div>
-                        <hr/>
+                        <hr>
                     </div>
                     <div id="history"><span id="history-indicator">+</span> Previous Versions</div>
                     <div id="history-release-notes">
@@ -1336,7 +1336,6 @@
                                 <li>Updated: instantsearch.js v4.16.1 -> v4.18.0 (<a href="https://codeberg.org/nobody/LocalCDN/issues/330">#330</a>)</li>
                                 <li>Updated: lazysizes v5.3.0 -> v5.3.1 (<a href="https://codeberg.org/nobody/LocalCDN/issues/331">#331</a>)</li>
                             </ul>
-                        </p>
                         <p class='release-date'>2021-03-15 (v2.6.3)</p>
                             <ul>
                                 <li>Fixed: Check status code in HTML filter (<a href="https://codeberg.org/nobody/LocalCDN/issues/277">#277</a>)</li>
@@ -1385,8 +1384,6 @@
                                     </ul>
                                 </li>
                             </ul>
-
-                        </p>
                         <p class='release-date'>2021-02-20 (v2.6.2)</p>
                             <ul>
                                 <li>Rejected by Mozilla</li>
