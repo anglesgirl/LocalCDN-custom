@@ -148,7 +148,7 @@ const SettingDefaults = {
     [Setting.INTERNAL_STATISTICS_DATA]: {},
     [Setting.DEFAULT_RANGE_STATISTIC]: 'week',
     [Setting.LAST_MAPPING_UPDATE]: '2020-01-01',
-    [Setting.NEGATE_HTML_FILTER_LIST]: false,
+    [Setting.NEGATE_HTML_FILTER_LIST]: true,
     [Setting.SELECTED_ICON]: 'Default',
     [Setting.SHOW_ICON_BADGE]: true,
     [Setting.STORAGE_TYPE]: 'local',
