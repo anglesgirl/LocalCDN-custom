@@ -260,7 +260,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery/3.') || type.startsWith('/jquery/latest')) {
         if (helpers.compareVersion('3.2.1', version)) return '3.2.1'; // <= v3.2.1
         if (helpers.compareVersion('3.5.1', version)) return '3.5.1'; // <= v3.5.1
-        return '3.6.1';
+        return '3.6.2';
     }
     if (type.startsWith('/jquery.devbridge-autocomplete/1.')) return '1.4.11';
     if (type.startsWith('/jqueryui/1.')) {

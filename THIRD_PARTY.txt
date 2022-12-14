@@ -1181,7 +1181,7 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
-https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js
