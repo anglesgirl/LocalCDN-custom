@@ -365,6 +365,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/ngx-bootstrap/10.')) return '10.0.0';
     if (type.startsWith('/noUiSlider/14.')) return '14.7.0';
     if (type.startsWith('/noUiSlider/15.')) return '15.6.1';
+    if (type.startsWith('/nprogress/0.')) return '0.2.0';
     if (type.startsWith('/nvd3/1.')) return '1.8.6';
     if (type.startsWith('/object-assign@4.')) return '4.1.1';
     if (type.startsWith('/oclazyload/1.')) return '1.1.0';
@@ -500,6 +501,8 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'nprogress.min.jsm': 'nprogress (JS)',
+    'nprogress.min.css': 'nprogress (CSS)',
     'swagger-ui-bundle.min.jsm': 'Swagger-UI (JS)',
     'swagger-ui.min.css': 'Swagger-UI (CSS)',
     'knockout.mapping.min.jsm': 'knockout.mapping',

@@ -808,6 +808,13 @@ var resources = {
     'ngxBootstrapDatepicker': {
         'path': 'resources/ngx-bootstrap/{version}/datepicker/bs-datepicker.css'
     },
+    // nprogress
+    'nprogressCSS': {
+        'path': 'resources/nprogress/{version}/nprogress.min.css'
+    },
+    'nprogressJS': {
+        'path': 'resources/nprogress/{version}/nprogress.min.jsm'
+    },
     // noUiSlider
     'noUiSlider': {
         'path': 'resources/noUiSlider/{version}/nouislider.min.jsm'

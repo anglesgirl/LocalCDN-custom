@@ -1379,6 +1379,8 @@ https://cdnjs.cloudflare.com/ajax/libs/mootools/1.4.5/mootools-core-full-compat-
 https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.min.js
 https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js
 https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.js
+https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css
+https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js
 https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css
 https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.js
 https://cdnjs.cloudflare.com/ajax/libs/oclazyload/1.1.0/ocLazyLoad.min.js
