@@ -358,7 +358,12 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('1.4.5', version)) return '1.4.5'; // <= v1.4.5
         return '1.6.0';
     }
-    if (type.startsWith('/ngx-bootstrap/6.')) return '6.2.0';
+    if (type.startsWith('/ngx-bootstrap/')) {
+        // The only resource used from ngx-bootstrap is the CSS file for the datepicker.
+        // This CSS is unchanged since version 7. So it's not necessary to host it more than once.
+        if (helpers.compareVersion('6.2.0', version)) return '6.2.0'; // <= v6.2.0
+        return '10.1.0';
+    }
     if (type.startsWith('/ngx-bootstrap/7.')) return '7.1.2';
     if (type.startsWith('/ngx-bootstrap/8.')) return '8.0.0';
     if (type.startsWith('/ngx-bootstrap/9.')) return '9.0.0';
