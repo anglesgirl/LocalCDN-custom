@@ -429,7 +429,7 @@ targets.setLastVersion = function (type, version) {
         return '1.9.0';
     }
     if (type.startsWith('/slick-lightbox/0.')) return '0.2.12';
-    if (type.startsWith('/slider-pro/1.')) return '1.6.0';
+    if (type.startsWith('/slider-pro/1.')) return '1.6.1';
     if (type.startsWith('/snowplow/2.')) return '2.18.2';
     if (type.startsWith('/socket.io/2.')) return '2.4.0';
     if (type.startsWith('/socket.io/3.')) return '3.1.3';
