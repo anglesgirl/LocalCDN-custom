@@ -1065,6 +1065,10 @@ var resources = {
     'swiperCSS': {
         'path': 'resources/Swiper/{version}/css/swiper.min.css'
     },
+    // tensorflow
+    'tensorflow': {
+        'path': 'resources/tensorflow/{version}/tf.min.jsm'
+    },
     // Tether JS [Deprecated]
     'tetherJS': {
         'path': 'resources/tether/{version}/js/tether.min.jsm'
