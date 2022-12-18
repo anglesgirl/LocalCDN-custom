@@ -684,7 +684,6 @@ mappings.cdn = {
             'react@{version}/umd/react.production.min.js': resources.react,
             'search-insights@{version}/dist/search-insights.': resources.searchInsights,
             'select2@{version}/': resources.select2,
-
             'swagger-ui-dist@{version}/swagger-ui.js': resources.swaggerUiJS,
             'swagger-ui-dist@{version}/swagger-ui.min.js': resources.swaggerUiJS,
             'swagger-ui-dist@{version}/swagger-ui-bundle.js': resources.swaggerUiJS,
@@ -697,7 +696,6 @@ mappings.cdn = {
             'swagger-ui-dist@{version}/swagger-ui-standalone-preset.min.js': resources.swaggerUiJS,
             'swagger-ui-dist@{version}/swagger-ui.css': resources.swaggerUiCSS,
             'swagger-ui-dist@{version}/swagger-ui.min.css': resources.swaggerUiCSS,
-
             'swiper@{version}/swiper-bundle.css': resources.swiperCSS,
             'swiper@{version}/swiper-bundle.min.css': resources.swiperCSS,
             'swiper@{version}/swiper-bundle.js': resources.swiperJS,
