@@ -145,6 +145,9 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
     let resourcePath, versionNumber, resourcePattern, shorthandResource;
 
     resourcePath = channelPath.replace(basePath, '');
+    if (resourcePath.startsWith('bootstrap')) {
+        resourcePath = resourcePath.replace(Regex.TWITTER_BOOTSTRAP_ALPHA_BETA, '');
+    }
 
     // Evaluate first in case of version 'latest' and numerals in resource
     versionNumber = resourcePath.match(Resource.VERSION_EXPRESSION);
