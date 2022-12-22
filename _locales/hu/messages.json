@@ -284,7 +284,7 @@
         "description": "Some websites look strange or are not easy to use"
     },
     "helpBlockGoogleFontsTitle": {
-        "message": "",
+        "message": "Miért van »Google Betűtipusok blokkolása « opció?",
         "description": "Why is there a »Block Google Fonts« option?"
     },
     "helpStatisticsTitle": {
@@ -292,7 +292,7 @@
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
-        "message": "",
+        "message": "Mi fog szinkronizálódni amikor be kapcsolom a »szinkronizál« opciót mint lokális tárhely?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {
@@ -308,11 +308,11 @@
         "description": "Testing utility"
     },
     "helpLinkTutorial": {
-        "message": "",
+        "message": "Bemutató",
         "description": "Tutorial"
     },
     "helpLinkWikiPages": {
-        "message": "",
+        "message": "Wiki oldalak",
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
@@ -320,11 +320,11 @@
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
-        "message": "",
+        "message": "A HTML filter ami letörli a pirosbkaraktereket mint ebben a bemutatóban:",
         "description": "The HTML filter removes the red characters from this example:"
     },
     "helpHtmlFilterAfter": {
-        "message": "",
+        "message": "Így fog ki nézni:",
         "description": "The result then looks like this:"
     },
     "helpHtmlFilterWhyTitle": {
