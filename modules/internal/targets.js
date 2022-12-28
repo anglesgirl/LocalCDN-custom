@@ -131,7 +131,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/autocomplete.js/1.')) return '1.5.4';
     if (type.startsWith('/angular-material/1.') || type.startsWith('/angular-material/0.')) return '1.2.5';
     if (type.startsWith('/angular-translate/2.')) return '2.19.0';
-    if (type.startsWith('/aos/2.')) return '2.3.4';
+    if (type.startsWith('/aos/2.') || type.startsWith('/aos/latest')) return '2.3.4';
     if (type.startsWith('/appboy-web-sdk/3.')) return '3.5.1';
     if (type.startsWith('/asciinema-player/2.')) return '2.6.1';
     if (type.startsWith('/axios/0.')) return '0.27.2';
