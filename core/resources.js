@@ -301,7 +301,7 @@ var resources = {
     },
     // Chart.js
     'chartJs': {
-        'path': 'resources/Chart.js/{version}/Chart.bundle.min.jsm'
+        'path': 'resources/Chart.js/{version}/chart.min.jsm'
     },
     'chartJsCSS': {
         'path': 'resources/Chart.js/{version}/Chart.min.css'
