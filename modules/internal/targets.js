@@ -142,7 +142,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/blazy/1.')) return '1.8.2';
     if (type.startsWith('/bluebird/3.')) return '3.7.2';
     if (type.startsWith('/bodymovin/4.')) return '4.13.0';
-    if (type.startsWith('/bodymovin/5.')) return '5.10.0';
+    if (type.startsWith('/bodymovin/5.')) return '5.10.1';
     if (type.startsWith('/bootbox.js/4.')) return '4.4.0';
     if (type.startsWith('/bootbox.js/5.')) return '5.5.3';
     if (type.startsWith('/bootbox.js/6.')) return '6.0.0';
