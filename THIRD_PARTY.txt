@@ -1497,6 +1497,10 @@ https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.7.1/rickshaw.min.css
 https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.7.1/rickshaw.min.js
 https://cdnjs.cloudflare.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js
 https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.9/script.min.js
+https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js
+https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.velocity.min.js
+https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js
+https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js
 https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2-bootstrap.min.css
 https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2_locale_ar.min.js
 https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2_locale_az.min.js

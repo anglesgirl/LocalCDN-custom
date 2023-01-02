@@ -67,6 +67,8 @@ targets.determineBundle = function (path) {
         val = 'vex';
     } else if (path.startsWith('/tinymce/')) {
         val = 'TinyMCE';
+    } else if (path.startsWith('/ScrollMagic/')) {
+        val = 'ScrollMagic';
     }
 
     return val === '' ? val : `${val} (Bundle)`;
@@ -414,6 +416,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/rickshaw/1.')) return '1.7.1';
     if (type.startsWith('/script.js/2.')) return '2.5.9';
     if (type.startsWith('/scriptaculous/1.')) return '1.9.0';
+    if (type.startsWith('/ScrollMagic/2.')) return '2.0.8';
     if (type.startsWith('/search-insights/1.')) return '1.8.0';
     if (type.startsWith('/search-insights/2.')) return '2.2.3';
     if (type.startsWith('/select2/3.')) return '3.5.4';

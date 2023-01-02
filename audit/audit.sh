@@ -739,6 +739,8 @@ function create_url() {
         url="$JSDELIVR/npm/in-view@$version/dist/in-view.min.js"
     elif [ "$folder" = "knockout" ] && [ "$version" = "3.5.1" ];then
         url="$CLOUDFLARE/$folder/$version/knockout-latest.min.js"
+    elif [ "$folder" = "ScrollMagic" ] && [ "$jfile" != "ScrollMagic.min.js" ];then
+        url="$CLOUDFLARE/$folder/$version/plugins/$jfile"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

@@ -972,6 +972,10 @@ var resources = {
     'scriptaculous': {
         'path': 'resources/scriptaculous/{version}/scriptaculous.jsm'
     },
+    // ScrollMagic (Bundle)
+    'scrollMagic': {
+        'path': 'resources/ScrollMagic/{version}/'
+    },
     // Search Insights
     'searchInsights': {
         'path': 'resources/search-insights/{version}/search-insights.min.jsm'
