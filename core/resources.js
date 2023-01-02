@@ -1138,6 +1138,10 @@ var resources = {
     'vueResource': {
         'path': 'resources/vue-resource/{version}/vue-resource.min.jsm'
     },
+    // vue-router
+    'vueRouter': {
+        'path': 'resources/vue-router/{version}/vue-router.global.min.jsm'
+    },
     // vuex
     'vuex': {
         'path': 'resources/vuex/{version}/vuex.min.jsm'

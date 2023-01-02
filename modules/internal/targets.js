@@ -493,6 +493,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vue-i18n/9.')) return '9.2.2';
     if (type.startsWith('/vue-match-media/1.')) return '1.0.3';
     if (type.startsWith('/vue-resource/1.')) return '1.5.3';
+    if (type.startsWith('/vue-router/3.')) return '3.6.5';
+    if (type.startsWith('/vue-router/4.')) return '4.1.6';
     if (type.startsWith('/vuex/3.')) return '3.6.2';
     if (type.startsWith('/vuex/4.')) return '4.1.0';
     if (type.startsWith('/waypoints/4.')) return '4.0.1';
@@ -512,6 +514,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'vue-router.global.min.jsm': 'vue-router',
     'tf.min.jsm': 'tensorflow',
     'nprogress.min.jsm': 'nprogress (JS)',
     'nprogress.min.css': 'nprogress (CSS)',
