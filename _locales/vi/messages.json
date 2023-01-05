@@ -80,7 +80,7 @@
         "description": "You can open the log with the icon in the menu. The log will be deleted when you close the browser or disable logging."
     },
     "featureBreaksWebsitesDescription": {
-        "message": "Tính năng này có thể làm hỏng các trang web. Không nên bật, trừ khi bạn sẵn sàng thêm các tên miền bị ảnh hưởng vào danh sách cho phép.",
+        "message": "Tính năng này có thể làm hỏng các trang web. Không nên bật trừ khi bạn sẵn sàng thêm các tên miền bị ảnh hưởng vào danh sách cho phép.",
         "description": "This feature breaks websites. Do not leave it enabled, unless you are prepared to manually add affected domains to the allow list."
     },
     "featureBreaksWebsitesButton": {
