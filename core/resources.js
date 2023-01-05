@@ -423,10 +423,6 @@ var resources = {
     'feather': {
         'path': 'resources/feather-icons/{version}/feather.min.jsm'
     },
-    // Finify bundle
-    'findifyBundle': {
-        'path': 'resources/findify-bundle/{version}/'
-    },
     // FitText.js [Deprecated]
     'fitTextJs': {
         'path': 'resources/FitText.js/{version}/jquery.fittext.min.jsm'

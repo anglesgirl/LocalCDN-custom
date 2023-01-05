@@ -29,9 +29,7 @@ var targets = {};
 targets.determineBundle = function (path) {
     path = path.replace('resources', '');
     let val = '';
-    if (path.startsWith('/findify')) {
-        val = 'Findify';
-    } else if (path.startsWith('/bootstrap-datepicker')) {
+    if (path.startsWith('/bootstrap-datepicker')) {
         val = 'Bootstrap Datepicker';
     } else if (path.startsWith('/jquery.lazy/')) {
         val = 'jQuery Lazy';
@@ -201,11 +199,6 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/exif-js/2.')) return '2.3.0';
     if (type.startsWith('/ext-core/3.')) return '3.1.0';
     if (type.startsWith('/fastclick/1.')) return '1.0.6';
-    if (type.startsWith('/findify')) {
-        if (helpers.compareVersion('6.9.15', version)) return '6.9.15'; // <= 6.9.15
-        if (helpers.compareVersion('6.17.0', version)) return '6.17.0'; // > 6.9.15 to <= 6.17.0
-        return '7.1.80';
-    }
     if (type.startsWith('/fancybox/2.')) return '2.1.7';
     if (type.startsWith('/fancybox/3.')) return '3.5.7';
     if (type.startsWith('/feather-icons/4.')) return '4.29.0';

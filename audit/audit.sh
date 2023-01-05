@@ -436,8 +436,6 @@ function create_url() {
         url="$JSDELIVR/npm/angular-stripe-checkout@$version/angular-stripe-checkout.min.js"
     elif [ "$folder" = "ethjs" ]; then
         url="$JSDELIVR/npm/ethjs@$version/dist/ethjs.min.js"
-    elif [ "$folder" = "findify-bundle" ]; then
-        url="$JSDELIVR/npm/@findify/bundle@$version/dist/$subfile"
     elif [ "$folder" = "react-lifecycles-compat" ]; then
         url="$JSDELIVR/npm/react-lifecycles-compat@$version/react-lifecycles-compat.min.js"
     elif [ "$folder" = "react-side-effect" ]; then
