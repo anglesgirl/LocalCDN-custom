@@ -526,6 +526,8 @@ mappings.cdn = {
             'twix.js/{version}/twix.': resources.twixJS,
             'underscore.js/{version}/underscore.': resources.underscore,
             'underscore.js/{version}/underscore-min.': resources.underscore,
+            'URI.js/{version}/URI.min.js': resources.uriJS,
+            'URI.js/{version}/URI.js': resources.uriJS,
             'urlive/{version}/jquery.urlive.': resources.jqueryURLive,
             'vex-js/{version}/': resources.vexJS,
             'video.js/{version}/video.js': resources.videoJS,

@@ -1096,6 +1096,10 @@ var resources = {
     'underscore': {
         'path': 'resources/underscore.js/{version}/underscore-min.jsm'
     },
+    // URI.js
+    'uriJS': {
+        'path': 'resources/URI.js/{version}/URI.min.jsm'
+    },
     // urlize
     'urlize': {
         'path': 'resources/urlize/{version}/urlize.jsm'

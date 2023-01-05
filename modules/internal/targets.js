@@ -476,6 +476,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/twix.js/0.')) return '0.3.0';
     if (type.startsWith('/twix.js/1.')) return '1.3.0';
     if (type.startsWith('/underscore.js/1.')) return '1.13.6';
+    if (type.startsWith('/URI.js/1.')) return '1.19.11';
     if (type.startsWith('/urlive/1.')) return '1.1.1';
     if (type.startsWith('/vanilla-lazyload')) return '17.8.3';
     if (type.startsWith('/vex-js/3.')) return '3.1.1';
@@ -518,6 +519,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'URI.min.jsm': 'URI.js',
     'vue-router.global.min.jsm': 'vue-router',
     'tf.min.jsm': 'tensorflow',
     'nprogress.min.jsm': 'nprogress (JS)',
