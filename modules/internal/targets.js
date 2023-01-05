@@ -714,6 +714,8 @@ const ListOfFiles = {
     'slick.min.css': 'slick (CSS)',
     'slick-theme.min.css': 'slick (Theme)',
     'google-material-design-icons.css': 'Google Material Icons',
+    'Chart.bundle.min.jsm': 'Chart.js (JS)', // for statistics page
+    'Chart.bundle.min.css': 'Chart.js (CSS)', // for statistics page
     'chart.min.jsm': 'Chart.js (JS)',
     'Chart.min.css': 'Chart.js (CSS)',
     'bootbox.min.jsm': 'BootboxJS',
