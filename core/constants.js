@@ -148,7 +148,7 @@ const SettingDefaults = {
     [Setting.INTERNAL_STATISTICS_DATA]: {},
     [Setting.DEFAULT_RANGE_STATISTIC]: 'week',
     [Setting.LAST_MAPPING_UPDATE]: '2020-01-01',
-    [Setting.NEGATE_HTML_FILTER_LIST]: false,
+    [Setting.NEGATE_HTML_FILTER_LIST]: true,
     [Setting.SELECTED_ICON]: 'Default',
     [Setting.SHOW_ICON_BADGE]: true,
     [Setting.STORAGE_TYPE]: 'local',
@@ -271,7 +271,8 @@ const Regex = {
     'FONT_AWESOME_WITH_CODE': /use\.fontawesome\.com\/[a-z0-9]{10}\.(js|css)/,
     'FONT_AWESOME_FONTS_ONLY': /\/font-?awesome\/(?:\d{1,2}\.){1,3}\d{1,2}\/fonts\//,
     'BOOTSTRAP_FONTS_ONLY': /\/bootstrap\/(?:\d{1,2}\.){1,3}\d{1,2}\/fonts\//,
-    'ROCKET_LOADER': /ajax\.cloudflare\.com\/cdn-cgi\/scripts\/[a-zA-Z0-9]{8}\/cloudflare-static\/rocket-loader\.min\.js/
+    'ROCKET_LOADER': /ajax\.cloudflare\.com\/cdn-cgi\/scripts\/[a-zA-Z0-9]{8}\/cloudflare-static\/rocket-loader\.min\.js/,
+    'TWITTER_BOOTSTRAP_ALPHA_BETA': /-(alpha|beta).?\d?/,
 };
 
 const MaterialIcons = {

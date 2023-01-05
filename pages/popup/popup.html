@@ -3,7 +3,7 @@
     <head>
         <title>Popup | LocalCDN</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="popup.css">
         <link rel="stylesheet" type="text/css" href="toggle.css">
         <link rel="stylesheet" type="text/css" href="../base.css">
@@ -16,7 +16,7 @@
         <script src="popup.js"></script>
         <header>
             <div class="heading">
-                <img class="icon-logo" src="../../icons/icon.svg" alt="Extension Icon">
+                <img class="icon-logo" src="../../icons/icon.svg" alt="">
                 <span id="name-label"></span> <sup id="version-label" class="label-version"></sup>
             </div>
             <div id="donate-button">
@@ -24,19 +24,15 @@
                 <div id="donate-button-svg" class="button-svg" data-link="donate"></div>
             </div>
         </header>
-        <section class="content">
+        <div class="content">
             <div id="website-context" class="panel hidden">
                 <div class="subpanel">
                     <div id="protection-toggle">
                     <label class='toggle' for='protection-toggle-switch'>
                         <input type='checkbox' name='protection-toggle-switch' id='protection-toggle-switch' class="toggle__input">
                         <span class="toggle__display" hidden>
-                            <svg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden="true" focusable="false" class="toggle__icon toggle__icon--checkmark">
-                                <path d='M6.08471 10.6237L2.29164 6.83059L1 8.11313L6.08471 13.1978L17 2.28255L15.7175 1L6.08471 10.6237Z' fill='currentcolor' stroke='currentcolor' />
-                            </svg>
-                            <svg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden="true" focusable="false" class="toggle__icon toggle__icon--cross">
-                                <path d='M11.167 0L6.5 4.667L1.833 0L0 1.833L4.667 6.5L0 11.167L1.833 13L6.5 8.333L11.167 13L13 11.167L8.333 6.5L13 1.833L11.167 0Z' fill='currentcolor' />
-                            </svg>
+                            <img class="toggle__img" src="../../icons/popup_check.svg" alt="">
+                            <img class="toggle__img" src="../../icons/popup_uncheck.svg" alt="">
                         </span>
                     </label>
                     </div>
@@ -49,12 +45,8 @@
                         <label class='toggle' for='manipulateDOM-toggle-switch'>
                             <input type='checkbox' name='manipulateDOM-toggle-switch' id='manipulateDOM-toggle-switch' class="toggle__input">
                             <span class="toggle__display" hidden>
-                                <svg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden="true" focusable="false" class="toggle__icon toggle__icon--checkmark">
-                                    <path d='M6.08471 10.6237L2.29164 6.83059L1 8.11313L6.08471 13.1978L17 2.28255L15.7175 1L6.08471 10.6237Z' fill='currentcolor' stroke='currentcolor' />
-                                </svg>
-                                <svg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden="true" focusable="false" class="toggle__icon toggle__icon--cross">
-                                    <path d='M11.167 0L6.5 4.667L1.833 0L0 1.833L4.667 6.5L0 11.167L1.833 13L6.5 8.333L11.167 13L13 11.167L8.333 6.5L13 1.833L11.167 0Z' fill='currentcolor' />
-                                </svg>
+                                <img class="toggle__img" src="../../icons/popup_check.svg" alt="">
+                                <img class="toggle__img" src="../../icons/popup_uncheck.svg" alt="">
                             </span>
                         </label>
                     </div>
@@ -67,12 +59,8 @@
                         <label class='toggle' for='google-fonts-toggle-switch'>
                             <input type='checkbox' name='google-fonts-toggle-switch' id='google-fonts-toggle-switch' class="toggle__input">
                             <span class="toggle__display" hidden>
-                                <svg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden="true" focusable="false" class="toggle__icon toggle__icon--checkmark">
-                                    <path d='M6.08471 10.6237L2.29164 6.83059L1 8.11313L6.08471 13.1978L17 2.28255L15.7175 1L6.08471 10.6237Z' fill='currentcolor' stroke='currentcolor' />
-                                </svg>
-                                <svg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden="true" focusable="false" class="toggle__icon toggle__icon--cross">
-                                    <path d='M11.167 0L6.5 4.667L1.833 0L0 1.833L4.667 6.5L0 11.167L1.833 13L6.5 8.333L11.167 13L13 11.167L8.333 6.5L13 1.833L11.167 0Z' fill='currentcolor' />
-                                </svg>
+                                <img class="toggle__img" src="../../icons/popup_check.svg" alt="">
+                                <img class="toggle__img" src="../../icons/popup_uncheck.svg" alt="">
                             </span>
                         </label>
                     </div>
@@ -85,7 +73,7 @@
                 <div id="injection-counter" class="counter">0</div>
                 <div class="description" data-i18n-content="amountInjectedDescription">Amount of local Content Delivery Network resource injections since installation.</div>
             </div>
-        </section>
+        </div>
         <footer>
             <div id="testing-utility">
                 <a id="testing-utility-link" class="link-text" data-i18n-content="websiteBroken" data-link="testing-utility">Website broken?</a>

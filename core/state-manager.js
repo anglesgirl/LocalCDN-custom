@@ -284,7 +284,7 @@ stateManager._setIconDisabled = function (tabIdentifier) {
 
 stateManager.requests = {};
 stateManager.tabs = {};
-stateManager.getInvertOption = false;
+stateManager.getInvertOption = true;
 stateManager.validHosts = [];
 stateManager.selectedIcon = 'Default';
 stateManager.internalStatistics = false;
@@ -317,8 +317,12 @@ storageManager.type.get([
     if (items.selectedIcon === undefined) {
         stateManager.selectedIcon = 'Default';
     }
+    if (items.negateHtmlFilterList === undefined) {
+        stateManager.getInvertOption = true;
+    } else {
+        stateManager.getInvertOption = items.negateHtmlFilterList;
+    }
     stateManager.showIconBadge = items.showIconBadge;
-    stateManager.getInvertOption = items.negateHtmlFilterList;
     stateManager.selectedIcon = items.selectedIcon;
     stateManager.internalStatistics = items.internalStatistics;
     stateManager.hideDonationButton = items.hideDonationButton;

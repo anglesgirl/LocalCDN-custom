@@ -619,7 +619,7 @@ popup._onLoggingButtonClicked = function (ev) {
  * Initializations
  */
 
-popup.negateHtmlFilterList = false;
+popup.negateHtmlFilterList = true;
 popup._statisticsStatus = false;
 popup._loggingStatus = false;
 popup._blockGoogleFonts = true;

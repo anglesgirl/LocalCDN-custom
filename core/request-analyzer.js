@@ -145,6 +145,9 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
     let resourcePath, versionNumber, resourcePattern, shorthandResource;
 
     resourcePath = channelPath.replace(basePath, '');
+    if (resourcePath.startsWith('bootstrap')) {
+        resourcePath = resourcePath.replace(Regex.TWITTER_BOOTSTRAP_ALPHA_BETA, '');
+    }
 
     // Evaluate first in case of version 'latest' and numerals in resource
     versionNumber = resourcePath.match(Resource.VERSION_EXPRESSION);
@@ -238,7 +241,9 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
     } else if (bundle === 'TinyMCE (Bundle)' && filename !== 'tinymce.min.js') {
         filename = requestAnalyzer._handleTinyMCE(channelPath, channelHost, initiator);
     } else if (bundle === 'DataTables (Bundle)') {
-        filename = requestAnalyzer._handleDataTables(filename);
+        filename = requestAnalyzer._handleUncompressedFiles(filename);
+    } else if (bundle === 'ScrollMagic (Bundle)' && !filename.endsWith('.min.js')) {
+        filename = requestAnalyzer._handleUncompressedFiles(filename);
     }
 
     if (filename === false) {
@@ -268,7 +273,7 @@ requestAnalyzer._handleMathJax = function (channelPath, channelHost, initiator) 
     return filename;
 };
 
-requestAnalyzer._handleDataTables = function (filename) {
+requestAnalyzer._handleUncompressedFiles = function (filename) {
     if (!filename.endsWith('.min.js') && filename.endsWith('.js')) {
         return filename.replace('.js', '.min.js');
     } else if (!filename.endsWith('.min.css') && filename.endsWith('.css')) {

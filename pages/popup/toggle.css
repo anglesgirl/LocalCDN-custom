@@ -123,6 +123,10 @@ button.toggle {
     color: #f0f0f0;
 }
 
+.toggle__img {
+    width: 12px;
+}
+
 *,
 ::before,
 ::after {

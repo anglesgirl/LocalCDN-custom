@@ -273,6 +273,21 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': `resources/webcomponentsjs/${lastVersion}/webcomponents-loader.min.jsm`,
             'bundle': ''
         };
+    } else if (CompleteURL.startsWith('unpkg.com/aos@next/dist/aos.')) {
+        let file;
+        lastVersion = targets.setLastVersion('/aos/latest');
+        if (channelPath.endsWith('js')) {
+            file = 'aos.jsm';
+        } else {
+            file = 'aos.css';
+        }
+        return {
+            'source': channelHost,
+            'versionDelivered': lastVersion,
+            'versionRequested': 'next',
+            'path': `resources/aos/${lastVersion}/${file}`,
+            'bundle': ''
+        };
     }
     return {
         'result': false,

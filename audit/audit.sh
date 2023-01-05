@@ -436,8 +436,6 @@ function create_url() {
         url="$JSDELIVR/npm/angular-stripe-checkout@$version/angular-stripe-checkout.min.js"
     elif [ "$folder" = "ethjs" ]; then
         url="$JSDELIVR/npm/ethjs@$version/dist/ethjs.min.js"
-    elif [ "$folder" = "findify-bundle" ]; then
-        url="$JSDELIVR/npm/@findify/bundle@$version/dist/$subfile"
     elif [ "$folder" = "react-lifecycles-compat" ]; then
         url="$JSDELIVR/npm/react-lifecycles-compat@$version/react-lifecycles-compat.min.js"
     elif [ "$folder" = "react-side-effect" ]; then
@@ -739,6 +737,10 @@ function create_url() {
         url="$JSDELIVR/npm/in-view@$version/dist/in-view.min.js"
     elif [ "$folder" = "knockout" ] && [ "$version" = "3.5.1" ];then
         url="$CLOUDFLARE/$folder/$version/knockout-latest.min.js"
+    elif [ "$folder" = "vue-router" ] && [ "$version" = "3.6.5" ];then
+        url="$CLOUDFLARE/$folder/$version/vue-router.min.js"
+    elif [ "$folder" = "ScrollMagic" ] && [ "$jfile" != "ScrollMagic.min.js" ];then
+        url="$CLOUDFLARE/$folder/$version/plugins/$jfile"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

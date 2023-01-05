@@ -301,7 +301,7 @@ var resources = {
     },
     // Chart.js
     'chartJs': {
-        'path': 'resources/Chart.js/{version}/Chart.bundle.min.jsm'
+        'path': 'resources/Chart.js/{version}/chart.min.jsm'
     },
     'chartJsCSS': {
         'path': 'resources/Chart.js/{version}/Chart.min.css'
@@ -422,10 +422,6 @@ var resources = {
     // Feather
     'feather': {
         'path': 'resources/feather-icons/{version}/feather.min.jsm'
-    },
-    // Finify bundle
-    'findifyBundle': {
-        'path': 'resources/findify-bundle/{version}/'
     },
     // FitText.js [Deprecated]
     'fitTextJs': {
@@ -808,6 +804,13 @@ var resources = {
     'ngxBootstrapDatepicker': {
         'path': 'resources/ngx-bootstrap/{version}/datepicker/bs-datepicker.css'
     },
+    // nprogress
+    'nprogressCSS': {
+        'path': 'resources/nprogress/{version}/nprogress.min.css'
+    },
+    'nprogressJS': {
+        'path': 'resources/nprogress/{version}/nprogress.min.jsm'
+    },
     // noUiSlider
     'noUiSlider': {
         'path': 'resources/noUiSlider/{version}/nouislider.min.jsm'
@@ -965,6 +968,10 @@ var resources = {
     'scriptaculous': {
         'path': 'resources/scriptaculous/{version}/scriptaculous.jsm'
     },
+    // ScrollMagic (Bundle)
+    'scrollMagic': {
+        'path': 'resources/ScrollMagic/{version}/'
+    },
     // Search Insights
     'searchInsights': {
         'path': 'resources/search-insights/{version}/search-insights.min.jsm'
@@ -1058,6 +1065,10 @@ var resources = {
     'swiperCSS': {
         'path': 'resources/Swiper/{version}/css/swiper.min.css'
     },
+    // tensorflow
+    'tensorflow': {
+        'path': 'resources/tensorflow/{version}/tf.min.jsm'
+    },
     // Tether JS [Deprecated]
     'tetherJS': {
         'path': 'resources/tether/{version}/js/tether.min.jsm'
@@ -1080,6 +1091,10 @@ var resources = {
     // Underscore.js
     'underscore': {
         'path': 'resources/underscore.js/{version}/underscore-min.jsm'
+    },
+    // URI.js
+    'uriJS': {
+        'path': 'resources/URI.js/{version}/URI.min.jsm'
     },
     // urlize
     'urlize': {
@@ -1122,6 +1137,10 @@ var resources = {
     // vue-resource
     'vueResource': {
         'path': 'resources/vue-resource/{version}/vue-resource.min.jsm'
+    },
+    // vue-router
+    'vueRouter': {
+        'path': 'resources/vue-router/{version}/vue-router.global.min.jsm'
     },
     // vuex
     'vuex': {
