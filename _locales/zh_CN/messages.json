@@ -20,11 +20,11 @@
         "description": "Show icon badge description."
     },
     "blockMissingTitle": {
-        "message": "阻止缺失资源的请求",
+        "message": "阻止对缺失资源的请求",
         "description": "Block requests for missing resources title"
     },
     "blockMissingDescription": {
-        "message": "如果请求的资源在本地不可用，则取消当前被拦截的请求。",
+        "message": "即使所需的资源在本地不可用，也取消拦截的请求。",
         "description": "Block requests for missing resources description."
     },
     "disablePrefetchTitle": {
@@ -112,7 +112,7 @@
         "description": "Do not apply HTML filter to these domains:"
     },
     "htmlFilterDomainsDescription": {
-        "message": "输入 HTML 过滤器要处理或忽略的域名，每行一个。",
+        "message": "输入要由 HTML 过滤器处理或忽略处理的域名，一行一个。",
         "description": "Enter the domains to be handled or ignored by the HTML filter. One entry per line."
     },
     "htmlFilterDomainsTitleInclude": {
@@ -176,7 +176,7 @@
         "description": "Are you sure you want to delete all the statistics?"
     },
     "labelDomainsAllowlistGoogleFonts": {
-        "message": "允许以下域名加载 Google Fonts，每行一个。",
+        "message": "允许以下域名加载 Google Fonts，一行一个。",
         "description": "These domains are allowed to load Google Fonts. One entry per line."
     },
     "btnGeneral": {
@@ -300,7 +300,7 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "LocalCDN 是一个 web 浏览器扩展，模拟内容交付网络，以改善您的在线隐私。它拦截流量，在本地找到支持的框架/库，并将它们注入网站。请随意使用下面的测试实用程序来确定您是否得到了适当的保护。欲了解更多信息，请阅读教程或我们的维基页面。",
+        "message": "LocalCDN 是一个用于本地模拟内容交付网络（CDN）的网页浏览器扩展，可以改善您的在线隐私。它能够拦截请求，找出本地支持的框架/库，并将它们注入网站，从而避免向内容交付网络发出请求。请随意使用下面的测试实用程序来确定您是否真正得到保护。欲了解更多信息，请阅读教程，或浏览我们的维基页面。",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
@@ -328,15 +328,15 @@
         "description": "The result then looks like this:"
     },
     "helpHtmlFilterWhyTitle": {
-        "message": "为何必需删除交叉起源和完整性属性?",
+        "message": "为何必须删除 crossorigin 和 integrity 这两个属性?",
         "description": "Why is it necessary to remove crossorigin and integrity attributes?"
     },
     "helpHtmlFilterCrossorigin": {
-        "message": "crossorigin 属性阻止替换，因为目标与请求的目标不匹配。",
+        "message": "crossorigin 属性会阻止替换请求，因为被替换请求的目标来源（origin）与原始请求的目标来源不匹配。",
         "description": "The crossorigin attribute prevents the replacement because the destination does not match the requested one."
     },
     "helpHtmlFilterIntegrity": {
-        "message": "为了节省磁盘空间和交付更多的框架，LocalCDN 升级了一个框架。完整性标记是文件的散列值。如果检查失败，浏览器将不包含框架。完整性检查将失败，因为例如 jQuery 1.10.1和 jQuery 1.12.4的散列值是不同的。",
+        "message": "为了节省磁盘空间，交付更多的框架，LocalCDN 会使用更新版本的框架来代替略旧版本的相同框架。完整性标记是文件的哈希值（hash），正常情况下，只有两个文件完全相同，它们的哈希值才会相同。如果框架的完整性检查失败，浏览器将拒绝包含框架。综合上述情况，完整性检查的确会失败，因为例如 jQuery 1.10.1 和 jQuery 1.12.4 的哈希值是不同的。",
         "description": "To save disk space and to deliver more frameworks LocalCDN upgrades a framework. An integrity tag is the hash value of a file. If the check fails, the browser won‘t include a framework. The integrity check will fail because the hash values for e.g. jQuery 1.10.1 and jQuery 1.12.4 are different."
     },
     "helpHtmlFilterErrors": {
@@ -380,7 +380,7 @@
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
-        "message": "有两个可能的原因：要么是需要一个框架/库，但 LocalCDN (还)没有交付，要么是一个 SOP 。SOP (同源策略)是一种安全机制，它决定了浏览器允许加载哪些数据。它有助于隔离恶意文档，从而减少可能的攻击向量。此策略阻止浏览器加载其外部框架。不幸的是，目前没有解决办法。",
+        "message": "有两个可能的原因：要么是 LocalCDN（还）没有包含某个需要的框架或库，要么是被 SOP（同源策略）屏蔽了。同源策略是一种用于确定浏览器可以加载哪些数据的安全机制。它有助于隔离恶意文档，从而减少可能的攻击向量。此策略会阻止浏览器从 LocalCDN 加载其外部框架。不幸的是，目前对此还没有解决办法。",
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
@@ -404,7 +404,7 @@
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
-        "message": "有哪些东西会被同步，当我选择 »同步« 作为存储类型？",
+        "message": "当我选择 »同步« 作为存储类型时，有哪些东西会被同步？",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
