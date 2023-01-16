@@ -64,11 +64,11 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'bundle': ''
         };
     } else if (channelPath.endsWith(MaterialIcons.DEFAULT)) {
-        lastVersion = targets.setLastVersion('/google-material-design-icons/');
+        lastVersion = targets.setLastVersion('/materialicons/');
         return {
             'source': channelHost,
             'versionDelivered': lastVersion,
-            'path': `resources/google-material-design-icons/${lastVersion}/MaterialIcons.woff2`,
+            'path': `resources/google-material-design-icons/materialicons/${lastVersion}/MaterialIcons.woff2`,
             'bundle': ''
         };
     } else if (Regex.BOOTSTRAP_DATEPICKER_3.test(channelPath)) {
