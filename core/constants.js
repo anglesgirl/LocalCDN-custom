@@ -439,7 +439,7 @@ const BadResources = {
 
 const LogString = {
     'PREFIX': '[ LocalCDN ]',
-    'FONT_AWESOME': 'Font Awesome is not fully supported by your browser.',
+    'NOT_SUPPORTED': 'is not fully supported by your browser.',
     'GOOGLE_MATERIAL_ICONS': 'Google Material Icons are not fully supported by your browser.',
     'YANDEX': 'Workaround. Disable LocalCDN if website and CDN are the same',
     'REPLACED_RESOURCE': 'Replaced resource:',
