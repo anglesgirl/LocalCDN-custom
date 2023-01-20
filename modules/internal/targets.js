@@ -85,6 +85,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/alpinejs/3.')) return '3.11.1';
     if (type.startsWith('/anchor-js/3.')) return '3.2.2';
     if (type.startsWith('/anchor-js/4.')) return '4.3.1';
+    if (type.startsWith('/anchor-js/5.')) return '5.0.0';
     if (type.startsWith('/angular.js/1.')) {
         if (helpers.compareVersion('1.0.8', version)) return '1.0.8'; // <= v1.0.8
         if (helpers.compareVersion('1.2.19', version)) return '1.2.19'; // > v1.0.8 to <= v1.2.19
