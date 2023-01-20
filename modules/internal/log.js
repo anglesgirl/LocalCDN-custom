@@ -21,10 +21,10 @@
 
 var log = {};
 
-log.append = function (initiator, resource, target, highlight) {
+log.append = function (initiator, resource, target, highlight, iframe = '') {
     storageManager.type.get(Setting.LOGGING, function (items) {
         if (items.enableLogging) {
-            log.data.push({initiator, resource, target, highlight});
+            log.data.push({initiator, resource, target, highlight, iframe});
         }
     });
 };

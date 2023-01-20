@@ -446,6 +446,7 @@ const LogString = {
     'MISSING_RESOURCE': 'Missing resource:',
     'EVIL_RESOURCE_BLOCKED': 'Evil resource blocked:',
     'NON_GET_REQUEST_BLOCKED': 'Non-GET-Request blocked',
+    'IFRAME': 'Possible iframe request:',
 };
 
 // Supported charsets for TextDecoder()

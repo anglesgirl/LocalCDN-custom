@@ -40,7 +40,7 @@ logging._generateTable = function () {
     }
 
     for (let i = data.length - 1; i >= 0; i--) {
-        let tbody, row, cell, content, redirect;
+        let tbody, row, cell, content, redirect, initiator;
 
         tbody = document.getElementById('logging-content').getElementsByTagName('tbody')[0];
         row = tbody.insertRow();
@@ -53,8 +53,14 @@ logging._generateTable = function () {
         content = document.createTextNode(i + 1);
         cell.appendChild(content);
 
+        if (Object.values(data[i])[4] === '') {
+            initiator = Object.values(data[i])[0];
+        } else {
+            initiator = `${Object.values(data[i])[0]}\n(i) ${Object.values(data[i])[4]}`;
+        }
+
         cell = row.insertCell();
-        content = document.createTextNode(Object.values(data[i])[0]);
+        content = document.createTextNode(initiator);
         cell.appendChild(content);
 
         cell = row.insertCell();
