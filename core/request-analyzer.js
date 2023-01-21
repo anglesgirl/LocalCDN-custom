@@ -52,9 +52,10 @@ requestAnalyzer.isValidCandidate = function (requestDetails, tabDetails) {
 
     // Font Awesome injections in Chromium deactivated  (https://gitlab.com/nobody42/localcdn/-/issues/67)
     if (!BrowserType.FIREFOX) {
-        if (requestDetails.url.includes('font-awesome') || requestDetails.url.includes('fontawesome')) {
-            console.warn(`${LogString.PREFIX} ${LogString.FONT_AWESOME}`);
-            log.append(tabDetails.url, requestDetails.url, LogString.FONT_AWESOME, true);
+        let requestType = requestAnalyzer.chromeSupport(requestDetails.url);
+        if (requestType !== '') {
+            console.warn(`${LogString.PREFIX} ${requestType} ${LogString.NOT_SUPPORTED}`);
+            log.append(tabDetails.url, requestDetails.url, `${requestType} ${LogString.NOT_SUPPORTED}`, true);
             return false;
         }
     }
@@ -67,6 +68,20 @@ requestAnalyzer.isValidCandidate = function (requestDetails, tabDetails) {
 
     // Only requests of type GET can be valid candidates.
     return requestDetails.method === WebRequest.GET;
+};
+
+requestAnalyzer.chromeSupport = function (url) {
+    let value = '';
+
+    if (url.includes('font-awesome')) {
+        value = 'font-awesome';
+    } else if (url.includes('fontawesome')) {
+        value = 'font-awesome';
+    } else if (url.includes('fork-awesome')) {
+        value = 'fork-awesome';
+    }
+
+    return value;
 };
 
 requestAnalyzer.isGoogleMaterialIcons = function (url) {

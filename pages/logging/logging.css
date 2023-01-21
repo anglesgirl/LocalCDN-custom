@@ -24,6 +24,7 @@ table td:first-child {
 
 td {
     padding: 2px 15px;
+    white-space: pre;
 }
 
 textarea {

@@ -31,7 +31,14 @@ var interceptor = {};
  */
 
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
-    let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed;
+    let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed,
+        iframe;
+
+    iframe = '';
+    if (tab.url !== requestDetails.originUrl) {
+        console.log(`${LogString.PREFIX} ${LogString.IFRAME} ${tab.url} -> ${requestDetails.originUrl}`);
+        iframe = requestDetails.originUrl;
+    }
 
     if (requestDetails['type'] === WebRequestType.MAIN_FRAME &&
         helpers.checkAllowlisted(
@@ -57,7 +64,7 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     // Block POST, HEAD, PUT, DELETE, TRACE, OPTIONS
     if (BlockedRequestMethods[requestDetails.method]) {
         console.warn(`${LogString.PREFIX} ${LogString.NON_GET_REQUEST_BLOCKED}`);
-        log.append(tab.url, requestDetails.url, LogString.NON_GET_REQUEST_BLOCKED, true);
+        log.append(tab.url, requestDetails.url, LogString.NON_GET_REQUEST_BLOCKED, true, iframe);
         return {
             'cancel': true
         };
@@ -72,7 +79,7 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
 
     if (interceptor._isBadResource(requestDetails.url)) {
         console.log(`${LogString.PREFIX} ${LogString.EVIL_RESOURCE_BLOCKED} ${requestDetails.url}`);
-        log.append(tab.url, requestDetails.url, '-', true);
+        log.append(tab.url, requestDetails.url, '-', true, iframe);
         return {
             'cancel': true
         };
@@ -105,7 +112,7 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     }
 
     console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${targetDetails.path}`);
-    log.append(tab.url, requestDetails.url, targetDetails.path, false);
+    log.append(tab.url, requestDetails.url, targetDetails.path, false, iframe);
 
     return {
         'redirectUrl': chrome.runtime.getURL(targetDetails.path + fileGuard.secret)
