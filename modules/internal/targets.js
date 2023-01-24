@@ -187,7 +187,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/d3-legend/2.')) return '2.25.6';
     if (type.startsWith('/datatables/1.')) return '1.11.0';
     if (type.startsWith('/dayjs/1.')) return '1.11.7';
-    if (type.startsWith('/dexie/3.') || type.startsWith('/dexie/latest')) return '3.2.2';
+    if (type.startsWith('/dexie/3.') || type.startsWith('/dexie/latest')) return '3.2.3';
     if (type.startsWith('/docsearch.js/2.')) return '2.6.3';
     if (type.startsWith('/docsify/4.') || type.startsWith('/docsify/')) return '4.13.0';
     if (type.startsWith('/docsify-themeable/0.')) return '0.9.0';
