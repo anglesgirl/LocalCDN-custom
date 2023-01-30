@@ -52,8 +52,11 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
 
     targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
     if (targetDetails['result'] === 'blocked') {
+        let source, resource;
+        source = helpers.extractDomainFromUrl(tab.url, true);
+        resource = tab.url;
         return {
-            'redirectUrl': chrome.runtime.getURL('resources/blocked/index.html')
+            'redirectUrl': chrome.runtime.getURL(`resources/blocked/index.html?source=${source}&resource=${resource}`)
         };
     }
 
