@@ -136,14 +136,14 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/appboy-web-sdk/3.')) return '3.5.1';
     if (type.startsWith('/asciinema-player/2.')) return '2.6.1';
     if (type.startsWith('/axios/0.')) return '0.27.2';
-    if (type.startsWith('/axios/1.')) return '1.2.3';
+    if (type.startsWith('/axios/1.')) return '1.3.2';
     if (type.startsWith('/backbone.js/0.')) return '0.9.10';
     if (type.startsWith('/backbone.js/1.')) return '1.4.1';
     if (type.startsWith('/baguettebox.js/1.')) return '1.11.1';
     if (type.startsWith('/blazy/1.')) return '1.8.2';
     if (type.startsWith('/bluebird/3.')) return '3.7.2';
     if (type.startsWith('/bodymovin/4.')) return '4.13.0';
-    if (type.startsWith('/bodymovin/5.')) return '5.10.1';
+    if (type.startsWith('/bodymovin/5.')) return '5.10.2';
     if (type.startsWith('/bootbox.js/4.')) return '4.4.0';
     if (type.startsWith('/bootbox.js/5.')) return '5.5.3';
     if (type.startsWith('/bootbox.js/6.')) return '6.0.0';
@@ -187,13 +187,13 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/d3-legend/2.')) return '2.25.6';
     if (type.startsWith('/datatables/1.')) return '1.11.0';
     if (type.startsWith('/dayjs/1.')) return '1.11.7';
-    if (type.startsWith('/dexie/3.') || type.startsWith('/dexie/latest')) return '3.2.2';
+    if (type.startsWith('/dexie/3.') || type.startsWith('/dexie/latest')) return '3.2.3';
     if (type.startsWith('/docsearch.js/2.')) return '2.6.3';
     if (type.startsWith('/docsify/4.') || type.startsWith('/docsify/')) return '4.13.0';
     if (type.startsWith('/docsify-themeable/0.')) return '0.9.0';
     if (type.startsWith('/drawer/3.')) return '3.2.2';
     if (type.startsWith('/dygraph/1.')) return '1.1.1';
-    if (type.startsWith('/dygraph/2.')) return '2.1.2';
+    if (type.startsWith('/dygraph/2.')) return '2.2.0';
     if (type.startsWith('/element-ui/2.')) return '2.15.12';
     if (type.startsWith('/embedly-player/0.')) return '0.1.0';
     if (type.startsWith('/ethjs')) return '0.4.0';
@@ -231,12 +231,12 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/history/4.')) return '4.10.1';
     if (type.startsWith('/history/5.')) return '5.3.0';
     if (type.startsWith('/hls.js/0.')) return '0.14.17';
-    if (type.startsWith('/hls.js/1.')) return '1.3.1';
+    if (type.startsWith('/hls.js/1.')) return '1.3.2';
     if (type.startsWith('/hogan.js/')) return '3.0.2';
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
     if (type.startsWith('/instantsearch.css/8.')) return '8.0.0';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
-    if (type.startsWith('/instantsearch.js/4.')) return '4.49.4';
+    if (type.startsWith('/instantsearch.js/4.')) return '4.50.2';
     if (type.startsWith('/in-view/0.')) return '0.6.1';
     if (type.startsWith('/iScroll/5.')) return '5.2.0';
     if (type.startsWith('/izimodal/1.')) return '1.6.1';
@@ -312,7 +312,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Leaflet.EasyButton/2.')) return '2.4.0';
     if (type.startsWith('/leaflet.featuregroup.subgroup/1.')) return '1.0.2';
     if (type.startsWith('/leaflet.markercluster/1.')) return '1.5.3';
-    if (type.startsWith('/libphonenumber-js/1.')) return '1.10.18';
+    if (type.startsWith('/libphonenumber-js/1.')) return '1.10.19';
     if (type.startsWith('/libsodium-wrappers/0.')) return '0.5.4';
     if (type.startsWith('/lightbox2/2.')) return '2.11.3';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
@@ -395,15 +395,15 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-dom/18.')) return '18.2.0';
     if (type.startsWith('/react-intl/')) {
         // NOTE: Parameters swapped. (= anything greater than v5.0.0)
-        if (helpers.compareVersion(version, '5.0.0')) return '6.2.5'; // >= v5.0.0
+        if (helpers.compareVersion(version, '5.0.0')) return '6.2.7'; // >= v5.0.0
     }
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.0.5';
     if (type.startsWith('/react-router/5.')) return '5.3.3';
-    if (type.startsWith('/react-router/6.')) return '6.7.0';
+    if (type.startsWith('/react-router/6.')) return '6.8.0';
     if (type.startsWith('/react-side-effect/')) return '2.1.2';
     if (type.startsWith('/react-lifecycles-compat/')) return '3.0.4';
-    if (type.startsWith('/redux/4.')) return '4.2.0';
+    if (type.startsWith('/redux/4.')) return '4.2.1';
     if (type.startsWith('/rickshaw/1.')) return '1.7.1';
     if (type.startsWith('/script.js/2.')) return '2.5.9';
     if (type.startsWith('/scriptaculous/1.')) return '1.9.0';
@@ -443,7 +443,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Swiper/5.')) return '5.4.5';
     if (type.startsWith('/Swiper/6.')) return '6.8.4';
     if (type.startsWith('/Swiper/7.')) return '7.4.1';
-    if (type.startsWith('/Swiper/8.') || type.startsWith('/Swiper/')) return '8.4.6';
+    if (type.startsWith('/Swiper/8.')) return '8.4.7';
+    if (type.startsWith('/Swiper/9.') || type.startsWith('/Swiper/')) return '9.0.2';
     if (type.startsWith('/tensorflow/2.')) return '4.2.0';
     if (type.startsWith('/tensorflow/3.')) return '4.2.0';
     if (type.startsWith('/tensorflow/4.')) return '4.2.0';
@@ -481,11 +482,11 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('5.20.5', version)) return '5.20.5'; // <= 5.20.5
         if (helpers.compareVersion('6.13.0', version)) return '6.13.0'; // > 5.20.5 to <= 6.13.0
         if (helpers.compareVersion('7.21.1', version)) return '7.21.1'; // > 6.13.0 to <= 7.21.1
-        return '8.0.3';
+        return '8.0.4';
     }
     if (type.startsWith('/vue/1.')) return '1.0.28';
     if (type.startsWith('/vue/2.')) return '2.6.14';
-    if (type.startsWith('/vue/3.')) return '3.2.45';
+    if (type.startsWith('/vue/3.')) return '3.2.47';
     if (type.startsWith('/vue-i18n/8.')) return '8.27.2';
     if (type.startsWith('/vue-i18n/9.')) return '9.2.2';
     if (type.startsWith('/vue-match-media/1.')) return '1.0.3';
