@@ -194,7 +194,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/drawer/3.')) return '3.2.2';
     if (type.startsWith('/dygraph/1.')) return '1.1.1';
     if (type.startsWith('/dygraph/2.')) return '2.2.0';
-    if (type.startsWith('/element-ui/2.')) return '2.15.12';
+    if (type.startsWith('/element-ui/2.')) return '2.15.13';
     if (type.startsWith('/embedly-player/0.')) return '0.1.0';
     if (type.startsWith('/ethjs')) return '0.4.0';
     if (type.startsWith('/exif-js/2.')) return '2.3.0';
