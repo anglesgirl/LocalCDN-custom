@@ -336,7 +336,7 @@ https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.0/docsify.min.js
 https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css
 https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js
 https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js
-https://cdnjs.cloudflare.com/ajax/libs/dygraph/2.2.0/dygraph.min.js
+https://cdnjs.cloudflare.com/ajax/libs/dygraph/2.2.1/dygraph.min.js
 https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.15.13/index.min.js
 https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.15.13/locale/af-ZA.min.js
 https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.15.13/locale/ar.min.js
