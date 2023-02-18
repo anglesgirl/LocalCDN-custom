@@ -158,6 +158,9 @@
 .bs-datepicker-body table td span.selected, .bs-datepicker-body table td.selected span {
   color: #fff;
 }
+.bs-datepicker-body table td span.selected.disabled, .bs-datepicker-body table td.selected.disabled span {
+  opacity: 0.3;
+}
 .bs-datepicker-body table td span.is-other-month, .bs-datepicker-body table td.is-other-month span {
   color: rgba(0, 0, 0, 0.25);
 }
@@ -207,9 +210,9 @@
   border-radius: 50%;
   color: #fff;
 }
-.bs-datepicker-body table.days td.active:not(.select-start):before, .bs-datepicker-body table.days td.in-range:not(.select-start):before,
-.bs-datepicker-body table.days span.active:not(.select-start):before,
-.bs-datepicker-body table.days span.in-range:not(.select-start):before {
+.bs-datepicker-body table.days td.active:not(.select-start):not(.disabled):before, .bs-datepicker-body table.days td.in-range:not(.select-start):not(.disabled):before,
+.bs-datepicker-body table.days span.active:not(.select-start):not(.disabled):before,
+.bs-datepicker-body table.days span.in-range:not(.select-start):not(.disabled):before {
   background: #e9edf0;
 }
 .bs-datepicker-body table.days span {
