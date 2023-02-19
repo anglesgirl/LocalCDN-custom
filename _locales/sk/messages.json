@@ -256,11 +256,11 @@
         "description": "beta"
     },
     "changeBadgeColorMissingResourcesTitle": {
-        "message": "",
+        "message": "Označenie chýbajúcich zdrojov na ikone",
         "description": "Indicate missing resources on the icon"
     },
     "changeBadgeColorMissingResourcesDescription": {
-        "message": "",
+        "message": "Zmena farby odznaku, ak chýbajú zdroje.",
         "description": "Change the badge color if resources are missing."
     },
     "titleHelp": {
@@ -272,7 +272,7 @@
         "description": "Introduction"
     },
     "helpHtmlFilterTitle": {
-        "message": "",
+        "message": "Čo je to »HTML filter«?",
         "description": "What is »HTML filter«?"
     },
     "helpRuleGeneratorTitle": {
@@ -280,11 +280,11 @@
         "description": "Rule generator"
     },
     "helpWebsiteIssuesTitle": {
-        "message": "",
+        "message": "Niektoré stránky vyzerajú divne alebo sa ťažko používajú",
         "description": "Some websites look strange or are not easy to use"
     },
     "helpBlockGoogleFontsTitle": {
-        "message": "",
+        "message": "Prečo existuje možnosť \"Blokovať písma Google\"?",
         "description": "Why is there a »Block Google Fonts« option?"
     },
     "helpStatisticsTitle": {
@@ -292,7 +292,7 @@
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
-        "message": "",
+        "message": "Čo bude synchronizované ak vyberiem »sync« ako typ úložiska?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {
@@ -300,7 +300,7 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "LocalCDN je rozšírenie webového prehliadača, ktoré emuluje siete na doručovanie obsahu s cieľom zlepšiť vaše súkromie online. Zachytáva prevádzku, lokálne vyhľadáva podporované rámce/knižnice a vkladá ich do webovej stránky. Neváhajte a použite nasledujúci testovací nástroj, aby ste zistili, či ste správne chránení. Ďalšie informácie nájdete v návode alebo na našich stránkach Wiki.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {

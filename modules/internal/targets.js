@@ -136,7 +136,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/appboy-web-sdk/3.')) return '3.5.1';
     if (type.startsWith('/asciinema-player/2.')) return '2.6.1';
     if (type.startsWith('/axios/0.')) return '0.27.2';
-    if (type.startsWith('/axios/1.')) return '1.3.2';
+    if (type.startsWith('/axios/1.')) return '1.3.3';
     if (type.startsWith('/backbone.js/0.')) return '0.9.10';
     if (type.startsWith('/backbone.js/1.')) return '1.4.1';
     if (type.startsWith('/baguettebox.js/1.')) return '1.11.1';
@@ -171,7 +171,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bxslider/4.')) return '4.2.15';
     if (type.startsWith('/Chart.js/2.')) return '2.9.4';
     if (type.startsWith('/Chart.js/3.')) return '3.9.1';
-    if (type.startsWith('/Chart.js/4.')) return '4.2.0';
+    if (type.startsWith('/Chart.js/4.')) return '4.2.1';
     if (type.startsWith('/clappr/0.') || type.startsWith('/clappr/latest/')) return '0.4.7';
     if (type.startsWith('/chosen/1.')) return '1.8.7';
     if (type.startsWith('/clipboard.js/1.')) return '1.7.1';
@@ -193,8 +193,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/docsify-themeable/0.')) return '0.9.0';
     if (type.startsWith('/drawer/3.')) return '3.2.2';
     if (type.startsWith('/dygraph/1.')) return '1.1.1';
-    if (type.startsWith('/dygraph/2.')) return '2.2.0';
-    if (type.startsWith('/element-ui/2.')) return '2.15.12';
+    if (type.startsWith('/dygraph/2.')) return '2.2.1';
+    if (type.startsWith('/element-ui/2.')) return '2.15.13';
     if (type.startsWith('/embedly-player/0.')) return '0.1.0';
     if (type.startsWith('/ethjs')) return '0.4.0';
     if (type.startsWith('/exif-js/2.')) return '2.3.0';
@@ -209,7 +209,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/font-awesome/3.')) return '3.2.1';
     if (type.startsWith('/font-awesome/4.')) return '4.7.0';
     if (type.startsWith('/font-awesome/5.')) return '5.15.4';
-    if (type.startsWith('/font-awesome/6.')) return '6.2.1';
+    if (type.startsWith('/font-awesome/6.')) return '6.3.0';
     if (type.startsWith('/fork-awesome/1.')) return '1.2.0';
     if (type.startsWith('/foundation/5.')) return '5.5.3';
     if (type.startsWith('/foundation/6.')) return '6.7.5';
@@ -231,12 +231,12 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/history/4.')) return '4.10.1';
     if (type.startsWith('/history/5.')) return '5.3.0';
     if (type.startsWith('/hls.js/0.')) return '0.14.17';
-    if (type.startsWith('/hls.js/1.')) return '1.3.2';
+    if (type.startsWith('/hls.js/1.')) return '1.3.3';
     if (type.startsWith('/hogan.js/')) return '3.0.2';
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
     if (type.startsWith('/instantsearch.css/8.')) return '8.0.0';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
-    if (type.startsWith('/instantsearch.js/4.')) return '4.50.2';
+    if (type.startsWith('/instantsearch.js/4.')) return '4.51.0';
     if (type.startsWith('/in-view/0.')) return '0.6.1';
     if (type.startsWith('/iScroll/5.')) return '5.2.0';
     if (type.startsWith('/izimodal/1.')) return '1.6.1';
@@ -312,7 +312,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Leaflet.EasyButton/2.')) return '2.4.0';
     if (type.startsWith('/leaflet.featuregroup.subgroup/1.')) return '1.0.2';
     if (type.startsWith('/leaflet.markercluster/1.')) return '1.5.3';
-    if (type.startsWith('/libphonenumber-js/1.')) return '1.10.19';
+    if (type.startsWith('/libphonenumber-js/1.')) return '1.10.20';
     if (type.startsWith('/libsodium-wrappers/0.')) return '0.5.4';
     if (type.startsWith('/lightbox2/2.')) return '2.11.3';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
@@ -355,14 +355,14 @@ targets.setLastVersion = function (type, version) {
         // The only resource used from ngx-bootstrap is the CSS file for the datepicker.
         // This CSS is unchanged since version 7. So it's not necessary to host it more than once.
         if (helpers.compareVersion('6.2.0', version)) return '6.2.0'; // <= v6.2.0
-        return '10.2.1';
+        return '10.3.0';
     }
     if (type.startsWith('/ngx-bootstrap/7.')) return '7.1.2';
     if (type.startsWith('/ngx-bootstrap/8.')) return '8.0.0';
     if (type.startsWith('/ngx-bootstrap/9.')) return '9.0.0';
     if (type.startsWith('/ngx-bootstrap/10.')) return '10.0.0';
     if (type.startsWith('/noUiSlider/14.')) return '14.7.0';
-    if (type.startsWith('/noUiSlider/15.')) return '15.6.1';
+    if (type.startsWith('/noUiSlider/15.')) return '15.7.0';
     if (type.startsWith('/nprogress/0.')) return '0.2.0';
     if (type.startsWith('/nvd3/1.')) return '1.8.6';
     if (type.startsWith('/object-assign@4.')) return '4.1.1';
@@ -395,12 +395,12 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-dom/18.')) return '18.2.0';
     if (type.startsWith('/react-intl/')) {
         // NOTE: Parameters swapped. (= anything greater than v5.0.0)
-        if (helpers.compareVersion(version, '5.0.0')) return '6.2.7'; // >= v5.0.0
+        if (helpers.compareVersion(version, '5.0.0')) return '6.2.8'; // >= v5.0.0
     }
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.0.5';
     if (type.startsWith('/react-router/5.')) return '5.3.3';
-    if (type.startsWith('/react-router/6.')) return '6.8.0';
+    if (type.startsWith('/react-router/6.')) return '6.8.1';
     if (type.startsWith('/react-side-effect/')) return '2.1.2';
     if (type.startsWith('/react-lifecycles-compat/')) return '3.0.4';
     if (type.startsWith('/redux/4.')) return '4.2.1';
@@ -408,8 +408,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/script.js/2.')) return '2.5.9';
     if (type.startsWith('/scriptaculous/1.')) return '1.9.0';
     if (type.startsWith('/ScrollMagic/2.')) return '2.0.8';
-    if (type.startsWith('/search-insights/1.')) return '1.8.0';
-    if (type.startsWith('/search-insights/2.')) return '2.2.3';
+    if (type.startsWith('/search-insights/1.')) return '1.9.0';
+    if (type.startsWith('/search-insights/2.')) return '2.3.0';
     if (type.startsWith('/select2/3.')) return '3.5.4';
     if (type.startsWith('/select2/4.')) return '4.0.13';
     if (type.startsWith('/semantic-ui/2.')) return '2.5.0';
@@ -417,7 +417,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/showdown/1.')) return '1.9.1';
     if (type.startsWith('/showdown/2.')) return '2.1.0';
     if (type.startsWith('/simplebar/5.')) return '5.3.9';
-    if (type.startsWith('/simplebar/6.')) return '6.2.0';
+    if (type.startsWith('/simplebar/6.')) return '6.2.1';
     if (type.startsWith('/simplemde/')) return '1.11.2';
     if (type.startsWith('/slick-carousel/1.')) {
         if (helpers.compareVersion('1.8.1', version)) return '1.8.1'; // <= v1.8.1
@@ -428,7 +428,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/snowplow/2.')) return '2.18.2';
     if (type.startsWith('/socket.io/2.')) return '2.4.0';
     if (type.startsWith('/socket.io/3.')) return '3.1.3';
-    if (type.startsWith('/socket.io/4.')) return '4.5.4';
+    if (type.startsWith('/socket.io/4.')) return '4.6.0';
     if (type.startsWith('/spin.js/2.')) return '2.3.2';
     if (type.startsWith('/spin.js/3.')) return '3.1.0';
     if (type.startsWith('/spin.js/4.')) return '4.1.1';
@@ -444,7 +444,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Swiper/6.')) return '6.8.4';
     if (type.startsWith('/Swiper/7.')) return '7.4.1';
     if (type.startsWith('/Swiper/8.')) return '8.4.7';
-    if (type.startsWith('/Swiper/9.') || type.startsWith('/Swiper/')) return '9.0.2';
+    if (type.startsWith('/Swiper/9.') || type.startsWith('/Swiper/')) return '9.0.5';
     if (type.startsWith('/tensorflow/2.')) return '4.2.0';
     if (type.startsWith('/tensorflow/3.')) return '4.2.0';
     if (type.startsWith('/tensorflow/4.')) return '4.2.0';

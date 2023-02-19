@@ -421,6 +421,7 @@ const MathJax3Files = {
     'es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff': true,
     'es5/tex-chtml.js': true,
     'es5/tex-mml-chtml.js': true,
+    'es5/tex-svg.js': true,
 
 };
 /**
