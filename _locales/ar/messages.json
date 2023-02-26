@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "يحميك من التتبع عبر شبكات توصيل المحتوى (CDNs) عن طريق إعادة التوجيه إلى موارد محليَّة.",
+        "message": "يحميك من التتبع عبر شبكات توصيل المحتوى (CDNs) عن طريق إعادة التوجيه إلى موارد محلية.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
