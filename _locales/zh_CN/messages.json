@@ -24,7 +24,7 @@
         "description": "Block requests for missing resources title"
     },
     "blockMissingDescription": {
-        "message": "即使所需的资源在本地不可用，也取消拦截的请求。",
+        "message": "如果所需的资源在本地不可用，则取消拦截的请求。",
         "description": "Block requests for missing resources description."
     },
     "disablePrefetchTitle": {
@@ -128,7 +128,7 @@
         "description": "If requests for missing resources are allowed, connections to \"fonts.googleapis.com\" are not blocked. Enable this option to block these requests."
     },
     "chooseIconStyle": {
-        "message": "选择一个此扩展程序的图标",
+        "message": "选择扩展程序的图标",
         "description": "Choose an icon for this extension"
     },
     "internalStatisticsTitle": {
@@ -272,7 +272,7 @@
         "description": "Introduction"
     },
     "helpHtmlFilterTitle": {
-        "message": "什么是 »HTML 过滤器«?",
+        "message": "什么是 »HTML 过滤器«？",
         "description": "What is »HTML filter«?"
     },
     "helpRuleGeneratorTitle": {
