@@ -218,11 +218,11 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/gsap/1.')) return '1.20.5';
     if (type.startsWith('/gsap/2.')) return '2.1.3';
     if (type.startsWith('/gsap/3.')) return '3.11.4';
-    if (type.startsWith('/materialicons/')) return 'v139';
-    if (type.startsWith('/materialiconsoutlined/')) return 'v108';
+    if (type.startsWith('/materialicons/')) return 'v140';
+    if (type.startsWith('/materialiconsoutlined/')) return 'v109';
     if (type.startsWith('/materialiconsround/')) return 'v107';
-    if (type.startsWith('/materialiconssharp/')) return 'v108';
-    if (type.startsWith('/materialiconstwotone/')) return 'v111';
+    if (type.startsWith('/materialiconssharp/')) return 'v109';
+    if (type.startsWith('/materialiconstwotone/')) return 'v112';
     if (type.startsWith('/highlight.js/7.')) return '9.18.5';
     if (type.startsWith('/highlight.js/8.')) return '9.18.5';
     if (type.startsWith('/highlight.js/9.')) return '9.18.5';
