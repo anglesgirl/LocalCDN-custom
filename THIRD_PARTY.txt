@@ -1398,8 +1398,8 @@ https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js
 https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js
 https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js
 https://cdnjs.cloudflare.com/ajax/libs/page.js/1.11.6/page.js
-https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.5.0/pagination.css
-https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.5.0/pagination.min.js
+https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.css
+https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.min.js
 https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js
 https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js
 https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js
