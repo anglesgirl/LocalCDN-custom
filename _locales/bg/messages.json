@@ -392,7 +392,7 @@
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
-        "message": "Статистиката не съдържа информация за мрежовия четец, операционната система, страницата, от която идва заявката, IP адреси или друга информация. Само дата, брояч на мрежа за доставка на съдържание (МДС) и брояч на софтуерни рамки. Статистиката показва кои софтуени рамки са заменени от LocalCDN колко често и кои МДС са били поискани.",
+        "message": "Статистиката не съдържа информация за мрежовия четец, операционната система, страницата, от която идва заявката, IP адреси или друга информация. Само дата, брояч на мрежа за доставка на съдържание (МДС) и брояч на софтуерни рамки. Статистиката показва кои софтуерни рамки са заменени от LocalCDN колко често и кои МДС са били поискани.",
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
