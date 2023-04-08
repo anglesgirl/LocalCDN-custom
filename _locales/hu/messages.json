@@ -288,7 +288,7 @@
         "description": "Why is there a »Block Google Fonts« option?"
     },
     "helpStatisticsTitle": {
-        "message": "",
+        "message": "Mi van a statisztikákkal? Van ami elküldődik bármilyen szerverre?",
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
@@ -304,7 +304,7 @@
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
-        "message": "",
+        "message": "Tesztelőeszköz",
         "description": "Testing utility"
     },
     "helpLinkTutorial": {
@@ -328,7 +328,7 @@
         "description": "The result then looks like this:"
     },
     "helpHtmlFilterWhyTitle": {
-        "message": "",
+        "message": "Miért szükséges eltávolítani a kereszteredtű- és sérthetetlenségtulajdonságokat?",
         "description": "Why is it necessary to remove crossorigin and integrity attributes?"
     },
     "helpHtmlFilterCrossorigin": {
@@ -424,63 +424,63 @@
         "description": "Numbers of injections"
     },
     "helpYes": {
-        "message": "",
+        "message": "Igen",
         "description": "Yes"
     },
     "helpNo": {
-        "message": "",
+        "message": "Nem",
         "description": "No"
     },
     "helpData": {
-        "message": "",
+        "message": "Adat",
         "description": "Data"
     },
     "helpSyncContentEver": {
-        "message": "",
+        "message": "Beállítások amik szinkronizálva lesznek:",
         "description": "Settings that will be synchronized:"
     },
     "helpIcons": {
-        "message": "",
+        "message": "Alapértelmezett, Világos, Kék/Szürke",
         "description": "Default, Light, Blue/Grey"
     },
     "helpSyncContentLinks": {
-        "message": "",
+        "message": "Meg több információ Firefox Sync-ről:",
         "description": "More information about Firefox Sync:"
     },
     "helpBrowserCompatibility": {
-        "message": "",
+        "message": "Böngésző kompatibilitás",
         "description": "Browser compatibility"
     },
     "helpReplace": {
-        "message": "",
+        "message": "Helyettesítsd",
         "description": "Replace"
     },
     "helpReplaceOther": {
-        "message": "",
+        "message": "Helyettesíts más erőforrásokat",
         "description": "Replace other resources"
     },
     "helpUpgradeAllResources": {
-        "message": "",
+        "message": "Frissítsd az összes erőforrást",
         "description": "Upgrade all resources"
     },
     "helpExplanationChrome": {
-        "message": "",
+        "message": "Összes Chromium-alapú böngésző",
         "description": "All Chromium based Browser"
     },
     "helpLimitation": {
-        "message": "",
+        "message": "Ez nem a LocalCDN korlátozása hanem, a Chromium-alapú böngészőknek egy hiányzó API támogatása.",
         "description": "This is not a limitation of LocalCDN, but missing API support of Chromium based browsers."
     },
     "titleBadgeDefault": {
-        "message": "",
+        "message": "Alapértelmezett jelvény",
         "description": "Default badge"
     },
     "titleBadgeHTMLFilter": {
-        "message": "",
+        "message": "HTML szűrő jelvény",
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "",
+        "message": "Hiányzó erőforrás jelvény",
         "description": "Missing resource badge"
     }
 }
