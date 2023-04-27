@@ -1249,7 +1249,7 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery-ujs/1.2.3/rails.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js
 https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js
-https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js
+https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.5/js.cookie.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.2/script/jquery.jscrollpane.min.js
 https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js
 https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js
