@@ -1875,7 +1875,7 @@ https://cdn.jsdelivr.net/npm/raven-js@3.27.2/dist/raven.min.js
 https://cdn.jsdelivr.net/npm/react-intl@6.3.2/react-intl.iife.min.js
 https://cdn.jsdelivr.net/npm/react-lifecycles-compat@3.0.4/react-lifecycles-compat.min.js
 https://cdn.jsdelivr.net/npm/search-insights@1.10.0/dist/search-insights.min.js
-https://cdn.jsdelivr.net/npm/search-insights@2.4.0/dist/search-insights.min.js
+https://cdn.jsdelivr.net/npm/search-insights@2.6.0/dist/search-insights.min.js
 https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css
 https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js
 https://cdn.jsdelivr.net/npm/swiper@7.4.1/swiper-bundle.min.css
