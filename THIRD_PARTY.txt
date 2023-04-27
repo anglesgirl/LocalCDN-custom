@@ -1872,7 +1872,7 @@ https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@0.6.2/build/p2p-media-loader
 https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css
 https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js
 https://cdn.jsdelivr.net/npm/raven-js@3.27.2/dist/raven.min.js
-https://cdn.jsdelivr.net/npm/react-intl@6.3.2/react-intl.iife.min.js
+https://cdn.jsdelivr.net/npm/react-intl@6.4.1/react-intl.iife.min.js
 https://cdn.jsdelivr.net/npm/react-lifecycles-compat@3.0.4/react-lifecycles-compat.min.js
 https://cdn.jsdelivr.net/npm/search-insights@1.10.0/dist/search-insights.min.js
 https://cdn.jsdelivr.net/npm/search-insights@2.6.0/dist/search-insights.min.js
