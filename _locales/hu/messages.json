@@ -292,7 +292,7 @@
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
-        "message": "Mi fog szinkronizálódni amikor be kapcsolom a »szinkronizál« opciót mint lokális tárhely?",
+        "message": "Mi lesz szinkronizálva, ha a »Szinkronizálás« opciót választom tárhely típusnak?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {
@@ -300,7 +300,7 @@
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "",
+        "message": "A LocalCDN egy webböngésző kiegészítő, ami utánozza tartalom kiszolgálói hálózatokat, hogy jobbá tegye az online magánszférát. Felfogja a forgalmat, és megtalálja a támogatott keresztrendszereket/könyvtárakat helyileg, és beinjektálja ezeket a weboldalba. Nyugodtan használd a következő tesztelő eszközt, hogy kiderüljön tényleg védett vagy. Több információért olvasd el a tutorialt, vagy a Wiki oldalainkat.",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
@@ -316,7 +316,7 @@
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "",
+        "message": "A legtöbb esetben LocalCDN egyszerűen helyettesíti a beágyazott keretrendszereket, és jobbá teszi a magánszférát. Más esetekben a weboldal megpróbálhatja megakadályozni ezt a HTML forráskódban levő bizonyos opciókkal. LocalCDN beolvassa a HTML forráskódot mielőtt megjelenik a böngészőben, és eltávolítja ezeket a részeket (piros).",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
@@ -332,7 +332,7 @@
         "description": "Why is it necessary to remove crossorigin and integrity attributes?"
     },
     "helpHtmlFilterCrossorigin": {
-        "message": "",
+        "message": "A kereszteredetű tulajdonság megakadályozza a helyettesítést, mert a címzett nem egyezett a kérttel.",
         "description": "The crossorigin attribute prevents the replacement because the destination does not match the requested one."
     },
     "helpHtmlFilterIntegrity": {
@@ -348,7 +348,7 @@
         "description": "If you want to automatically redirect all supported CDN connections to LocalCDN, you can add these rules to your adblocker to allow these redirections. If you do not want to add these rules, you must allow each CDN connection individually for each website."
     },
     "helpRuleGeneratorUblockTitle": {
-        "message": "",
+        "message": "Csak uBlock Origin:",
         "description": "Only uBlock Origin:"
     },
     "helpRuleGeneratorUblockDescription": {
@@ -356,11 +356,11 @@
         "description": "These rules are only relevant in »medium« or »hard« mode, because it blocks all 3rd-party resources. They are not necessary in »default«, »easy« or »very-easy« mode. For more information, please visit the uBlock Origin Wiki."
     },
     "helpRuleGeneratorUblockTableIcon": {
-        "message": "",
+        "message": "Ikon",
         "description": "Icon"
     },
     "helpRuleGeneratorUblockTableMode": {
-        "message": "",
+        "message": "Mód",
         "description": "Mode"
     },
     "helpRuleGeneratorUblockTableUseful": {
@@ -368,15 +368,15 @@
         "description": "Rules useful"
     },
     "helpRuleGeneratorUblockTableDefaultEasy": {
-        "message": "",
+        "message": "Alapértelmezett/Könnyű",
         "description": "Default/Easy"
     },
     "helpRuleGeneratorUblockTableMedium": {
-        "message": "",
+        "message": "Közepes",
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "",
+        "message": "Nehéz",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
@@ -396,7 +396,7 @@
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
-        "message": "",
+        "message": "Honnan tudom, hogy igaz?",
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
@@ -404,7 +404,7 @@
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
-        "message": "",
+        "message": "Mi lesz szinkronizálva, ha kiválsztom a »sync« tároló tipúsnak?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
@@ -416,11 +416,11 @@
         "description": "If you don‘t have a sync account, nothing will be synchronized. In that case it makes no difference what type of storage you have selected."
     },
     "helpSyncContentNever": {
-        "message": "",
+        "message": "Dolgok amik soha nem lesznek szinkronizálva:",
         "description": "Things that are never synchronized:"
     },
     "helpNumberOfInjections": {
-        "message": "",
+        "message": "Injekciók száma",
         "description": "Numbers of injections"
     },
     "helpYes": {
