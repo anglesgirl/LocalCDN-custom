@@ -531,6 +531,7 @@ mappings.cdn = {
             'twitter-bootstrap/{version}/bootstrap.min.css': resources.bootstrapCSS,
             'twitter-bootstrap/{version}/bootstrap.css': resources.bootstrapCSS,
             'twix.js/{version}/twix.': resources.twixJS,
+            'typeahead.js/{version}/typeahead.jquery.min.js': resources.corejsTypeahead,
             'underscore.js/{version}/underscore.': resources.underscore,
             'underscore.js/{version}/underscore-min.': resources.underscore,
             'URI.js/{version}/URI.min.js': resources.uriJS,
