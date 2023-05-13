@@ -70,7 +70,7 @@ In some cases, LocalCDN is not allowed to replace requested resources because th
 
 ## Contributing Code
 
-Suggestions in the form of **Issues**, and contributions in the form of **Merge Requests**, are highly welcome.
+Suggestions in the form of **Issues**, and contributions in the form of **Merge/Pull Requests**, are highly welcome.
 
 ## Installation
 
