@@ -149,7 +149,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootbox.js/6.')) return '6.0.0';
     if (type.startsWith('/bootstrap-daterangepicker/2.')) return '2.1.27';
     if (type.startsWith('/bootstrap-daterangepicker/3.')) return '3.1';
-    if (type.startsWith('/bootstrap-datepicker/1.')) return '1.9.0';
+    if (type.startsWith('/bootstrap-datepicker/1.')) return '1.10.0';
     if (type.startsWith('/bootstrap-icons/1.')) return '1.10.5';
     if (type.startsWith('/bootstrap-multiselect/0.')) return '0.9.16';
     if (type.startsWith('/bootstrap-multiselect/1.')) return '1.1.2';
