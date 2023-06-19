@@ -500,7 +500,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/webfont')) return '1.6.28';
     if (type.startsWith('/webrtc-adapter/6.')) return '6.4.8';
     if (type.startsWith('/webrtc-adapter/7.')) return '7.7.1';
-    if (type.startsWith('/webrtc-adapter/8.')) return '8.2.2';
+    if (type.startsWith('/webrtc-adapter/8.')) return '8.2.3';
     if (type.startsWith('/wow/1.')) return '1.1.2';
     if (version === null) return 'latest';
     return '';
