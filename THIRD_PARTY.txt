@@ -1490,7 +1490,7 @@ https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.14.0/umd/react-dom.productio
 https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react-redux/7.2.8/react-redux.min.js
-https://cdnjs.cloudflare.com/ajax/libs/react-redux/8.0.5/react-redux.min.js
+https://cdnjs.cloudflare.com/ajax/libs/react-redux/8.1.0/react-redux.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react-router/5.3.3/react-router.min.js
 https://cdnjs.cloudflare.com/ajax/libs/react-router/6.13.0/react-router.production.min.js
 https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js
