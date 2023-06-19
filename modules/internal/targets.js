@@ -465,7 +465,7 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('4.4.1', version)) return '4.4.1'; // <= 4.4.1
         return '4.6.1';
     }
-    if (type.startsWith('/twitter-bootstrap/5.')) return '5.2.3';
+    if (type.startsWith('/twitter-bootstrap/5.')) return '5.3.0';
     if (type.startsWith('/twix.js/0.')) return '0.3.0';
     if (type.startsWith('/twix.js/1.')) return '1.3.0';
     if (type.startsWith('/underscore.js/1.')) return '1.13.6';
