@@ -333,6 +333,7 @@ mappings.cdn = {
             'foundicons/{version}/foundation-icons.min.css': resources.foundationIconsCSS,
             'granim/{version}/granim.': resources.granim,
             'gsap/{version}/': resources.gsapBundle,
+            'handlebars.js/{version}/handlebars.': resources.handlebarsJs,
             'highlight.js/{version}/': resources.highlightJS,
             'hls.js/{version}/hls.': resources.hlsJS,
             'hogan.js/{version}/hogan.': resources.hoganJS,

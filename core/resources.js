@@ -478,6 +478,10 @@ var resources = {
     'googleMaterialIcons': {
         'path': 'resources/google-material-design-icons/google-material-design-icons.css'
     },
+    // handlebars.js
+    'handlebarsJs': {
+        'path': 'resources/handlebars.js/{version}/handlebars.min.jsm'
+    },
     // highlight.js (Bundle)
     'highlightJS': {
         'path': 'resources/highlight.js/{version}/'
