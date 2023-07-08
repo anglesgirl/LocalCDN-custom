@@ -446,7 +446,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Swiper/6.')) return '6.8.4';
     if (type.startsWith('/Swiper/7.')) return '7.4.1';
     if (type.startsWith('/Swiper/8.')) return '8.4.7';
-    if (type.startsWith('/Swiper/9.') || type.startsWith('/Swiper/')) return '9.4.1';
+    if (type.startsWith('/Swiper/9.')) return '9.4.1';
+    if (type.startsWith('/Swiper/10.') || type.startsWith('/Swiper/')) return '10.0.3';
     if (type.startsWith('/tensorflow/')) {
         // NOTE: Parameters swapped. (= anything greater than v2.0.0)
         if (helpers.compareVersion(version, '2.0.0')) return '4.8.0'; // >= v2.0.0
