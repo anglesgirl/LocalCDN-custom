@@ -284,11 +284,11 @@
         "description": "Some websites look strange or are not easy to use"
     },
     "helpBlockGoogleFontsTitle": {
-        "message": "",
+        "message": "Varför finns det ett »Block Google Fonts« alternativ?",
         "description": "Why is there a »Block Google Fonts« option?"
     },
     "helpStatisticsTitle": {
-        "message": "",
+        "message": "Hur är det kring statistik? Är det något som förflyttas till någon server?",
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
