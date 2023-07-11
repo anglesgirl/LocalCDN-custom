@@ -31,7 +31,8 @@ var stateManager = {};
  */
 
 stateManager.registerInjection = function (tabIdentifier, injection, url) {
-    let injectionIdentifier, registeredTab, injectionCount, missingCount, initiatorDomain, htmlFilterIsActive;
+    let injectionIdentifier, registeredTab, injectionCount, missingCount, blockedCount,
+        initiatorDomain, htmlFilterIsActive;
 
     if (injection['result'] !== false) {
         injectionIdentifier = injection.source + injection.path;
@@ -42,8 +43,13 @@ stateManager.registerInjection = function (tabIdentifier, injection, url) {
     initiatorDomain = helpers.extractDomainFromUrl(url, true) || Address.EXAMPLE;
     htmlFilterIsActive = manipulateDOM.checkHtmlFilterEnabled(initiatorDomain);
 
-    injectionCount = Object.keys(registeredTab.injections).length || 0;
-    missingCount = registeredTab.missing || 0;
+    if (registeredTab !== undefined) {
+        injectionCount = Object.keys(registeredTab.injections).length || 0;
+        missingCount = registeredTab.missing || 0;
+        blockedCount = registeredTab.blocked || 0;
+    } else {
+        return;
+    }
 
     if (injectionCount > 0) {
         chrome.browserAction.setTitle({
@@ -52,7 +58,7 @@ stateManager.registerInjection = function (tabIdentifier, injection, url) {
         });
     }
     if (stateManager.showIconBadge === true) {
-        if (missingCount > 0 && stateManager.changeBadgeColorMissingResources) {
+        if ((missingCount > 0 || blockedCount > 0) && stateManager.changeBadgeColorMissingResources) {
             wrappers.setBadgeColoring(tabIdentifier, BadgeSettingMissingResource.TYPE);
         } else if (htmlFilterIsActive) {
             wrappers.setBadgeColoring(tabIdentifier, BadgeSettingHTMLFilter.TYPE);
@@ -156,7 +162,8 @@ stateManager._createTab = function (tab) {
 
     stateManager.tabs[tabIdentifier] = {
         'injections': {},
-        'missing': 0
+        'missing': 0,
+        'blocked': 0
     };
 
     requestFilters = {
@@ -205,6 +212,7 @@ stateManager._updateTab = function (details) {
     if (stateManager.tabs[tabIdentifier]) {
         stateManager.tabs[tabIdentifier].injections = {};
         stateManager.tabs[tabIdentifier].missing = 0;
+        stateManager.tabs[tabIdentifier].blocked = 0;
     }
 };
 

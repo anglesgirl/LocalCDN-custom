@@ -97,6 +97,10 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
         isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
         // Check if the website is allowed to load Google Fonts
         if (interceptor.blockGoogleFonts === true && isListed === false) {
+            console.log(`${LogString.PREFIX} Google fonts blocked ${requestDetails.url}`);
+            log.append(tab.url, requestDetails.url, '-', true, iframe);
+            interceptor._handleMissingCandidate(requestDetails.url, tabIdentifier);
+            ++stateManager.tabs[tabIdentifier].blocked;
             return {
                 'redirectUrl': chrome.runtime.getURL('resources/google-fonts-placeholder.css')
             };
@@ -128,13 +132,14 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
  */
 
 interceptor._handleMissingCandidate = function (requestUrl, tabIdentifier) {
-    let requestUrlSegments, injectionCount, missingCount;
+    let requestUrlSegments, injectionCount, missingCount, blockedCount;
 
     if (stateManager.showIconBadge === true) {
         injectionCount = Object.keys(stateManager.tabs[tabIdentifier].injections).length || 0;
         if (stateManager.changeBadgeColorMissingResources === true) {
             missingCount = stateManager.tabs[tabIdentifier].missing || 0;
-            if (missingCount > 0 && injectionCount === 0) {
+            blockedCount = stateManager.tabs[tabIdentifier].blocked || 0;
+            if ((missingCount > 0 || blockedCount > 0) && injectionCount === 0) {
                 wrappers.setBadgeText(tabIdentifier, injectionCount);
                 wrappers.setBadgeColoring(tabIdentifier, BadgeSettingMissingResource.TYPE);
             }
