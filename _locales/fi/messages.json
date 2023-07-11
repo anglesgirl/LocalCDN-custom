@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Puuttuvan resurssin kuvake",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

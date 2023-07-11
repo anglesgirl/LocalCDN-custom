@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Biểu tượng cho tài nguyên bị thiếu",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

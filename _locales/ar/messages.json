@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "شارة المورد غير المتوفر",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

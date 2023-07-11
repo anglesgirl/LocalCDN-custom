@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Insignă lipsă resursă",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

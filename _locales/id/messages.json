@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Kehilangan lencana sumber daya",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

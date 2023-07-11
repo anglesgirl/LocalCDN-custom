@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Icono en recursos que faltan",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

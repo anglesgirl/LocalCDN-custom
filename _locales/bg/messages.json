@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Пиктограма за липсващ ресурс",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "缺失资源的徽章",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

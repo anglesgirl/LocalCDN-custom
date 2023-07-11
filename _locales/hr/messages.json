@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Nedostaje značka resursa",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

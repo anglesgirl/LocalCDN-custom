@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "リソース不足時のバッジ",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }

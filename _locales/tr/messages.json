@@ -481,6 +481,6 @@
     },
     "titleBadgeMissingResource": {
         "message": "Eksik kaynak rozeti",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
     }
 }
