@@ -480,7 +480,7 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Ícone de recursos ausentes",
+        "message": "Ícone de recurso ausente ou bloqueado",
         "description": "Missing or blocked resources badge"
     }
 }
