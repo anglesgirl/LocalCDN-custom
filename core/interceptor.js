@@ -136,10 +136,13 @@ interceptor._handleMissingCandidate = function (requestUrl, tabIdentifier) {
 
     if (stateManager.showIconBadge === true) {
         injectionCount = Object.keys(stateManager.tabs[tabIdentifier].injections).length || 0;
+        missingCount = stateManager.tabs[tabIdentifier].missing || 0;
+        blockedCount = stateManager.tabs[tabIdentifier].blocked || 0;
+
+        injectionCount = injectionCount + missingCount + blockedCount;
+
         if (stateManager.changeBadgeColorMissingResources === true) {
-            missingCount = stateManager.tabs[tabIdentifier].missing || 0;
-            blockedCount = stateManager.tabs[tabIdentifier].blocked || 0;
-            if ((missingCount > 0 || blockedCount > 0) && injectionCount === 0) {
+            if (injectionCount === 0) {
                 wrappers.setBadgeText(tabIdentifier, injectionCount);
                 wrappers.setBadgeColoring(tabIdentifier, BadgeSettingMissingResource.TYPE);
             }

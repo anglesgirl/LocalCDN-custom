@@ -90,12 +90,17 @@ popup._renderNonContextualContents = function () {
 };
 
 popup._renderContextualContents = function () {
+    let isVisible = false;
     if (popup._domain !== null) {
         popup._renderDomainAllowlistPanel();
         document.getElementById('testing-utility-link').style.display = 'block';
     }
 
-    if (Object.keys(popup._resourceInjections).length > 0) {
+    isVisible = Object.keys(popup._resourceInjections).length > 0 ||
+                popup._blockedCounter > 0 ||
+                popup._missingCounter > 0;
+
+    if (isVisible) {
         popup._renderInjectionPanel(popup._resourceInjections);
     }
 };
@@ -166,7 +171,10 @@ popup._renderInjectionPanel = function (groupedInjections) {
     websiteContextElement = document.getElementById('website-context');
     injectionOverviewElement = popup._createInjectionOverviewElement(groupedInjections);
     injectionOverviewElement.setAttribute('class', 'panel-overflow');
+
     websiteContextElement.append(injectionOverviewElement);
+    websiteContextElement.append(popup._renderBlockedAndMissingElementHeader(popup._blockedCounter, 'Blocked'));
+    websiteContextElement.append(popup._renderBlockedAndMissingElementHeader(popup._missingCounter, 'Missing'));
 };
 
 popup._enableProtection = function () {
@@ -289,7 +297,10 @@ popup._determineResourceInjections = function () {
         };
 
         chrome.runtime.sendMessage(message, function (response) {
-            let groupedInjections = popup._groupResourceInjections(response.value);
+            popup._blockedCounter = response.value.blockedCounter;
+            popup._missingCounter = response.value.missingCounter;
+
+            let groupedInjections = popup._groupResourceInjections(response.value.injections);
             popup._resourceInjections = groupedInjections;
 
             resolve();
@@ -480,6 +491,25 @@ popup._renderLocaleNotice = function () {
     localeNoticeElement.appendChild(nameTextNode);
 };
 
+popup._renderBlockedAndMissingElementHeader = function (counter, type) {
+    let parent, typeElem, counterElem, typeElemTextNode, counterElemTextNode;
+
+    parent = document.createElement('div');
+
+    typeElemTextNode = document.createTextNode(`${type}: `);
+    typeElem = document.createElement('span');
+    typeElem.appendChild(typeElemTextNode);
+
+    counterElemTextNode = document.createTextNode(counter);
+    counterElem = document.createElement('span');
+    counterElem.appendChild(counterElemTextNode);
+
+    parent.appendChild(typeElem);
+    parent.appendChild(counterElem);
+
+    return parent;
+};
+
 
 /**
  * Event Handlers
@@ -623,5 +653,7 @@ popup.negateHtmlFilterList = true;
 popup._statisticsStatus = false;
 popup._loggingStatus = false;
 popup._blockGoogleFonts = true;
+popup._blockedCounter = 0;
+popup._missingCounter = 0;
 
 document.addEventListener('DOMContentLoaded', popup._onDocumentLoaded);

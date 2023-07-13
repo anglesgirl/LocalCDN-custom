@@ -65,7 +65,7 @@ stateManager.registerInjection = function (tabIdentifier, injection, url) {
         } else {
             wrappers.setBadgeColoring(tabIdentifier, BadgeSetting.TYPE);
         }
-        wrappers.setBadgeText(tabIdentifier, injectionCount);
+        wrappers.setBadgeText(tabIdentifier, (injectionCount + missingCount + blockedCount));
     }
     if (isNaN(storageManager.amountInjected)) {
         storageManager.type.get(Setting.AMOUNT_INJECTED, function (items) {
