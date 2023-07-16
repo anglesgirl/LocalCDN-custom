@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "Lecana sumber daya hilang atau diblokir",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }

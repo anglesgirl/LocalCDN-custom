@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "Missing or blocked resource badge",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "Blocked",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "Missing",
+        "description": "Missing"
     }
 }

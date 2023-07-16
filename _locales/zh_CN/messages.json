@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "缺失资源的徽章",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }

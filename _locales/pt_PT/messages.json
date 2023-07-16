@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "Contador de recursos em falta",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }

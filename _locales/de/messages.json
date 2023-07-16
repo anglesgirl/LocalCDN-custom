@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "Symbol für fehlende oder blockierte Resourcen",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "Geblockt",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "Fehlend",
+        "description": "Missing"
     }
 }

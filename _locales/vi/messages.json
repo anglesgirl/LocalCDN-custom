@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "Biểu tượng cho tài nguyên bị thiếu",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }

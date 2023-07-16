@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "Nedostaje značka resursa",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }

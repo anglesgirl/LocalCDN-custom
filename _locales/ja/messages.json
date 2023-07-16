@@ -482,5 +482,13 @@
     "titleBadgeMissingResource": {
         "message": "リソース不足時のバッジ",
         "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }
