@@ -90,13 +90,42 @@ popup._renderNonContextualContents = function () {
 };
 
 popup._renderContextualContents = function () {
+    let isVisible = false;
     if (popup._domain !== null) {
         popup._renderDomainAllowlistPanel();
         document.getElementById('testing-utility-link').style.display = 'block';
     }
 
-    if (Object.keys(popup._resourceInjections).length > 0) {
-        popup._renderInjectionPanel(popup._resourceInjections);
+    isVisible = Object.keys(popup._resourceInjections).length > 0 ||
+                popup._blockedCounter > 0 ||
+                popup._missingCounter > 0;
+
+    if (isVisible) {
+        let websiteContextElement, injectionOverviewElement;
+
+        websiteContextElement = document.getElementById('website-context-replaced');
+
+        injectionOverviewElement = document.createElement('ul');
+        injectionOverviewElement.setAttribute('class', 'list');
+
+        for (let source in popup._resourceInjections) {
+            let injectionGroupHeaderElement, injectionGroupElement, cdn;
+
+            cdn = popup._resourceInjections[source];
+
+            injectionGroupHeaderElement = popup._createInjectionGroupHeaderElement(source, cdn);
+            injectionGroupElement = popup._createInjectionGroupElement(source, cdn);
+
+            injectionOverviewElement.appendChild(injectionGroupHeaderElement);
+            injectionOverviewElement.appendChild(injectionGroupElement);
+        }
+
+        injectionOverviewElement.setAttribute('class', 'panel-overflow');
+
+        websiteContextElement.append(injectionOverviewElement);
+        popup._renderBlockedAndMissingElementHeader(popup._blockedCounter, 'blocked');
+        popup._renderBlockedAndMissingElementHeader(popup._missingCounter, 'missing');
+        document.getElementById('counter-blocked-missing').style.display = 'block';
     }
 };
 
@@ -158,15 +187,6 @@ popup._renderDomainAllowlistPanel = function () {
     }
 
     websiteContextElement.style.display = 'block';
-};
-
-popup._renderInjectionPanel = function (groupedInjections) {
-    let websiteContextElement, injectionOverviewElement;
-
-    websiteContextElement = document.getElementById('website-context');
-    injectionOverviewElement = popup._createInjectionOverviewElement(groupedInjections);
-    injectionOverviewElement.setAttribute('class', 'panel-overflow');
-    websiteContextElement.append(injectionOverviewElement);
 };
 
 popup._enableProtection = function () {
@@ -289,7 +309,10 @@ popup._determineResourceInjections = function () {
         };
 
         chrome.runtime.sendMessage(message, function (response) {
-            let groupedInjections = popup._groupResourceInjections(response.value);
+            popup._blockedCounter = response.value.blockedCounter;
+            popup._missingCounter = response.value.missingCounter;
+
+            let groupedInjections = popup._groupResourceInjections(response.value.injections);
             popup._resourceInjections = groupedInjections;
 
             resolve();
@@ -336,25 +359,6 @@ popup._groupResourceInjections = function (injections) {
     }
 
     return groupedInjections;
-};
-
-popup._createInjectionOverviewElement = function (groupedInjections) {
-    let injectionOverviewElement = document.createElement('ul');
-    injectionOverviewElement.setAttribute('class', 'list');
-
-    for (let source in groupedInjections) {
-        let injectionGroupHeaderElement, injectionGroupElement, cdn;
-
-        cdn = groupedInjections[source];
-
-        injectionGroupHeaderElement = popup._createInjectionGroupHeaderElement(source, cdn);
-        injectionGroupElement = popup._createInjectionGroupElement(source, cdn);
-
-        injectionOverviewElement.appendChild(injectionGroupHeaderElement);
-        injectionOverviewElement.appendChild(injectionGroupElement);
-    }
-
-    return injectionOverviewElement;
 };
 
 popup._createInjectionGroupHeaderElement = function (source, cdn) {
@@ -478,6 +482,13 @@ popup._renderLocaleNotice = function () {
     nameTextNode = document.createTextNode('Translation is incomplete. You want to help on Weblate?');
 
     localeNoticeElement.appendChild(nameTextNode);
+};
+
+popup._renderBlockedAndMissingElementHeader = function (counter, type) {
+    let counterElement;
+
+    counterElement = document.getElementById(`counter-${type}-number`);
+    counterElement.textContent = counter;
 };
 
 
@@ -623,5 +634,7 @@ popup.negateHtmlFilterList = true;
 popup._statisticsStatus = false;
 popup._loggingStatus = false;
 popup._blockGoogleFonts = true;
+popup._blockedCounter = 0;
+popup._missingCounter = 0;
 
 document.addEventListener('DOMContentLoaded', popup._onDocumentLoaded);

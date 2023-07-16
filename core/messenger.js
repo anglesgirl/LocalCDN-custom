@@ -41,7 +41,11 @@ messenger._handleMessageReceived = function (message, sender, sendResponse) {
     switch (topic) {
 
         case 'tab:fetch-injections':
-            sendResponse({'value': stateManager.tabs[value].injections});
+            sendResponse({'value': {
+                'injections': stateManager.tabs[value].injections,
+                'blockedCounter': stateManager.tabs[value].blocked,
+                'missingCounter': stateManager.tabs[value].missing
+            }});
             return MessageResponse.SYNCHRONOUS;
 
         case 'tab:inject':

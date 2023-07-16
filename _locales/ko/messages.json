@@ -481,6 +481,14 @@
     },
     "titleBadgeMissingResource": {
         "message": "누락된 리소스 배지",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }

@@ -481,6 +481,14 @@
     },
     "titleBadgeMissingResource": {
         "message": "Insignă lipsă resursă",
-        "description": "Missing resource badge"
+        "description": "Missing or blocked resources badge"
+    },
+    "counterBlocked": {
+        "message": "",
+        "description": "Blocked"
+    },
+    "counterMissing": {
+        "message": "",
+        "description": "Missing"
     }
 }
