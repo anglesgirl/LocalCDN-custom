@@ -101,7 +101,31 @@ popup._renderContextualContents = function () {
                 popup._missingCounter > 0;
 
     if (isVisible) {
-        popup._renderInjectionPanel(popup._resourceInjections);
+        let websiteContextElement, injectionOverviewElement;
+
+        websiteContextElement = document.getElementById('website-context-replaced');
+
+        injectionOverviewElement = document.createElement('ul');
+        injectionOverviewElement.setAttribute('class', 'list');
+
+        for (let source in popup._resourceInjections) {
+            let injectionGroupHeaderElement, injectionGroupElement, cdn;
+
+            cdn = popup._resourceInjections[source];
+
+            injectionGroupHeaderElement = popup._createInjectionGroupHeaderElement(source, cdn);
+            injectionGroupElement = popup._createInjectionGroupElement(source, cdn);
+
+            injectionOverviewElement.appendChild(injectionGroupHeaderElement);
+            injectionOverviewElement.appendChild(injectionGroupElement);
+        }
+
+        injectionOverviewElement.setAttribute('class', 'panel-overflow');
+
+        websiteContextElement.append(injectionOverviewElement);
+        popup._renderBlockedAndMissingElementHeader(popup._blockedCounter, 'blocked');
+        popup._renderBlockedAndMissingElementHeader(popup._missingCounter, 'missing');
+        document.getElementById('counter-blocked-missing').style.display = 'block';
     }
 };
 
@@ -163,18 +187,6 @@ popup._renderDomainAllowlistPanel = function () {
     }
 
     websiteContextElement.style.display = 'block';
-};
-
-popup._renderInjectionPanel = function (groupedInjections) {
-    let websiteContextElement, injectionOverviewElement;
-
-    websiteContextElement = document.getElementById('website-context');
-    injectionOverviewElement = popup._createInjectionOverviewElement(groupedInjections);
-    injectionOverviewElement.setAttribute('class', 'panel-overflow');
-
-    websiteContextElement.append(injectionOverviewElement);
-    websiteContextElement.append(popup._renderBlockedAndMissingElementHeader(popup._blockedCounter, 'Blocked'));
-    websiteContextElement.append(popup._renderBlockedAndMissingElementHeader(popup._missingCounter, 'Missing'));
 };
 
 popup._enableProtection = function () {
@@ -349,25 +361,6 @@ popup._groupResourceInjections = function (injections) {
     return groupedInjections;
 };
 
-popup._createInjectionOverviewElement = function (groupedInjections) {
-    let injectionOverviewElement = document.createElement('ul');
-    injectionOverviewElement.setAttribute('class', 'list');
-
-    for (let source in groupedInjections) {
-        let injectionGroupHeaderElement, injectionGroupElement, cdn;
-
-        cdn = groupedInjections[source];
-
-        injectionGroupHeaderElement = popup._createInjectionGroupHeaderElement(source, cdn);
-        injectionGroupElement = popup._createInjectionGroupElement(source, cdn);
-
-        injectionOverviewElement.appendChild(injectionGroupHeaderElement);
-        injectionOverviewElement.appendChild(injectionGroupElement);
-    }
-
-    return injectionOverviewElement;
-};
-
 popup._createInjectionGroupHeaderElement = function (source, cdn) {
     let injectionGroupHeaderElement, badgeElement, badgeTextNode, cdnNameTextNode;
 
@@ -492,22 +485,10 @@ popup._renderLocaleNotice = function () {
 };
 
 popup._renderBlockedAndMissingElementHeader = function (counter, type) {
-    let parent, typeElem, counterElem, typeElemTextNode, counterElemTextNode;
+    let counterElement;
 
-    parent = document.createElement('div');
-
-    typeElemTextNode = document.createTextNode(`${type}: `);
-    typeElem = document.createElement('span');
-    typeElem.appendChild(typeElemTextNode);
-
-    counterElemTextNode = document.createTextNode(counter);
-    counterElem = document.createElement('span');
-    counterElem.appendChild(counterElemTextNode);
-
-    parent.appendChild(typeElem);
-    parent.appendChild(counterElem);
-
-    return parent;
+    counterElement = document.getElementById(`counter-${type}-number`);
+    counterElement.textContent = counter;
 };
 
 
