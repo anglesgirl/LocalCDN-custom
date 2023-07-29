@@ -192,7 +192,7 @@
         "description": "Other"
     },
     "btnInfo": {
-        "message": "Podaci",
+        "message": "Informacije",
         "description": "Info"
     },
     "headerStorageType": {
@@ -480,15 +480,15 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Nedostaje značka resursa",
+        "message": "Nedostajuća ili blokirana značka resursa",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Blokirano",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Nedostaje",
         "description": "Missing"
     }
 }
