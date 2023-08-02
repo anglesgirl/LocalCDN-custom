@@ -480,7 +480,7 @@ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js
 https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js
 https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js
 https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js
-https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js
+https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js
 https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/highlight.min.js
 https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/1c.min.js
 https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/abnf.min.js
