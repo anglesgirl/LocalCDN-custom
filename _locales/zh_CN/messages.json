@@ -480,15 +480,15 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "缺失资源的徽章",
+        "message": "缺失或被禁用的资源的标记",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "被禁用的",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "缺失的",
         "description": "Missing"
     }
 }
