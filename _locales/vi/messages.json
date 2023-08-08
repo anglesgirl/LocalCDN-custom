@@ -480,11 +480,11 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Biểu tượng cho tài nguyên bị thiếu",
+        "message": "Biểu tượng cho tài nguyên bị thiếu hoặc bị chặn",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Đã bị chặn",
         "description": "Blocked"
     },
     "counterMissing": {

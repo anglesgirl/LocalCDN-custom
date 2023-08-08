@@ -480,15 +480,15 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Manglende ressurs-tellermerke",
+        "message": "Manglende/blokkert ressurs-tellermerke",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Blokkert",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Manglende",
         "description": "Missing"
     }
 }

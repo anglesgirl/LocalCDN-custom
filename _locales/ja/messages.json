@@ -480,15 +480,15 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "リソース不足時のバッジ",
+        "message": "リソース不足・ブロック時のバッジ",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "ブロック済み",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "不足",
         "description": "Missing"
     }
 }

@@ -480,15 +480,15 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Trūksta ištekliaus ženklelio",
+        "message": "Trūksta arba užblokuotas ištekliaus ženklelio/-is",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Užblokuota",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Nerasta",
         "description": "Missing"
     }
 }

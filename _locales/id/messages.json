@@ -484,11 +484,11 @@
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Diblokir",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Hilang",
         "description": "Missing"
     }
 }

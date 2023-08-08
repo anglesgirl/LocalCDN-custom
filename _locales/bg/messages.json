@@ -484,11 +484,11 @@
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Спрян",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Липсващ",
         "description": "Missing"
     }
 }
