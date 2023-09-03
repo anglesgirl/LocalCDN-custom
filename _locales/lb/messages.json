@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "Schützt virun Tracking duerch \"gratis\" Content Delivery Networks.",
+        "message": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
@@ -32,7 +32,7 @@
         "description": "Disable prefetch title"
     },
     "disablePrefetchDescription": {
-        "message": "Verhënnert, dass onerlaabten Ressourcen entgéint den aneren Astellungen trotzdeem ugefuerdert\/erofgeluede ginn.",
+        "message": "Verhënnert, dass onerlaabten Ressourcen entgéint den aneren Astellungen trotzdeem ugefuerdert/erofgeluede ginn.",
         "description": "Disable prefetch description."
     },
     "stripMetadataTitle": {
