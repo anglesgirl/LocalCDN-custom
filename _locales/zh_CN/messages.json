@@ -512,11 +512,11 @@
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "缺失权限",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "允许",
         "description": "Allow"
     },
     "permissionMoreInfo": {
