@@ -492,35 +492,35 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Käyttöoikeus mitätöity",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Käytä dataasi kaikilta sivustoilta",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Älä poista tätä käyttöoikeutta. LocalCDN tarvitsee sitä pyyntöjen tunnistukseen ja uudelleenohjaukseen jakeluverkoille.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Miksi laajennus tarvitsee tämän käyttöoikeuden?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN:n tarvitsee tietää mitkä pyynnöt ovat verkkosivuston luomia ohjatakseen tai estääksen ne. MV3-rajapintaan siirtymisen seurauksena tämä käyttöoikeus näytetään valinnaisena.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Riittämättömät käyttöoikeudet",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Salli",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Lisätietoja",
         "description": "More info"
     }
 }
