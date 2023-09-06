@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "Защитава от проследяване от страна на мрежите за доставка на съдържание като пренасочва заявките към местни ресурси.",
+        "message": "Предпазва от проследяване от мрежите за доставка на съдържание като пренасочва заявките им към местни ресурси.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
@@ -492,35 +492,35 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Няма права",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Достъпва данните ви за всички страници",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Не забранявайте това право. LocalCDN се нуждае от него, за да определя и пренасочва заявките към МДС.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Защо разширението се нуждае от тези права?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN трябва да знае кои заявки идват от страниците, за да ги пренасочва или спира. С въвеждането на издание 3 на Манифеста (MV3) това право е незадължително.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Липсващи права",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Разрешаване",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Подробности",
         "description": "More info"
     }
 }
