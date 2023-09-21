@@ -446,7 +446,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Swiper/10.') || type.startsWith('/Swiper/')) return '10.2.0';
     if (type.startsWith('/tensorflow/')) {
         // NOTE: Parameters swapped. (= anything greater than v2.0.0)
-        if (helpers.compareVersion(version, '2.0.0')) return '4.10.0'; // >= v2.0.0
+        if (helpers.compareVersion(version, '2.0.0')) return '4.11.0'; // >= v2.0.0
     }
     if (type.startsWith('/tether/1.')) return '1.4.7';
     if (type.startsWith('/tinymce/5.')) return '5.10.5';
