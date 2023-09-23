@@ -86,8 +86,8 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                                 charsetMatch = htmlHead.match(/<meta.*charset=["']?([^>"'\/]+)["'].*[>\/]/i) || 'utf8';
                             }
 
-                            if (EncodingTypes[charsetMatch[1].toLowerCase()] !== undefined) {
-                                charset = charsetMatch[1];
+                            if (EncodingTypes[charsetMatch[1].toLowerCase().trim()] !== undefined) {
+                                charset = charsetMatch[1].trim();
                             } else {
                                 // If charset is unclear, then use ASCII by default.
                                 // Other charsets are mostly tagged in the header or HTML source code.

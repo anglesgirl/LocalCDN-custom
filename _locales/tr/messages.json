@@ -490,5 +490,37 @@
     "counterMissing": {
         "message": "Eksik",
         "description": "Missing"
+    },
+    "permissionRevokedHeader": {
+        "message": "İzin iptal edildi",
+        "description": "Permission revoked"
+    },
+    "permissionRevokedPermissionName": {
+        "message": "Tüm web siteleri için verilerinize erişim",
+        "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
+    },
+    "permissionRevokedDescription": {
+        "message": "Lütfen izni devre dışı bırakmayın. LocalCDN, istekleri algılamak ve CDN'lere yönlendirmek için izne ihtiyaç duyar.",
+        "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
+    },
+    "helpWhyThisPermission": {
+        "message": "Bu uzantı neden bu izne ihtiyaç duyuyor?",
+        "description": "Why does this extension need this permission?"
+    },
+    "helpPermissionDescription": {
+        "message": "LocalCDN, yönlendirmek veya engellemek için bir web sitesi tarafından hangi isteklerin oluşturulduğunu bilmelidir. MV3'ün gelmesiyle birlikte bu izin isteğe bağlı bir izin olarak listelendi.",
+        "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
+    },
+    "permissionMissing": {
+        "message": "Eksik izin",
+        "description": "Missing permission"
+    },
+    "permissionAllow": {
+        "message": "İzin ver",
+        "description": "Allow"
+    },
+    "permissionMoreInfo": {
+        "message": "Daha fazla bilgi",
+        "description": "More info"
     }
 }

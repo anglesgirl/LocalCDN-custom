@@ -480,15 +480,47 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Ikonoa falta diren baliabideetan",
+        "message": "Baliabidearen kredentziala ez dago edo blokeatuta dago",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Blokeatuta",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Ez dago",
         "description": "Missing"
+    },
+    "permissionRevokedHeader": {
+        "message": "Baimena erretiratuta",
+        "description": "Permission revoked"
+    },
+    "permissionRevokedPermissionName": {
+        "message": "Sartu zure webgune guztietarako datuetan",
+        "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
+    },
+    "permissionRevokedDescription": {
+        "message": "Mesedez, ez desgaitu baimena. LocalCDN-k baimena behar du eskaerak detektatzeko eta CDN-ra bideratzeko.",
+        "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
+    },
+    "helpWhyThisPermission": {
+        "message": "Zergatik behar du hedapen honek baimen hau?",
+        "description": "Why does this extension need this permission?"
+    },
+    "helpPermissionDescription": {
+        "message": "LocalCDN-k jakin behar du weborri batek zer eskaera sortzen dituen horiek bideratzeko edo blokeatzeko. MV3-rekin, baimen hau aukerakoa da.",
+        "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
+    },
+    "permissionMissing": {
+        "message": "Baimena falta da",
+        "description": "Missing permission"
+    },
+    "permissionAllow": {
+        "message": "Baimendu",
+        "description": "Allow"
+    },
+    "permissionMoreInfo": {
+        "message": "Informazio gehiago",
+        "description": "More info"
     }
 }

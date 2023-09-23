@@ -490,5 +490,37 @@
     "counterMissing": {
         "message": "Hilang",
         "description": "Missing"
+    },
+    "permissionRevokedHeader": {
+        "message": "Perizinan ditolak",
+        "description": "Permission revoked"
+    },
+    "permissionRevokedPermissionName": {
+        "message": "Akses semua data Anda untuk semua situs web",
+        "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
+    },
+    "permissionRevokedDescription": {
+        "message": "Jangan nonaktifkan izinnya. LocalCDN memerlukan izin untuk mendeteksi dan mengalihkan permintaan ke CDN.",
+        "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
+    },
+    "helpWhyThisPermission": {
+        "message": "Mengapa ekstensi ini memerlukan izin ini?",
+        "description": "Why does this extension need this permission?"
+    },
+    "helpPermissionDescription": {
+        "message": "LocalCDN perlu tahu permintaan mana yang dibuat oleh sebuah situs web untuk mengalihkan atau memblokirnya. Dengan adanya MV3, perizinan ini diterapkan sebagai izin opsional.",
+        "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
+    },
+    "permissionMissing": {
+        "message": "Izin belum ada",
+        "description": "Missing permission"
+    },
+    "permissionAllow": {
+        "message": "Perbolehkan",
+        "description": "Allow"
+    },
+    "permissionMoreInfo": {
+        "message": "Info lebih lanjut",
+        "description": "More info"
     }
 }

@@ -490,5 +490,37 @@
     "counterMissing": {
         "message": "Ausente",
         "description": "Missing"
+    },
+    "permissionRevokedHeader": {
+        "message": "Permissão revogada",
+        "description": "Permission revoked"
+    },
+    "permissionRevokedPermissionName": {
+        "message": "Acesse seus dados em todos os sites",
+        "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
+    },
+    "permissionRevokedDescription": {
+        "message": "Por favor, não desative a permissão. O LocalCDN precisa dessa permissão para detectar e redirecionar os pedidos para os CDNs.",
+        "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
+    },
+    "helpWhyThisPermission": {
+        "message": "Por que esta extensão precisa dessa permissão?",
+        "description": "Why does this extension need this permission?"
+    },
+    "helpPermissionDescription": {
+        "message": "O LocalCDN precisa saber quais pedidos são criados por um site para bloqueá-lo ou redirecioná-lo. Com a introdução do MV3, essa permissão é mostrada como opcional.",
+        "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
+    },
+    "permissionMissing": {
+        "message": "Permissão ausente",
+        "description": "Missing permission"
+    },
+    "permissionAllow": {
+        "message": "Permitir",
+        "description": "Allow"
+    },
+    "permissionMoreInfo": {
+        "message": "Mais informações",
+        "description": "More info"
     }
 }
