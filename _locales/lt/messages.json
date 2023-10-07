@@ -492,35 +492,35 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Leidimai atsiimti",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Pasiekite visus savo duomenis, visuose tinklapiuose",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Prašome neuždrausti šio leidimo. „LocalCDN“ reikalauja jo, kad aptiktų ir peradresuotų užklausas į „CDN'us“.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Kodėl šiam plėtiniui reikia šio leidimo?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "„LocalCDN“ reikia žinoti, kurie tinklapio prašymai reikalajaumi, kad peradresuotų ar blokuotų jį. Su „MV3“, šis leidimas yra žymimas, kaip pasirinktinis.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Trūksta leidimo",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Leisti",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Daugiau informacijos",
         "description": "More info"
     }
 }
