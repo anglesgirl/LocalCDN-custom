@@ -492,35 +492,35 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Отменять разрешение",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Доступ к данным для всех веб-сайтов",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Пожалуйста, не отключайте это разрешение. LocalCDN необходимо разрешение для обнаружения и перенаправления запросов к CDN.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Зачем расширению нужно это разрешение?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN должен знать, какие запросы создает тот или иной сайт, чтобы перенаправить или блокировать его. С введением MV3 это разрешение включено в список опциональных.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Отсутствующее разрешение",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Разрешение",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Дополнительная информация",
         "description": "More info"
     }
 }
