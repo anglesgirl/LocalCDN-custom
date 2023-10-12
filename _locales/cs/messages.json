@@ -204,7 +204,7 @@
         "description": "Local"
     },
     "labelStorageTypeSync": {
-        "message": "Synchronizovat",
+        "message": "Synchronizované",
         "description": "Sync"
     },
     "headerImportExport": {
@@ -364,11 +364,11 @@
         "description": "Mode"
     },
     "helpRuleGeneratorUblockTableUseful": {
-        "message": "",
+        "message": "Týká se",
         "description": "Rules useful"
     },
     "helpRuleGeneratorUblockTableDefaultEasy": {
-        "message": "",
+        "message": "Výchozí/lehký",
         "description": "Default/Easy"
     },
     "helpRuleGeneratorUblockTableMedium": {
@@ -376,7 +376,7 @@
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "",
+        "message": "Přísný",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
@@ -416,7 +416,7 @@
         "description": "If you don‘t have a sync account, nothing will be synchronized. In that case it makes no difference what type of storage you have selected."
     },
     "helpSyncContentNever": {
-        "message": "",
+        "message": "Položky, které nikdy nebudou synchronizovány:",
         "description": "Things that are never synchronized:"
     },
     "helpNumberOfInjections": {
@@ -472,23 +472,23 @@
         "description": "This is not a limitation of LocalCDN, but missing API support of Chromium based browsers."
     },
     "titleBadgeDefault": {
-        "message": "",
+        "message": "Výchozí odznak",
         "description": "Default badge"
     },
     "titleBadgeHTMLFilter": {
-        "message": "",
+        "message": "Odznak HTML filtru",
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "",
+        "message": "Odznak chybějících nebo blokovaných zdrojů",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Zablokovaných",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Chybějících",
         "description": "Missing"
     },
     "permissionRevokedHeader": {
@@ -504,7 +504,7 @@
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Proč toto rozšíření potřebuje toto oprávnění?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
@@ -512,15 +512,15 @@
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Chybějící oprávnění",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Povolit",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Další informace",
         "description": "More info"
     }
 }

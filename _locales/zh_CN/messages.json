@@ -492,23 +492,23 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "已撤消权限",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "访问所有网站的数据",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "请不要禁用此权限。LocalCDN 需要此权限来检测并重定向到 CDN 的请求。",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "此扩展为何需要这个权限？",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN 需要知道哪些请求是由网站所创建以重定向或拦截它。MV3 规范中此权限被列为可选项。",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
@@ -520,7 +520,7 @@
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "更多信息",
         "description": "More info"
     }
 }
