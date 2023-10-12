@@ -1910,7 +1910,7 @@ https://fonts.gstatic.com/s/materialiconstwotone/v112/hESh6WRmNCxEqUmNyh3JDeGxjV
 https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
 https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css
 https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js
-https://raw.githubusercontent.com/jquery-validation/jquery-validation/1.19.5/dist/jquery.validate.min.js
+https://raw.githubusercontent.com/jquery-validation/jquery-validation/1.20.0/dist/jquery.validate.min.js
 https://raw.githubusercontent.com/pagekit/vue-resource/1.5.3/dist/vue-resource.min.js
 https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/v2.8.94/css/materialdesignicons.min.css
 https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/v2.8.94/fonts/materialdesignicons-webfont.woff2
