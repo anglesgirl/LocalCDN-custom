@@ -145,7 +145,7 @@ popup._renderDomainAllowlistPanel = function () {
 
     googleFontsToggleElement = document.getElementById('google-fonts-toggle-switch');
 
-    if (popup._blockGoogleFonts === false) {
+    if (popup._blockGoogleFonts === false || helpers.isGoogleDomain(popup._domain) === true) {
         document.getElementById('div-google-fonts').hidden = true;
     }
 
