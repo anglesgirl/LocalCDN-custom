@@ -34,7 +34,11 @@ optionsOther._renderIconSection = function (opt) {
         return;
     }
 
-    selectedIcon = opt.selectedIcon;
+    if (opt.selectedIcon === null || opt.selectedIcon === undefined) {
+        selectedIcon = 'Default';
+    } else {
+        selectedIcon = opt.selectedIcon;
+    }
 
     if (selectedIcon === 'Default') {
         document.getElementById('icon-default').checked = true;

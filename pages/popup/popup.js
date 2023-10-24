@@ -295,7 +295,9 @@ popup._determineStatusGoogleFonts = function () {
         };
 
         chrome.runtime.sendMessage(message, function (response) {
-            popup._domainGoogleFonts = response.value;
+            if (response !== undefined) {
+                popup._domainGoogleFonts = response.value;
+            }
             resolve();
         });
     });
