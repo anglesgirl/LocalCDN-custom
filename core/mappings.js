@@ -603,6 +603,7 @@ mappings.cdn = {
             'bootstrap@{version}/dist/css/bootstrap.': resources.bootstrapCSS,
             'bootstrap-icons@{version}/font/bootstrap-icons.css': resources.bootstrapIcons,
             'bootstrap-icons@{version}/font/bootstrap-icons.min.css': resources.bootstrapIcons,
+            'bootstrap-select@{version}/dist/css/bootstrap-select.': resources.bootstrapSelectCSS,
             'bootstrap-select@{version}/dist/js/bootstrap-select.': resources.bootstrapSelectJS,
             'bootstrap-table@{version}/dist/bootstrap-table.min.js': resources.bootstrapTableJS,
             'bootstrap-table@{version}/dist/bootstrap-table.js': resources.bootstrapTableJS,
