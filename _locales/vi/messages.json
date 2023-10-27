@@ -516,11 +516,11 @@
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Cho phép",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Thêm thông tin",
         "description": "More info"
     }
 }
