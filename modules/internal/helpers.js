@@ -294,3 +294,7 @@ helpers.compareVersion = function (v1, v2) {
     }
     return v1.length === v2.length ? true : v1.length < v2.length ? false : true;
 };
+
+helpers.isGoogleDomain = function (initiatorDomain) {
+    return GoogleDomains[initiatorDomain.replace('www.', '')] || false;
+};

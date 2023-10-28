@@ -196,7 +196,7 @@ options._configureLinkPrefetching = function (value) {
 };
 
 options._serializeAllowlistedDomains = function (allowlistedDomains) {
-    if (allowlistedDomains === undefined) {
+    if (allowlistedDomains === undefined || allowlistedDomains === null) {
         return '';
     }
 

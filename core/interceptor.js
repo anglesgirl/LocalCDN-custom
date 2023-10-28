@@ -32,7 +32,7 @@ var interceptor = {};
 
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed,
-        iframe;
+        iframe, isGoogleDomain;
 
     iframe = '';
     if (tab.url !== requestDetails.originUrl) {
@@ -95,14 +95,20 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     if (BrowserType.FIREFOX && isGoogleFont && !isGoogleMaterialIcons) {
         initiatorDomain = helpers.extractDomainFromUrl(tab.url, true);
         isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
+        isGoogleDomain = helpers.isGoogleDomain(initiatorDomain);
         // Check if the website is allowed to load Google Fonts
-        if (interceptor.blockGoogleFonts === true && isListed === false) {
+        if (interceptor.blockGoogleFonts === true && isListed === false && isGoogleDomain === false) {
             console.log(`${LogString.PREFIX} Google fonts blocked ${requestDetails.url}`);
             log.append(tab.url, requestDetails.url, '-', true, iframe);
             interceptor._handleMissingCandidate(requestDetails.url, tabIdentifier);
             ++stateManager.tabs[tabIdentifier].blocked;
             return {
                 'redirectUrl': chrome.runtime.getURL('resources/google-fonts-placeholder.css')
+            };
+        } else if (isGoogleDomain === true) {
+            console.log(`${LogString.PREFIX} Google fonts allowed, because Google Website ${initiatorDomain}`);
+            return {
+                'cancel': false
             };
         } else if (interceptor.blockGoogleFonts === false || isListed === true) {
             return {
