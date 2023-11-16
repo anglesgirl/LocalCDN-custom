@@ -256,11 +256,11 @@
         "description": "beta"
     },
     "changeBadgeColorMissingResourcesTitle": {
-        "message": "用圖示表明資源缺失",
+        "message": "用圖標表示缺失資源",
         "description": "Indicate missing resources on the icon"
     },
     "changeBadgeColorMissingResourcesDescription": {
-        "message": "若資源缺失則改變圖章顏色。",
+        "message": "若缺失資源則改變圖章顏色。",
         "description": "Change the badge color if resources are missing."
     },
     "titleHelp": {
@@ -296,11 +296,11 @@
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {
-        "message": "瀏覽器相容性",
+        "message": "瀏覽器兼容性",
         "description": "Browser compatibility"
     },
     "helpIntroductionDescription": {
-        "message": "LocalCDN 是模仿內容傳遞網路的瀏覽器附加元件，用以進一步保障隱私。它將會攔截流量，以本機支援的框架/程式庫取代而注入網站。您可以使用以下工具測試是否有效。欲知詳情，請瀏覽教程或 Wiki 頁面。",
+        "message": "LocalCDN 是一款會以模仿內容分發網絡的方式，進一步保障您隱私的擴充功能。它將會攔截流量，以本機支援的框架/程式庫注入網站取以代之。您可以使用以下測試工具檢查您是否已受到適當的保護。欲知詳情，請瀏覽教程或 Wiki 頁面。",
         "description": "LocalCDN is a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported frameworks/libraries locally, and injects them into the website. Feel free to use the following testing utility to find out if you are properly protected. For more information read the tutorial or our Wiki pages."
     },
     "helpLinkTestUtility": {
@@ -316,7 +316,7 @@
         "description": "Wiki pages"
     },
     "helpHtmlFilterDescription": {
-        "message": "在大多數情況下，LocalCDN 可以輕鬆替換嵌入式框架並提高隱私性。 在某些情況下，網站可能會嘗試通過在 HTML 源代碼中設置某些選項來防止這種情況發生。 LocalCDN 在 HTML 源代碼顯示在瀏覽器中之前讀取它並刪除這些部分（紅色）。",
+        "message": "在大多數情況下，LocalCDN 可以輕鬆替換嵌入式框架並保護隱私。 在某些情況下，網站可能會嘗試通過在 HTML 源始碼中設置某些選項來防止這種情況發生。 LocalCDN 會在瀏覽器中顯示 HTML 源始碼之前讀取並刪除這些部分（紅色）。",
         "description": "In most cases LocalCDN can easily replace embedded frameworks and improves privacy. In some cases the website may try to prevent this by setting certain options in the HTML source code. LocalCDN reads the HTML source code before it is displayed in the browser and removes these part (red)."
     },
     "helpHtmlFilterBefore": {
@@ -352,7 +352,7 @@
         "description": "Only uBlock Origin:"
     },
     "helpRuleGeneratorUblockDescription": {
-        "message": "這些規則只適用於 »Medium« 或 »Hard« 模式，因為它阻擋了所有第三方資源。在 »Default«、»Easy« 或 »Very-easy« 模式下並不必要。有關更多信息，請瀏覽 uBlock Origin Wiki。",
+        "message": "這些規則只適用於 »Medium« 或 »Hard« 模式，因為它們會阻擋所有第三方資源。在 »Default«、»Easy« 或 »Very-easy« 模式下則不是必需的。有關更多信息，請瀏覽 uBlock Origin Wiki。",
         "description": "These rules are only relevant in »medium« or »hard« mode, because it blocks all 3rd-party resources. They are not necessary in »default«, »easy« or »very-easy« mode. For more information, please visit the uBlock Origin Wiki."
     },
     "helpRuleGeneratorUblockTableIcon": {
