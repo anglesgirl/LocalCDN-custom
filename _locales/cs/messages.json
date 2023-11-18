@@ -332,11 +332,11 @@
         "description": "Why is it necessary to remove crossorigin and integrity attributes?"
     },
     "helpHtmlFilterCrossorigin": {
-        "message": "",
+        "message": "Atribut crossorigin brání nahrazení, protože cíl neodpovídá požadovanému.",
         "description": "The crossorigin attribute prevents the replacement because the destination does not match the requested one."
     },
     "helpHtmlFilterIntegrity": {
-        "message": "",
+        "message": "Chcete-li ušetřit místo na disku a dodat více rámců LocalCDN upgraduje rámec. Značka integrity je hash hodnotou souboru. Pokud se kontrola nezdaří, prohlížeč nebude obsahovat framework. Kontrola integrity se nezdaří, protože hodnoty hash pro např. jQuery 1.10.1 a jQuery 1.12.4 se liší.",
         "description": "To save disk space and to deliver more frameworks LocalCDN upgrades a framework. An integrity tag is the hash value of a file. If the check fails, the browser won‘t include a framework. The integrity check will fail because the hash values for e.g. jQuery 1.10.1 and jQuery 1.12.4 are different."
     },
     "helpHtmlFilterErrors": {
