@@ -368,23 +368,23 @@
         "description": "Rules useful"
     },
     "helpRuleGeneratorUblockTableDefaultEasy": {
-        "message": "Default/Easy",
+        "message": "預設／簡易",
         "description": "Default/Easy"
     },
     "helpRuleGeneratorUblockTableMedium": {
-        "message": "Medium",
+        "message": "中等",
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "Hard",
+        "message": "進階",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
-        "message": "",
+        "message": "這有兩個可能的原因：因為頁面需要一個LocalCDN尚不支援的函式庫，或是因為同源策略。同源策略（Same origin policy）是一個瀏覽器用來區分資料是否允許被載入的安全機制。同源機制幫助我們區分有害的檔案，藉此減少潛在的攻擊媒介。這個策略會阻止瀏覽器從LocalCDN載入一些外部的框架。不幸的是，目前並沒有針對這個問題的解決方法。",
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
-        "message": "",
+        "message": "LocalCDN可以將Google Material Icons圖示字型。為了攔截針對這些字型的連接，您的廣告阻擋器——例如uBlock Origin、uMatrix、Adguard——必須允許這些請求。LocalCDN監聽這些請求，以在當請求包含Google Material Icons時置換資源。若您取消選擇「阻擋缺失資源」選項，不存在的資源會被允許以致Google Fonts字體會被載入，因為Google Material Icons與Google Fonts使用同一個域名。如果您不希望如此，您可以使用LocalCDN阻擋Google Fonts。",
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
