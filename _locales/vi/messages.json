@@ -488,31 +488,31 @@
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Không có sẵn",
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Đã thu hồi quyền",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Truy cập dữ liệu của bạn cho tất cả website",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Xin đừng tắt quyền đi. LocalCDN cần có quyền này để tìm thấy và chuyển hướng các yêu cầu tới CDN.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Tại sao tiện ích mở rộng này cần quyền này?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN cần biết trang web tạo ra yêu cầu nào để chuyển hướng hoặc chặn nó. Với sự ra đời của MV3, quyền này được liệt kê dưới dạng quyền tùy chọn.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Quyền bị thiếu",
         "description": "Missing permission"
     },
     "permissionAllow": {

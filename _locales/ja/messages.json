@@ -492,7 +492,7 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "権限が取り消されました",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
