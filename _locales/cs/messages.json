@@ -128,7 +128,7 @@
         "description": "If requests for missing resources are allowed, connections to \"fonts.googleapis.com\" are not blocked. Enable this option to block these requests."
     },
     "chooseIconStyle": {
-        "message": "Vyberte si ikonu pro toto rozšíření",
+        "message": "Vybraná ikona tohoto rozšíření",
         "description": "Choose an icon for this extension"
     },
     "internalStatisticsTitle": {
@@ -380,7 +380,7 @@
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
-        "message": "",
+        "message": "Jsou tu dvě možné příčiny: buď požadovaný framework/knihovna není (zatím) poskytována LocalCDN nebo SOP. SOP (Same origin policy) je bezpečnostní mechanizmus, který určuje, jaká data může prohlížeč načíst. Pomáhá izolovat zákeřné dokumenty a snižuje tím možné způsoby útoku. Tato zásada znemožňuje prohlížeči načíst externí frameworky LocalCDN. Bohužel to v současnosti nemá žádné řešení.",
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
@@ -420,7 +420,7 @@
         "description": "Things that are never synchronized:"
     },
     "helpNumberOfInjections": {
-        "message": "",
+        "message": "Počet vložení",
         "description": "Numbers of injections"
     },
     "helpYes": {
@@ -440,7 +440,7 @@
         "description": "Settings that will be synchronized:"
     },
     "helpIcons": {
-        "message": "",
+        "message": "Výchozí, světlá, modrá/šedá",
         "description": "Default, Light, Blue/Grey"
     },
     "helpSyncContentLinks": {
@@ -460,7 +460,7 @@
         "description": "Replace other resources"
     },
     "helpUpgradeAllResources": {
-        "message": "",
+        "message": "Nahradit všechny zdroje",
         "description": "Upgrade all resources"
     },
     "helpExplanationChrome": {
