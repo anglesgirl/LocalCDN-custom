@@ -384,7 +384,7 @@
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
-        "message": "",
+        "message": "LocalCDN může nahradit »Google Material Icons«. Chcete-li zachytit připojení, váš blokátor reklam (např. uBlock Origin, uMatrix nebo AdGuard) musí požadavek povolit. LocalCDN naslouchá těmto požadavkům a pokud dotaz obsahuje »Google Material Icons«, zdroj bude nahrazen. Pokud zrušíte zaškrtnutí možnosti »Blokovat požadavky na chybějící obsah«, bude povolen průchod neexistujícím zdrojům a načte se »Google Fonts«, protože »Google Material Icons« a »Google Fonts« používají stejnou doménu. Pokud si to nepřejete, můžete zablokovat »Google Fonts« na LocalCDN .",
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
@@ -400,7 +400,7 @@
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
-        "message": "",
+        "message": "Úložiště rozšíření lze zobrazit přímo v prohlížeči Firefox. Otevřete URL »about:debugging«, přepněte na »Úložiště« a zvolte »Extension Storage«. Pod klíčem »internalStatisticsData« najdete shromážděná data. Stačí jej zkopírovat a vložit do tiskárny JSON PrettyPrinter, aby byl čitelnější. Vezměte prosím na vědomí, že musíte odstranit první a poslední uvozovky a klíč k nim. V tomto videu byste to měli jasně vidět.",
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
