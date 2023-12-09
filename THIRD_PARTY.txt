@@ -177,7 +177,7 @@ https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.20.0/select.min.js
 https://cdnjs.cloudflare.com/ajax/libs/angular-ui-utils/0.1.1/angular-ui-utils.min.js
 https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
-https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js
+https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js
 https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css
 https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js
 https://cdnjs.cloudflare.com/ajax/libs/asciinema-player/2.6.1/asciinema-player.min.css
