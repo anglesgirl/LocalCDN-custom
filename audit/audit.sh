@@ -540,7 +540,11 @@ function create_url() {
         if [ "$jfile" = "mdb-ui-kit.min.css" ]; then
             url="$CLOUDFLARE/$folder/$version/mdb.min.css"
         elif [ "$jfile" = "mdb-ui-kit.min.js" ]; then
-            url="$CLOUDFLARE/$folder/$version/mdb.min.js"
+            if [ "$version" = "3.11.0" ] || [ "$version" = "4.4.0" ] || [ "$version" = "5.0.0" ] || [ "$version" = "6.4.2" ]; then
+                url="$CLOUDFLARE/$folder/$version/mdb.min.js"
+            else
+                url="$CLOUDFLARE/$folder/$version/mdb.es.min.js"
+            fi
         fi
     elif [ "$folder" = "Modaal" ]; then
         if [ "$jfile" = "modaal.min.css" ]; then
