@@ -745,6 +745,8 @@ function create_url() {
         url="$CLOUDFLARE/$folder/$version/vue-router.min.js"
     elif [ "$folder" = "ScrollMagic" ] && [ "$jfile" != "ScrollMagic.min.js" ];then
         url="$CLOUDFLARE/$folder/$version/plugins/$jfile"
+    elif [ "$folder" = "redux" ] && [ "$version" != "4.2.1" ];then
+        url="$CLOUDFLARE/$folder/$version/redux.legacy-esm.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then
