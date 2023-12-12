@@ -80,7 +80,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/1000hz-bootstrap-validator/0.')) return '0.11.9';
     if (type.startsWith('/ajax-bootstrap-select/1.')) return '1.4.5';
     if (type.startsWith('/algoliasearch/3.')) return '3.35.1';
-    if (type.startsWith('/algoliasearch/4.')) return '4.20.0';
+    if (type.startsWith('/algoliasearch/4.')) return '4.21.0';
     if (type.startsWith('/alpinejs/2.')) return '2.8.2';
     if (type.startsWith('/alpinejs/3.')) return '3.13.3';
     if (type.startsWith('/anchor-js/3.')) return '3.2.2';
