@@ -357,7 +357,7 @@ targets.setLastVersion = function (type, version) {
         // The only resource used from ngx-bootstrap is the CSS file for the datepicker.
         // This CSS is unchanged since version 7. So it's not necessary to host it more than once.
         if (helpers.compareVersion('6.2.0', version)) return '6.2.0'; // <= v6.2.0
-        return '11.0.2';
+        return '12.0.0';
     }
     if (type.startsWith('/noUiSlider/14.')) return '14.7.0';
     if (type.startsWith('/noUiSlider/15.')) return '15.7.1';
