@@ -128,7 +128,7 @@
         "description": "If requests for missing resources are allowed, connections to \"fonts.googleapis.com\" are not blocked. Enable this option to block these requests."
     },
     "chooseIconStyle": {
-        "message": "Vyberte si ikonu pro toto rozšíření",
+        "message": "Vybraná ikona tohoto rozšíření",
         "description": "Choose an icon for this extension"
     },
     "internalStatisticsTitle": {
@@ -344,7 +344,7 @@
         "description": "Unfortunately, it sometimes happens that special characters are then displayed incorrectly. In this case you can deactivate the setting again, to display the umlauts correctly."
     },
     "helpRuleGeneratorDescription": {
-        "message": "",
+        "message": "Pokud chcete automaticky přesměrovat všechna podporovaná připojení k CDN do LocalCDN, můžete přidat tato pravidla do vašeho blokovače reklam pro povolení těchto přesměrování. Pokud pravidla nechcete přidat, musíte povolit každé CDN zvlášť na každé webové stránce.",
         "description": "If you want to automatically redirect all supported CDN connections to LocalCDN, you can add these rules to your adblocker to allow these redirections. If you do not want to add these rules, you must allow each CDN connection individually for each website."
     },
     "helpRuleGeneratorUblockTitle": {
@@ -352,7 +352,7 @@
         "description": "Only uBlock Origin:"
     },
     "helpRuleGeneratorUblockDescription": {
-        "message": "",
+        "message": "Tato pravidla jsou relevantní pouze ve »středním« nebo »těžkém« režimu, protože blokuje veškeré zdroje třetích stran. Nejsou potřeba ve »výchozím«, »jednoduchém« nebo »velmi jednoduchém« režimu. Pro více informací navštivte Wiki uBlock Origin.",
         "description": "These rules are only relevant in »medium« or »hard« mode, because it blocks all 3rd-party resources. They are not necessary in »default«, »easy« or »very-easy« mode. For more information, please visit the uBlock Origin Wiki."
     },
     "helpRuleGeneratorUblockTableIcon": {
@@ -380,19 +380,19 @@
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {
-        "message": "",
+        "message": "Jsou tu dvě možné příčiny: buď požadovaný framework/knihovna není (zatím) poskytována LocalCDN nebo SOP. SOP (Same origin policy) je bezpečnostní mechanizmus, který určuje, jaká data může prohlížeč načíst. Pomáhá izolovat zákeřné dokumenty a snižuje tím možné způsoby útoku. Tato zásada znemožňuje prohlížeči načíst externí frameworky LocalCDN. Bohužel to v současnosti nemá žádné řešení.",
         "description": "There are two possible reasons: Either a framework/library is required that LocalCDN doesn‘t (yet) deliver or an SOP. A SOP (Same origin policy) is a security mechanism that determines what data the browser is allowed to load. It helps to isolate malicious documents and thus reduce possible attack vectors. This policy prevents the browser from loading the external frameworks of LocalCDN. Unfortunately there is no solution for this at the moment."
     },
     "helpBlockGoogleFontsDescription": {
-        "message": "",
+        "message": "LocalCDN může nahradit »Google Material Icons«. Chcete-li zachytit připojení, váš blokátor reklam (např. uBlock Origin, uMatrix nebo AdGuard) musí požadavek povolit. LocalCDN naslouchá těmto požadavkům a pokud dotaz obsahuje »Google Material Icons«, zdroj bude nahrazen. Pokud zrušíte zaškrtnutí možnosti »Blokovat požadavky na chybějící obsah«, bude povolen průchod neexistujícím zdrojům a načte se »Google Fonts«, protože »Google Material Icons« a »Google Fonts« používají stejnou doménu. Pokud si to nepřejete, můžete zablokovat »Google Fonts« na LocalCDN .",
         "description": "LocalCDN can replace »Google Material Icons«. To catch the connection your adblocker (e.g. uBlock Origin, uMatrix or AdGuard) must allow the request. LocalCDN listens on these requests and if the query contains »Google Material Icons«, the resource will be replaced. If you uncheck the »Block requests for missing content« option, non-existent resources will be allowed to pass and »Google Fonts« will be loaded, because »Google Material Icons« and »Google Fonts« use the same domain. If you don‘t want this, you can block »Google Fonts« on LocalCDN."
     },
     "helpStatisticsDescription": {
-        "message": "",
+        "message": "Nepanikařte, nic nebude přeneseno. Bylo by to proti všem mým zásadám. Statistiky (formát JSON) obsahují následující informace: datum, CDN+počítadlo a framework+počítadlo. To je vše, tady je příklad:",
         "description": "Don‘t panic, nothing will be transmitted. It would be against all my principles. The statistics (JSON format) contains the following information: Date, CDN+counter and framework+counter. That‘s all. I‘ve an example here:"
     },
     "helpStatisticsContent": {
-        "message": "",
+        "message": "Statistiky neobsahují informace o prohlížeči, operačním systému, webové stránce, IP adrese ani jiné informace. Jen datum, CDN+počítadlo a framework+počítadlo. Ukazují vám frameworky, které byly nahrazeny LocalCDN, a jak často a které CDN byly vyžádány.",
         "description": "The statistics contain no information about the browser, operating system, requesting website, IP addresses or any other information. Just date, CDN+counter and framework+counter. It shows you which frameworks are replaced by LocalCDNs how often and which CDNs were requested."
     },
     "helpStatisticsTruthTitle": {
@@ -400,19 +400,19 @@
         "description": "How do I know that‘s true?"
     },
     "helpStatisticsTruthDescription": {
-        "message": "",
+        "message": "Úložiště rozšíření lze zobrazit přímo v prohlížeči Firefox. Otevřete URL »about:debugging«, přepněte na »Úložiště« a zvolte »Extension Storage«. Pod klíčem »internalStatisticsData« najdete shromážděná data. Stačí jej zkopírovat a vložit do tiskárny JSON PrettyPrinter, aby byl čitelnější. Vezměte prosím na vědomí, že musíte odstranit první a poslední uvozovky a klíč k nim. V tomto videu byste to měli jasně vidět.",
         "description": "The extension storage can be viewed directly with the Firefox browser. Open the URL »about:debugging«, switch to »Storage« and select »Extension Storage«. Under the key »internalStatisticsData« you will find the collected data. Just copy it and put it into a JSON PrettyPrinter to make it more readable. Please note that you have to remove the first and last quotation mark and the key to it. You should be able to see this clearly in this video."
     },
     "helpSyncTitle": {
-        "message": "",
+        "message": "Co bude synchronizováno, když vyberu »synchronizovaný« typ úložiště?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "",
+        "message": "Synchronizace bude fungovat pouze pokud jste přihlášeni Firefox účtem ve vašem zařízení a dovolili jste synchronizaci nastavení doplňků. Zvláštní server pro synchronizaci pod vaší kontrolou bude též fungovat. Bude se synchronizovat většina nastavení LocalCDN napříč všemi zařízeními.",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {
-        "message": "",
+        "message": "Pokud nemáte účet pro synchronizaci, nic nebude synchronizováno. V tomto případě nemá výběr vliv.",
         "description": "If you don‘t have a sync account, nothing will be synchronized. In that case it makes no difference what type of storage you have selected."
     },
     "helpSyncContentNever": {
@@ -420,7 +420,7 @@
         "description": "Things that are never synchronized:"
     },
     "helpNumberOfInjections": {
-        "message": "",
+        "message": "Počet vložení",
         "description": "Numbers of injections"
     },
     "helpYes": {
@@ -440,7 +440,7 @@
         "description": "Settings that will be synchronized:"
     },
     "helpIcons": {
-        "message": "",
+        "message": "Výchozí, světlá, modrá/šedá",
         "description": "Default, Light, Blue/Grey"
     },
     "helpSyncContentLinks": {
@@ -456,19 +456,19 @@
         "description": "Replace"
     },
     "helpReplaceOther": {
-        "message": "",
+        "message": "Nahradit ostatní zdroje",
         "description": "Replace other resources"
     },
     "helpUpgradeAllResources": {
-        "message": "",
+        "message": "Nahradit všechny zdroje",
         "description": "Upgrade all resources"
     },
     "helpExplanationChrome": {
-        "message": "",
+        "message": "Všechny prohlížeče založené na Chromiu",
         "description": "All Chromium based Browser"
     },
     "helpLimitation": {
-        "message": "",
+        "message": "Toto není omezení LocalCDN, ale chybějící API v prohlížečích založených na Chromiu.",
         "description": "This is not a limitation of LocalCDN, but missing API support of Chromium based browsers."
     },
     "titleBadgeDefault": {
@@ -492,15 +492,15 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Oprávnění odebráno",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Přistupovat k vašim datům pro všechny webové stránky",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Prosíme, nezakazujte toto oprávnění. LocalCDN potřebuje toto oprávnění pro detekci a přesměrování požadavků na CDN.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
@@ -508,7 +508,7 @@
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN potřebuje znát, které požadavky jsou vytvořeny webovou stránkou pro jejich přesměrování nebo blokování. Po představení MV3 je toto oprávnění volitelné.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {

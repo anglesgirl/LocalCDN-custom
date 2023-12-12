@@ -492,35 +492,35 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "権限が取り消されました",
+        "message": "権限が拒否されました",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "すべてのウェブサイトの保存されたデータへのアクセス",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "権限は無効にしないでください。LocalCDNがCDNへのリクエストを検出してリダイレクトするにはこの権限が必要です。",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "なぜこの拡張機能はこの権限が必要なのですか？",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDNはリクエストをリダイレクトまたはブロックするために、ウェブサイトが発するリクエストを知る必要があります。MV3の導入により、この権限はオプションの権限として記載されています。",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "権限の不足",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "許可",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "詳細",
         "description": "More info"
     }
 }
