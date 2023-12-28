@@ -213,7 +213,7 @@ storageManager._validateDomainsAndStatistics = function (type, obj) {
     if (type === 'allowedDomainsGoogleFonts' || type === 'domainsManipulateDOM' || type === 'allowlistedDomains') {
         for (const [key, value] of Object.entries(obj)) {
             // eslint-disable-next-line no-useless-escape
-            if (((/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,24}/).test(key) || key === '') && value === true) {
+            if (((Regex.DOMAIN).test(key) || key === '') && value === true) {
                 valid[key] = value;
             } else {
                 alert(`${chrome.i18n.getMessage('dialogImportFailed')}: ${key}`);
@@ -222,12 +222,12 @@ storageManager._validateDomainsAndStatistics = function (type, obj) {
         }
     } else if (type === 'internalStatisticsData') {
         for (const [date, values] of Object.entries(obj)) {
-            if ((/((2\d)\d{2})-(0[1-9]|1[012])-(0[1-9]|[12]\d|3[01])/).test(date)) {
+            if ((Regex.INTERNAL_STATISTICS_DATA).test(date)) {
                 for (const [types, category] of Object.entries(values)) {
                     if (types === 'frameworks') {
                         for (const [name, counter] of Object.entries(category)) {
                             // eslint-disable-next-line max-len
-                            if (!(/resources\/[0-9a-z.-]+\/((?:\d{1,2}\.){1,3}\d{1,2})?.*\.(css|jsm)/).test(name) && !storageManager._validateNumbers(counter)) {
+                            if (!(Regex.INTERNAL_RESOURCES).test(name) && !storageManager._validateNumbers(counter)) {
                                 alert(`${chrome.i18n.getMessage('dialogImportFailed')}: ${name}`);
                                 throw InvalidFile;
                             }
@@ -235,7 +235,7 @@ storageManager._validateDomainsAndStatistics = function (type, obj) {
                     } else if (types === 'cdns') {
                         for (const [name, counter] of Object.entries(category)) {
                             // eslint-disable-next-line no-useless-escape, max-len
-                            if (!(/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,24}/).test(name) && !storageManager._validateNumbers(counter)) {
+                            if (!(Regex.DOMAIN).test(name) && !storageManager._validateNumbers(counter)) {
                                 alert(`${chrome.i18n.getMessage('dialogImportFailed')}: ${name}`);
                                 throw InvalidFile;
                             }
@@ -259,9 +259,9 @@ storageManager._validateDomainsAndStatistics = function (type, obj) {
 };
 
 storageManager._validateStrings = function (value) {
-    if ((/((2\d)\d{2})-(0[1-9]|1[012])-(0[1-9]|[12]\d|3[01])/).test(value)) {
+    if ((Regex.ISO_DATE).test(value)) {
         return value;
-    } else if ((/#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/).test(value)) {
+    } else if ((Regex.HEX_COLOR).test(value)) {
         return value;
     } else if (value === 'Default' || value === 'Light' || value === 'Grey') {
         return value;

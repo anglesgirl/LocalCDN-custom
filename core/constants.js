@@ -273,6 +273,11 @@ const Regex = {
     'BOOTSTRAP_FONTS_ONLY': /\/bootstrap\/(?:\d{1,2}\.){1,3}\d{1,2}\/fonts\//,
     'ROCKET_LOADER': /ajax\.cloudflare\.com\/cdn-cgi\/scripts\/[a-zA-Z0-9]{8}\/cloudflare-static\/rocket-loader\.min\.js/,
     'TWITTER_BOOTSTRAP_ALPHA_BETA': /-(alpha|beta).?\d?/,
+    'INTERNAL_STATISTICS_DATA': /((2\d)\d{2})-(0[1-9]|1[012])-(0[1-9]|[12]\d|3[01])/,
+    'DOMAIN': /[a-z0-9]+([-.]{1}[a-z0-9]+)*\.[a-z]{2,24}/,
+    'INTERNAL_RESOURCES': /resources\/[0-9a-z.-]+\/((?:\d{1,2}\.){1,3}\d{1,2})?.*\.(css|jsm)/,
+    'ISO_DATE': /((2\d)\d{2})-(0[1-9]|1[012])-(0[1-9]|[12]\d|3[01])/,
+    'HEX_COLOR': /#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/,
 };
 
 const MaterialIcons = {
