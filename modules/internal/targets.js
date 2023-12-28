@@ -402,7 +402,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-side-effect/')) return '2.1.2';
     if (type.startsWith('/react-lifecycles-compat/')) return '3.0.4';
     if (type.startsWith('/redux/4.')) return '4.2.1';
-    if (type.startsWith('/redux/5.')) return '5.0.0';
+    if (type.startsWith('/redux/5.')) return '5.0.1';
     if (type.startsWith('/rickshaw/1.')) return '1.7.1';
     if (type.startsWith('/script.js/2.')) return '2.5.9';
     if (type.startsWith('/scriptaculous/1.')) return '1.9.0';
