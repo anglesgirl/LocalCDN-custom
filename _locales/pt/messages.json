@@ -480,47 +480,47 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Emblema de recurso ausente",
+        "message": "Ícone de recurso ausente ou bloqueado",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "Bloqueado",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "Ausente",
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Permissão revogada",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Acede os seus dados em todos os sites",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Por favor, não desative a permissão. O LocalCDN precisa dessa permissão para detetar e redirecionar os pedidos para os CDNs.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Por que esta extensão precisa dessa permissão?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "O LocalCDN precisa saber quais pedidos são criados por um site para bloqueá-lo ou redirecioná-lo. Com a introdução do MV3, essa permissão é mostrada como opcional.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Permissão ausente",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Permitir",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Mais informações",
         "description": "More info"
     }
 }

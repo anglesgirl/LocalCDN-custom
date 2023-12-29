@@ -292,7 +292,7 @@
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
-        "message": "",
+        "message": "Kio estos sinkronigita kiam mi elektas \"sinkronigi\" kiel stokotipo?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {

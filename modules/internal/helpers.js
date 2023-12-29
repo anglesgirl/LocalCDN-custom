@@ -296,5 +296,12 @@ helpers.compareVersion = function (v1, v2) {
 };
 
 helpers.isGoogleDomain = function (initiatorDomain) {
-    return GoogleDomains[initiatorDomain.replace('www.', '')] || false;
+    let parts = initiatorDomain.split('.');
+
+    // remove subdomains if exist
+    if (parts.length > 2) {
+        parts.shift();
+    }
+
+    return GoogleDomains[parts.join('.')] || false;
 };
