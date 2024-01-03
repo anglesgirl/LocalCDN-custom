@@ -408,39 +408,39 @@
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpSyncDescription": {
-        "message": "",
+        "message": "只有當您在裝置上使用 Firefox 帳戶登入並在設定中允許擴充套件同步設定同步才會起作用，您控制下的單獨同步伺服器也可以工作，這將在所有裝置上同步 LocalCDN 的大部分設定。",
         "description": "Sync will only work if you are logged in with a Firefox account on the device and have allowed add-ons to sync in the settings. A separate sync server under your control will also work. This will synchronize most of the settings of LocalCDN across all devices."
     },
     "helpSyncAccount": {
-        "message": "",
+        "message": "如果您沒有同步帳戶，則不會同步任何內容。在這種情況下，您選擇什麼儲存的類型都沒有區別。",
         "description": "If you don‘t have a sync account, nothing will be synchronized. In that case it makes no difference what type of storage you have selected."
     },
     "helpSyncContentNever": {
-        "message": "",
+        "message": "永遠不同步的東西：",
         "description": "Things that are never synchronized:"
     },
     "helpNumberOfInjections": {
-        "message": "",
+        "message": "取代次數",
         "description": "Numbers of injections"
     },
     "helpYes": {
-        "message": "",
+        "message": "是",
         "description": "Yes"
     },
     "helpNo": {
-        "message": "",
+        "message": "否",
         "description": "No"
     },
     "helpData": {
-        "message": "",
+        "message": "資料",
         "description": "Data"
     },
     "helpSyncContentEver": {
-        "message": "",
+        "message": "會被同步的設定：",
         "description": "Settings that will be synchronized:"
     },
     "helpIcons": {
-        "message": "",
+        "message": "預設、淺色、藍色/灰色",
         "description": "Default, Light, Blue/Grey"
     },
     "helpSyncContentLinks": {
@@ -448,7 +448,7 @@
         "description": "More information about Firefox Sync:"
     },
     "helpBrowserCompatibility": {
-        "message": "",
+        "message": "瀏覽器相容性",
         "description": "Browser compatibility"
     },
     "helpReplace": {
@@ -460,67 +460,67 @@
         "description": "Replace other resources"
     },
     "helpUpgradeAllResources": {
-        "message": "",
+        "message": "升級所有資源",
         "description": "Upgrade all resources"
     },
     "helpExplanationChrome": {
-        "message": "",
+        "message": "所有基於 Chromium 的瀏覽器",
         "description": "All Chromium based Browser"
     },
     "helpLimitation": {
-        "message": "",
+        "message": "這不是 LocalCDN 的限制，而是缺少基於 Chromium 的瀏覽器的 API 支援。",
         "description": "This is not a limitation of LocalCDN, but missing API support of Chromium based browsers."
     },
     "titleBadgeDefault": {
-        "message": "",
+        "message": "預設標籤",
         "description": "Default badge"
     },
     "titleBadgeHTMLFilter": {
-        "message": "",
+        "message": "HTML 過濾器標籤",
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "",
+        "message": "資源標籤遺失或被阻止",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
-        "message": "",
+        "message": "阻止的",
         "description": "Blocked"
     },
     "counterMissing": {
-        "message": "",
+        "message": "遺失的",
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "權限被撤銷",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "存取您在所有網站上的數據",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "請勿停用該權限。 LocalCDN 需要該權限偵測請求並將請求重新導向到 CDN 。",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "為什麼這個擴充需要這個權限？",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN 需要知道網站創建了哪些請求來重定向或封鎖它。隨著MV3的引入，該權限被列為可選權限。",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "缺少權限",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "允許",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "更多資訊",
         "description": "More info"
     }
 }
