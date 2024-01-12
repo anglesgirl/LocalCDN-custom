@@ -436,7 +436,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/sticky-js/')) return '1.3.0';
     if (type.startsWith('/store.js/2.')) return '2.0.12';
     if (type.startsWith('/swagger-ui/4.')) return '4.18.3';
-    if (type.startsWith('/swagger-ui/5.')) return '5.10.5';
+    if (type.startsWith('/swagger-ui/5.')) return '5.11.0';
     if (type.startsWith('/swfobject/2.')) return '2.2';
     if (type.startsWith('/Swiper/3.')) return '3.4.2';
     if (type.startsWith('/Swiper/4.')) return '4.5.1';
