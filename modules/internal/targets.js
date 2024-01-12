@@ -347,7 +347,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/modernizr/2.')) return '2.8.3';
     if (type.startsWith('/moment.js/2.')) {
         if (helpers.compareVersion('2.5.1', version)) return '2.5.1'; // <= v2.5.1
-        return '2.30.0';
+        return '2.30.1';
     }
     if (type.startsWith('/mootools/1.')) {
         if (helpers.compareVersion('1.4.5', version)) return '1.4.5'; // <= v1.4.5
