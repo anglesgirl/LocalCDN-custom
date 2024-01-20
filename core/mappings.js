@@ -639,6 +639,7 @@ mappings.cdn = {
             'docsify-themeable@{version}/dist/css/theme-defaults.css': resources.docsifyThemeDefault,
             'docsify-themeable@{version}/dist/css/theme-simple.css': resources.docsifyThemeSimple,
             'docsify-themeable@{version}/dist/css/theme-simple-dark.css': resources.docsifyThemeSimpleDark,
+            'docsify@{version}': resources.docsify,
             'ethjs@{version}/dist/ethjs.': resources.ethJs,
             'exif-js@{version}/exif.': resources.exifJS,
             'flv.js/dist/flv.min.js': resources.flvJS,
