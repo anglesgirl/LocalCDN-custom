@@ -492,7 +492,7 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Autorizzazione revocata",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
@@ -500,27 +500,27 @@
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Non disabilitare l'autorizzazione. LocalCDN ha bisogno dell'autorizzazione per rilevare e reindirizzare le richieste a CDNs",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Perche questa estensione necessita di questa autorizzazione?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN ha bisogno di sapere quali richieste sono create da un sito web per reindirizzarle o bloccarle. Con l'introduzione di MV3, questa autorizzazione è elencata come facoltativa.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Autorizzazione mancante",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Consenti",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Più informazioni",
         "description": "More info"
     }
 }
