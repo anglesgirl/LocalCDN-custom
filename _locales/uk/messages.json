@@ -492,35 +492,35 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Дозвіл відкликано",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Доступ до ваших даних для всіх вебсайтів",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Будь ласка, не вимикайте цей дозвіл. LocalCDN потрібен цей дозвіл, щоб виявляти і перенаправляти запити на CDN.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Навіщо цьому розширенню потрібен цей дозвіл?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN має знати, які запити створює вебсайт, щоб перенаправляти або блокувати їх. З впровадженням MV3 цей дозвіл вказано як необов'язковий.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Відсутній дозвіл",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Дозволити",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Докладніше",
         "description": "More info"
     }
 }
