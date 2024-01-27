@@ -500,7 +500,7 @@
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "Non disabilitare l'autorizzazione. LocalCDN ha bisogno dell'autorizzazione per rilevare e reindirizzare le richieste a CDNs",
+        "message": "Non disabilitare l'autorizzazione. LocalCDN ha bisogno dell'autorizzazione per rilevare e reindirizzare le richieste a CDNs.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
