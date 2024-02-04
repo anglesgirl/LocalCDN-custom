@@ -435,6 +435,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/stickyfill/2.')) return '2.1.0';
     if (type.startsWith('/sticky-js/')) return '1.3.0';
     if (type.startsWith('/store.js/2.')) return '2.0.12';
+    if (type.startsWith('/supabase-js/2.')) return '2.39.3';
     if (type.startsWith('/swagger-ui/4.')) return '4.18.3';
     if (type.startsWith('/swagger-ui/5.')) return '5.11.2';
     if (type.startsWith('/Swiper/3.')) return '3.4.2';
@@ -513,6 +514,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'supabase.min.jsm': 'supabase-js',
     'handlebars.min.jsm': 'handlebars.js',
     'URI.min.jsm': 'URI.js',
     'vue-router.global.min.jsm': 'vue-router',

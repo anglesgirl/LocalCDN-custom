@@ -726,6 +726,7 @@ mappings.cdn = {
             'slick-carousel@{version}/slick/slick.css': resources.slickCarouselCSS,
             'slick-carousel@{version}/slick/slick.min.js': resources.slickCarouselJS,
             'slick-carousel@{version}/slick/slick.js': resources.slickCarouselJS,
+            '@supabase/supabase-js@{version}': resources.supabaseJs,
             '@tensorflow/tfjs@{version}/dist/tf.min.js': resources.tensorflow,
             '@tensorflow/tfjs@{version}/dist/tf.js': resources.tensorflow,
             'underscore@{version}/underscore.': resources.underscore,
