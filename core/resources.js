@@ -1058,10 +1058,6 @@ var resources = {
     'swaggerUiCSS': {
         'path': 'resources/swagger-ui/{version}/swagger-ui.min.css'
     },
-    // SWFObject [Deprecated]
-    'swfobject': {
-        'path': 'resources/swfobject/{version}/swfobject.jsm'
-    },
     // Swiper
     'swiperJS': {
         'path': 'resources/Swiper/{version}/js/swiper.min.jsm'

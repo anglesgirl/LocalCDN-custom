@@ -64,7 +64,6 @@ mappings.cdn = {
             'mootools/{version}/mootools-core': resources.mootools,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'webfont/{version}/webfont.': resources.webfontloader,
             'webfont/{version}/webfontloader.js': resources.webfontloader,
             'webfont/1/webfont.js': resources.webfontloader
@@ -512,7 +511,6 @@ mappings.cdn = {
             'swagger-ui/{version}/swagger-ui-standalone-preset.min.js': resources.swaggerUiJS,
             'swagger-ui/{version}/swagger-ui.css': resources.swaggerUiCSS,
             'swagger-ui/{version}/swagger-ui.min.css': resources.swaggerUiCSS,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'Swiper/{version}/css/swiper.': resources.swiperCSS,
             'Swiper/{version}/js/swiper.': resources.swiperJS,
             'Swiper/{version}/swiper-bundle.min.js': resources.swiperJS,
@@ -722,7 +720,6 @@ mappings.cdn = {
             'swiper/swiper-bundle.min.css': resources.swiperCSS,
             'swiper/swiper-bundle.js': resources.swiperJS,
             'swiper/swiper-bundle.min.js': resources.swiperJS,
-            'swfobject@{version}/index.js': resources.swfobject,
             'store-js@{version}/dist/store.legacy.min.js': resources.storeJS,
             'scriptaculous-js@{version}/scriptaculous.': resources.scriptaculous,
             'slick-carousel@{version}/slick/slick.min.css': resources.slickCarouselCSS,
@@ -792,7 +789,6 @@ mappings.cdn = {
             'simplemde/{version}/simplemde.css': resources.simplemdeCSS,
             'simplemde/{version}/simplemde.min.css': resources.simplemdeCSS,
             'snowplow/{version}/sp.': resources.snowplow,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'underscorejs/{version}/underscore.': resources.underscore,
             'underscorejs/{version}/underscore-min.': resources.underscore,
             'webfontloader/{version}/webfont': resources.webfontloader
@@ -835,7 +831,6 @@ mappings.cdn = {
             'momentjs/{version}/moment.min.': resources.moment,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'underscore/{version}/underscore.': resources.underscore,
             'underscore/{version}/underscore-min.': resources.underscore
         }
@@ -856,7 +851,6 @@ mappings.cdn = {
             'momentjs/{version}/moment.min.': resources.moment,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'underscore/{version}/underscore.': resources.underscore,
             'underscore/{version}/underscore-min.': resources.underscore
         }
@@ -887,8 +881,6 @@ mappings.cdn = {
             'mootools/{version}/mootools-core.': resources.mootools,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
-            'swfobject/{version}/swfobject_src.': resources.swfobject,
             'underscore.js/{version}/underscore.': resources.underscore,
             'underscore.js/{version}/underscore-min.': resources.underscore,
             'webfont/{version}/webfont.': resources.webfontloader,
@@ -921,7 +913,6 @@ mappings.cdn = {
             'mootools/{version}/mootools-core.': resources.mootools,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'underscore.js/{version}/underscore.': resources.underscore,
             'underscore.js/{version}/underscore-min.': resources.underscore,
             'webfont/{version}/webfont.': resources.webfontloader,
@@ -949,7 +940,6 @@ mappings.cdn = {
             'mootools/{version}/mootools-core.': resources.mootools,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'underscore.js/{version}/underscore.': resources.underscore,
             'underscore.js/{version}/underscore-min.': resources.underscore,
             'webfont/{version}/webfont.': resources.webfontloader,
@@ -981,7 +971,6 @@ mappings.cdn = {
             'mootools/{version}/mootools-core.': resources.mootools,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'webfont/{version}/webfont.': resources.webfontloader,
             'webfont/{version}/webfont_debug.': resources.webfontloader
         }
@@ -1014,7 +1003,6 @@ mappings.cdn = {
             'mootools/{version}/mootools-core.': resources.mootools,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'twitter-bootstrap/{version}/js/bootstrap.': resources.bootstrapJS,
             'twitter-bootstrap/{version}/css/bootstrap.': resources.bootstrapCSS,
             'underscore.js/{version}/underscore.': resources.underscore,
@@ -1058,7 +1046,6 @@ mappings.cdn = {
             'mootools/{version}/mootools.': resources.mootools,
             'prototype/{version}/prototype.': resources.prototypeJS,
             'scriptaculous/{version}/scriptaculous.': resources.scriptaculous,
-            'swfobject/{version}/swfobject.': resources.swfobject,
             'underscore/{version}/underscore.': resources.underscore,
             'underscore/{version}/underscore-min.': resources.underscore,
             'webfont/{version}/webfont.': resources.webfontloader,

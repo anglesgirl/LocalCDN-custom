@@ -437,7 +437,6 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/store.js/2.')) return '2.0.12';
     if (type.startsWith('/swagger-ui/4.')) return '4.18.3';
     if (type.startsWith('/swagger-ui/5.')) return '5.11.2';
-    if (type.startsWith('/swfobject/2.')) return '2.2';
     if (type.startsWith('/Swiper/3.')) return '3.4.2';
     if (type.startsWith('/Swiper/4.')) return '4.5.1';
     if (type.startsWith('/Swiper/5.')) return '5.4.5';
@@ -821,7 +820,6 @@ const ListOfFiles = {
     'socket.io.min.jsm': 'Socket.IO',
     'spin.min.jsm': 'spin.js',
     'store.legacy.min.jsm': 'Store.js',
-    'swfobject.jsm': 'SWFObject',
     'swiper.min.css': 'Swiper (CSS)',
     'swiper.min.jsm': 'Swiper (JS)',
     'tether.min.jsm': 'Tether (JS)',
