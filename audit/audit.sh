@@ -747,6 +747,8 @@ function create_url() {
         url="$CLOUDFLARE/$folder/$version/plugins/$jfile"
     elif [ "$folder" = "redux" ] && [ "$version" != "4.2.1" ];then
         url="$CLOUDFLARE/$folder/$version/redux.legacy-esm.min.js"
+    elif [ "$folder" = "supabase-js" ]; then
+        url="$UNPKG/@supabase/supabase-js@$version/dist/umd/supabase.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

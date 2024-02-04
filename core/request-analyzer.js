@@ -259,6 +259,8 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
         filename = requestAnalyzer._handleUncompressedFiles(filename);
     } else if (bundle === 'ScrollMagic (Bundle)' && !filename.endsWith('.min.js')) {
         filename = requestAnalyzer._handleUncompressedFiles(filename);
+    } else if (bundle === 'Font Awesome (Fonts) (Bundle)') {
+        filename = requestAnalyzer._handleFontawesomeFiles(targetPath, filename);
     }
 
     if (filename === false) {
@@ -303,6 +305,13 @@ requestAnalyzer._handleTinyMCE = function (channelPath, channelHost, initiator) 
         console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
         log.append(initiator, channelHost + channelPath, '-', true);
         return false;
+    }
+    return filename;
+};
+
+requestAnalyzer._handleFontawesomeFiles = function (targetPath, filename) {
+    if (targetPath === 'resources/font-awesome/4.7.0/fonts/') {
+        return filename.replace('fontawesome-webfont.woff', 'fontawesome-webfont.woff2');
     }
     return filename;
 };
