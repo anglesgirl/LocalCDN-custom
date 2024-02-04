@@ -111,7 +111,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/angular-bootstrap-colorpicker/3.')) return '3.0.32';
     if (type.startsWith('/zumper-angular-payments/1.')) return '1.0.7';
     if (type.startsWith('/angular-stripe-checkout@5.')) return '5.1.0';
-    if (type.startsWith('/angular-translate-loader-partial/2.')) return '2.19.0';
+    if (type.startsWith('/angular-translate-loader-partial/2.')) return '2.19.1';
     if (type.startsWith('/angular-ui-bootstrap/')) {
         if (helpers.compareVersion('0.10.0', version)) return '0.10.0'; // <= v0.10.0
         if (helpers.compareVersion('0.14.3', version)) return '0.14.3'; // > 0.10.0 <= v0.14.3
