@@ -514,6 +514,11 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'buble.min.css': 'docsify Theme (buble)',
+    'dark.min.css': 'docsify Theme (dark)',
+    'dolphin.min.css': 'docsify Theme (dolphin)',
+    'pure.min.css': 'docsify Theme (pure)',
+    'vue.min.css': 'docsify Theme (vue)',
     'supabase.min.jsm': 'supabase-js',
     'handlebars.min.jsm': 'handlebars.js',
     'URI.min.jsm': 'URI.js',
