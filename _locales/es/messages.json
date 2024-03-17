@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "Le protege contra el rastreo de CDN (Redes de entrega de contenido) mediante la redirección a recursos locales.",
+        "message": "Protege contra el rastreo a través de CDN (Redes de entrega de contenido) mediante la redirección a recursos locales.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {

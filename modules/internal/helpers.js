@@ -175,11 +175,17 @@ helpers.getWildcard = function (initiatorDomain) {
         domain = domain.join().replace(/,/g, '.');
         return domain;
     }
+};
 
+helpers.getTopLevelDomain = function (initiatorDomain) {
+    let domain = initiatorDomain.split('.');
+
+    domain[domain.length - 2] = '*';
+    return `${domain[domain.length - 2]}.${domain[domain.length - 1]}`;
 };
 
 helpers.checkAllowlisted = function (domain, list) {
-    let domainWithoutPrefix, wildcard;
+    let domainWithoutPrefix, wildcard, tld;
 
     if (domain === null) {
         return false;
@@ -189,8 +195,13 @@ helpers.checkAllowlisted = function (domain, list) {
         domainWithoutPrefix = domain.slice(Address.WWW_PREFIX.length);
     }
     wildcard = helpers.getWildcard(domain);
+    tld = helpers.getTopLevelDomain(domain);
 
-    return Boolean(list[domain] || list[domainWithoutPrefix] || list[wildcard] || list[domainWithoutPrefix]);
+    return Boolean(list[domain] ||
+        list[domainWithoutPrefix] ||
+        list[wildcard] ||
+        list[domainWithoutPrefix] ||
+        list[tld]);
 };
 
 helpers.extractFilenameFromPath = function (path) {

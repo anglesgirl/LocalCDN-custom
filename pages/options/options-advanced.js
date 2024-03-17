@@ -88,6 +88,10 @@ optionsAdvanced.init = function (opt) {
     negateHtmlFilterList = options.getOptionElement(Setting.NEGATE_HTML_FILTER_LIST);
     negateHtmlFilterList.addEventListener('change', options.onOptionChanged);
     negateHtmlFilterList.checked = opt[Setting.NEGATE_HTML_FILTER_LIST];
+    if (opt[Setting.NEGATE_HTML_FILTER_LIST] === false) {
+        document.getElementById('html-filter-domains-title-include').style.display = 'block';
+        document.getElementById('html-filter-domains-title-exclude').style.display = 'none';
+    }
 
     changeBadgeColorMissingResources = options.getOptionElement(Setting.CHANGE_BADGE_COLOR_MISSING_RESOURCES);
     changeBadgeColorMissingResources.addEventListener('change', options.onOptionChanged);
