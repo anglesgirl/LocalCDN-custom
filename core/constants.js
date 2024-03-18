@@ -278,6 +278,7 @@ const Regex = {
     'INTERNAL_RESOURCES': /resources\/[0-9a-z.-]+\/((?:\d{1,2}\.){1,3}\d{1,2})?.*\.(css|jsm)/,
     'ISO_DATE': /((2\d)\d{2})-(0[1-9]|1[012])-(0[1-9]|[12]\d|3[01])/,
     'HEX_COLOR': /#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/,
+    'DOCSIFY': /docsify@(?:\d{1,2}\.){0,3}\d{1,2}(?:-\d)?$/,
 };
 
 const MaterialIcons = {
