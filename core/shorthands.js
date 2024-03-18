@@ -288,19 +288,6 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': `resources/aos/${lastVersion}/${file}`,
             'bundle': ''
         };
-    } else if (CompleteURL.startsWith('unpkg.com/docsify/lib/themes/')) {
-        let theme = CompleteURL.split('/').pop();
-        lastVersion = targets.setLastVersion('/docsify/');
-        if (!theme.includes('.min.')) {
-            theme = theme.replace('.css', '.min.css');
-        }
-        return {
-            'source': channelHost,
-            'versionDelivered': lastVersion,
-            'versionRequested': 'latest',
-            'path': `resources/docsify/${lastVersion}/themes/${theme}`,
-            'bundle': ''
-        };
     }
     return {
         'result': false,
