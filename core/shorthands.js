@@ -288,6 +288,15 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': `resources/aos/${lastVersion}/${file}`,
             'bundle': ''
         };
+    } else if (Regex.DOCSIFY.test(channelPath)) {
+        lastVersion = targets.setLastVersion('/docsify/');
+        return {
+            'source': channelHost,
+            'versionDelivered': lastVersion,
+            'versionRequested': channelPath.split('@')[1],
+            'path': `resources/docsify/${lastVersion}/docsify.min.jsm`,
+            'bundle': ''
+        };
     }
     return {
         'result': false,
