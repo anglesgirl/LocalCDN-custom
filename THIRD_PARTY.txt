@@ -333,11 +333,6 @@ https://cdnjs.cloudflare.com/ajax/libs/dexie/3.2.6/dexie.min.js
 https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css
 https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.js
 https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/docsify.min.js
-https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/buble.min.css
-https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/dark.min.css
-https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/dolphin.min.css
-https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/pure.min.css
-https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/vue.min.css
 https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css
 https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js
 https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js
