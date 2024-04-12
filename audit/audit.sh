@@ -432,9 +432,7 @@ function check_resource() {
 # CREATE URLs
 # =============================================================================
 function create_url() {
-    if [ "$folder" = "angular-stripe-checkout" ]; then
-        url="$JSDELIVR/npm/angular-stripe-checkout@$version/angular-stripe-checkout.min.js"
-    elif [ "$folder" = "ethjs" ]; then
+    if [ "$folder" = "ethjs" ]; then
         url="$JSDELIVR/npm/ethjs@$version/dist/ethjs.min.js"
     elif [ "$folder" = "react-lifecycles-compat" ]; then
         url="$JSDELIVR/npm/react-lifecycles-compat@$version/react-lifecycles-compat.min.js"

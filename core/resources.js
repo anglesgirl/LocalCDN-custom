@@ -128,10 +128,6 @@ var resources = {
     'angularPayments': {
         'path': 'resources/zumper-angular-payments/{version}/angular-payments.jsm'
     },
-    // Angular Stripe Checkout [Deprecated]
-    'angularStripeCheckout': {
-        'path': 'resources/angular-stripe-checkout/{version}/angular-stripe-checkout.min.jsm'
-    },
     // Angular Translate (Bundle)
     'angularTranslate': {
         'path': 'resources/angular-translate/{version}/'
