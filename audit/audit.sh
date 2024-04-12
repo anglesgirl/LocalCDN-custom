@@ -664,8 +664,6 @@ function create_url() {
         url="$CLOUDFLARE/$folder/$version/$relativpath"
     elif [ "$folder" = "Chart.js" ] && [ "$version" = "2.9.4" ] && [ "$jfile" = "chart.min.js" ]; then
         url="$CLOUDFLARE/$folder/$version/Chart.bundle.min.js"
-    elif [ "$folder" = "angular-ui-select" ] && [ "$version" = "0.19.8" ]; then
-        url="$JSDELIVR/npm/ui-select@$version/dist/select.min.js"
     elif [ "$folder" = "plyr" ]; then
         if [ "$jfile" = "plyr.min.js" ]; then
             url="$JSDELIVR/npm/plyr@$version/dist/plyr.min.js"

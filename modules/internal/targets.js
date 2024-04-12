@@ -123,7 +123,6 @@ targets.setLastVersion = function (type, version) {
         return '1.1.0'; // > 0.4.3
     }
     if (type.startsWith('/angular-ui-utils/0.')) return '0.1.1';
-    if (type.startsWith('/angular-ui-select/0.')) return '0.20.0';
     if (type.startsWith('/angucomplete-alt/3.')) return '3.0.0';
     if (type.startsWith('/animate.css/3.')) return '3.7.2';
     if (type.startsWith('/animate.css/4.')) return '4.1.1';
