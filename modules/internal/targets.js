@@ -446,7 +446,8 @@ targets.setLastVersion = function (type, version) {
     }
     if (type.startsWith('/tether/1.')) return '1.4.7';
     if (type.startsWith('/tinymce/5.')) return '5.10.5';
-    if (type.startsWith('/tinymce/6.')) return '6.8.3';
+    if (type.startsWith('/tinymce/6.')) return '7.0.1';
+    if (type.startsWith('/tinymce/7.')) return '7.0.1';
     if (type.startsWith('/tooltipster/3.')) return '3.3.0';
     if (type.startsWith('/tooltipster/4.')) return '4.2.8';
     if (type.startsWith('/toastr.js/2.') || type.startsWith('/toastr.js/latest/')) return '2.1.4';
