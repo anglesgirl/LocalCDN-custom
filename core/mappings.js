@@ -296,7 +296,6 @@ mappings.cdn = {
             'cookieconsent2/{version}/cookieconsent.css': resources.cookieconsent2CSS,
             'corejs-typeahead/{version}/typeahead.bundle.': resources.corejsTypeahead,
             'd3/{version}/d3.min.js': resources.d3JS,
-            'd3-legend/{version}/d3-legend.': resources.d3legend,
             'datatables/{version}/': resources.datatables,
             'dayjs/{version}/dayjs.': resources.dayjs,
             'dexie/{version}/dexie.': resources.dexie,

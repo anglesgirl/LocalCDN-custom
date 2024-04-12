@@ -181,7 +181,6 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/d3/5.')) return '5.16.0';
     if (type.startsWith('/d3/6.')) return '6.7.0';
     if (type.startsWith('/d3/7.')) return '7.9.0';
-    if (type.startsWith('/d3-legend/2.')) return '2.25.6';
     if (type.startsWith('/datatables/1.')) return '1.11.0';
     if (type.startsWith('/dayjs/1.')) return '1.11.10';
     if (type.startsWith('/dexie/3.') || type.startsWith('/dexie/latest')) return '3.2.6';

@@ -325,10 +325,6 @@ var resources = {
     'd3JS': {
         'path': 'resources/d3/{version}/d3.min.jsm'
     },
-    // D3 Legend [Deprecated]
-    'd3legend': {
-        'path': 'resources/d3-legend/{version}/d3-legend.min.jsm'
-    },
     // datatables
     'datatables': {
         'path': 'resources/datatables/{version}/'
