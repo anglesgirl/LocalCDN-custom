@@ -106,10 +106,6 @@ var resources = {
     'angularJSslider': {
         'path': 'resources/angularjs-slider/{version}/rzslider.min.jsm'
     },
-    // angular-ui-utils [Deprecated]
-    'angularUiUtils': {
-        'path': 'resources/angular-ui-utils/{version}/angular-ui-utils.min.jsm'
-    },
     // AngularUI Bootstrap [Deprecated]
     'angularUiBootstrapTPLS': {
         'path': 'resources/angular-ui-bootstrap/{version}/ui-bootstrap-tpls.min.jsm'
