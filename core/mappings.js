@@ -305,8 +305,6 @@ mappings.cdn = {
             'docsearch.js/{version}/docsearch.css': resources.docsearchCSS,
             'docsify/{version}/docsify.min.js': resources.docsify,
             'docsify/{version}/docsify.js': resources.docsify,
-            'drawer/{version}/js/drawer.min.js': resources.drawerJS,
-            'drawer/{version}/css/drawer.min.css': resources.drawerCSS,
             'dygraph/{version}/dygraph': resources.dygraph,
             'element-ui/{version}/': resources.elementUI,
             'ext-core/{version}/ext-core.': resources.extCore,

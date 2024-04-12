@@ -358,13 +358,6 @@ var resources = {
     'docsifyThemeSimpleDark': {
         'path': 'resources/docsify-themeable/{version}/theme-simple-dark.css'
     },
-    // Drawer [Deprecated]
-    'drawerJS': {
-        'path': 'resources/drawer/{version}/drawer.min.jsm'
-    },
-    'drawerCSS': {
-        'path': 'resources/drawer/{version}/drawer.min.css'
-    },
     // dygraph
     'dygraph': {
         'path': 'resources/dygraph/{version}/dygraph.min.jsm'
