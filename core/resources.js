@@ -423,10 +423,6 @@ var resources = {
     'feather': {
         'path': 'resources/feather-icons/{version}/feather.min.jsm'
     },
-    // FitText.js [Deprecated]
-    'fitTextJs': {
-        'path': 'resources/FitText.js/{version}/jquery.fittext.min.jsm'
-    },
     // flickity
     'flickity': {
         'path': 'resources/flickity/{version}/flickity.pkgd.min.jsm'

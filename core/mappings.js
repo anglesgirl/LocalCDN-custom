@@ -321,7 +321,6 @@ mappings.cdn = {
             'fancybox/{version}/jquery.fancybox.css': resources.fancyBoxCSS,
             'fastclick/{version}/fastclick.': resources.fastclick,
             'feather-icons/{version}/feather.': resources.feather,
-            'FitText.js/{version}/jquery.fittext.': resources.fitTextJs,
             'flickity/{version}/flickity.pkgd.': resources.flickity,
             'font-awesome/{version}/css/font-awesome': resources.fontawesome,
             'font-awesome/{version}/css/': resources.fontawesome5CSS,
