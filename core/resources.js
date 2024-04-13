@@ -106,14 +106,6 @@ var resources = {
     'angularJSslider': {
         'path': 'resources/angularjs-slider/{version}/rzslider.min.jsm'
     },
-    // AngularJS ui-select [Deprecated]
-    'angularJsUiSelect': {
-        'path': 'resources/angular-ui-select/{version}/select.min.jsm'
-    },
-    // angular-ui-utils [Deprecated]
-    'angularUiUtils': {
-        'path': 'resources/angular-ui-utils/{version}/angular-ui-utils.min.jsm'
-    },
     // AngularUI Bootstrap [Deprecated]
     'angularUiBootstrapTPLS': {
         'path': 'resources/angular-ui-bootstrap/{version}/ui-bootstrap-tpls.min.jsm'
@@ -135,10 +127,6 @@ var resources = {
     // Angular Payments [Deprecated]
     'angularPayments': {
         'path': 'resources/zumper-angular-payments/{version}/angular-payments.jsm'
-    },
-    // Angular Stripe Checkout [Deprecated]
-    'angularStripeCheckout': {
-        'path': 'resources/angular-stripe-checkout/{version}/angular-stripe-checkout.min.jsm'
     },
     // Angular Translate (Bundle)
     'angularTranslate': {
@@ -337,10 +325,6 @@ var resources = {
     'd3JS': {
         'path': 'resources/d3/{version}/d3.min.jsm'
     },
-    // D3 Legend [Deprecated]
-    'd3legend': {
-        'path': 'resources/d3-legend/{version}/d3-legend.min.jsm'
-    },
     // datatables
     'datatables': {
         'path': 'resources/datatables/{version}/'
@@ -373,13 +357,6 @@ var resources = {
     },
     'docsifyThemeSimpleDark': {
         'path': 'resources/docsify-themeable/{version}/theme-simple-dark.css'
-    },
-    // Drawer [Deprecated]
-    'drawerJS': {
-        'path': 'resources/drawer/{version}/drawer.min.jsm'
-    },
-    'drawerCSS': {
-        'path': 'resources/drawer/{version}/drawer.min.css'
     },
     // dygraph
     'dygraph': {
@@ -422,10 +399,6 @@ var resources = {
     // Feather
     'feather': {
         'path': 'resources/feather-icons/{version}/feather.min.jsm'
-    },
-    // FitText.js [Deprecated]
-    'fitTextJs': {
-        'path': 'resources/FitText.js/{version}/jquery.fittext.min.jsm'
     },
     // flickity
     'flickity': {
