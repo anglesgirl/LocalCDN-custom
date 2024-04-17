@@ -96,15 +96,19 @@ stateManager.addDomainToAllowlist = function (domain) {
 
 stateManager.removeDomainFromAllowlist = function (domain) {
     return new Promise((resolve) => {
-        let allowlistedDomains, wildcard;
+        let allowlistedDomains;
 
         allowlistedDomains = requestAnalyzer.allowlistedDomains;
-        wildcard = helpers.getWildcard(domain);
 
         if (allowlistedDomains[domain]) {
             delete allowlistedDomains[domain];
         } else {
-            delete allowlistedDomains[wildcard];
+            for (const key in allowlistedDomains) {
+                if (key.startsWith('*.') && domain.endsWith(key.substring(2))) {
+                    delete allowlistedDomains[key];
+                    break;
+                }
+            }
         }
 
         storageManager.type.set({allowlistedDomains}, resolve);

@@ -185,23 +185,29 @@ helpers.getTopLevelDomain = function (initiatorDomain) {
 };
 
 helpers.checkAllowlisted = function (domain, list) {
-    let domainWithoutPrefix, wildcard, tld;
+    if (!domain) return false;
 
-    if (domain === null) {
-        return false;
+    const subdomains = helpers.getAllSubdomains(domain);
+
+    for (const subdomain of subdomains) {
+        if (list[subdomain]) return true;
+    }
+    return false;
+};
+
+
+helpers.getAllSubdomains = function (domain) {
+    const parts = domain.split('.').reverse();
+    const subdomains = [];
+    let currentSubdomain = '';
+
+    for (const part of parts) {
+        currentSubdomain = part + (currentSubdomain ? `.${currentSubdomain}` : '');
+        subdomains.push(`*.${currentSubdomain}`);
+        subdomains.push(currentSubdomain);
     }
 
-    if (domain.startsWith(Address.WWW_PREFIX)) {
-        domainWithoutPrefix = domain.slice(Address.WWW_PREFIX.length);
-    }
-    wildcard = helpers.getWildcard(domain);
-    tld = helpers.getTopLevelDomain(domain);
-
-    return Boolean(list[domain] ||
-        list[domainWithoutPrefix] ||
-        list[wildcard] ||
-        list[domainWithoutPrefix] ||
-        list[tld]);
+    return subdomains;
 };
 
 helpers.extractFilenameFromPath = function (path) {
