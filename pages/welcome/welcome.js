@@ -27,7 +27,7 @@ var welcome = {};
  */
 
 welcome._onDocumentLoaded = function () {
-    if (!BrowserType.FIREFOX) {
+    if (!window.location.href.startsWith('moz-extension')) {
         document.getElementById('chromium-banner').style.display = 'block';
     }
     document.getElementById('open-settings').addEventListener('mouseup', function () { chrome.runtime.openOptionsPage(); });
