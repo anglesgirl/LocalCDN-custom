@@ -159,6 +159,10 @@
         "message": "Förra året",
         "description": "Statistics view for past year."
     },
+    "labelAll": {
+        "message": "",
+        "description": "Statistics view over the whole time range"
+    },
     "labelDelete": {
         "message": "Radera",
         "description": "Button to delete all statistics data."
