@@ -127,6 +127,8 @@ statistics._setDateRange = function () {
         days = 30;
     } else if (type === 'year') {
         days = 365;
+    } else if (type === 'all') {
+        days = statistics._daysSinceFirstRelease();
     } else {
         statistics._dateRange = [new Date().toISOString().slice(0, 10)];
     }
@@ -238,7 +240,7 @@ statistics._displayNameOfFramework = function (str, type) {
 
 statistics._handlerDateRange = function ({target}) {
     let type = target.value;
-    if (type === 'day' || type === 'week' || type === 'month' || type === 'year') {
+    if (type === 'day' || type === 'week' || type === 'month' || type === 'year' || type === 'all') {
         statistics._dateUnit = type;
         statistics._saveDefaultRange(type);
     } else if (type === 'delete') {
@@ -268,6 +270,14 @@ statistics._registerListener = function () {
     document.getElementById('btn-delete').addEventListener('click', function () {
         statistics._handlerDateRange({'target': {'value': 'delete'}});
     });
+};
+
+statistics._daysSinceFirstRelease = function () {
+    let timeDifference, millisecondsPerDay;
+
+    timeDifference = new Date() - new Date('2020-01-01');
+    millisecondsPerDay = 24 * 60 * 60 * 1000;
+    return Math.floor(timeDifference / millisecondsPerDay);
 };
 
 
