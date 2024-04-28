@@ -23,7 +23,7 @@
  * Main
  */
 
-var main = {};
+let main = {};
 
 
 /**

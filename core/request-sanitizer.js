@@ -18,7 +18,7 @@
  * Request Sanitizer
  */
 
-var requestSanitizer = {};
+let requestSanitizer = {};
 
 
 /**

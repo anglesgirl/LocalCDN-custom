@@ -23,7 +23,7 @@
  * Interceptor
  */
 
-var interceptor = {};
+let interceptor = {};
 
 
 /**

@@ -19,7 +19,7 @@
  * Targets
  */
 
-var targets = {};
+let targets = {};
 
 
 /**

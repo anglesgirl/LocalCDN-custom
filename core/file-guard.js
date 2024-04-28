@@ -21,7 +21,7 @@
  * File Guard
  */
 
-var fileGuard = {};
+let fileGuard = {};
 
 
 /**

@@ -23,7 +23,7 @@
  * State Manager
  */
 
-var stateManager = {};
+let stateManager = {};
 
 
 /**

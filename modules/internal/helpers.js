@@ -23,7 +23,7 @@
  * Helpers
  */
 
-var helpers = {};
+let helpers = {};
 
 
 /**

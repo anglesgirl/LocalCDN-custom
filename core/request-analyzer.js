@@ -23,7 +23,7 @@
  * Request Analyzer
  */
 
-var requestAnalyzer = {};
+let requestAnalyzer = {};
 
 
 /**

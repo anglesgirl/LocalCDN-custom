@@ -20,7 +20,7 @@
  * Stats
  */
 
-var stats = {};
+let stats = {};
 
 
 /**

@@ -26,7 +26,7 @@ const InvalidFile = 'Invalid file!';
  * Storage Manager
  */
 
-var storageManager = {};
+let storageManager = {};
 
 
 /**
