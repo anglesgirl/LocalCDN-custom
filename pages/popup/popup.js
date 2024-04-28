@@ -23,7 +23,7 @@
  * Popup
  */
 
-var popup = {};
+let popup = {};
 
 
 /**

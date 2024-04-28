@@ -20,7 +20,7 @@
  * Updates
  */
 
-var updates = {};
+let updates = {};
 
 
 /**

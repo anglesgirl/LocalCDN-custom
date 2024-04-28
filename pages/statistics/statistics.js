@@ -19,7 +19,7 @@
  * Statistic
  */
 
-var statistics = {};
+let statistics = {};
 
 
 /**

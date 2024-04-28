@@ -23,7 +23,7 @@
  * Options
  */
 
-var options = {};
+let options = {};
 
 
 /**

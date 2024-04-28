@@ -19,7 +19,7 @@
  * Welcome
  */
 
-var welcome = {};
+let welcome = {};
 
 
 /**
