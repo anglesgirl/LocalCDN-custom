@@ -128,7 +128,7 @@ statistics._setDateRange = function () {
     } else if (type === 'year') {
         days = 365;
     } else if (type === 'all') {
-        days = statistics._daysSinceFirstRelease();
+        days = statistics._daysSinceYearOfRelease();
     } else {
         statistics._dateRange = [new Date().toISOString().slice(0, 10)];
     }
@@ -272,7 +272,7 @@ statistics._registerListener = function () {
     });
 };
 
-statistics._daysSinceFirstRelease = function () {
+statistics._daysSinceYearOfRelease = function () {
     let timeDifference, millisecondsPerDay;
 
     timeDifference = new Date() - new Date('2020-01-01');
