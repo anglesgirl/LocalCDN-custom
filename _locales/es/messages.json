@@ -160,7 +160,7 @@
         "description": "Statistics view for past year."
     },
     "labelAll": {
-        "message": "",
+        "message": "Todo",
         "description": "Statistics view over the whole time range"
     },
     "labelDelete": {
