@@ -433,7 +433,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/store.js/2.')) return '2.0.12';
     if (type.startsWith('/supabase-js/2.')) return '2.39.3';
     if (type.startsWith('/swagger-ui/4.')) return '4.18.3';
-    if (type.startsWith('/swagger-ui/5.')) return '5.15.1';
+    if (type.startsWith('/swagger-ui/5.')) return '5.17.3';
     if (type.startsWith('/Swiper/3.')) return '3.4.2';
     if (type.startsWith('/Swiper/4.')) return '4.5.1';
     if (type.startsWith('/Swiper/5.')) return '5.4.5';
