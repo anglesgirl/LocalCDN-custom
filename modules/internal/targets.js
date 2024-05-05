@@ -386,7 +386,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react/18.')) return '18.3.1';
     if (type.startsWith('/react-dom/16.')) return '16.14.0';
     if (type.startsWith('/react-dom/17.')) return '17.0.2';
-    if (type.startsWith('/react-dom/18.')) return '18.2.0';
+    if (type.startsWith('/react-dom/18.')) return '18.3.1';
     if (type.startsWith('/react-intl/')) {
         // NOTE: Parameters swapped. (= anything greater than v5.0.0)
         if (helpers.compareVersion(version, '5.0.0')) return '6.6.5'; // >= v5.0.0
