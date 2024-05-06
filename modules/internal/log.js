@@ -19,7 +19,7 @@
  * Log
  */
 
-var log = {};
+let log = {};
 
 log.append = function (initiator, resource, target, highlight, iframe = '') {
     storageManager.type.get(Setting.LOGGING, function (items) {

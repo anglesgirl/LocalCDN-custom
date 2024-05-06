@@ -19,7 +19,7 @@
  * Options (Basic)
  */
 
-var optionsBasic = {};
+let optionsBasic = {};
 
 
 /**

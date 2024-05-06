@@ -19,7 +19,7 @@
  * Help
  */
 
-var help = {};
+let help = {};
 
 
 /**

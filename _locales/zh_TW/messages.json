@@ -159,6 +159,10 @@
         "message": "去年",
         "description": "Statistics view for past year."
     },
+    "labelAll": {
+        "message": "全部",
+        "description": "Statistics view over the whole time range"
+    },
     "labelDelete": {
         "message": "刪除",
         "description": "Button to delete all statistics data."
@@ -376,7 +380,7 @@
         "description": "Medium"
     },
     "helpRuleGeneratorUblockTableHard": {
-        "message": "進階",
+        "message": "困難",
         "description": "Hard"
     },
     "helpWebsiteIssuesDescription": {

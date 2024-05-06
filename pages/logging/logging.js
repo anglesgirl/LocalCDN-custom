@@ -19,7 +19,7 @@
  * Logging Page
  */
 
-var logging = {};
+let logging = {};
 
 logging._onDocumentLoaded = function () {
     logging._getLoggingData()

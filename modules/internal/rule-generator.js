@@ -19,7 +19,7 @@
  * Updates
  */
 
-var ruleGenerator = {};
+let ruleGenerator = {};
 
 
 /**

@@ -19,7 +19,7 @@
  * Options (Info)
  */
 
-var optionsInfo = {};
+let optionsInfo = {};
 
 
 /**

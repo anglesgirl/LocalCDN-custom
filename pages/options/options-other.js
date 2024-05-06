@@ -19,7 +19,7 @@
  * Options (Other)
  */
 
-var optionsOther = {};
+let optionsOther = {};
 
 
 /**

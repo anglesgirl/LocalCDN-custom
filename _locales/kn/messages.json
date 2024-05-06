@@ -159,6 +159,10 @@
         "message": "ಕಳೆದ ವರ್ಷ",
         "description": "Statistics view for past year."
     },
+    "labelAll": {
+        "message": "",
+        "description": "Statistics view over the whole time range"
+    },
     "labelDelete": {
         "message": "ಅಳಿಸಿ",
         "description": "Button to delete all statistics data."

@@ -19,7 +19,7 @@
  * Options (Advanced)
  */
 
-var optionsAdvanced = {};
+let optionsAdvanced = {};
 
 
 /**

@@ -159,6 +159,10 @@
         "message": "Afgelopen jaar",
         "description": "Statistics view for past year."
     },
+    "labelAll": {
+        "message": "",
+        "description": "Statistics view over the whole time range"
+    },
     "labelDelete": {
         "message": "Verwijderen",
         "description": "Button to delete all statistics data."

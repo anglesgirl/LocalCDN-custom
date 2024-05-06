@@ -23,7 +23,7 @@
  * Messenger
  */
 
-var messenger = {};
+let messenger = {};
 
 
 /**

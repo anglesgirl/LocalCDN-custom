@@ -19,7 +19,7 @@
  * Manipulate DOM
  */
 
-var manipulateDOM = {};
+let manipulateDOM = {};
 
 
 /**

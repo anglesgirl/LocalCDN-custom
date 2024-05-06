@@ -22,7 +22,7 @@
  * Wrappers
  */
 
-var wrappers = {};
+let wrappers = {};
 
 
 /**
