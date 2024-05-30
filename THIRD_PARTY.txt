@@ -841,7 +841,7 @@ https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css
 https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js
 https://cdnjs.cloudflare.com/ajax/libs/Leaflet.EasyButton/2.4.0/easy-button.min.js
 https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js
-https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.10.62/libphonenumber-js.min.js
+https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.11.2/libphonenumber-js.min.js
 https://cdnjs.cloudflare.com/ajax/libs/libsodium-wrappers/0.5.4/sodium.min.js
 https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js
 https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.min.css
