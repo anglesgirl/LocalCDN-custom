@@ -1443,7 +1443,7 @@ https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple.css
 https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple-dark.css
 https://cdn.jsdelivr.net/npm/ethjs@0.4.0/dist/ethjs.min.js
 https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/algolia-min.css
-https://cdn.jsdelivr.net/npm/instantsearch.css@8.1.0/themes/algolia-min.css
+https://cdn.jsdelivr.net/npm/instantsearch.css@8.2.0/themes/algolia-min.css
 https://cdn.jsdelivr.net/npm/in-view@0.6.1/dist/in-view.min.js
 https://cdn.jsdelivr.net/npm/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js
 https://cdn.jsdelivr.net/npm/ngx-bootstrap@12.0.0/datepicker/bs-datepicker.css
