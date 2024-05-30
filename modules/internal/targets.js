@@ -337,7 +337,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/mdb-ui-kit/4.')) return '4.4.0';
     if (type.startsWith('/mdb-ui-kit/5.')) return '5.0.0';
     if (type.startsWith('/mdb-ui-kit/6.')) return '6.4.2';
-    if (type.startsWith('/mdb-ui-kit/7.')) return '7.2.0';
+    if (type.startsWith('/mdb-ui-kit/7.')) return '7.3.0';
     if (type.startsWith('/mobile/1.')) return '1.4.5';
     if (type.startsWith('/Modaal/0.')) return '0.4.4';
     if (type.startsWith('/modernizr/2.')) return '2.8.3';
