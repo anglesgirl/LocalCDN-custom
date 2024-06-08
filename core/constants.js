@@ -430,6 +430,11 @@ const MathJax3Files = {
     'es5/tex-svg.js': true,
 
 };
+
+const ReqAnalyzer = {
+    'BUNDLE_PURE_CSS': 'Pure CSS (Bundle)',
+};
+
 /**
  * To block bad resources, e.g. fingerprint
  *

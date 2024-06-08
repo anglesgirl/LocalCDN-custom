@@ -261,6 +261,8 @@ requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath
         filename = requestAnalyzer._handleUncompressedFiles(filename);
     } else if (bundle === 'Font Awesome (Fonts) (Bundle)') {
         filename = requestAnalyzer._handleFontawesomeFiles(targetPath, filename);
+    } else if (bundle === ReqAnalyzer.BUNDLE_PURE_CSS) {
+        filename = (filename === 'pure-min.css' ? 'pure.min.css' : filename);
     }
 
     if (filename === false) {

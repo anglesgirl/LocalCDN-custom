@@ -35,6 +35,7 @@
         "LogString": true,
         "BlockedRequestMethods": true,
         "GoogleDomains": true,
+        "ReqAnalyzer": true,
 
         "fileGuard": true,
         "files": true,
