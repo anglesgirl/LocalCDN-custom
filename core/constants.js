@@ -432,6 +432,11 @@ const MathJax3Files = {
 };
 
 const ReqAnalyzer = {
+    'BUNDLE_MATHJAX': 'MathJax (Bundle)',
+    'BUNDLE_TINYMCE': 'TinyMCE (Bundle)',
+    'BUNDLE_DATATABLES': 'DataTables (Bundle)',
+    'BUNDLE_SCROLLMAGIC': 'ScrollMagic (Bundle)',
+    'BUNDLE_FONT_AWESOME': 'Font Awesome (Fonts) (Bundle)',
     'BUNDLE_PURE_CSS': 'Pure CSS (Bundle)',
 };
 
