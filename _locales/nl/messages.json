@@ -160,7 +160,7 @@
         "description": "Statistics view for past year."
     },
     "labelAll": {
-        "message": "",
+        "message": "Alle",
         "description": "Statistics view over the whole time range"
     },
     "labelDelete": {
@@ -496,19 +496,19 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Toestemming ingetrokken",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Uw data voor alle websites inzien",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Weiger deze toestemming alstublieft niet. LocalCDN heeft deze toestemming nodig om CDN's te detecteren en om te leiden.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Waarom heeft deze extensie deze toestemming nodig?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
@@ -516,15 +516,15 @@
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Geen toestemming verleend",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Toestaan",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Meer informatie",
         "description": "More info"
     }
 }
