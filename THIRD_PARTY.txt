@@ -858,8 +858,8 @@ https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js
 https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js
 https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js
 https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js
-https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js
-https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css
+https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js
+https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css
 https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.min.js
 https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css
 https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js
