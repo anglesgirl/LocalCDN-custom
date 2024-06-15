@@ -430,6 +430,16 @@ const MathJax3Files = {
     'es5/tex-svg.js': true,
 
 };
+
+const ReqAnalyzer = {
+    'BUNDLE_MATHJAX': 'MathJax (Bundle)',
+    'BUNDLE_TINYMCE': 'TinyMCE (Bundle)',
+    'BUNDLE_DATATABLES': 'DataTables (Bundle)',
+    'BUNDLE_SCROLLMAGIC': 'ScrollMagic (Bundle)',
+    'BUNDLE_FONT_AWESOME': 'Font Awesome (Fonts) (Bundle)',
+    'BUNDLE_PURE_CSS': 'Pure CSS (Bundle)',
+};
+
 /**
  * To block bad resources, e.g. fingerprint
  *

@@ -251,16 +251,18 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
 requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath, targetPath, bundle) {
     let filename = channelPath.split('/').pop();
 
-    if (bundle === 'MathJax (Bundle)' && filename !== 'MathJax.js') {
+    if (bundle === ReqAnalyzer.BUNDLE_MATHJAX && filename !== 'MathJax.js') {
         filename = requestAnalyzer._handleMathJax(channelPath, channelHost, initiator);
-    } else if (bundle === 'TinyMCE (Bundle)' && filename !== 'tinymce.min.js') {
+    } else if (bundle === ReqAnalyzer.BUNDLE_TINYMCE && filename !== 'tinymce.min.js') {
         filename = requestAnalyzer._handleTinyMCE(channelPath, channelHost, initiator);
-    } else if (bundle === 'DataTables (Bundle)') {
+    } else if (bundle === ReqAnalyzer.BUNDLE_DATATABLES) {
         filename = requestAnalyzer._handleUncompressedFiles(filename);
-    } else if (bundle === 'ScrollMagic (Bundle)' && !filename.endsWith('.min.js')) {
+    } else if (bundle === ReqAnalyzer.BUNDLE_SCROLLMAGIC && !filename.endsWith('.min.js')) {
         filename = requestAnalyzer._handleUncompressedFiles(filename);
-    } else if (bundle === 'Font Awesome (Fonts) (Bundle)') {
+    } else if (bundle === ReqAnalyzer.BUNDLE_FONT_AWESOME) {
         filename = requestAnalyzer._handleFontawesomeFiles(targetPath, filename);
+    } else if (bundle === ReqAnalyzer.BUNDLE_PURE_CSS) {
+        filename = (filename === 'pure-min.css' ? 'pure.min.css' : filename);
     }
 
     if (filename === false) {

@@ -645,6 +645,10 @@ let resources = {
     'jscookie': {
         'path': 'resources/js-cookie/{version}/js.cookie.min.jsm'
     },
+    // jsrender
+    'jsrender': {
+        'path': 'resources/jsrender/{version}/jsrender.min.jsm'
+    },
     // knockout
     'knockout': {
         'path': 'resources/knockout/{version}/knockout-min.jsm'

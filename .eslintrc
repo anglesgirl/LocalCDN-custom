@@ -35,6 +35,8 @@
         "LogString": true,
         "BlockedRequestMethods": true,
         "GoogleDomains": true,
+        "ReqAnalyzer": true,
+        "MathJax3Files": true,
 
         "fileGuard": true,
         "files": true,
