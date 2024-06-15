@@ -293,6 +293,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jasny-bootstrap/4.')) return '4.0.0';
     if (type.startsWith('/js-cookie/2.')) return '2.2.1';
     if (type.startsWith('/js-cookie/3.')) return '3.0.5';
+    if (type.startsWith('/jsrender/1.')) return '1.0.14';
     if (type.startsWith('/knockout/3.')) {
         if (helpers.compareVersion('3.4.2', version)) return '3.4.2'; // <= v3.4.2
         return '3.5.1';
@@ -514,6 +515,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'jsrender.min.jsm': 'jsrender',
     'supabase.min.jsm': 'supabase-js',
     'handlebars.min.jsm': 'handlebars.js',
     'URI.min.jsm': 'URI.js',

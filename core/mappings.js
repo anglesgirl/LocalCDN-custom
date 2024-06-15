@@ -383,6 +383,7 @@ mappings.cdn = {
             'jquery-ujs/{version}/rails.': resources.jqueryUJS,
             'jScrollPane/{version}/script/jquery.jscrollpane.': resources.jScrollPane,
             'js-cookie/{version}/js.cookie.min.js': resources.jscookie,
+            'jsrender/{version}/jsrender.min.js': resources.jsrender,
             'knockout/{version}/knockout': resources.knockout,
             'knockout.mapping/{version}/knockout.mapping.': resources.knockoutMapping,
             'lazysizes/{version}/lazysizes.min.js': resources.lazysizes,
