@@ -268,7 +268,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery.lazy/1.')) return '1.7.11';
     if (type.startsWith('/jquery.matchHeight/0.')) return '0.7.2';
     if (type.startsWith('/jquery-migrate/1.')) return '1.4.1';
-    if (type.startsWith('/jquery-migrate/3.')) return '3.4.1';
+    if (type.startsWith('/jquery-migrate/3.')) return '3.5.0';
     if (type.startsWith('/jquery-minicolors/2.')) return '2.3.6';
     if (type.startsWith('/jquery-mobile/1.')) {
         if (helpers.compareVersion('1.3.2', version)) return '1.3.2'; // <= v1.3.2
