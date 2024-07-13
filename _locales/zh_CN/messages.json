@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "将请求重定向到本地资源，保护你免于 CDN（内容分发网络）的跟踪。",
+        "message": "通过将请求重定向到本地资源，以保护你免于 CDN（内容分发网络）的跟踪。",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
@@ -24,7 +24,7 @@
         "description": "Block requests for missing resources title"
     },
     "blockMissingDescription": {
-        "message": "如果所需的资源在本地不可用，则取消拦截的请求。",
+        "message": "如果所需的资源在本地不可用，则取消此被拦截的请求。",
         "description": "Block requests for missing resources description."
     },
     "disablePrefetchTitle": {

@@ -160,7 +160,7 @@
         "description": "Statistics view for past year."
     },
     "labelAll": {
-        "message": "",
+        "message": "כל",
         "description": "Statistics view over the whole time range"
     },
     "labelDelete": {
@@ -252,51 +252,51 @@
         "description": "Website broken?"
     },
     "hideDonationButton": {
-        "message": "",
+        "message": "הסתר כפתור תרומה",
         "description": "Hide donation button"
     },
     "betaLabel": {
-        "message": "",
+        "message": "בטא",
         "description": "beta"
     },
     "changeBadgeColorMissingResourcesTitle": {
-        "message": "",
+        "message": "ציין משאבים חסרים בסמל",
         "description": "Indicate missing resources on the icon"
     },
     "changeBadgeColorMissingResourcesDescription": {
-        "message": "",
+        "message": "שנה את צבע התג אם חסרים משאבים.",
         "description": "Change the badge color if resources are missing."
     },
     "titleHelp": {
-        "message": "",
+        "message": "עזרה",
         "description": "Help"
     },
     "helpIntroductionTitle": {
-        "message": "",
+        "message": "הקדמה",
         "description": "Introduction"
     },
     "helpHtmlFilterTitle": {
-        "message": "",
+        "message": "מה זה \"מסנן HTML\"?",
         "description": "What is »HTML filter«?"
     },
     "helpRuleGeneratorTitle": {
-        "message": "",
+        "message": "יוצר כללים",
         "description": "Rule generator"
     },
     "helpWebsiteIssuesTitle": {
-        "message": "",
+        "message": "חלק מהאתרים נראים מוזרים או שאינם קלים לשימוש",
         "description": "Some websites look strange or are not easy to use"
     },
     "helpBlockGoogleFontsTitle": {
-        "message": "",
+        "message": "מדוע יש אפשרות \"חסום גופנים של גוגל\"?",
         "description": "Why is there a »Block Google Fonts« option?"
     },
     "helpStatisticsTitle": {
-        "message": "",
+        "message": "מה עם הסטטיסטיקה? האם משהו עובר לשרתים כלשהם?",
         "description": "What about the statistics? Is anything transferred to any servers?"
     },
     "helpWhatWillBeSynchronizedTitle": {
-        "message": "",
+        "message": "מה יסונכרן כשאבחר ב-»סנכרון« כסוג אחסון?",
         "description": "What will be synchronized when I select »sync« as storage type?"
     },
     "helpBrowserCompatibilityTitle": {

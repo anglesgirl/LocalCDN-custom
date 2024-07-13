@@ -439,9 +439,17 @@ function create_url() {
     elif [ "$folder" = "react-side-effect" ]; then
         url="$UNPKG/react-side-effect@$version/lib/index.umd.min.js"
     elif [ "$folder" = "p2p-media-loader-core" ]; then
-        url="$JSDELIVR/npm/p2p-media-loader-core@$version/build/p2p-media-loader-core.min.js"
+        if [ "$version" = "0.6.2" ]; then
+            url="$JSDELIVR/npm/p2p-media-loader-core@$version/build/p2p-media-loader-core.min.js"
+        else
+            url="$JSDELIVR/npm/p2p-media-loader-core@$version/dist/p2p-media-loader-core.es.min.js"
+        fi
     elif [ "$folder" = "p2p-media-loader-hlsjs" ]; then
-        url="$JSDELIVR/npm/p2p-media-loader-hlsjs@$version/build/p2p-media-loader-hlsjs.min.js"
+        if [ "$version" = "0.6.2" ]; then
+            url="$JSDELIVR/npm/p2p-media-loader-hlsjs@$version/build/p2p-media-loader-hlsjs.min.js"
+        else
+            url="$JSDELIVR/npm/p2p-media-loader-hlsjs@$version/dist/p2p-media-loader-hlsjs.es.min.js"
+        fi
     elif [ "$folder" = "urlize" ]; then
         url="$JSDELIVR/npm/urlize.js/urlize.js"
     elif [ "$folder" = "videojs-seek-buttons" ]; then
