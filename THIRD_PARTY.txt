@@ -763,7 +763,7 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unob
 https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
-https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.22/jquery.csv.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.autoheight.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.caption.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.command.min.js
