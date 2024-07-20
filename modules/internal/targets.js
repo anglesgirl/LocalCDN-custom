@@ -281,6 +281,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jeditable.js/2.')) return '2.0.19';
     if (type.startsWith('/jquery.cycle2/2.')) return '2.1.6';
     if (type.startsWith('/jquery.scrollbar/0.')) return '0.2.11';
+    if (type.startsWith('/jquery-powertip/1.')) return '1.2.0';
     if (type.startsWith('/jquery-validation-unobtrusive/3.')) return '3.2.12';
     if (type.startsWith('/jquery-validation-unobtrusive/4.')) return '4.0.0';
     if (type.startsWith('/jquery.tablesorter/2.')) return '2.31.3';
@@ -518,6 +519,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'jquery.powertip.min.jsm': 'jquery-powertip',
     'jsrender.min.jsm': 'jsrender',
     'supabase.min.jsm': 'supabase-js',
     'handlebars.min.jsm': 'handlebars.js',

@@ -372,6 +372,8 @@ mappings.cdn = {
             'jquery-mobile/{version}/jquery.mobile.min.css': resources.jQueryMobileCSS,
             'jquery-mobile/{version}/jquery.mobile.css': resources.jQueryMobileCSS,
             'jquery-mousewheel/{version}/jquery.mousewheel.min.js': resources.jqueryMousewheelJS,
+            'jquery-powertip/{version}/jquery.powertip.min.js': resources.jqueryPowertip,
+            'jquery-powertip/{version}/jquery.powertip.js': resources.jqueryPowertip,
             'jquery-cookie/{version}/jquery.cookie.': resources.jqueryCookie,
             'jquery.scrollbar/{version}/jquery.scrollbar.min.js': resources.jQueryScrollbar,
             'jquery.scrollbar/{version}/jquery.scrollbar.js': resources.jQueryScrollbar,
