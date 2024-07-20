@@ -426,6 +426,8 @@ mappings.cdn = {
             'moment.js/{version}/moment.min.': resources.moment,
             'moment.js/{version}/moment-with-locales.': resources.moment,
             'mootools/{version}/mootools-core': resources.mootools,
+            'mousetrap/{version}/mousetrap.min.js': resources.mousetrap,
+            'mousetrap/{version}/mousetrap.js': resources.mousetrap,
             'nprogress/{version}/nprogress.min.js': resources.nprogressJS,
             'nprogress/{version}/nprogress.js': resources.nprogressJS,
             'nprogress/{version}/nprogress.min.css': resources.nprogressCSS,

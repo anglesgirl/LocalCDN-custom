@@ -350,6 +350,7 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('1.4.5', version)) return '1.4.5'; // <= v1.4.5
         return '1.6.0';
     }
+    if (type.startsWith('/mousetrap/1.')) return '1.6.5';
     if (type.startsWith('/ngx-bootstrap/')) {
         // The only resource used from ngx-bootstrap is the CSS file for the datepicker.
         // This CSS is unchanged since version 7. So it's not necessary to host it more than once.
@@ -519,6 +520,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'mousetrap.min.jsm': 'mousetrap',
     'jquery.powertip.min.jsm': 'jquery-powertip',
     'jsrender.min.jsm': 'jsrender',
     'supabase.min.jsm': 'supabase-js',

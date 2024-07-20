@@ -785,6 +785,10 @@ let resources = {
     'mootools': {
         'path': 'resources/mootools/{version}/mootools-core.min.jsm'
     },
+    // mousetrap
+    'mousetrap': {
+        'path': 'resources/mousetrap/{version}/mousetrap.min.jsm'
+    },
     // ngx-bootstrap datepicker
     'ngxBootstrapDatepicker': {
         'path': 'resources/ngx-bootstrap/{version}/datepicker/bs-datepicker.css'
