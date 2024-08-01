@@ -73,12 +73,26 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
 
                 // NOTE: should work if 'script' string is divided into two chunks
                 filter.ondata = (evt) => {
+                    let chunk, uint8View;
+
+                    chunk = evt.data;
+                    uint8View = new Uint8Array(chunk);
+
                     if (isFirstData) {
                         if (!charset) {
                             // content-type has no charset declared
                             let htmlHead, charsetMatch;
 
-                            htmlHead = asciiDecoder.decode(evt.data, {'stream': false});
+                            // // Check and remove UTF-8 BOM at the beginning of the Uint8Array
+                            if (manipulateDOM._startWithUtf8Bom(uint8View)) {
+                                // Remove the BOM by slicing off the first 3 bytes
+                                chunk = chunk.slice(3);
+
+                                // Update the Uint8Array view to reflect the modified chunk without BOM
+                                uint8View = new Uint8Array(chunk);
+                            }
+
+                            htmlHead = asciiDecoder.decode(uint8View, {'stream': false});
                             // eslint-disable-next-line no-useless-escape
                             charsetMatch = htmlHead.match(/<meta\s+charset=["']?([^>"'\/]+)["'>\/]/i);
                             if (charsetMatch === null) {
@@ -99,7 +113,7 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                     }
                     isFirstData = false;
 
-                    data.push(evt.data);
+                    data.push(chunk);
                 };
 
                 filter.onstop = () => {
@@ -143,6 +157,10 @@ manipulateDOM._searchCharset = function (str, charset) {
     return str;
 };
 
+// Check if the given byte array starts with the UTF-8 BOM
+manipulateDOM._startWithUtf8Bom = function (str) {
+    return str.byteLength >= 3 && str[0] === 0xEF && str[1] === 0xBB && str[2] === 0xBF;
+};
 
 /**
  * Public Methods
