@@ -261,7 +261,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery.blockUI/2.')) return '2.70';
     if (type.startsWith('/jquery.colorbox/1.')) return '1.6.4';
     if (type.startsWith('/jquery-cookie/1.')) return '1.4.1';
-    if (type.startsWith('/jquery-csv/1.')) return '1.0.22';
+    if (type.startsWith('/jquery-csv/1.')) return '1.0.40';
     if (type.startsWith('/jquery-easing/1.')) return '1.4.1';
     if (type.startsWith('/jquery-jcrop/0.')) return '0.9.15';
     if (type.startsWith('/jquery.lazyload/1.')) return '1.9.1';
