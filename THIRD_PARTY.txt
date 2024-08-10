@@ -185,8 +185,8 @@ https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js
 https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.3/axios.min.js
 https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js
 https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.6.0/backbone-min.js
-https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css
-https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js
+https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.css
+https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.js
 https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js
 https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.7.2/bluebird.min.js
 https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js
