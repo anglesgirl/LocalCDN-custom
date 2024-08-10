@@ -583,6 +583,10 @@ let resources = {
     'jqueryMousewheelJS': {
         'path': 'resources/jquery-mousewheel/{version}/jquery.mousewheel.min.jsm'
     },
+    // jqueryPowertip
+    'jqueryPowertip': {
+        'path': 'resources/jquery-powertip/{version}/jquery.powertip.min.jsm'
+    },
     // jQuery Scrollbar [Deprecated]
     'jQueryScrollbar': {
         'path': 'resources/jquery.scrollbar/{version}/jquery.scrollbar.min.jsm'
@@ -780,6 +784,10 @@ let resources = {
     // MooTools [Deprecated]
     'mootools': {
         'path': 'resources/mootools/{version}/mootools-core.min.jsm'
+    },
+    // mousetrap
+    'mousetrap': {
+        'path': 'resources/mousetrap/{version}/mousetrap.min.jsm'
     },
     // ngx-bootstrap datepicker
     'ngxBootstrapDatepicker': {
