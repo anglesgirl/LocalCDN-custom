@@ -119,7 +119,7 @@ targets.setLastVersion = function (type, version) {
     }
     if (type.startsWith('/angular-ui-router/')) {
         if (helpers.compareVersion('0.4.3', version)) return '0.4.3'; // <= 0.4.3
-        return '1.1.0'; // > 0.4.3
+        return '1.1.1'; // > 0.4.3
     }
     if (type.startsWith('/angucomplete-alt/3.')) return '3.0.0';
     if (type.startsWith('/animate.css/3.')) return '3.7.2';
