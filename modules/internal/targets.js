@@ -230,7 +230,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/hls.js/1.')) return '1.5.14';
     if (type.startsWith('/hogan.js/')) return '3.0.2';
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
-    if (type.startsWith('/instantsearch.css/8.')) return '8.3.0';
+    if (type.startsWith('/instantsearch.css/8.')) return '8.4.0';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
     if (type.startsWith('/instantsearch.js/4.')) return '4.73.1';
     if (type.startsWith('/in-view/0.')) return '0.6.1';
