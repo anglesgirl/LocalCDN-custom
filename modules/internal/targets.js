@@ -475,7 +475,7 @@ targets.setLastVersion = function (type, version) {
     }
     if (type.startsWith('/twix.js/0.')) return '0.3.0';
     if (type.startsWith('/twix.js/1.')) return '1.3.0';
-    if (type.startsWith('/underscore.js/1.')) return '1.13.6';
+    if (type.startsWith('/underscore.js/1.')) return '1.13.7';
     if (type.startsWith('/URI.js/1.')) return '1.19.11';
     if (type.startsWith('/urlive/1.')) return '1.1.1';
     if (type.startsWith('/vanilla-lazyload')) return '19.1.3';
