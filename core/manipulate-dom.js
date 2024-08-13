@@ -116,11 +116,10 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                     data.push(chunk);
                 };
 
-                if (decoder === undefined) {
-                    decoder = new TextDecoder(charset);
-                }
-
                 filter.onstop = () => {
+                    if (decoder === undefined) {
+                        decoder = new TextDecoder(charset);
+                    }
                     let str = '';
                     for (let buffer of data) {
                         str += decoder.decode(buffer, {'stream': true});
