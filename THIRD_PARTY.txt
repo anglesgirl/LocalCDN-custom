@@ -1414,7 +1414,7 @@ https://cdnjs.cloudflare.com/ajax/libs/video.js/7.21.1/video-js.min.css
 https://cdnjs.cloudflare.com/ajax/libs/video.js/7.21.1/video.min.js
 https://cdnjs.cloudflare.com/ajax/libs/video.js/8.17.4/video-js.min.css
 https://cdnjs.cloudflare.com/ajax/libs/video.js/8.17.4/video.min.js
-https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.37/vue.global.prod.js
+https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.3/vue.global.prod.js
 https://cdnjs.cloudflare.com/ajax/libs/vue-i18n/8.27.2/vue-i18n.min.js
 https://cdnjs.cloudflare.com/ajax/libs/vue-i18n/9.13.1/vue-i18n.cjs.min.js
 https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.6.5/vue-router.min.js
