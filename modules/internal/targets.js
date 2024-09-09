@@ -285,7 +285,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/jquery-powertip/1.')) return '1.2.0';
     if (type.startsWith('/jquery-validation-unobtrusive/3.')) return '3.2.12';
     if (type.startsWith('/jquery-validation-unobtrusive/4.')) return '4.0.0';
-    if (type.startsWith('/jquery.tablesorter/2.')) return '2.31.3';
+    if (type.startsWith('/jquery.tablesorter/2.')) return '2.32.0';
     if (type.startsWith('/jquery-scrollTo/2.')) return '2.1.3';
     if (type.startsWith('/jquery-timeago/1.')) return '1.6.7';
     if (type.startsWith('/jquery-tiny-pubsub/0.')) return '0.7.0';
