@@ -369,7 +369,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/owl-carousel/2.')) return '2.3.4';
     if (type.startsWith('/p2p-media-loader-core') || type.startsWith('/p2p-media-loader-hlsjs')) {
         if (helpers.compareVersion('0.6.2', version)) return '0.6.2'; // <= v0.6.2
-        return '1.0.4';
+        return '1.0.5';
     }
     if (type.startsWith('/p5.js/0.')) return '0.10.2';
     if (type.startsWith('/p5.js/1.')) return '1.10.0';
