@@ -223,6 +223,8 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
                 break;
             }
 
+            targetPath = requestAnalyzer._redirectTargetFile(targetPath);
+
             // Prepare and return a local target.
             return {
                 'source': channelHost,
@@ -247,6 +249,11 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
         'result': false,
     };
 };
+
+requestAnalyzer._redirectTargetFile = function (targetPath) {
+    return RedirectMap[targetPath] || targetPath;
+};
+
 
 requestAnalyzer._getPathOfBundle = function (initiator, channelHost, channelPath, targetPath, bundle) {
     let filename = channelPath.split('/').pop();

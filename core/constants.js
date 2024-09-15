@@ -466,6 +466,13 @@ const LogString = {
     'IFRAME': 'Possible iframe request:',
 };
 
+const RedirectMap = {
+    'resources/font-awesome/3.2.1/css/all.min.css': 'resources/font-awesome/3.2.1/css/font-awesome.min.css',
+    'resources/font-awesome/3.2.1/css/all.css': 'resources/font-awesome/3.2.1/css/font-awesome.min.css',
+    'resources/font-awesome/4.7.0/css/all.min.css': 'resources/font-awesome/4.7.0/css/font-awesome.min.css',
+    'resources/font-awesome/4.7.0/css/all.css': 'resources/font-awesome/4.7.0/css/font-awesome.min.css'
+};
+
 /**
  * https://codeberg.org/nobody/LocalCDN/issues/1560
  */

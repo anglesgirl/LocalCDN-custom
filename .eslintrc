@@ -37,6 +37,7 @@
         "GoogleDomains": true,
         "ReqAnalyzer": true,
         "MathJax3Files": true,
+        "RedirectMap": true,
 
         "fileGuard": true,
         "files": true,
