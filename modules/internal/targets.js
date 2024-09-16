@@ -200,6 +200,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/fancybox/2.')) return '2.1.7';
     if (type.startsWith('/fancybox/3.')) return '3.5.7';
     if (type.startsWith('/feather-icons/4.')) return '4.29.2';
+    if (type.startsWith('/featherlight/1.')) return '1.7.13';
     if (type.startsWith('/flickity/3.')) return '3.0.0';
     if (type.startsWith('/flv.js/')) return '1.6.2';
     if (type.startsWith('/font-awesome/3.')) return '3.2.1';
@@ -521,6 +522,10 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'featherlight.min.css': 'featherlight (CSS)',
+    'featherlight.min.jsm': 'featherlight (JS)',
+    'featherlight.gallery.min.css': 'featherlight Gallery (CSS)',
+    'featherlight.gallery.min.jsm': 'featherlight Gallery (JS)',
     'mousetrap.min.jsm': 'mousetrap',
     'jquery.powertip.min.jsm': 'jquery-powertip',
     'jsrender.min.jsm': 'jsrender',
