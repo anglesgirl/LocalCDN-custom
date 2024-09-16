@@ -736,6 +736,8 @@ mappings.cdn = {
             'videojs-seek-buttons/dist/videojs-seek-buttons.js': resources.videojsSeekButtonsJS,
             'videojs-seek-buttons/dist/videojs-seek-buttons.min.css': resources.videojsSeekButtonsCSS,
             'videojs-seek-buttons/dist/videojs-seek-buttons.min.js': resources.videojsSeekButtonsJS,
+            'video.js@{version}/dist/video-js.min.css': resources.videoJScss,
+            'video.js@{version}/dist/video-js.css': resources.videoJScss,
             'vue-match-media@{version}/dist/index.': resources.vueMatchMedia,
             'vue-resource@{version}/dist/vue-resource.': resources.vueResource,
             'vue-router@{version}/dist/vue-router.': resources.vueRouter,
