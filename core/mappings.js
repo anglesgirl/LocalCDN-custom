@@ -578,6 +578,7 @@ mappings.cdn = {
     'cdn.jsdelivr.net': {
         '/npm/': {
             '@popperjs/core@{version}/dist/umd/popper.': resources.popperJS,
+            '@popperjs/core@{version}': resources.popperJS,
             '@supabase/supabase-js@{version}': resources.supabaseJs,
             '@tensorflow/tfjs@{version}/dist/tf.js': resources.tensorflow,
             '@tensorflow/tfjs@{version}/dist/tf.min.js': resources.tensorflow,
