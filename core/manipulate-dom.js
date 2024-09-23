@@ -52,7 +52,7 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
 
             if (!isAllowlisted && mimeType === 'text/html') {
 
-                let asciiDecoder, decoder, encoder, charset, isFirstData, filter, data;
+                let initDecoder, decoder, encoder, charset, isFirstData, filter, data;
 
                 charset = (/charset\s*=/).test(header.value) && header.value.replace(/^.*?charset\s*=\s*/, '').replace(/["']?/g, '');
 
@@ -63,7 +63,8 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                     return;
                 }
 
-                asciiDecoder = new TextDecoder('ASCII');
+                // Use charset of the response header in the initial TextDecoder. ASCII only as fallback.
+                initDecoder = new TextDecoder(charset === false ? 'ASCII' : charset);
                 encoder = new TextEncoder();
                 isFirstData = true;
                 filter = browser.webRequest.filterResponseData(details.requestId);
@@ -92,7 +93,7 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                                 uint8View = new Uint8Array(chunk);
                             }
 
-                            htmlHead = asciiDecoder.decode(uint8View, {'stream': false});
+                            htmlHead = initDecoder.decode(uint8View, {'stream': false});
                             // eslint-disable-next-line no-useless-escape
                             charsetMatch = htmlHead.match(/<meta\s+charset=["']?([^>"'\/]+)["'>\/]/i);
                             if (charsetMatch === null) {
