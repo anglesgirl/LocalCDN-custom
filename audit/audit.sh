@@ -623,7 +623,7 @@ function create_url() {
             url="$NETDNA_BOOTSTRAPCDN/$folder/$version/js/bootstrap.min.js"
         fi
     elif [ "$folder" = "vue-i18n" ] && [[ "$version" != 8* ]]; then
-        url="$CLOUDFLARE/$folder/$version/vue-i18n.cjs.min.js"
+        url="$CLOUDFLARE/$folder/$version/vue-i18n.global.prod.min.js"
     elif [ "$path" = "../resources/twitter-bootstrap/fonts/glyphicons-halflings-regular.woff2" ]; then
         url="$CLOUDFLARE/twitter-bootstrap/3.4.1/fonts/glyphicons-halflings-regular.woff2"
     elif [ "$subfile" = "jquery-ui.min.css" ]; then
