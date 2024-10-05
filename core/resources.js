@@ -400,6 +400,19 @@ let resources = {
     'feather': {
         'path': 'resources/feather-icons/{version}/feather.min.jsm'
     },
+    // featherlight
+    'featherlightJS': {
+        'path': 'resources/featherlight/{version}/featherlight.min.jsm'
+    },
+    'featherlightCSS': {
+        'path': 'resources/featherlight/{version}/featherlight.min.css'
+    },
+    'featherlightGalleryJS': {
+        'path': 'resources/featherlight/{version}/featherlight.gallery.min.jsm'
+    },
+    'featherlightGalleryCSS': {
+        'path': 'resources/featherlight/{version}/featherlight.gallery.min.css'
+    },
     // flickity
     'flickity': {
         'path': 'resources/flickity/{version}/flickity.pkgd.min.jsm'
