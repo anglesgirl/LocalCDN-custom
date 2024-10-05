@@ -396,6 +396,10 @@ https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css
 https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js
 https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js
 https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.2/feather.min.js
+https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.gallery.min.css
+https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.gallery.min.js
+https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.css
+https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js
 https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js
 https://cdnjs.cloudflare.com/ajax/libs/flv.js/1.6.2/flv.min.js
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css
