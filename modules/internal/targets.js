@@ -314,7 +314,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/leaflet.markercluster/1.')) return '1.5.3';
     if (type.startsWith('/libphonenumber-js/1.')) return '1.11.12';
     if (type.startsWith('/libsodium-wrappers/0.')) return '0.5.4';
-    if (type.startsWith('/lightbox2/2.')) return '2.11.4';
+    if (type.startsWith('/lightbox2/2.')) return '2.11.5';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
     if (type.startsWith('/lightgallery/1.')) return '1.10.0';
     if (type.startsWith('/lightgallery/2.')) return '2.7.2';
