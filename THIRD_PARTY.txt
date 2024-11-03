@@ -422,8 +422,8 @@ https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.c
 https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/fonts/forkawesome-webfont.woff2
 https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css
 https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js
-https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/css/foundation.min.css
-https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/js/foundation.min.js
+https://cdnjs.cloudflare.com/ajax/libs/foundation/6.9.0/css/foundation.min.css
+https://cdnjs.cloudflare.com/ajax/libs/foundation/6.9.0/js/foundation.min.js
 https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css
 https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.woff
 https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js
