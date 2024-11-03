@@ -1,6 +1,6 @@
 {
     "extensionDescription": {
-        "message": "Skyddar dig mot att spåras av CDNs (Innehållsleveransnätverk) genom vidarebefordring till lokala resurser.",
+        "message": "Skyddar dig mot att spåras av CDNs (Innehållsleveransnätverk) genom omdirigering till lokala resurser.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
