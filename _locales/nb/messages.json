@@ -496,23 +496,23 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Tillatelse tilbakekalt",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Få tilgang til dine data for alle nettsteder",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Ikke deaktiver tillatelsen. LocalCDN trenger tillatelsen for å oppdage og omdirigere forespørsler til CDN-er.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Hvorfor trenger denne utvidelsen denne tillatelsen?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN må vite hvilke forespørsler som opprettes av et nettsted for å omdirigere eller blokkere dem. Med innføringen av MV3 er denne tillatelsen oppført som en valgfri tillatelse.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
