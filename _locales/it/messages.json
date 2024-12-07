@@ -160,7 +160,7 @@
         "description": "Statistics view for past year."
     },
     "labelAll": {
-        "message": "",
+        "message": "Tutte",
         "description": "Statistics view over the whole time range"
     },
     "labelDelete": {
@@ -500,7 +500,7 @@
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Accedere ai dati di tutti i siti web",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
