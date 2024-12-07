@@ -221,9 +221,9 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/materialiconssharp/')) return 'v109';
     if (type.startsWith('/materialiconstwotone/')) return 'v112';
     if (type.startsWith('/handlebars.js/4.')) return '4.7.8';
-    if (type.startsWith('/highlight.js/7.')) return '11.9.0';
-    if (type.startsWith('/highlight.js/8.')) return '11.9.0';
-    if (type.startsWith('/highlight.js/9.')) return '11.9.0';
+    if (type.startsWith('/highlight.js/7.')) return '9.18.5';
+    if (type.startsWith('/highlight.js/8.')) return '9.18.5';
+    if (type.startsWith('/highlight.js/9.')) return '9.18.5';
     if (type.startsWith('/highlight.js/10.')) return '11.9.0';
     if (type.startsWith('/highlight.js/11.')) return '11.10.0';
     if (type.startsWith('/history/4.')) return '4.10.1';
