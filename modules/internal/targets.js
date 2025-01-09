@@ -501,6 +501,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vue-i18n/8.')) return '8.27.2';
     if (type.startsWith('/vue-i18n/9.')) return '9.14.0';
     if (type.startsWith('/vue-i18n/10.')) return '10.0.5';
+    if (type.startsWith('/vue-i18n/11.')) return '11.0.1';
     if (type.startsWith('/vue-match-media/1.')) return '1.0.3';
     if (type.startsWith('/vue-resource/1.')) return '1.5.3';
     if (type.startsWith('/vue-router/3.')) return '3.6.5';
