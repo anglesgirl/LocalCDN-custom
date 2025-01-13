@@ -81,9 +81,9 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/ajax-bootstrap-select/1.')) return '1.4.5';
     if (type.startsWith('/algoliasearch/3.')) return '3.35.1';
     if (type.startsWith('/algoliasearch/4.')) return '4.24.0';
-    if (type.startsWith('/algoliasearch/5.')) return '5.15.0';
+    if (type.startsWith('/algoliasearch/5.')) return '5.19.0';
     if (type.startsWith('/alpinejs/2.')) return '2.8.2';
-    if (type.startsWith('/alpinejs/3.')) return '3.14.5';
+    if (type.startsWith('/alpinejs/3.')) return '3.14.8';
     if (type.startsWith('/anchor-js/3.')) return '3.2.2';
     if (type.startsWith('/anchor-js/4.')) return '4.3.1';
     if (type.startsWith('/anchor-js/5.')) return '5.0.0';
@@ -154,7 +154,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootstrap-slider/10.')) return '10.6.2';
     if (type.startsWith('/bootstrap-slider/11.')) return '11.0.2';
     if (type.startsWith('/bootstrap-select/1.')) return '1.13.18';
-    if (type.startsWith('/bootstrap-table/1.')) return '1.23.5';
+    if (type.startsWith('/bootstrap-table/1.')) return '1.24.0';
     if (type.startsWith('/bootstrap-toggle/2.')) return '2.2.2';
     if (type.startsWith('/bootstrap-vue/2.')) return '2.23.1';
     if (type.startsWith('/bootstrap-3-typeahead/4.')) return '4.0.2';
@@ -165,7 +165,7 @@ targets.setLastVersion = function (type, version) {
         if (version !== 'latest' && helpers.compareVersion('1.9.4', version)) return '1.9.4';
         return '2.11.0';
     }
-    if (type.startsWith('/bulma/0.') || type.startsWith('/bulma/1.')) return '1.0.2';
+    if (type.startsWith('/bulma/0.') || type.startsWith('/bulma/1.')) return '1.0.3';
     if (type.startsWith('/bxslider/4.')) return '4.2.17';
     if (type.startsWith('/Chart.js/2.')) return '2.9.4';
     if (type.startsWith('/Chart.js/3.')) return '3.9.1';
@@ -206,7 +206,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/font-awesome/3.')) return '3.2.1';
     if (type.startsWith('/font-awesome/4.')) return '4.7.0';
     if (type.startsWith('/font-awesome/5.')) return '5.15.4';
-    if (type.startsWith('/font-awesome/6.')) return '6.7.1';
+    if (type.startsWith('/font-awesome/6.')) return '6.7.2';
     if (type.startsWith('/fork-awesome/1.')) return '1.2.0';
     if (type.startsWith('/foundation/5.')) return '5.5.3';
     if (type.startsWith('/foundation/6.')) return '6.9.0';
@@ -215,7 +215,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/gsap/1.')) return '1.20.5';
     if (type.startsWith('/gsap/2.')) return '2.1.3';
     if (type.startsWith('/gsap/3.')) return '3.12.5';
-    if (type.startsWith('/materialicons/')) return 'v142';
+    if (type.startsWith('/materialicons/')) return 'v143';
     if (type.startsWith('/materialiconsoutlined/')) return 'v109';
     if (type.startsWith('/materialiconsround/')) return 'v108';
     if (type.startsWith('/materialiconssharp/')) return 'v109';
@@ -225,16 +225,16 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/highlight.js/8.')) return '9.18.5';
     if (type.startsWith('/highlight.js/9.')) return '9.18.5';
     if (type.startsWith('/highlight.js/10.')) return '11.9.0';
-    if (type.startsWith('/highlight.js/11.')) return '11.10.0';
+    if (type.startsWith('/highlight.js/11.')) return '11.11.1';
     if (type.startsWith('/history/4.')) return '4.10.1';
     if (type.startsWith('/history/5.')) return '5.3.0';
     if (type.startsWith('/hls.js/0.')) return '0.14.17';
-    if (type.startsWith('/hls.js/1.')) return '1.5.17';
+    if (type.startsWith('/hls.js/1.')) return '1.5.18';
     if (type.startsWith('/hogan.js/')) return '3.0.2';
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
     if (type.startsWith('/instantsearch.css/8.')) return '8.5.1';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
-    if (type.startsWith('/instantsearch.js/4.')) return '4.75.5';
+    if (type.startsWith('/instantsearch.js/4.')) return '4.75.7';
     if (type.startsWith('/in-view/0.')) return '0.6.1';
     if (type.startsWith('/iScroll/5.')) return '5.2.0';
     if (type.startsWith('/izimodal/1.')) return '1.6.1';
@@ -313,7 +313,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/Leaflet.EasyButton/2.')) return '2.4.0';
     if (type.startsWith('/leaflet.featuregroup.subgroup/1.')) return '1.0.2';
     if (type.startsWith('/leaflet.markercluster/1.')) return '1.5.3';
-    if (type.startsWith('/libphonenumber-js/1.')) return '1.11.15';
+    if (type.startsWith('/libphonenumber-js/1.')) return '1.11.17';
     if (type.startsWith('/libsodium-wrappers/0.')) return '0.5.4';
     if (type.startsWith('/lightbox2/2.')) return '2.11.5';
     if (type.startsWith('/lightcase/2.')) return '2.5.0';
@@ -359,7 +359,7 @@ targets.setLastVersion = function (type, version) {
         // The only resource used from ngx-bootstrap is the CSS file for the datepicker.
         // This CSS is unchanged since version 7. So it's not necessary to host it more than once.
         if (helpers.compareVersion('6.2.0', version)) return '6.2.0'; // <= v6.2.0
-        return '18.1.3';
+        return '19.0.2';
     }
     if (type.startsWith('/noUiSlider/14.')) return '14.7.0';
     if (type.startsWith('/noUiSlider/15.')) return '15.8.1';
@@ -398,12 +398,12 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-dom/18.')) return '18.3.1';
     if (type.startsWith('/react-intl/')) {
         // NOTE: Parameters swapped. (= anything greater than v5.0.0)
-        if (helpers.compareVersion(version, '5.0.0')) return '7.0.1'; // >= v5.0.0
+        if (helpers.compareVersion(version, '5.0.0')) return '7.1.0'; // >= v5.0.0
     }
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.1.3';
     if (type.startsWith('/react-router/5.')) return '5.3.3';
-    if (type.startsWith('/react-router/6.')) return '6.28.0';
+    if (type.startsWith('/react-router/6.')) return '6.28.1';
     if (type.startsWith('/react-side-effect/')) return '2.1.2';
     if (type.startsWith('/react-lifecycles-compat/')) return '3.0.4';
     if (type.startsWith('/redux/4.')) return '4.2.1';
@@ -421,7 +421,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/showdown/1.')) return '1.9.1';
     if (type.startsWith('/showdown/2.')) return '2.1.0';
     if (type.startsWith('/simplebar/5.')) return '5.3.9';
-    if (type.startsWith('/simplebar/6.')) return '6.2.7';
+    if (type.startsWith('/simplebar/6.')) return '6.3.0';
     if (type.startsWith('/simplemde/')) return '1.11.2';
     if (type.startsWith('/slick-carousel/1.')) {
         if (helpers.compareVersion('1.8.1', version)) return '1.8.1'; // <= v1.8.1
@@ -457,8 +457,8 @@ targets.setLastVersion = function (type, version) {
     }
     if (type.startsWith('/tether/1.')) return '1.4.7';
     if (type.startsWith('/tinymce/5.')) return '5.10.5';
-    if (type.startsWith('/tinymce/6.')) return '7.0.1';
-    if (type.startsWith('/tinymce/7.')) return '7.5.1';
+    if (type.startsWith('/tinymce/6.')) return '7.5.1';
+    if (type.startsWith('/tinymce/7.')) return '7.6.0';
     if (type.startsWith('/tooltipster/3.')) return '3.3.0';
     if (type.startsWith('/tooltipster/4.')) return '4.2.8';
     if (type.startsWith('/toastr.js/2.') || type.startsWith('/toastr.js/latest/')) return '2.1.4';
@@ -493,7 +493,7 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('5.20.5', version)) return '5.20.5'; // <= 5.20.5
         if (helpers.compareVersion('6.13.0', version)) return '6.13.0'; // > 5.20.5 to <= 6.13.0
         if (helpers.compareVersion('7.21.1', version)) return '7.21.1'; // > 6.13.0 to <= 7.21.1
-        return '8.20.0';
+        return '8.21.1';
     }
     if (type.startsWith('/vue/1.')) return '1.0.28';
     if (type.startsWith('/vue/2.')) return '2.6.14';
@@ -501,6 +501,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vue-i18n/8.')) return '8.27.2';
     if (type.startsWith('/vue-i18n/9.')) return '9.14.0';
     if (type.startsWith('/vue-i18n/10.')) return '10.0.5';
+    if (type.startsWith('/vue-i18n/11.')) return '11.0.1';
     if (type.startsWith('/vue-match-media/1.')) return '1.0.3';
     if (type.startsWith('/vue-resource/1.')) return '1.5.3';
     if (type.startsWith('/vue-router/3.')) return '3.6.5';

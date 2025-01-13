@@ -160,7 +160,7 @@
         "description": "Statistics view for past year."
     },
     "labelAll": {
-        "message": "",
+        "message": "Όλα",
         "description": "Statistics view over the whole time range"
     },
     "labelDelete": {
@@ -276,7 +276,7 @@
         "description": "Introduction"
     },
     "helpHtmlFilterTitle": {
-        "message": "Τι είναι το «φίλτρο HTML»;",
+        "message": "Τι είναι το »φίλτρο HTML«;",
         "description": "What is »HTML filter«?"
     },
     "helpRuleGeneratorTitle": {
