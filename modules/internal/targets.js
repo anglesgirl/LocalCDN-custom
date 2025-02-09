@@ -378,6 +378,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/p5.js/1.')) return '1.11.2';
     if (type.startsWith('/page.js/1.')) return '1.11.6';
     if (type.startsWith('/paginationjs/2.')) return '2.6.0';
+    if (type.startsWith('/playerjs/')) return '19.9.25';
     if (type.startsWith('/plyr/3.')) return '3.7.8';
     if (type.startsWith('/popper.js/1.')) return '1.16.1';
     if (type.startsWith('/popper.js/2.')) return '2.11.8';
@@ -526,6 +527,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'playerjs.min.jsm': 'PlayerJS',
     'featherlight.min.css': 'featherlight (CSS)',
     'featherlight.min.jsm': 'featherlight (JS)',
     'featherlight.gallery.min.css': 'featherlight Gallery (CSS)',
