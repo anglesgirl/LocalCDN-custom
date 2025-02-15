@@ -372,7 +372,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/owl-carousel/2.')) return '2.3.4';
     if (type.startsWith('/p2p-media-loader-core') || type.startsWith('/p2p-media-loader-hlsjs')) {
         if (helpers.compareVersion('0.6.2', version)) return '0.6.2'; // <= v0.6.2
-        return '2.1.0';
+        return '2.2.0';
     }
     if (type.startsWith('/p5.js/0.')) return '0.10.2';
     if (type.startsWith('/p5.js/1.')) return '1.11.2';
@@ -393,12 +393,14 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react/16.')) return '16.14.0';
     if (type.startsWith('/react/17.')) return '17.0.2';
     if (type.startsWith('/react/18.')) return '18.3.1';
+    if (type.startsWith('/react/19.')) return '19.0.0';
     if (type.startsWith('/react-dom/16.')) return '16.14.0';
     if (type.startsWith('/react-dom/17.')) return '17.0.2';
     if (type.startsWith('/react-dom/18.')) return '18.3.1';
+    if (type.startsWith('/react-dom/19.')) return '19.0.0';
     if (type.startsWith('/react-intl/')) {
         // NOTE: Parameters swapped. (= anything greater than v5.0.0)
-        if (helpers.compareVersion(version, '5.0.0')) return '7.1.0'; // >= v5.0.0
+        if (helpers.compareVersion(version, '5.0.0')) return '7.1.6'; // >= v5.0.0
     }
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.1.3';
