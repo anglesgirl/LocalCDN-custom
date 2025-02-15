@@ -524,7 +524,7 @@
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Mere Information",
         "description": "More info"
     }
 }
