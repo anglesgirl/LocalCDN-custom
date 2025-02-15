@@ -759,6 +759,8 @@ function create_url() {
          [ "$jfile" = "pure.min.css" ] && \
          ( [ "$version" = "0.6.2" ] || [ "$version" = "1.0.1" ] ); then
         url="$CLOUDFLARE/$folder/$version/pure-min.css"
+    elif [ "$folder" = "react" ] && [ "$version" != "16.14.0" ] && [ "$version" != "17.0.2" ] && [ "$version" != "18.3.1" ]; then
+        url="$CLOUDFLARE/$folder/$version/cjs/react.production.min.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then
