@@ -759,8 +759,6 @@ function create_url() {
          [ "$jfile" = "pure.min.css" ] && \
          ( [ "$version" = "0.6.2" ] || [ "$version" = "1.0.1" ] ); then
         url="$CLOUDFLARE/$folder/$version/pure-min.css"
-    elif [ "$folder" = "playerjs" ]; then
-        url="$GITHUB/cstkcstk/playerjs/refs/heads/main/playerjs.js"
     # --------------------------------------------------------------------------
     else
         if [ "$subfile" = "$jfile" ]; then

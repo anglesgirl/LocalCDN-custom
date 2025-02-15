@@ -190,15 +190,6 @@ shorthands.specialFiles = function (channelHost, channelPath, searchString) {
             'path': `resources/materialize/1.0.0/${channelPath}`,
             'bundle': 'Materialize'
         };
-    } else if (CompleteURL === 'cdn.jsdelivr.net/gh/cstkcstk/playerjs@main/playerjs.js') {
-        lastVersion = targets.setLastVersion('/playerjs/');
-        return {
-            'source': channelHost,
-            'versionDelivered': lastVersion,
-            'versionRequested': 'latest',
-            'path': `resources/playerjs/${lastVersion}/playerjs.min.jsm`,
-            'bundle': ''
-        };
     } else if (CompleteURL === 'cdn.jsdelivr.net/npm/vue@2') {
         lastVersion = targets.setLastVersion('/vue/2.');
         if (lastVersion === '') {

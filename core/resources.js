@@ -875,10 +875,6 @@ let resources = {
     'paginationjsCSS': {
         'path': 'resources/paginationjs/{version}/pagination.min.css'
     },
-    // player.js
-    'playerJs': {
-        'path': 'resources/playerjs/{version}/playerjs.min.jsm'
-    },
     // plyr CSS
     'plyrCSS': {
         'path': 'resources/plyr/{version}/plyr.min.css'
