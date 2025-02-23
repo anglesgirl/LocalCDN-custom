@@ -32,7 +32,12 @@ let interceptor = {};
 
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
     let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed,
-        iframe, isGoogleDomain;
+        iframe, isGoogleDomain, isOnAllowlist;
+
+    isOnAllowlist = helpers.checkAllowlisted(
+        helpers.extractDomainFromUrl(tab.url, true),
+        requestAnalyzer.allowlistedDomains
+    );
 
     iframe = '';
     if (tab.url !== requestDetails.originUrl) {
@@ -40,11 +45,7 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
         iframe = requestDetails.originUrl;
     }
 
-    if (requestDetails['type'] === WebRequestType.MAIN_FRAME &&
-        helpers.checkAllowlisted(
-            helpers.extractDomainFromUrl(tab.url, true),
-            requestAnalyzer.allowlistedDomains
-        )) {
+    if (isOnAllowlist) {
         return {
             'cancel': false
         };
