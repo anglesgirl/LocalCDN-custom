@@ -277,7 +277,7 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('1.3.2', version)) return '1.3.2'; // <= v1.3.2
         return '1.4.5';
     }
-    if (type.startsWith('/jquery-mousewheel/3.')) return '3.1.13';
+    if (type.startsWith('/jquery-mousewheel/3.')) return '3.2.2';
     if (type.startsWith('/jScrollPane/2.')) return '2.2.2';
     if (type.startsWith('/jquery-validate/1.')) return '1.21.0';
     if (type.startsWith('/jeditable.js/1.')) return '1.8.0';
