@@ -19,7 +19,7 @@
  * Targets
  */
 
-let targets = {};
+const targets = {};
 
 
 /**

@@ -23,7 +23,7 @@
  * Resources
  */
 
-let resources = {
+const resources = {
 
     // Ajax Bootstrap Select
     'ajaxBootstrapSelect': {

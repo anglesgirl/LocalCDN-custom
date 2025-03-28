@@ -19,7 +19,7 @@
  * Manipulate DOM
  */
 
-let manipulateDOM = {};
+const manipulateDOM = {};
 
 
 /**
@@ -45,16 +45,12 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
 
         if (header && manipulateDOM.checkHtmlFilterEnabled(initiatorDomain)) {
 
-            let mimeType, isAllowlisted;
-
-            mimeType = header.value.replace(/;.*/, '').toLowerCase();
-            isAllowlisted = stateManager._domainIsListed(initiatorDomain);
+            const mimeType = header.value.replace(/;.*/, '').toLowerCase();
+            const isAllowlisted = stateManager._domainIsListed(initiatorDomain);
 
             if (!isAllowlisted && mimeType === 'text/html') {
 
-                let initDecoder, decoder, encoder, charset, isFirstData, filter, data;
-
-                charset = (/charset\s*=/).test(header.value) && header.value.replace(/^.*?charset\s*=\s*/, '').replace(/["']?/g, '');
+                const charset = (/charset\s*=/).test(header.value) && header.value.replace(/^.*?charset\s*=\s*/, '').replace(/["']?/g, '');
 
                 // Check if charset is supported by TextDecoder()
                 if ((/charset\s*=/).test(header.value) && !EncodingTypes[charset.toString().toLowerCase()]) {
@@ -64,11 +60,13 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                 }
 
                 // Use charset of the response header in the initial TextDecoder. ASCII only as fallback.
-                initDecoder = new TextDecoder(charset === false ? 'ASCII' : charset);
-                encoder = new TextEncoder();
-                isFirstData = true;
-                filter = browser.webRequest.filterResponseData(details.requestId);
-                data = [];
+                const initDecoder = new TextDecoder(charset === false ? 'ASCII' : charset);
+                const encoder = new TextEncoder();
+                const filter = browser.webRequest.filterResponseData(details.requestId);
+
+                let isFirstData = true;
+                let data = [];
+                let decoder;
 
                 header.value = 'text/html; charset=UTF-8';
 
@@ -171,9 +169,8 @@ manipulateDOM._startWithUtf8Bom = function (str) {
  */
 
 manipulateDOM.checkHtmlFilterEnabled = function (url) {
-    let listedToManipulateDOM, negateHtmlFilter;
-    listedToManipulateDOM = stateManager._domainIsListed(url, 'manipulate-dom');
-    negateHtmlFilter = stateManager.getInvertOption;
+    const listedToManipulateDOM = stateManager._domainIsListed(url, 'manipulate-dom');
+    const negateHtmlFilter = stateManager.getInvertOption;
 
     if ((negateHtmlFilter || listedToManipulateDOM) && !(negateHtmlFilter && listedToManipulateDOM)) {
         return true;
@@ -186,7 +183,7 @@ manipulateDOM.checkHtmlFilterEnabled = function (url) {
  */
 
 /* eslint-disable one-var */
-let cdnDomainsRE = new RegExp(`//(${Object.keys(mappings.cdn).map((m) => m.replace(/\W/g, '\\$&')).join('|')})/`);
+const cdnDomainsRE = new RegExp(`//(${Object.keys(mappings.cdn).map((m) => m.replace(/\W/g, '\\$&')).join('|')})/`);
 /* eslint-enable one-var */
 
 

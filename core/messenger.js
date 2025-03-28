@@ -23,7 +23,7 @@
  * Messenger
  */
 
-let messenger = {};
+const messenger = {};
 
 
 /**
@@ -32,11 +32,9 @@ let messenger = {};
 
 messenger._handleMessageReceived = function (message, sender, sendResponse) {
 
-    let topic, value, popup;
-
-    topic = message.topic;
-    value = message.value;
-    popup = {};
+    const topic = message.topic;
+    const value = message.value;
+    const popup = {};
 
     switch (topic) {
 

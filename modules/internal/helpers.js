@@ -23,7 +23,7 @@
  * Helpers
  */
 
-let helpers = {};
+const helpers = {};
 
 
 /**
@@ -31,14 +31,12 @@ let helpers = {};
  */
 
 helpers.insertI18nContentIntoDocument = function (document) {
-    let scriptDirection, i18nElements, translationComplete;
-
-    translationComplete = true;
-    scriptDirection = helpers.determineScriptDirection(navigator.language);
-    i18nElements = document.querySelectorAll('[data-i18n-content]');
+    const translationComplete = true;
+    const scriptDirection = helpers.determineScriptDirection(navigator.language);
+    const i18nElements = document.querySelectorAll('[data-i18n-content]');
 
     i18nElements.forEach(function (i18nElement) {
-        let i18nMessageName = i18nElement.getAttribute('data-i18n-content');
+        const i18nMessageName = i18nElement.getAttribute('data-i18n-content');
 
         if (chrome.i18n.getMessage(i18nMessageName) !== '') {
             if (i18nElement.type === 'button') {
@@ -56,10 +54,8 @@ helpers.insertI18nContentIntoDocument = function (document) {
 };
 
 helpers.insertI18nTitlesIntoDocument = function (document) {
-    let scriptDirection, i18nElements;
-
-    scriptDirection = helpers.determineScriptDirection(navigator.language);
-    i18nElements = document.querySelectorAll('[data-i18n-title]');
+    const scriptDirection = helpers.determineScriptDirection(navigator.language);
+    const i18nElements = document.querySelectorAll('[data-i18n-title]');
 
     i18nElements.forEach(function (i18nElement) {
         let i18nMessageName = i18nElement.getAttribute('data-i18n-title');
@@ -70,11 +66,10 @@ helpers.insertI18nTitlesIntoDocument = function (document) {
 };
 
 helpers.languageIsFullySupported = function (language) {
-    let languageSupported, supportedLanguages;
 
-    languageSupported = false;
+    let languageSupported = false;
 
-    supportedLanguages = [
+    const supportedLanguages = [
         'ar',
         'bg',
         'ca',
@@ -126,7 +121,7 @@ helpers.languageIsFullySupported = function (language) {
         'zh_Hant'
     ];
 
-    for (let supportedLanguage of supportedLanguages) {
+    for (const supportedLanguage of supportedLanguages) {
         if (language.search(supportedLanguage) !== -1) {
             languageSupported = true;
         }
@@ -178,7 +173,7 @@ helpers.getWildcard = function (initiatorDomain) {
 };
 
 helpers.getTopLevelDomain = function (initiatorDomain) {
-    let domain = initiatorDomain.split('.');
+    const domain = initiatorDomain.split('.');
 
     domain[domain.length - 2] = '*';
     return `${domain[domain.length - 2]}.${domain[domain.length - 1]}`;
@@ -211,23 +206,22 @@ helpers.getAllSubdomains = function (domain) {
 };
 
 helpers.extractFilenameFromPath = function (path) {
-    let pathSegments, filename;
 
-    pathSegments = path.split('/');
-    filename = pathSegments[pathSegments.length - 1];
+    const pathSegments = path.split('/');
+    const filename = pathSegments[pathSegments.length - 1];
 
     return filename === '' ? pathSegments[1] : filename;
 };
 
 helpers.generateRandomHexString = function (length) {
-    let randomValues, randomHexString;
+    let randomHexString;
 
-    randomValues = crypto.getRandomValues(new Uint8Array(length));
+    const randomValues = crypto.getRandomValues(new Uint8Array(length));
     randomHexString = '';
 
-    for (let value of randomValues) {
+    for (const value of randomValues) {
         // eslint-disable-next-line no-bitwise
-        let hexValue = (0 ^ (value & (15 >> (0 / 4)))).toString(16);
+        const hexValue = (0 ^ (value & (15 >> (0 / 4)))).toString(16);
         randomHexString += hexValue;
     }
 
@@ -239,9 +233,9 @@ helpers.determineCdnName = function (domainName) {
 };
 
 helpers.determineScriptDirection = function (language) {
-    let rightToLeftLanguages, scriptDirection;
+    let scriptDirection;
 
-    rightToLeftLanguages = ['ar', 'he'];
+    const rightToLeftLanguages = ['ar', 'he'];
 
     if (rightToLeftLanguages.indexOf(language) === -1) {
         scriptDirection = 'ltr';
@@ -313,7 +307,7 @@ helpers.compareVersion = function (v1, v2) {
 };
 
 helpers.isGoogleDomain = function (initiatorDomain) {
-    let parts = initiatorDomain.split('.');
+    const parts = initiatorDomain.split('.');
 
     // remove subdomains if exist
     if (parts.length > 2) {

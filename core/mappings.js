@@ -23,7 +23,7 @@
  * Mappings
  */
 
-let mappings = {};
+const mappings = {};
 
 /*
  * Date of last update.

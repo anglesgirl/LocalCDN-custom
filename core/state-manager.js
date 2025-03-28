@@ -23,7 +23,7 @@
  * State Manager
  */
 
-let stateManager = {};
+const stateManager = {};
 
 
 /**
@@ -31,25 +31,23 @@ let stateManager = {};
  */
 
 stateManager.registerInjection = function (tabIdentifier, injection, url) {
-    let injectionIdentifier, registeredTab, injectionCount, missingCount, blockedCount,
-        initiatorDomain, htmlFilterIsActive;
-
+    let registeredTab;
+ 
     if (injection['result'] !== false) {
-        injectionIdentifier = injection.source + injection.path;
+        const injectionIdentifier = injection.source + injection.path;
         registeredTab = stateManager.tabs[tabIdentifier];
         registeredTab.injections[injectionIdentifier] = injection;
     }
 
-    initiatorDomain = helpers.extractDomainFromUrl(url, true) || Address.EXAMPLE;
-    htmlFilterIsActive = manipulateDOM.checkHtmlFilterEnabled(initiatorDomain);
-
-    if (registeredTab !== undefined) {
-        injectionCount = Object.keys(registeredTab.injections).length || 0;
-        missingCount = registeredTab.missing || 0;
-        blockedCount = registeredTab.blocked || 0;
-    } else {
+    if (registeredTab === undefined) {
         return;
     }
+
+    const initiatorDomain = helpers.extractDomainFromUrl(url, true) || Address.EXAMPLE;
+    const htmlFilterIsActive = manipulateDOM.checkHtmlFilterEnabled(initiatorDomain);
+    const injectionCount = Object.keys(registeredTab.injections).length || 0;
+    const missingCount = registeredTab.missing || 0;
+    const blockedCount = registeredTab.blocked || 0;
 
     if (injectionCount > 0) {
         chrome.browserAction.setTitle({
@@ -96,9 +94,7 @@ stateManager.addDomainToAllowlist = function (domain) {
 
 stateManager.removeDomainFromAllowlist = function (domain) {
     return new Promise((resolve) => {
-        let allowlistedDomains;
-
-        allowlistedDomains = requestAnalyzer.allowlistedDomains;
+        const allowlistedDomains = requestAnalyzer.allowlistedDomains;
 
         if (allowlistedDomains[domain]) {
             delete allowlistedDomains[domain];
@@ -117,7 +113,7 @@ stateManager.removeDomainFromAllowlist = function (domain) {
 
 stateManager.addDomainToManipulateDOMlist = function (domain) {
     return new Promise((resolve) => {
-        let domainsManipulateDOM = requestAnalyzer.domainsManipulateDOM;
+        const domainsManipulateDOM = requestAnalyzer.domainsManipulateDOM;
 
         domainsManipulateDOM[domain] = true;
 
@@ -127,7 +123,7 @@ stateManager.addDomainToManipulateDOMlist = function (domain) {
 
 stateManager.removeDomainFromManipulateDOMlist = function (domain) {
     return new Promise((resolve) => {
-        let domainsManipulateDOM = requestAnalyzer.domainsManipulateDOM;
+        const domainsManipulateDOM = requestAnalyzer.domainsManipulateDOM;
 
         delete domainsManipulateDOM[domain];
 
@@ -137,7 +133,7 @@ stateManager.removeDomainFromManipulateDOMlist = function (domain) {
 
 stateManager.addDomainToGoogleFontsList = function (domain) {
     return new Promise((resolve) => {
-        let allowedDomainsGoogleFonts = interceptor.allowedDomainsGoogleFonts;
+        const allowedDomainsGoogleFonts = interceptor.allowedDomainsGoogleFonts;
 
         allowedDomainsGoogleFonts[domain] = true;
 
@@ -147,7 +143,7 @@ stateManager.addDomainToGoogleFontsList = function (domain) {
 
 stateManager.removeDomainFromGoogleFontsList = function (domain) {
     return new Promise((resolve) => {
-        let allowedDomainsGoogleFonts = interceptor.allowedDomainsGoogleFonts;
+        const allowedDomainsGoogleFonts = interceptor.allowedDomainsGoogleFonts;
 
         delete allowedDomainsGoogleFonts[domain];
 
@@ -160,9 +156,7 @@ stateManager.removeDomainFromGoogleFontsList = function (domain) {
  */
 
 stateManager._createTab = function (tab) {
-    let tabIdentifier, requestFilters;
-
-    tabIdentifier = tab.id;
+    const tabIdentifier = tab.id;
 
     stateManager.tabs[tabIdentifier] = {
         'injections': {},
@@ -170,7 +164,7 @@ stateManager._createTab = function (tab) {
         'blocked': 0
     };
 
-    requestFilters = {
+    const requestFilters = {
         'tabId': tabIdentifier,
         'urls': stateManager.validHosts
     };
@@ -185,12 +179,11 @@ stateManager._removeTab = function (tabIdentifier) {
     delete stateManager.tabs[tabIdentifier];
 };
 
-stateManager._updateTab = function (details) {
-    let tabDomain, domainIsAllowlisted, frameIdentifier, tabIdentifier;
-    tabDomain = helpers.extractDomainFromUrl(details.url, true);
-    domainIsAllowlisted = stateManager._domainIsListed(tabDomain);
-    frameIdentifier = details.frameId;
-    tabIdentifier = details.tabId;
+stateManager._updateTab = function (details) {   
+    const tabDomain = helpers.extractDomainFromUrl(details.url, true);
+    const domainIsAllowlisted = stateManager._domainIsListed(tabDomain);
+    const frameIdentifier = details.frameId;
+    const tabIdentifier = details.tabId;
 
     if (frameIdentifier !== 0 || tabIdentifier === -1) {
         return;
@@ -268,13 +261,13 @@ stateManager._removeIconBadgeFromTab = function (tab) {
 
 stateManager._domainIsListed = function (domain, listname) {
     if (domain !== null) {
-        let allowlistRecord, isAllowlisted;
+        let isAllowlisted;
 
         if (listname === 'manipulate-dom') {
-            allowlistRecord = helpers.checkAllowlisted(domain, requestAnalyzer.domainsManipulateDOM);
+            const allowlistRecord = helpers.checkAllowlisted(domain, requestAnalyzer.domainsManipulateDOM);
             isAllowlisted = Boolean(allowlistRecord);
         } else {
-            allowlistRecord = helpers.checkAllowlisted(domain, requestAnalyzer.allowlistedDomains);
+            const allowlistRecord = helpers.checkAllowlisted(domain, requestAnalyzer.allowlistedDomains);
             isAllowlisted = Boolean(allowlistRecord);
         }
         return isAllowlisted;
@@ -304,7 +297,7 @@ stateManager.hideDonationButton = false;
 stateManager.changeBadgeColorMissingResources = false;
 stateManager.logging = false;
 
-for (let mapping in mappings.cdn) {
+for (const mapping in mappings.cdn) {
     let supportedHost = Address.ANY_PROTOCOL + mapping + Address.ANY_PATH;
     stateManager.validHosts.push(supportedHost);
 }
@@ -374,7 +367,7 @@ chrome.webRequest.onErrorOccurred.addListener(function (requestDetails) {
 }, {'urls': [Address.ANY]});
 
 chrome.webRequest.onBeforeRedirect.addListener(function (requestDetails) {
-    let knownRequest = stateManager.requests[requestDetails.requestId];
+    const knownRequest = stateManager.requests[requestDetails.requestId];
     if (knownRequest) {
         stateManager.registerInjection(
             knownRequest.tabIdentifier,

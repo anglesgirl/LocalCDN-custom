@@ -23,7 +23,7 @@
  * Shorthands
  */
 
-let shorthands = {};
+const shorthands = {};
 
 shorthands.specialFiles = function (channelHost, channelPath, searchString) {
 

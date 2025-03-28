@@ -18,7 +18,7 @@
  * Request Sanitizer
  */
 
-let requestSanitizer = {};
+const requestSanitizer = {};
 
 
 /**
@@ -38,7 +38,7 @@ const ExtraInfoSpec = BrowserType.FIREFOX
  */
 
 requestSanitizer.enable = function () {
-    let onBeforeSendHeaders = chrome.webRequest.onBeforeSendHeaders;
+    const onBeforeSendHeaders = chrome.webRequest.onBeforeSendHeaders;
 
     onBeforeSendHeaders.addListener(requestSanitizer._stripMetadata, {
         'urls': stateManager.validHosts
@@ -46,7 +46,7 @@ requestSanitizer.enable = function () {
 };
 
 requestSanitizer.disable = function () {
-    let onBeforeSendHeaders = chrome.webRequest.onBeforeSendHeaders;
+    const onBeforeSendHeaders = chrome.webRequest.onBeforeSendHeaders;
 
     onBeforeSendHeaders.removeListener(requestSanitizer._stripMetadata, {
         'urls': stateManager.validHosts
@@ -59,11 +59,9 @@ requestSanitizer.disable = function () {
  */
 
 requestSanitizer._stripMetadata = function (requestDetails) {
-    let sensitiveHeaders, initiatorDomain, allowlistedDomains;
-
-    sensitiveHeaders = [Header.COOKIE, Header.ORIGIN, Header.REFERER];
-    initiatorDomain = helpers.extractDomainFromUrl(requestDetails.initiator, true);
-    allowlistedDomains = helpers.checkAllowlisted(initiatorDomain, requestAnalyzer.allowlistedDomains);
+    const sensitiveHeaders = [Header.COOKIE, Header.ORIGIN, Header.REFERER];
+    const initiatorDomain = helpers.extractDomainFromUrl(requestDetails.initiator, true);
+    const allowlistedDomains = helpers.checkAllowlisted(initiatorDomain, requestAnalyzer.allowlistedDomains);
 
     if (allowlistedDomains) {
         return {

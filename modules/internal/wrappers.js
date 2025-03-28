@@ -22,7 +22,7 @@
  * Wrappers
  */
 
-let wrappers = {};
+const wrappers = {};
 
 
 /**
