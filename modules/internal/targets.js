@@ -144,7 +144,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bodymovin/5.')) return '5.12.2';
     if (type.startsWith('/bootbox.js/4.')) return '4.4.0';
     if (type.startsWith('/bootbox.js/5.')) return '5.5.3';
-    if (type.startsWith('/bootbox.js/6.')) return '6.0.0';
+    if (type.startsWith('/bootbox.js/6.')) return '6.0.2';
     if (type.startsWith('/bootstrap-daterangepicker/2.')) return '2.1.27';
     if (type.startsWith('/bootstrap-daterangepicker/3.')) return '3.1';
     if (type.startsWith('/bootstrap-datepicker/1.')) return '1.10.0';
