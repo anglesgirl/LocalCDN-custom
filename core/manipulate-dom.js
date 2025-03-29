@@ -49,8 +49,11 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
             const isAllowlisted = stateManager._domainIsListed(initiatorDomain);
 
             if (!isAllowlisted && mimeType === 'text/html') {
+                let isFirstData, data, decoder, charset;
 
-                const charset = (/charset\s*=/).test(header.value) && header.value.replace(/^.*?charset\s*=\s*/, '').replace(/["']?/g, '');
+                data = [];
+                isFirstData = true;
+                charset = (/charset\s*=/).test(header.value) && header.value.replace(/^.*?charset\s*=\s*/, '').replace(/["']?/g, '');
 
                 // Check if charset is supported by TextDecoder()
                 if ((/charset\s*=/).test(header.value) && !EncodingTypes[charset.toString().toLowerCase()]) {
@@ -63,10 +66,6 @@ manipulateDOM._removeCrossOriginAndIntegrityAttr = function (details) {
                 const initDecoder = new TextDecoder(charset === false ? 'ASCII' : charset);
                 const encoder = new TextEncoder();
                 const filter = browser.webRequest.filterResponseData(details.requestId);
-
-                let isFirstData = true;
-                let data = [];
-                let decoder;
 
                 header.value = 'text/html; charset=UTF-8';
 
