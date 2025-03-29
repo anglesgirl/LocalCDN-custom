@@ -889,6 +889,10 @@ const resources = {
     'popperJS': {
         'path': 'resources/popper.js/{version}/umd/popper.min.jsm'
     },
+    // progressbar.js
+    'progressbarJs': {
+        'path': 'resources/progressbar.js/{version}/progressbar.min.jsm'
+    },
     // prop-types
     'propTypes': {
         'path': 'resources/prop-types/{version}/prop-types.min.jsm'
