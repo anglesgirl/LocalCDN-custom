@@ -26,7 +26,7 @@ const InvalidFile = 'Invalid file!';
  * Storage Manager
  */
 
-let storageManager = {};
+const storageManager = {};
 
 
 /**
@@ -120,10 +120,9 @@ storageManager.startImportFilePicker = function () {
 };
 
 storageManager.handleImportFilePicker = function () {
-    let file, reader;
-    file = document.getElementById('import-file-picker').files[0];
+    const file = document.getElementById('import-file-picker').files[0];
+    const reader = new FileReader();
 
-    reader = new FileReader();
     reader.readAsText(file, 'UTF-8');
 
     reader.onload = (ev) => {

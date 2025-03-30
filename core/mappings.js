@@ -23,7 +23,7 @@
  * Mappings
  */
 
-let mappings = {};
+const mappings = {};
 
 /*
  * Date of last update.
@@ -470,6 +470,8 @@ mappings.cdn = {
             'plyr/{version}/plyr.polyfilled.min.js': resources.plyrJS,
             'plyr/{version}/plyr.svg': resources.plyrSVG,
             'popper.js/{version}/umd/popper.min.js': resources.popperJS,
+            'progressbar.js/{version}/progressbar.js': resources.progressbarJs,
+            'progressbar.js/{version}/progressbar.min.js': resources.progressbarJs,
             'protonet-jquery.inview/{version}/jquery.inview.': resources.protonetJqueryInview,
             'pure/{version}/': resources.pureCSS,
             'rangeslider.js/{version}/rangeslider.css': resources.rangesliderCSS,

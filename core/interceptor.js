@@ -23,7 +23,7 @@
  * Interceptor
  */
 
-let interceptor = {};
+const interceptor = {};
 
 
 /**
@@ -31,30 +31,28 @@ let interceptor = {};
  */
 
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
-    let validCandidate, targetDetails, targetDomain, isGoogleFont, isGoogleMaterialIcons, initiatorDomain, isListed,
-        iframe, isGoogleDomain;
 
-    iframe = '';
+    const isOnAllowlist = helpers.checkAllowlisted(
+        helpers.extractDomainFromUrl(tab.url, true),
+        requestAnalyzer.allowlistedDomains
+    );
+
+    let iframe = '';
     if (tab.url !== requestDetails.originUrl) {
         console.log(`${LogString.PREFIX} ${LogString.IFRAME} ${tab.url} -> ${requestDetails.originUrl}`);
         iframe = requestDetails.originUrl;
     }
 
-    if (requestDetails['type'] === WebRequestType.MAIN_FRAME &&
-        helpers.checkAllowlisted(
-            helpers.extractDomainFromUrl(tab.url, true),
-            requestAnalyzer.allowlistedDomains
-        )) {
+    if (isOnAllowlist) {
         return {
             'cancel': false
         };
     }
 
-    targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
+    const targetDetails = requestAnalyzer.getLocalTarget(requestDetails, tab.url);
     if (targetDetails['result'] === 'blocked') {
-        let source, resource;
-        source = helpers.extractDomainFromUrl(tab.url, true);
-        resource = tab.url;
+        const source = helpers.extractDomainFromUrl(tab.url, true);
+        const resource = tab.url;
         return {
             'redirectUrl': chrome.runtime.getURL(`resources/blocked/index.html?source=${source}&resource=${resource}`)
         };
@@ -73,7 +71,7 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
         };
     }
 
-    validCandidate = requestAnalyzer.isValidCandidate(requestDetails, tab);
+    const validCandidate = requestAnalyzer.isValidCandidate(requestDetails, tab);
     if (!validCandidate) {
         return {
             'cancel': false
@@ -88,14 +86,14 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
         };
     }
 
-    targetDomain = helpers.extractDomainFromUrl(requestDetails.url, true);
-    isGoogleFont = requestAnalyzer.isGoogleFont(targetDomain);
-    isGoogleMaterialIcons = requestAnalyzer.isGoogleMaterialIcons(requestDetails.url);
+    const targetDomain = helpers.extractDomainFromUrl(requestDetails.url, true);
+    const isGoogleFont = requestAnalyzer.isGoogleFont(targetDomain);
+    const isGoogleMaterialIcons = requestAnalyzer.isGoogleMaterialIcons(requestDetails.url);
 
     if (BrowserType.FIREFOX && isGoogleFont && !isGoogleMaterialIcons) {
-        initiatorDomain = helpers.extractDomainFromUrl(tab.url, true);
-        isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
-        isGoogleDomain = helpers.isGoogleDomain(initiatorDomain);
+        const initiatorDomain = helpers.extractDomainFromUrl(tab.url, true);
+        const isListed = helpers.checkAllowlisted(initiatorDomain, interceptor.allowedDomainsGoogleFonts);
+        const isGoogleDomain = helpers.isGoogleDomain(initiatorDomain);
         // Check if the website is allowed to load Google Fonts
         if (interceptor.blockGoogleFonts === true && isListed === false && isGoogleDomain === false) {
             console.log(`${LogString.PREFIX} Google fonts blocked ${requestDetails.url}`);
@@ -138,12 +136,10 @@ interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
  */
 
 interceptor._handleMissingCandidate = function (requestUrl, tabIdentifier) {
-    let requestUrlSegments, injectionCount, missingCount, blockedCount;
-
     if (stateManager.showIconBadge === true) {
-        injectionCount = Object.keys(stateManager.tabs[tabIdentifier].injections).length || 0;
-        missingCount = stateManager.tabs[tabIdentifier].missing || 0;
-        blockedCount = stateManager.tabs[tabIdentifier].blocked || 0;
+        let injectionCount = Object.keys(stateManager.tabs[tabIdentifier].injections).length || 0;
+        const missingCount = stateManager.tabs[tabIdentifier].missing || 0;
+        const blockedCount = stateManager.tabs[tabIdentifier].blocked || 0;
 
         injectionCount = injectionCount + missingCount + blockedCount;
 
@@ -163,7 +159,7 @@ interceptor._handleMissingCandidate = function (requestUrl, tabIdentifier) {
         };
     }
 
-    requestUrlSegments = new URL(requestUrl);
+    const requestUrlSegments = new URL(requestUrl);
 
     if (requestUrlSegments.protocol === Address.HTTP) {
         requestUrlSegments.protocol = Address.HTTPS;

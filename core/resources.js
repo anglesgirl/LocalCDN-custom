@@ -23,7 +23,7 @@
  * Resources
  */
 
-let resources = {
+const resources = {
 
     // Ajax Bootstrap Select
     'ajaxBootstrapSelect': {
@@ -888,6 +888,10 @@ let resources = {
     // Popper
     'popperJS': {
         'path': 'resources/popper.js/{version}/umd/popper.min.jsm'
+    },
+    // progressbar.js
+    'progressbarJs': {
+        'path': 'resources/progressbar.js/{version}/progressbar.min.jsm'
     },
     // prop-types
     'propTypes': {

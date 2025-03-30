@@ -21,7 +21,7 @@
  * File Guard
  */
 
-let fileGuard = {};
+const fileGuard = {};
 
 
 /**
@@ -30,7 +30,7 @@ let fileGuard = {};
 
 fileGuard._startListening = function () {
 
-    let randomHexString = helpers.generateRandomHexString(24);
+    const randomHexString = helpers.generateRandomHexString(24);
     fileGuard.secret = `?_=${randomHexString}`;
 
     chrome.webRequest.onBeforeRequest.addListener(
@@ -42,7 +42,7 @@ fileGuard._startListening = function () {
 
 fileGuard._verifyRequest = function (requestDetails) {
 
-    let redirectUrl = chrome.runtime.getURL(Address.ROOT_PATH);
+    const redirectUrl = chrome.runtime.getURL(Address.ROOT_PATH);
 
     if (!requestDetails.url.endsWith(fileGuard.secret)) {
         return {redirectUrl};

@@ -23,7 +23,7 @@
  * Main
  */
 
-let main = {};
+const main = {};
 
 
 /**

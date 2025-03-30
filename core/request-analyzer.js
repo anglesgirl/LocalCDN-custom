@@ -23,7 +23,7 @@
  * Request Analyzer
  */
 
-let requestAnalyzer = {};
+const requestAnalyzer = {};
 
 
 /**
@@ -31,21 +31,19 @@ let requestAnalyzer = {};
  */
 
 requestAnalyzer.isValidCandidate = function (requestDetails, tabDetails) {
-    let initiatorDomain, requestedDomain, isAllowlisted;
-
-    initiatorDomain = helpers.extractDomainFromUrl(tabDetails.url, true);
+    const initiatorDomain = helpers.extractDomainFromUrl(tabDetails.url, true);
 
     if (initiatorDomain === null) {
         initiatorDomain = Address.EXAMPLE;
     }
 
     // If requested Domain not in mappings.js it is not relevant
-    requestedDomain = helpers.extractDomainFromUrl(requestDetails.url, true);
+    const requestedDomain = helpers.extractDomainFromUrl(requestDetails.url, true);
     if (mappings['cdn'][requestedDomain] === undefined) {
         return false;
     }
 
-    isAllowlisted = helpers.checkAllowlisted(initiatorDomain, requestAnalyzer.allowlistedDomains);
+    const isAllowlisted = helpers.checkAllowlisted(initiatorDomain, requestAnalyzer.allowlistedDomains);
     if (isAllowlisted) {
         return false;
     }
@@ -93,20 +91,19 @@ requestAnalyzer.isGoogleFont = function (domain) {
 };
 
 requestAnalyzer.getLocalTarget = function (requestDetails, initiator) {
-    let destinationUrl, destinationHost, destinationPath, hostMappings, basePath,
-        resourceMappings, destinationSearchString;
+    let destinationSearchString;
 
     destinationSearchString = '';
-    destinationUrl = new URL(requestDetails.url);
+    const destinationUrl = new URL(requestDetails.url);
 
-    destinationHost = destinationUrl.host;
-    destinationPath = destinationUrl.pathname;
+    const destinationHost = destinationUrl.host;
+    const destinationPath = destinationUrl.pathname;
     if (destinationUrl.search) {
         destinationSearchString = destinationUrl.search;
     }
 
     // Use the proper mappings for the targeted host.
-    hostMappings = mappings.cdn[destinationHost];
+    const hostMappings = mappings.cdn[destinationHost];
 
     // Resource mapping files are never locally available.
     if (Resource.MAPPING_EXPRESSION.test(destinationPath)) {
@@ -115,8 +112,8 @@ requestAnalyzer.getLocalTarget = function (requestDetails, initiator) {
         };
     }
 
-    basePath = requestAnalyzer._matchBasePath(hostMappings, destinationPath)['result'];
-    resourceMappings = hostMappings[basePath];
+    const basePath = requestAnalyzer._matchBasePath(hostMappings, destinationPath)['result'];
+    const resourceMappings = hostMappings[basePath];
 
     if (!resourceMappings) {
         return {
@@ -142,7 +139,7 @@ requestAnalyzer.getLocalTarget = function (requestDetails, initiator) {
  */
 
 requestAnalyzer._matchBasePath = function (hostMappings, channelPath) {
-    for (let basePath of Object.keys(hostMappings)) {
+    for (const basePath of Object.keys(hostMappings)) {
         if (channelPath.startsWith(basePath)) {
             return {
                 'result': basePath,
@@ -309,7 +306,7 @@ requestAnalyzer._handleUncompressedFiles = function (filename) {
 };
 
 requestAnalyzer._handleTinyMCE = function (channelPath, channelHost, initiator) {
-    let filename = channelPath.replace(Resource.TINYMCE, '');
+    const filename = channelPath.replace(Resource.TINYMCE, '');
     if (filename.startsWith('plugins/')) {
         console.warn(`${LogString.PREFIX} ${LogString.MISSING_RESOURCE} ${channelHost + channelPath}`);
         log.append(initiator, channelHost + channelPath, '-', true);

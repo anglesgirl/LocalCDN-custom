@@ -19,7 +19,7 @@
  * Updates
  */
 
-let ruleGenerator = {};
+const ruleGenerator = {};
 
 
 /**
@@ -27,13 +27,12 @@ let ruleGenerator = {};
  */
 
 ruleGenerator.openRuleSet = function ({target}) {
-    let urls, key, textArea, btnCopy, content;
-
-    urls = mappings.cdn;
-    key = target.getAttribute('data-ruleset');
-    textArea = document.getElementById('generated-rules');
-    btnCopy = document.getElementById('button-copy-rule-set');
-    content = '';
+    const urls = mappings.cdn;
+    const key = target.getAttribute('data-ruleset');
+    const textArea = document.getElementById('generated-rules');
+    const btnCopy = document.getElementById('button-copy-rule-set');
+    
+    let content = '';
 
     textArea.style.display = 'block';
     btnCopy.style.display = 'block';
@@ -59,7 +58,7 @@ ruleGenerator.openRuleSet = function ({target}) {
 };
 
 ruleGenerator.copyRuleSet = function () {
-    let textArea = document.getElementById('generated-rules');
+    const textArea = document.getElementById('generated-rules');
     navigator.clipboard.writeText(textArea.value).then(
         function () {
             textArea.select();

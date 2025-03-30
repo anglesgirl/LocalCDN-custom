@@ -20,7 +20,7 @@
  * Stats
  */
 
-let stats = {};
+const stats = {};
 
 
 /**
@@ -28,12 +28,11 @@ let stats = {};
  */
 
 stats.setStats = function (injection) {
-    let data, today, cdn, framework, newEntry, pathSegments;
-
-    data = storageManager.statistics;
-    today = new Date().toISOString().slice(0, 10);
-    cdn = injection.source;
-
+    const data = storageManager.statistics;
+    const today = new Date().toISOString().slice(0, 10);
+    const cdn = injection.source;
+    let framework, pathSegments, newEntry;
+    
     if (injection.bundle !== '') {
         pathSegments = injection.path.split('/');
         framework = `${pathSegments[0]}/${pathSegments[1]}/${pathSegments[2]}/`;
