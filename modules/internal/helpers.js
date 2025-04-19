@@ -31,9 +31,10 @@ const helpers = {};
  */
 
 helpers.insertI18nContentIntoDocument = function (document) {
-    const translationComplete = true;
     const scriptDirection = helpers.determineScriptDirection(navigator.language);
     const i18nElements = document.querySelectorAll('[data-i18n-content]');
+
+    let translationComplete = true;
 
     i18nElements.forEach(function (i18nElement) {
         const i18nMessageName = i18nElement.getAttribute('data-i18n-content');
