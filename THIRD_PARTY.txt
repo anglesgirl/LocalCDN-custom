@@ -194,7 +194,7 @@ https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js
 https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js
 https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js
 https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.3/bootbox.min.js
-https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.2/bootbox.min.js
+https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.4/bootbox.min.js
 https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js
 https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.standalone.min.css
 https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.standalone.min.css
