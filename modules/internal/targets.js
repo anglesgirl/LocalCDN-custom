@@ -220,6 +220,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/materialiconsround/')) return 'v108';
     if (type.startsWith('/materialiconssharp/')) return 'v109';
     if (type.startsWith('/materialiconstwotone/')) return 'v112';
+    if (type.startsWith('/materialsymbolsoutlined/')) return 'v249';
     if (type.startsWith('/handlebars.js/4.')) return '4.7.8';
     if (type.startsWith('/highlight.js/7.')) return '9.18.5';
     if (type.startsWith('/highlight.js/8.')) return '9.18.5';
@@ -528,6 +529,7 @@ targets.determineResourceName = function (filename) {
 };
 
 const ListOfFiles = {
+    'MaterialSymbolsOutlined.woff2': 'Material Symbols Outlined',
     'featherlight.min.css': 'featherlight (CSS)',
     'featherlight.min.jsm': 'featherlight (JS)',
     'featherlight.gallery.min.css': 'featherlight Gallery (CSS)',
