@@ -473,6 +473,8 @@ function create_url() {
             url="$FONTSGSTATIC/s/materialiconssharp/$iconVersion/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2"
         elif [[ $iconType = "materialiconstwotone" ]]; then
             url="$FONTSGSTATIC/s/materialiconstwotone/$iconVersion/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2"
+        elif [[ $iconType = "materialsymbolsoutlined" ]]; then
+            url="$FONTSGSTATIC/s/materialsymbolsoutlined/$iconVersion/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2"
         fi
     elif [ "$folder" = "object-assign" ]; then
         url="$JSDELIVR/npm/object-assign@4.1.1/index.js"
