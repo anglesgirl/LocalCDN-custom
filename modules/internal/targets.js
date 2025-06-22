@@ -219,7 +219,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/materialicons/')) return 'v143';
     if (type.startsWith('/materialiconsoutlined/')) return 'v110';
     if (type.startsWith('/materialiconsround/')) return 'v109';
-    if (type.startsWith('/materialiconssharp/')) return 'v109';
+    if (type.startsWith('/materialiconssharp/')) return 'v110';
     if (type.startsWith('/materialiconstwotone/')) return 'v112';
     if (type.startsWith('/materialsymbolsoutlined/')) return 'v250';
     if (type.startsWith('/handlebars.js/4.')) return '4.7.8';
