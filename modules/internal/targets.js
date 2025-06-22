@@ -509,7 +509,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/vue-match-media/1.')) return '1.0.3';
     if (type.startsWith('/vue-resource/1.')) return '1.5.3';
     if (type.startsWith('/vue-router/3.')) return '3.6.5';
-    if (type.startsWith('/vue-router/4.')) return '4.5.0';
+    if (type.startsWith('/vue-router/4.')) return '4.5.1';
     if (type.startsWith('/vuex/3.')) return '3.6.2';
     if (type.startsWith('/vuex/4.')) return '4.1.0';
     if (type.startsWith('/waypoints/4.')) return '4.0.1';
