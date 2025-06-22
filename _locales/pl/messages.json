@@ -484,7 +484,7 @@
         "description": "HTML filter badge"
     },
     "titleBadgeMissingResource": {
-        "message": "Plakietka brakującego zasobu",
+        "message": "Brakująca lub zablokowana plakietka zasobu",
         "description": "Missing or blocked resources badge"
     },
     "counterBlocked": {
@@ -496,35 +496,35 @@
         "description": "Missing"
     },
     "permissionRevokedHeader": {
-        "message": "",
+        "message": "Uprawnienie cofnięte",
         "description": "Permission revoked"
     },
     "permissionRevokedPermissionName": {
-        "message": "",
+        "message": "Dostęp do danych użytkownika na wszystkich stronach",
         "description": "The exact name of the permission. Exactly as it is displayed in Firefox."
     },
     "permissionRevokedDescription": {
-        "message": "",
+        "message": "Proszę nie wyłączać tych uprawnień. LocalCDN potrzebuje ich, aby wykrywać oraz przekierowywać żądania do CDN'ów.",
         "description": "Please do not disable the permission. LocalCDN needs the permission to detect and redirect requests to CDNs."
     },
     "helpWhyThisPermission": {
-        "message": "",
+        "message": "Dlaczego rozszerzenie potrzebuje tego uprawnienia?",
         "description": "Why does this extension need this permission?"
     },
     "helpPermissionDescription": {
-        "message": "",
+        "message": "LocalCDN musi wiedzieć, które żądania są tworzone przez stronę internetową, żeby móc je przekierować albo zablokować. Wraz z wprowadzeniem MV3, to uprawnienie zostało oznaczone jako opcjonalne.",
         "description": "LocalCDN needs to know which requests are created by a website to redirect or block it. With the introduction of MV3, this permission is listed as an optional permission."
     },
     "permissionMissing": {
-        "message": "",
+        "message": "Brakujące uprawnienie",
         "description": "Missing permission"
     },
     "permissionAllow": {
-        "message": "",
+        "message": "Zezwól",
         "description": "Allow"
     },
     "permissionMoreInfo": {
-        "message": "",
+        "message": "Więcej informacji",
         "description": "More info"
     }
 }

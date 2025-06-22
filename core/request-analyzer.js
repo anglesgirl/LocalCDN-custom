@@ -83,7 +83,9 @@ requestAnalyzer.chromeSupport = function (url) {
 };
 
 requestAnalyzer.isGoogleMaterialIcons = function (url) {
-    return url.includes('Material+Icons') || url.includes('materialicons');
+    return url.includes('Material+Icons') ||
+           url.includes('materialicons') ||
+           url.includes('Material+Symbols+Outlined');
 };
 
 requestAnalyzer.isGoogleFont = function (domain) {

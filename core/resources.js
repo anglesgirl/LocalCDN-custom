@@ -414,8 +414,11 @@ const resources = {
         'path': 'resources/featherlight/{version}/featherlight.gallery.min.css'
     },
     // flickity
-    'flickity': {
+    'flickityJS': {
         'path': 'resources/flickity/{version}/flickity.pkgd.min.jsm'
+    },
+    'flickityCSS': {
+        'path': 'resources/flickity/{version}/flickity.min.css'
     },
     // flv.js [Deprecated]
     'flvJS': {
