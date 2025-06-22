@@ -218,7 +218,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/gsap/3.')) return '3.13.0';
     if (type.startsWith('/materialicons/')) return 'v143';
     if (type.startsWith('/materialiconsoutlined/')) return 'v110';
-    if (type.startsWith('/materialiconsround/')) return 'v108';
+    if (type.startsWith('/materialiconsround/')) return 'v109';
     if (type.startsWith('/materialiconssharp/')) return 'v109';
     if (type.startsWith('/materialiconstwotone/')) return 'v112';
     if (type.startsWith('/materialsymbolsoutlined/')) return 'v250';
