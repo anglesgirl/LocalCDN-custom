@@ -163,7 +163,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/bootswatch/5.')) return '5.3.7';
     if (type.startsWith('/bowser/')) {
         if (version !== 'latest' && helpers.compareVersion('1.9.4', version)) return '1.9.4';
-        return '2.11.0';
+        return '2.12.0';
     }
     if (type.startsWith('/bulma/0.') || type.startsWith('/bulma/1.')) return '1.0.4';
     if (type.startsWith('/bxslider/4.')) return '4.2.17';
