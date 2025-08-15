@@ -1789,7 +1789,7 @@ https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc
 https://fonts.gstatic.com/s/materialiconssharp/v110/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2
 https://fonts.gstatic.com/s/materialiconstwotone/v113/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2
 https://fonts.gstatic.com/s/materialicons/v143/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
-https://fonts.gstatic.com/s/materialsymbolsoutlined/v252/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2
+https://fonts.gstatic.com/s/materialsymbolsoutlined/v271/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2
 https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css
 https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js
 https://raw.githubusercontent.com/jquery-validation/jquery-validation/1.21.0/dist/jquery.validate.min.js
