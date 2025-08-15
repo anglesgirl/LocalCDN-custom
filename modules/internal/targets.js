@@ -398,7 +398,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react/16.')) return '16.14.0';
     if (type.startsWith('/react/17.')) return '17.0.2';
     if (type.startsWith('/react/18.')) return '18.3.1';
-    if (type.startsWith('/react/19.')) return '19.1.0';
+    if (type.startsWith('/react/19.')) return '19.1.1';
     if (type.startsWith('/react-dom/16.')) return '16.14.0';
     if (type.startsWith('/react-dom/17.')) return '17.0.2';
     if (type.startsWith('/react-dom/18.')) return '18.3.1';
