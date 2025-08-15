@@ -255,7 +255,7 @@ targets.setLastVersion = function (type, version) {
         if (helpers.compareVersion('3.5.1', version)) return '3.5.1'; // <= v3.5.1
         return '3.7.1';
     }
-    if (type.startsWith('/jquery.devbridge-autocomplete/1.')) return '1.4.11';
+    if (type.startsWith('/jquery.devbridge-autocomplete/1.')) return '1.5.0';
     if (type.startsWith('/jqueryui/1.')) {
         if (helpers.compareVersion('1.8.24', version)) return '1.8.24'; // <= v1.8.24
         if (helpers.compareVersion('1.10.0', version)) return '1.10.0'; // > v1.8.24 to <= v1.10.0
