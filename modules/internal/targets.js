@@ -478,7 +478,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/twitter-bootstrap/4.')) {
         if (helpers.compareVersion('4.1.1', version)) return '4.1.1'; // <= 4.1.1
         if (helpers.compareVersion('4.4.1', version)) return '4.4.1'; // <= 4.4.1
-        return '4.6.1';
+        return '4.6.2';
     }
     if (type.startsWith('/twitter-bootstrap/5.')) {
         if (helpers.compareVersion('5.1.3', version)) return '5.1.3'; // <= 5.1.3
