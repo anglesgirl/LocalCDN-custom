@@ -482,7 +482,7 @@ targets.setLastVersion = function (type, version) {
     }
     if (type.startsWith('/twitter-bootstrap/5.')) {
         if (helpers.compareVersion('5.1.3', version)) return '5.1.3'; // <= 5.1.3
-        return '5.3.7';
+        return '5.3.8';
     }
     if (type.startsWith('/twix.js/0.')) return '0.3.0';
     if (type.startsWith('/twix.js/1.')) return '1.3.0';
