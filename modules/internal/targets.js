@@ -183,7 +183,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/d3/6.')) return '6.7.0';
     if (type.startsWith('/d3/7.')) return '7.9.0';
     if (type.startsWith('/datatables/1.')) return '1.11.0';
-    if (type.startsWith('/dayjs/1.')) return '1.11.13';
+    if (type.startsWith('/dayjs/1.')) return '1.11.18';
     if (type.startsWith('/dexie/3.')) return '3.2.7';
     if (type.startsWith('/dexie/4.') || type.startsWith('/dexie/latest')) return '4.2.0';
     if (type.startsWith('/docsearch.js/2.')) return '2.6.3';
