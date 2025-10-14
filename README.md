@@ -1,25 +1,25 @@
 # LocalCDN
 
-[![Translate](https://www.localcdn.org/badges/translation.svg)](https://hosted.weblate.org/projects/localcdn/localcdn/) [![CDNs](https://www.localcdn.org/badges/cdn.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/core/mappings.js) [![Frameworks](https://www.localcdn.org/badges/frameworks.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/resources/) [![Firefox Add-on](https://www.localcdn.org/badges/amo-version.svg)](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) [![Chrome Add-on](https://www.localcdn.org/badges/chrome-version.svg)](https://chrome.google.com/webstore/detail/localcdn/njdfdhgcmkocbgbhcioffdbicglldapd/) [![Buy Me a Coffee](https://www.localcdn.org/badges/buymeacoffee.svg)](https://www.buymeacoffee.com/LocalCDN) [![opencollective](https://www.localcdn.org/badges/opencollective.svg)](https://opencollective.com/LocalCDN)
+[![Translate](https://www.localcdn.org/badges/translation.svg)](https://hosted.weblate.org/projects/localcdn/localcdn/) [![CDNs](https://www.localcdn.org/badges/cdn.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/core/mappings.js) [![Frameworks](https://www.localcdn.org/badges/frameworks.svg)](https://codeberg.org/nobody/LocalCDN/src/branch/main/resources/) [![Firefox Add-on](https://www.localcdn.org/badges/amo-version.svg)](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) [![Buy Me a Coffee](https://www.localcdn.org/badges/buymeacoffee.svg)](https://www.buymeacoffee.com/LocalCDN) [![opencollective](https://www.localcdn.org/badges/opencollective.svg)](https://opencollective.com/LocalCDN)
 
 LocalCDN is a fork of Decentraleyes and a web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported resources locally, and injects them into the environment. All of this happens automatically, so no prior configuration is required. Feel free to use the following [testing utility](https://www.localcdn.org/test/) to find out if you are properly protected. For more information, please read the [tutorial](https://www.localcdn.org/tutorial) or the [Wiki](https://codeberg.org/nobody/LocalCDN/wiki). You can also [download](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) the extension directly from Mozilla and just try it.
 
 ### What are the advantages?
 
-* Supports cloud storage by browsers sync feature (Firefox Sync or own Sync-Server) if enabled <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* Removes integrity and crossorigin tags from embedded script and style elements to replace even more frameworks <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
-* Font Awesome  <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
-* Google Material Icons <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
-* jQuery <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* Bootstrap CSS <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png">
-* Bootstrap JavaScript <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* AngularJS, AngularJS-Animate, AngularJS-Sanitize, AngularJS-Cookies and AngularJS-Touch <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* React, Vue.js, Chart.js and many other frameworks/libraries <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* MathJax (minimal) <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* TinyMCE (without plugins) <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* Internal statistics about CDNs and frameworks (day, week, month, year) <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* Export/Import your config <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
-* Prepared rules for uBlock Origin, uMatrix, AdGuard and NoScript <img width="15px" src="https://www.localcdn.org/img/icon-firefox-25.png"> <img width="15px" src="https://www.localcdn.org/img/icon-chrome-25.png">
+* Supports cloud storage by browsers sync feature (Firefox Sync or own Sync-Server) if enabled
+* Removes integrity and crossorigin tags from embedded script and style elements to replace even more frameworks
+* Font Awesome
+* Google Material Icons
+* jQuery
+* Bootstrap CSS
+* Bootstrap JavaScript
+* AngularJS, AngularJS-Animate, AngularJS-Sanitize, AngularJS-Cookies and AngularJS-Touch
+* React, Vue.js, Chart.js and many other frameworks/libraries
+* MathJax (minimal)
+* TinyMCE (without plugins)
+* Internal statistics about CDNs and frameworks (day, week, month, year)
+* Export/Import your config
+* Prepared rules for uBlock Origin, uMatrix, AdGuard and NoScript
 
 > **Note:** LocalCDN is no silver bullet, but it does prevent a lot of websites from making you send these kinds of requests. Ultimately, you can make LocalCDN block requests for any missing CDN resources, too.
 
@@ -76,7 +76,7 @@ Suggestions in the form of **Issues**, and contributions in the form of **Merge/
 
 * Mozilla Firefox *(86 or higher)*: [get it on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/)
   * Firefox for Android: It's possible. Please read [here](https://codeberg.org/nobody/LocalCDN/wiki#user-content-13-can-i-use-localcdn-in-firefox-for-android-fenix).
-* Chromium based browser: [Chrome Web Store (by Emanuel Bennici)](https://chrome.google.com/webstore/detail/localcdn-fork-from-decent/njdfdhgcmkocbgbhcioffdbicglldapd) :warning: **Please note this Wiki article [FAQ: Chromium incompatibilities](https://codeberg.org/nobody/LocalCDN/wiki/Home#user-content-2-can-i-use-this-extension-in-my-chrome-browser)** :warning:
+* ~~Chromium based browser~~: Google has removed important APIs with MV3, meaning this extension no longer works there. It may still work in Brave, but there will be no new version in the Chrome Web Store (it wasn't provided by me anyway) :warning: **Please note this Wiki article [FAQ: Chromium incompatibilities](https://codeberg.org/nobody/LocalCDN/wiki/Home#user-content-2-can-i-use-this-extension-in-my-chrome-browser)** :warning:
 
 #### Running the Code as temporary extension
 
