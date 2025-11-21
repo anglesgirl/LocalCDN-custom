@@ -1279,6 +1279,7 @@ mappings.cdn['fonts.loli.net.cdn.cloudflare.net'] = mappings.cdn['fonts.loli.net
 mappings.cdn['gateway.cname.ustclug.org'] = mappings.cdn['ajax.proxy.ustclug.org'];
 mappings.cdn['gstaticadssl.l.google.com'] = mappings.cdn['fonts.gstatic.com'];
 mappings.cdn['iduwdjf.qiniudns.com'] = mappings.cdn['cdn.staticfile.org'];
+mappings.cdn['jsdelivr.map.fastly.net'] = mappings.cdn['cdn.jsdelivr.net'];
 mappings.cdn['lb.sae.sina.com.cn'] = mappings.cdn['lib.sinaapp.com'];
 mappings.cdn['lib.baomitu.com.qh-cdn.com'] = mappings.cdn['lib.baomitu.com'];
 mappings.cdn['mat1.gtimg.com.tegsea.tc.qq.com'] = mappings.cdn['mat1.gtimg.com'];

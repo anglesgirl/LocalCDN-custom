@@ -27,6 +27,7 @@ cdn.plyr.io
 cdn.ravenjs.com
 cdn.staticfile.org
 cds.s5x3j6q5.hwcdn.net
+code.createjs.com
 code.jquery.com
 developer.n.shifen.com
 dualstack.osff.map.fastly.net
@@ -39,6 +40,7 @@ gitcdn.github.io
 gstaticadssl.l.google.com
 iduwdjf.qiniudns.com
 js.appboycdn.com
+jsdelivr.map.fastly.net
 lb.sae.sina.com.cn
 lib.baomitu.com
 lib.baomitu.com.qh-cdn.com
