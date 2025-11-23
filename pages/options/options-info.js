@@ -96,6 +96,9 @@ optionsInfo._createList = function (type) {
             textArea.value += `${elem}\n`;
         }
     });
+
+    // Remove trailing newlines
+    textArea.value = textArea.value.trim();
 };
 
 
