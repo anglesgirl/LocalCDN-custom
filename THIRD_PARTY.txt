@@ -1756,9 +1756,9 @@ https://cdn.jsdelivr.net/npm/ngx-bootstrap@20.0.2/datepicker/bs-datepicker.css
 https://cdn.jsdelivr.net/npm/ngx-bootstrap@6.2.0/datepicker/bs-datepicker.css
 https://cdn.jsdelivr.net/npm/object-assign@4.1.1/index.js
 https://cdn.jsdelivr.net/npm/p2p-media-loader-core@0.6.2/build/p2p-media-loader-core.min.js
-https://cdn.jsdelivr.net/npm/p2p-media-loader-core@2.2.1/dist/p2p-media-loader-core.es.min.js
+https://cdn.jsdelivr.net/npm/p2p-media-loader-core@2.2.2/dist/p2p-media-loader-core.es.min.js
 https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@0.6.2/build/p2p-media-loader-hlsjs.min.js
-https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@2.2.1/dist/p2p-media-loader-hlsjs.es.min.js
+https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@2.2.2/dist/p2p-media-loader-hlsjs.es.min.js
 https://cdn.jsdelivr.net/npm/plyr@3.8.3/dist/plyr.css
 https://cdn.jsdelivr.net/npm/plyr@3.8.3/dist/plyr.min.js
 https://cdn.jsdelivr.net/npm/raven-js@3.27.2/dist/raven.min.js
