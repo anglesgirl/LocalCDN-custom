@@ -60,7 +60,7 @@
         "description": "Generate rule sets for your adblocker"
     },
     "generateRuleSetDescription": {
-        "message": "",
+        "message": "Kui sa kasutad reklaamiblokeerijat saad sa reeglid siin luua, aga sa pead need ise käsitsi oma reklaamiblokeerijasse lisama.",
         "description": "In case you are using an adblocker you can generate the rules here. You have to add these rules manually in your adblocker."
     },
     "lastUpdate": {
@@ -76,11 +76,11 @@
         "description": "Enable logging"
     },
     "loggingDescription": {
-        "message": "",
+        "message": "Logi saab avada menüüst ikooni klõpsates. Logid kustutatakse browseri sulguemisel või logimise välja lülitamisel.",
         "description": "You can open the log with the icon in the menu. The log will be deleted when you close the browser or disable logging."
     },
     "featureBreaksWebsitesDescription": {
-        "message": "",
+        "message": "See võimekus lõhub veebitehti. Ära lülita seda sisse, kui sa pole valmis ise mõjutatud domeene valgesse nimekirja lisama.",
         "description": "This feature breaks websites. Do not leave it enabled, unless you are prepared to manually add affected domains to the allow list."
     },
     "featureBreaksWebsitesButton": {
@@ -88,7 +88,7 @@
         "description": "Disable"
     },
     "labelManipulateDOM": {
-        "message": "",
+        "message": "Filtreeri HTML lähtekoodi",
         "description": "Filter HTML source code"
     },
     "labelDonate": {
