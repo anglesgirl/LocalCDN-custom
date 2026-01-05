@@ -30,7 +30,7 @@ const mappings = {};
  * This only needs to be updated when new domains are added.
  * It's not necessary for subdirectories!
  */
-mappings.lastMappingUpdate = '2022-04-18';
+mappings.lastMappingUpdate = '2025-11-21';
 
 mappings.cdn = {
 
