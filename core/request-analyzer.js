@@ -176,6 +176,10 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
         resourcePattern = resourcePath.replaceAll(versionNumber, Resource.VERSION_PLACEHOLDER);
     }
 
+    if (resourcePattern.startsWith('mathjax/{version}-latest/')) {
+        resourcePattern = resourcePattern.replaceAll('-latest', '');
+    }
+
     shorthandResource = shorthands.specialFiles(channelHost, channelPath, destinationSearchString);
     if (shorthandResource['result'] !== false) {
         console.log(`${LogString.PREFIX} ${LogString.REPLACED_RESOURCE} ${shorthandResource.path}`);
