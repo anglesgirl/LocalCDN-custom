@@ -222,7 +222,8 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/materialiconsround/')) return 'v109';
     if (type.startsWith('/materialiconssharp/')) return 'v110';
     if (type.startsWith('/materialiconstwotone/')) return 'v113';
-    if (type.startsWith('/materialsymbolsoutlined/')) return 'v303';
+    if (type.startsWith('/materialsymbolsoutlined/')) return 'v316';
+    if (type.startsWith('/materialsymbolsrounded/')) return 'v314';
     if (type.startsWith('/handlebars.js/4.')) return '4.7.8';
     if (type.startsWith('/highlight.js/7.')) return '9.18.5';
     if (type.startsWith('/highlight.js/8.')) return '9.18.5';
@@ -235,7 +236,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/hls.js/1.')) return '1.6.13';
     if (type.startsWith('/hogan.js/')) return '3.0.2';
     if (type.startsWith('/instantsearch.css/7.')) return '7.4.5';
-    if (type.startsWith('/instantsearch.css/8.')) return '8.9.0';
+    if (type.startsWith('/instantsearch.css/8.')) return '8.11.0';
     if (type.startsWith('/instantsearch.js/3.')) return '3.7.0';
     if (type.startsWith('/instantsearch.js/4.')) return '4.80.0';
     if (type.startsWith('/in-view/0.')) return '0.6.1';
@@ -363,7 +364,7 @@ targets.setLastVersion = function (type, version) {
         // The only resource used from ngx-bootstrap is the CSS file for the datepicker.
         // This CSS is unchanged since version 7. So it's not necessary to host it more than once.
         if (helpers.compareVersion('6.2.0', version)) return '6.2.0'; // <= v6.2.0
-        return '20.0.2';
+        return '21.0.1';
     }
     if (type.startsWith('/noUiSlider/14.')) return '14.7.0';
     if (type.startsWith('/noUiSlider/15.')) return '15.8.1';
@@ -406,7 +407,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/react-dom/19.')) return '19.1.1';
     if (type.startsWith('/react-intl/')) {
         // NOTE: Parameters swapped. (= anything greater than v5.0.0)
-        if (helpers.compareVersion(version, '5.0.0')) return '8.0.8'; // >= v5.0.0
+        if (helpers.compareVersion(version, '5.0.0')) return '8.1.3'; // >= v5.0.0
     }
     if (type.startsWith('/react-redux/7.')) return '7.2.8';
     if (type.startsWith('/react-redux/8.')) return '8.1.3';

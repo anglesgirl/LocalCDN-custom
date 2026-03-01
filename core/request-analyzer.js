@@ -85,7 +85,8 @@ requestAnalyzer.chromeSupport = function (url) {
 requestAnalyzer.isGoogleMaterialIcons = function (url) {
     return url.includes('Material+Icons') ||
            url.includes('materialicons') ||
-           url.includes('Material+Symbols+Outlined');
+           url.includes('Material+Symbols+Outlined') ||
+           url.includes('Material+Symbols+Rounded');
 };
 
 requestAnalyzer.isGoogleFont = function (domain) {
@@ -173,6 +174,10 @@ requestAnalyzer._findLocalTarget = function (resourceMappings, basePath, channel
         versionNumber = [`${versionNumber}.0`];
     } else {
         resourcePattern = resourcePath.replaceAll(versionNumber, Resource.VERSION_PLACEHOLDER);
+    }
+
+    if (resourcePattern.startsWith('mathjax/{version}-latest/')) {
+        resourcePattern = resourcePattern.replaceAll('-latest', '');
     }
 
     shorthandResource = shorthands.specialFiles(channelHost, channelPath, destinationSearchString);

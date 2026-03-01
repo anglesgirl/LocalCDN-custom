@@ -4,7 +4,7 @@
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
-        "message": "自安装以来本地 CDN 资源的注入次数。",
+        "message": "安装以来本地 CDN 资源注入数。",
         "description": "Amount injected description."
     },
     "optionsTitle": {

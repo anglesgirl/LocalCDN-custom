@@ -7,15 +7,6 @@
   box-shadow: 0 0 10px 0 #aaa;
   position: relative;
   z-index: 1;
-  /* button */
-  /* .bs-datepicker-head */
-  /* .bs-datepicker-body */
-  /* .current-timedate */
-  /* .bs-datepicker-multiple */
-  /* .bs-datepicker-btns */
-  /*.bs-datepicker-custom-range */
-  /* .bs-datepicker-predefined-btns */
-  /* .bs-datepicker-buttons */
 }
 .bs-datepicker:after {
   clear: both;
@@ -25,6 +16,9 @@
 .bs-datepicker bs-day-picker {
   float: left;
 }
+.bs-datepicker {
+  /* button */
+}
 .bs-datepicker button:hover,
 .bs-datepicker button:focus,
 .bs-datepicker button:active,
@@ -33,19 +27,24 @@
 .bs-datepicker input:active, .bs-datepicker-btns button:hover, .bs-datepicker-btns button:focus, .bs-datepicker-btns button:active, .bs-datepicker-predefined-btns button:active, .bs-datepicker-predefined-btns button:focus {
   outline: none;
 }
+.bs-datepicker {
+  /* .bs-datepicker-head */
+}
 .bs-datepicker-head {
   min-width: 270px;
   height: 50px;
   padding: 10px;
   border-radius: 3px 3px 0 0;
   text-align: justify;
-  /* .bs-datepicker-head button */
 }
 .bs-datepicker-head:after {
   content: "";
   display: inline-block;
   vertical-align: top;
   width: 100%;
+}
+.bs-datepicker-head {
+  /* .bs-datepicker-head button */
 }
 .bs-datepicker-head button {
   display: inline-block;
@@ -96,24 +95,27 @@
 .bs-datepicker-head button:active {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.bs-datepicker {
+  /* .bs-datepicker-body */
+}
 .bs-datepicker-body {
   padding: 10px;
   border-radius: 0 0 3px 3px;
   min-height: 232px;
   min-width: 278px;
   border: 1px solid #e9edf0;
-  /* .bs-datepicker-body table */
 }
 .bs-datepicker-body .days.weeks {
   position: relative;
   z-index: 1;
 }
+.bs-datepicker-body {
+  /* .bs-datepicker-body table */
+}
 .bs-datepicker-body table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  /* .bs-datepicker-body table.days */
-  /* .bs-datepicker-body table.weeks */
 }
 .bs-datepicker-body table th {
   font-size: 13px;
@@ -126,7 +128,6 @@
   text-align: center;
   position: relative;
   padding: 0;
-  /* todo: check first :not(.disabled) usage */
 }
 .bs-datepicker-body table td span {
   display: block;
@@ -137,6 +138,9 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+.bs-datepicker-body table td {
+  /* todo: check first :not(.disabled) usage */
 }
 .bs-datepicker-body table td:not(.disabled):not(.week) span:not(.disabled):not(.is-other-month) {
   cursor: pointer;
@@ -210,6 +214,9 @@
   border-radius: 50%;
   color: #fff;
 }
+.bs-datepicker-body table {
+  /* .bs-datepicker-body table.days */
+}
 .bs-datepicker-body table.days td.active:not(.select-start):not(.disabled):before, .bs-datepicker-body table.days td.in-range:not(.select-start):not(.disabled):before,
 .bs-datepicker-body table.days span.active:not(.select-start):not(.disabled):before,
 .bs-datepicker-body table.days span.in-range:not(.select-start):not(.disabled):before {
@@ -235,6 +242,9 @@
   background: #e9edf0;
   width: 100%;
 }
+.bs-datepicker-body table {
+  /* .bs-datepicker-body table.weeks */
+}
 .bs-datepicker-body table.weeks tr td:nth-child(2).active:before {
   border-radius: 3px 0 0 3px;
   left: 0;
@@ -259,6 +269,9 @@
   padding: 6px;
   border-radius: 15px;
 }
+.bs-datepicker {
+  /* .current-timedate */
+}
 .bs-datepicker .current-timedate {
   color: #54708b;
   font-size: 15px;
@@ -282,6 +295,9 @@
   margin-right: 4px;
   vertical-align: text-bottom;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAABMklEQVQoU9VTwW3CQBCcOUgBtEBKSAukAnBKME+wFCAlYIhk8sQlxFABtJAScAsuAPBEewYcxCP8ouxrPDsza61uiVN1o6RNHD4htSCmq49RfO71BvMJqBBkITRf1kmUW49nQRC9h1I5AZlBClaL8aP1fKgOOxCx8aSLs+Q19eZuNO8QmPqJRtDFguy7OAcDbJPs+/BKVPDIPrvD2ZJgWAmVe7O0rI0Vqs1seyWUXpuJoppYCa5L+U++NpNPkr5OE2oMdARsb3gykJT5ydZcL8Z9Ww60nxg2LhjON9li9OwXZzo+xLbp3nC2s9CL2RrueGyVrgwNm8HpsCzZ9EEW6kqXlo1GQe03FzP/7W8Hl0dBtu7Bf7zt6mIwvX1RvzDCm7+q3mAW0Dl/GPdUCeXrZLT9BrDrGkm4qlPvAAAAAElFTkSuQmCC);
+}
+.bs-datepicker {
+  /* .bs-datepicker-multiple */
 }
 .bs-datepicker-multiple {
   border-radius: 4px 0 0 4px;
@@ -312,6 +328,9 @@
 .bs-datepicker-multiple .bs-datepicker .right {
   float: right;
 }
+.bs-datepicker {
+  /* .bs-datepicker-btns */
+}
 .bs-datepicker-container {
   padding: 15px;
 }
@@ -327,9 +346,15 @@
   display: flex;
   justify-content: space-around;
 }
+.bs-datepicker {
+  /*.bs-datepicker-custom-range */
+}
 .bs-datepicker-custom-range {
   padding: 15px;
   background: #eee;
+}
+.bs-datepicker {
+  /* .bs-datepicker-predefined-btns */
 }
 .bs-datepicker-predefined-btns button {
   width: 100%;
@@ -346,6 +371,9 @@
 }
 .bs-datepicker-predefined-btns button:hover {
   background-color: #54708b;
+}
+.bs-datepicker {
+  /* .bs-datepicker-buttons */
 }
 .bs-datepicker-buttons {
   display: flex;
