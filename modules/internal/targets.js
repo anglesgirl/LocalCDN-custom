@@ -244,6 +244,7 @@ targets.setLastVersion = function (type, version) {
     if (type.startsWith('/izimodal/1.')) return '1.6.1';
     if (type.startsWith('/jets/0.')) return '0.14.1';
     if (type.startsWith('/jquery/1.')) {
+        if (helpers.compareVersion('1.5.1', version)) return '1.5.1'; // <= v1.5.1
         if (helpers.compareVersion('1.7.1', version)) return '1.7.1'; // <= v1.7.1
         if (helpers.compareVersion('1.8.3', version)) return '1.8.3'; // > 1.7.1 to <= 1.8.3
         if (helpers.compareVersion('1.9.1', version)) return '1.9.1'; // > 1.8.3 to <= 1.9.1
