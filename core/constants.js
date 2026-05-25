@@ -723,6 +723,7 @@ const GoogleDomains = {
     'g.co': true,
     'android.com': true,
     'developer.android.com': true,
+    'research.google.com': true, 
 };
 
 // Supported charsets for TextDecoder()
