@@ -1,10 +1,10 @@
 {
     "extensionDescription": {
-        "message": "Apsaugo tave nuo sekimo per „CDNs“ (Turinio Pervedimo Tinklą) kuris perveda į lokalius resursus.",
+        "message": "Apsaugo tave nuo sekimo per „CDNs“ (Content Delivery Networks) nukreipiant į lokalius resursus.",
         "description": "Protects you against tracking through CDNs (Content Delivery Networks) by redirecting to local resources."
     },
     "amountInjectedDescription": {
-        "message": "Kiekis lokalaus Turinio pristatymo tinklo resursai injekcijos nuo įdiegimo.",
+        "message": "Lokalių CDN resursų injekcijų kiekis nuo įdiegimo.",
         "description": "Amount injected description."
     },
     "optionsTitle": {
@@ -12,15 +12,15 @@
         "description": "Options title"
     },
     "showIconBadgeTitle": {
-        "message": "Rodyti injekcijos skaičių ant piktogramos",
+        "message": "Rodyti injekcijų kiekį ant piktogramos",
         "description": "Show icon badge title"
     },
     "showIconBadgeDescription": {
-        "message": "Rodyti numeri injekcijų resursų ant papildinio piktogramos.",
+        "message": "Rodyti resursų injekcijų kiekį ant papildinio piktogramos.",
         "description": "Show icon badge description."
     },
     "blockMissingTitle": {
-        "message": "Blokuoti prašymus dėl trūkstamų resursų",
+        "message": "Blokuoti trūkstamų resursų prašymus",
         "description": "Block requests for missing resources title"
     },
     "blockMissingDescription": {
@@ -32,31 +32,31 @@
         "description": "Disable prefetch title"
     },
     "disablePrefetchDescription": {
-        "message": "Neleisti neleistinus prašymus iš nutekėjiančių į pristatymo tinklus.",
+        "message": "Neleisti uždraustiems prašymams nutekėti į pristatymo tinklus (CDN).",
         "description": "Disable prefetch description."
     },
     "stripMetadataTitle": {
-        "message": "Nuoginti metaduomenis iš priimtinų prašymų",
+        "message": "Pašalinti metaduomenis iš leistų prašymų",
         "description": "Strip metadata title"
     },
     "stripMetadataDescription": {
-        "message": "Išnaikinti sensityvią informacija iš leistinų „CDN-Prašymų“ dėl pagerinto privatumo.",
+        "message": "Pašalinti jautrius duomenis iš leidžiamų CDN prašymų taip pagerinant privatumą.",
         "description": "Strip metadata description."
     },
     "allowlistedDomainsTitle": {
-        "message": "Išjungti „LocalCDN“ šitiems Tinklapiams:",
+        "message": "Išjungti LocalCDN šiems tinklapiams:",
         "description": "Deactivate LocalCDN for these domains:"
     },
     "allowlistedDomainsDescription": {
-        "message": "Įveskite Tinklapius kuriuos norite, kad būtų išjungtą „LocalCDN“. Vienas įvedimas per liniją.",
+        "message": "Įveskite tinklalapius, kuriuose norite išjungti LocalCDN. Vienas tinklalapis eilutėje.",
         "description": "Enter domains to disable LocalCDN there. One entry per line."
     },
     "advancedLabel": {
-        "message": "Išplėsti",
+        "message": "Sudėtingesnės nuostatos",
         "description": "Advanced label"
     },
     "generateRuleSetTitle": {
-        "message": "Sugeneruoti taisyklių sąrašą jūsų Turinio blokatoriui",
+        "message": "Sugeneruoti taisyklių sąrašą jūsų reklamų blokavimo įskiepiui",
         "description": "Generate rule sets for your adblocker"
     },
     "generateRuleSetDescription": {
@@ -80,7 +80,7 @@
         "description": "You can open the log with the icon in the menu. The log will be deleted when you close the browser or disable logging."
     },
     "featureBreaksWebsitesDescription": {
-        "message": "Šitą funkciją sunaikiną tinklapius. Nepalikite ją įjungtą, nebendrais jei esate pasiruošė savarankiškai įtraukinėti paveiktus tinklapius į leistinų sąrašą.",
+        "message": "Ši funkcija sugadina tinklalapius. Nepalikite jos įjungtos, nebent esate pasiruošę savarankiškai įtraukti paveiktus tinklalapius į leistinų sąrašą.",
         "description": "This feature breaks websites. Do not leave it enabled, unless you are prepared to manually add affected domains to the allow list."
     },
     "featureBreaksWebsitesButton": {
@@ -88,7 +88,7 @@
         "description": "Disable"
     },
     "labelManipulateDOM": {
-        "message": "Filtruoti HTML Pagrindo kodą",
+        "message": "Filtruoti HTML pirminį kodą",
         "description": "Filter HTML source code"
     },
     "labelDonate": {
@@ -96,7 +96,7 @@
         "description": "Donate"
     },
     "negateHtmlFilterListTitle": {
-        "message": "Apversti HTML Filtrą",
+        "message": "Invertuoti HTML filtrą",
         "description": "Invert HTML filter"
     },
     "negateHtmlFilterListDescription": {
@@ -160,7 +160,7 @@
         "description": "Statistics view for past year."
     },
     "labelAll": {
-        "message": "",
+        "message": "Viso laiko statistikos peržiūra",
         "description": "Statistics view over the whole time range"
     },
     "labelDelete": {
