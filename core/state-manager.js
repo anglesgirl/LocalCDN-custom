@@ -234,8 +234,6 @@ stateManager._handleStorageChanged = function (changes) {
         stateManager.internalStatistics = changes.internalStatistics.newValue;
     } else if (Setting.INTERNAL_STATISTICS_DATA in changes) {
         stats.data = changes.internalStatisticsData.newValue;
-    } else if (Setting.HIDE_DONATION_BUTTON in changes) {
-        stateManager.hideDonationButton = changes.hideDonationButton.newValue;
     } else if (Setting.CHANGE_BADGE_COLOR_MISSING_RESOURCES in changes) {
         stateManager.changeBadgeColorMissingResources = changes.changeBadgeColorMissingResources.newValue;
     } else if (Setting.LOGGING in changes) {
@@ -293,7 +291,6 @@ stateManager.getInvertOption = true;
 stateManager.validHosts = [];
 stateManager.selectedIcon = 'Default';
 stateManager.internalStatistics = false;
-stateManager.hideDonationButton = false;
 stateManager.changeBadgeColorMissingResources = false;
 stateManager.logging = false;
 
@@ -311,7 +308,6 @@ storageManager.type.get([
     Setting.NEGATE_HTML_FILTER_LIST,
     Setting.SELECTED_ICON,
     Setting.INTERNAL_STATISTICS,
-    Setting.HIDE_DONATION_BUTTON,
     Setting.CHANGE_BADGE_COLOR_MISSING_RESOURCES,
     Setting.LOGGING,
     Setting.AMOUNT_INJECTED
@@ -330,7 +326,6 @@ storageManager.type.get([
     stateManager.showIconBadge = items.showIconBadge;
     stateManager.selectedIcon = items.selectedIcon;
     stateManager.internalStatistics = items.internalStatistics;
-    stateManager.hideDonationButton = items.hideDonationButton;
     stateManager.changeBadgeColorMissingResources = items.changeBadgeColorMissingResources;
     stateManager.logging = items.enableLogging;
     stateManager.amountInjected = items.amountInjected;

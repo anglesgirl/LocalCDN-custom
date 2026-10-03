@@ -55,14 +55,13 @@ popup._renderContents = function () {
 
 popup._renderNonContextualContents = function () {
     let versionLabelElement, nameLabelElement, counterElement, testingUtilityLinkElement,
-        optionsButtonElement, donationButtonElement, infoButtonLabel;
+        optionsButtonElement, infoButtonLabel;
 
     versionLabelElement = document.getElementById('version-label');
     nameLabelElement = document.getElementById('name-label');
     counterElement = document.getElementById('injection-counter');
     testingUtilityLinkElement = document.getElementById('testing-utility-link');
     optionsButtonElement = document.getElementById('options-button');
-    donationButtonElement = document.getElementById('donate-button');
     infoButtonLabel = document.getElementById('manipulateDOM-indicator');
 
     versionLabelElement.innerText = popup._version;
@@ -71,7 +70,6 @@ popup._renderNonContextualContents = function () {
 
     testingUtilityLinkElement.addEventListener('mouseup', popup._onTestingUtilityLinkClicked);
     optionsButtonElement.addEventListener('mouseup', popup._onOptionsButtonClicked);
-    donationButtonElement.addEventListener('mouseup', popup._onDonationButtonClicked);
     infoButtonLabel.addEventListener('mouseup', popup._onInfoButtonClicked);
 
     if (popup._statisticsStatus) {
@@ -82,10 +80,6 @@ popup._renderNonContextualContents = function () {
     if (popup._loggingStatus) {
         document.getElementById('logging-button').style.display = 'block';
         document.getElementById('logging-button').addEventListener('mouseup', popup._onLoggingButtonClicked);
-    }
-
-    if (!popup.hideDonationButton) {
-        document.getElementById('donate-button').style.display = 'flex';
     }
 };
 
@@ -343,7 +337,6 @@ popup._getData = function () {
             popup._statisticsStatus = items.data.internalStatistics;
             popup.negateHtmlFilterList = items.data.negateHtmlFilterList;
             popup._loggingStatus = items.data.loggingStatus;
-            popup.hideDonationButton = items.data.hideDonationButton;
             popup._blockGoogleFonts = items.data.blockGoogleFonts;
             resolve();
         });
@@ -519,19 +512,6 @@ popup._onTestingUtilityLinkClicked = function (ev) {
         }, function (tab) {
             popup._injectDomain(tab.id);
         });
-    }
-};
-
-popup._onDonationButtonClicked = function (ev) {
-    if (ev.button === 0 || ev.button === 1) {
-        chrome.tabs.create({
-            'url': Links.DONATE,
-            'active': ev.button === 0,
-        });
-    }
-
-    if (ev.button === 0) {
-        window.close();
     }
 };
 

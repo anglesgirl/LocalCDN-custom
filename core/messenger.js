@@ -120,7 +120,6 @@ messenger._handleMessageReceived = function (message, sender, sendResponse) {
             popup.internalStatistics = stateManager.internalStatistics;
             popup.negateHtmlFilterList = stateManager.getInvertOption;
             popup.loggingStatus = stateManager.logging;
-            popup.hideDonationButton = stateManager.hideDonationButton;
             popup.blockGoogleFonts = interceptor.blockGoogleFonts;
             sendResponse({'data': popup});
             return MessageResponse.ASYNCHRONOUS;

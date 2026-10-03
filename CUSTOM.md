@@ -34,15 +34,26 @@ Fork of [nobody/LocalCDN](https://codeberg.org/nobody/LocalCDN) - 保留全部 C
 
 ## 维护
 
+### 同步上游
 ```bash
-# 同步上游
-git fetch upstream
-git merge upstream/main
-# 加新规则：
-# - 本地文件：改 core/custom-mappings.js + core/custom-resources.js + resources/custom/ 下加文件
-# - 域名重写：改 core/custom-redirects.js 的 customRedirects 对象
-# - 新 JS 库：resources/<lib>/ 下加 .jsm 文件 + core/custom-resources.js 定义 + core/custom-mappings.js 映射
+./scripts/sync-upstream.sh
 ```
+- upstream remote：`https://codeberg.org/nobody/LocalCDN.git`（已配置）
+- `core/custom-*.js`、`resources/custom/`、`resources/htmx/`、`resources/preact/`、`CUSTOM.md`、`scripts/` 与上游无重名，合并无冲突（2026-10-03 实测 `git merge upstream/main` 零冲突）
+- 唯一改过的上游文件：`pages/background/background.html`（加 custom-*.js 引入）、`core/interceptor.js`（加域名重写钩子），合并后检查这两处是否完好
+- 同步脚本会自动检查 custom-* 文件和 background.html 引入
+
+### 加新规则
+- 本地文件：改 `core/custom-mappings.js` + `core/custom-resources.js` + `resources/custom/` 下加文件
+- 域名重写：改 `core/custom-redirects.js` 的 `customRedirects` 对象
+- 新 JS 库：`resources/<lib>/` 下加 `.jsm` 文件 + `core/custom-resources.js` 定义 + `core/custom-mappings.js` 映射
+
+### 去捐赠（2026-10-03）
+已移除上游的捐赠相关 UI：
+- 删 `pages/donate/`、`icons/donate.svg`
+- popup、options、welcome 里的捐赠按钮/链接/选项全部移除
+- `hideDonationButton` 设置项一并移除（core/constants.js、state-manager.js、messenger.js、options.js）
+- 上游同步时如 donate 相关文件被加回，重新跑一遍清理即可
 
 ## 构建
 

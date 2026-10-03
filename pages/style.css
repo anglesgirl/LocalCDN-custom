@@ -187,14 +187,6 @@ hr {
     text-align: center;
 }
 
-.p-donate {
-    text-decoration: underline;
-}
-
-.p-donate:hover {
-    cursor: pointer;
-}
-
 @media screen and (max-width: 982px) {
     body {
         box-shadow: none;

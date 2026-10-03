@@ -130,7 +130,6 @@ const Setting = {
     'BADGE_HTML_FILTER_TEXT_COLOR': 'badgeHTMLfilterTextColor',
     'BADGE_MISSING_RESOURCE_BACKGROUND_COLOR': 'badgeMissingResourceBackgroundColor',
     'BADGE_MISSING_RESOURCE_TEXT_COLOR': 'badgeMissingResourceTextColor',
-    'HIDE_DONATION_BUTTON': 'hideDonationButton',
     'CHANGE_BADGE_COLOR_MISSING_RESOURCES': 'changeBadgeColorMissingResources',
 };
 
@@ -161,7 +160,6 @@ const SettingDefaults = {
     [Setting.BADGE_HTML_FILTER_TEXT_COLOR]: BadgeSettingHTMLFilter.HEX_TEXT_COLOR,
     [Setting.BADGE_MISSING_RESOURCE_BACKGROUND_COLOR]: BadgeSettingMissingResource.HEX_BACKGROUND_COLOR,
     [Setting.BADGE_MISSING_RESOURCE_TEXT_COLOR]: BadgeSettingMissingResource.HEX_TEXT_COLOR,
-    [Setting.HIDE_DONATION_BUTTON]: false,
     [Setting.CHANGE_BADGE_COLOR_MISSING_RESOURCES]: false,
 };
 
@@ -289,7 +287,6 @@ const Links = {
     'CODEBERG_HTML_FILTER': 'https://codeberg.org/nobody/LocalCDN/wiki/Home#user-content-7-a-website-looks-weird-or-cannot-be-used-if-i-deactivate-localcdn-everything-works-what-is-the-problem',
     'CODEBERG_RULESET': 'https://codeberg.org/nobody/LocalCDN/wiki/Home#user-content-6-why-do-i-need-this-rule-generator-i-use-an-adblocker-and-want-to-import-these-rules-how-does-it-work',
     'WELCOME': chrome.runtime.getURL('pages/welcome/welcome.html'),
-    'DONATE': chrome.runtime.getURL('pages/donate/donate.html'),
     'CHANGELOG': chrome.runtime.getURL('pages/updates/updates.html'),
     'FAQ': chrome.runtime.getURL('pages/help/help.html'),
     'FAQ_HTML_FILTER': chrome.runtime.getURL('pages/help/help.html#html-filter'),
