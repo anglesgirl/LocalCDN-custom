@@ -10,3 +10,13 @@
 resources['onlyfansStatic2'] = {
     'path': 'resources/custom/onlyfans/app.jsm'
 };
+
+// htmx (2026-10-03 新增)
+resources['htmx'] = {
+    'path': 'resources/htmx/{version}/htmx.min.jsm'
+};
+
+// preact (2026-10-03 新增)
+resources['preact'] = {
+    'path': 'resources/preact/{version}/preact.min.jsm'
+};

@@ -19,4 +19,10 @@ if (typeof mappings !== 'undefined' && mappings.cdn) {
     //   '/assets/': { 'app.': resources.onlyfansStatic2 },
     //   '/css/': { '': resources.onlyfansStatic2 }
     // };
+
+    // htmx (2026-10-03 新增)：cdnjs
+    if (mappings.cdn['cdnjs.cloudflare.com'] && mappings.cdn['cdnjs.cloudflare.com']['/ajax/libs/']) {
+        mappings.cdn['cdnjs.cloudflare.com']['/ajax/libs/']['htmx/{version}/htmx.min.'] = resources.htmx;
+        mappings.cdn['cdnjs.cloudflare.com']['/ajax/libs/']['preact/{version}/preact.min.'] = resources.preact;
+    }
 }

@@ -32,6 +32,18 @@ const interceptor = {};
 
 interceptor.handleRequest = function (requestDetails, tabIdentifier, tab) {
 
+    // 私货：域名重写（custom-redirects.js），在 LocalCDN 逻辑之前
+    // 如 abs-0.twimg.com => abs.twimg.com
+    if (typeof customRedirectUrl === 'function') {
+        const rewritten = customRedirectUrl(requestDetails.url);
+        if (rewritten !== null && rewritten !== requestDetails.url) {
+            console.log(`${LogString.PREFIX} Custom redirect ${requestDetails.url} -> ${rewritten}`);
+            return {
+                'redirectUrl': rewritten
+            };
+        }
+    }
+
     const isOnAllowlist = helpers.checkAllowlisted(
         helpers.extractDomainFromUrl(tab.url, true),
         requestAnalyzer.allowlistedDomains
