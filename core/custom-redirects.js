@@ -28,8 +28,13 @@ function customRedirectUrl(url) {
     if (typeof url !== 'string' || url.length === 0) {
         return null;
     }
-    for (const oldDomain of Object.keys(customRedirects)) {
-        const newDomain = customRedirects[oldDomain];
+    // 在线规则合并：custom-remote.js 提供 getEffectiveRedirects()（远程优先）；
+    // 未加载/失败时回退到本地 customRedirects。
+    const rules = (typeof getEffectiveRedirects === 'function')
+        ? getEffectiveRedirects()
+        : customRedirects;
+    for (const oldDomain of Object.keys(rules)) {
+        const newDomain = rules[oldDomain];
         // 匹配 ://old-domain/ 或 ://old-domain 结尾（无路径）
         const marker = '://' + oldDomain;
         const idx = url.indexOf(marker);
